@@ -3,8 +3,8 @@ const models=require('../models')
 
 async function getSubdivisions(req,res){
   let [err,subdivisions]=await get(models.Subdivision.findAll({
-    /* where:{estado: 'A'},
-    include: [{all: true}] */
+    /* where:{estado: 'A'}, */
+    include: [{all: true}]
   }))
   if(err) return res.status(500).json({message: `err`})
   if(subdivisions==null) return res.status(404).json({message: `Subdivisions nulos`})

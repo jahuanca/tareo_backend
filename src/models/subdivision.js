@@ -27,5 +27,10 @@ module.exports = (sequelize, DataTypes) => {
     timestamps: false,
     tableName: 'Subdivision'
   });
+
+  Subdivision.associate = function(models) {
+    Subdivision.belongsTo(models.Division, {foreignKey: "iddivision",targetKey: 'iddivision'})
+  };
+
   return Subdivision;
 };
