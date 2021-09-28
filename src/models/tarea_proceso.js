@@ -10,7 +10,7 @@ module.exports = (sequelize, DataTypes) => {
   };
   TareaProceso.init({
     //add new parameters
-    itemtareoproceso: {primaryKey: true, type: DataTypes.INTEGER, allowNull: false},
+    itemtareoproceso: {primaryKey: true, type: DataTypes.INTEGER, autoIncrement: true},
     codigoempresa: {type: DataTypes.STRING, allowNull: false},
     fecha: {type: DataTypes.DATE, allowNull: false},
     idactividad: {type: DataTypes.INTEGER, allowNull: false},

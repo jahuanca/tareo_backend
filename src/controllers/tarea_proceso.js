@@ -42,17 +42,15 @@ async function createAllTareaProceso(req, res) {
         const result = await models.sequelize.transaction(async (t) => {
             const tarea = await models.TareaProceso.create({
 
-                itemtareoproceso: 1,
                 codigoempresa: req.body.codigoempresa,
                 fecha: new Date(req.body.fecha),
                 idactividad: req.body.idactividad,
                 idlabor: req.body.idlabor,
-                idcentrocosto: 1,
-                //idcentrocosto: req.body.idcentrocosto,
+                idestado: 4,
+                idcentrocosto: req.body.idcentrocosto,
                 turnotareo: req.body.turnotareo,
                 fechamod: new Date(req.body.fechamod),
                 idusuario: 1,
-                idestado: req.body.idestado,
                 escampo: req.body.escampo,
                 espacking: req.body.espacking,
                 esjornal: req.body.esjornal,
@@ -73,15 +71,20 @@ async function createAllTareaProceso(req, res) {
                 for (let i = 0; i < req.body.personal.length; i++) {
                     req.body.personal[i].itemtareoproceso=tarea.itemtareoproceso;
                     req.body.personal[i].idusuario=1;
-                    req.body.fechamod= Date.now();
-                    req.body.cantidadHoras= 2;
-                    req.body.cantidadrendimiento= 5;
-                    req.body.cantidadavance= 5;
-                    req.body.idestado= 1;
-                    req.body.idusuario= 1;
+                    req.body.personal[i].fechamod= Date.now();
+                    req.body.personal[i].cantidadHoras= 2;
+                    req.body.personal[i].cantidadrendimiento= 5;
+                    req.body.personal[i].cantidadavance= 5;
+                    req.body.personal[i].transferidosap= true;
+                    req.body.personal[i].idestado= 1;
+                    req.body.personal[i].idusuario= 1;
+
+
+                    
+                    req.body.idactividad=tarea.idactividad;
                     //await models.PersonalTareaProceso.create(req.body.personal[i],{transaction: t})
                 }
-                //await models.PersonalTareaProceso.bulkCreate(req.body.personal, { transaction: t });
+                await models.PersonalTareaProceso.bulkCreate(req.body.personal, { transaction: t });
             }
             /* trabajador.dataValues.usuario=user; */
             return tarea;

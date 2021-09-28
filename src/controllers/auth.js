@@ -33,15 +33,17 @@ async function signInAdmin(req, res){
             username: req.body.username,
             password: req.body.password
         },
-        include: [{all: true}]
+        /* include: [{all: true}] */
     }))
     if(err) return res.status(500).json({message: `Error en el servidor ${err2}`})
-    if(usuario==null) return res.status(404).json({message: `Usuarios nulos`})
+    if(usuario==null) return res.status(404).json({message: `Usuario no encontrado, verifique su contraseña o usuario`})
     let token=service.createToken(usuario,4,usuario.Directiva.id)
     res.status(200).json({token})
 }
 //signin
 async function signInUser(req, res){
+    console.log(req.body);
+
     const errors = validationResult(req);
     if(!errors.isEmpty()) {
         return res.status(422).json({errors: errors.array()});
@@ -50,11 +52,14 @@ async function signInUser(req, res){
         where:{
             alias: req.body.alias,
             password: req.body.password,
-        }
+        },
+        include: [{
+            model: models.Usuario_Perfil, where: {idsubdivision: req.body.idsubdivision}, required: true,
+        }]
     }))
     
     if(err) return res.status(500).json({message: `${err}`})
-    if(usuario==null) return res.status(404).json({message: `Usuarios nulos`})
+    if(usuario==null) return res.status(404).json({message: `Usuario no encontrado, verifique su contraseña o usuario`})
     else{
         let token=service.createToken(usuario)
         usuario.dataValues.token=token;
