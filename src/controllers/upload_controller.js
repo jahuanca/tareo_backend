@@ -22,7 +22,7 @@ const handlersImages = {
         next(error, false);
         }
     };
-    return multer(options).single("files");
+    return multer(options).single("file");
   },
 
   uploadMany: (cantidad)=>{
@@ -47,15 +47,15 @@ const handlersImages = {
     return async (req, res, next) => {
         
         if (!req.file) return next();
-        
+        console.log('regreso');
         const cadena=crypto
                     .createHash('RSA-SHA256')
-                    .update(e.originalname)
+                    .update(req.file.originalname)
                     .digest('hex');
         
-        const name = `sum2020_${cadena.substring(0,10)}_${new Date().valueOf().toString()}.${req.file.mimetype.split("/")[1]}`;
+        const name = `u_${cadena.substring(0,10)}_${new Date().valueOf().toString()}.${req.file.mimetype.split("/")[1]}`;
 
-        req.file[i].filename=name;
+        req.file.filename=name;
 
         const photo = await jimp.read(req.file.buffer);
         //await photo.resize(300, jimp.AUTO);

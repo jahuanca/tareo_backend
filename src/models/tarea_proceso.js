@@ -29,6 +29,7 @@ module.exports = (sequelize, DataTypes) => {
     pausainicio: {type: DataTypes.DATE, allowNull: false},
     pausafin: {type: DataTypes.DATE, allowNull: false},
     diasiguiente: {type: DataTypes.BOOLEAN, allowNull: false},
+    firmasupervisor: {type: DataTypes.STRING, allowNull: true},
 
     accion: {type: DataTypes.VIRTUAL},
     usuario: {type: DataTypes.VIRTUAL},

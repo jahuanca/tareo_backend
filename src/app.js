@@ -87,7 +87,7 @@ fs
     
     let f=file.replace('.js','');
     let name=f.replace(/_/g,'-');
-    const dir = path.join(__dirname,'public','uploads',`${name}s`);
+    const dir = path.join(__dirname, '..','public','uploads',`${name}s`);
     if (!fs.existsSync(dir)){
       fs.mkdirSync(dir);
     }

@@ -117,6 +117,27 @@ async function updateTareaProceso(req, res) {
     res.status(200).json(tareaProceso[1][0].dataValues)
 }
 
+async function uploadFileTareaProceso(req, res) {
+    
+    let [err, tareaProceso] = await get(models.TareaProceso.update({
+        firmasupervisor: req.file.filename,
+
+        accion: 'U',
+        accion_usuario: 'Edito un tareaProceso.',
+        ip: req.ip,
+        usuario: 0
+    }, {
+        where: {
+            itemtareoproceso: req.body.itemtareoproceso
+        },
+        individualHooks: true,
+        validate: false
+    }))
+    if (err) return res.status(500).json({ message: `${err}` })
+    if (tareaProceso == null) return res.status(404).json({ message: `TareaProcesos nulos` })
+    res.status(200).json(tareaProceso[1][0].dataValues)
+}
+
 
 async function deleteTareaProceso(req, res) {
     let [err, tareaProceso] = await get(models.TareaProceso.update({
@@ -150,6 +171,7 @@ module.exports = {
     getTareaProceso,
     createAllTareaProceso,
     createTareaProceso,
+    uploadFileTareaProceso,
     updateTareaProceso,
     deleteTareaProceso
 }
