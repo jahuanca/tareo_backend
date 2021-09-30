@@ -3,8 +3,8 @@ const models=require('../models')
 
 async function getUsuarios(req,res){
   let [err,usuarios]=await get(models.Usuario.findAll({
-    /* where:{estado: 'A'},
-    include: [{all: true}] */
+    /* where:{estado: 'A'},*/
+    include: [{all: true}],
     
   }))
   if(err) return res.status(500).json({message: `${err}`})
