@@ -4,9 +4,7 @@ const {
 } = require('sequelize');
 module.exports = (sequelize, DataTypes) => {
   class TareaProceso extends Model {
-    static associate(models) {
-      
-    }
+    static associate(models) {}
   };
   TareaProceso.init({
     //add new parameters
