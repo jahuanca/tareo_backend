@@ -3,10 +3,10 @@ const models=require('../models')
 
 async function getLabors(req,res){
   let [err,labors]=await get(models.Labor.findAll({
-    /* where:{estado: 'A'},
-    include: [{all: true}] */
+    /* where:{estado: 'A'}, */
+    include: [{all: true}]
   }))
-  if(err) return res.status(500).json({message: `err`})
+  if(err) return res.status(500).json({message: `${err}`})
   if(labors==null) return res.status(404).json({message: `Labors nulos`})
   res.status(200).json(labors)
 }
@@ -16,8 +16,7 @@ async function getLabor(req,res){
     where:{id: req.params.id, estado: 'A'},
     include: [{all: true}]
   }))
-  console.log(err)
-  if(err) return res.status(500).json({message: `err`})
+  if(err) return res.status(500).json({message: `${err}`})
   if(labor==null) return res.status(404).json({message: `Labors nulos`})
   res.status(200).json(labor)
 }

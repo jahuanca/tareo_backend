@@ -5,7 +5,7 @@ const {
 module.exports = (sequelize, DataTypes) => {
   class Labor extends Model {
     static associate(models) {
-      
+      Labor.belongsTo(models.Actividad, {foreignKey: "idactividad",targetKey: 'idactividad'})
     }
   };
   Labor.init({

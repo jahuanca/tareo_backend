@@ -3,8 +3,8 @@ const models=require('../models')
 
 async function getPersonalTareaProcesos(req,res){
   let [err,personalTareaProcesos]=await get(models.PersonalTareaProceso.findAll({
-    where:{estado: 'A'},
-    include: [{all: true}]
+    /* where:{estado: 'A'}, */
+    /* include: [{all: true}] */
   }))
   if(err) return res.status(500).json({message: `err`})
   if(personalTareaProcesos==null) return res.status(404).json({message: `PersonalTareaProcesos nulos`})

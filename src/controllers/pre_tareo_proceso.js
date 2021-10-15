@@ -4,6 +4,7 @@ const models=require('../models')
 async function getPre_Tareo_Procesos(req,res){
   let [err,pre_tareo_procesos]=await get(models.Pre_Tareo_Proceso.findAll({
     /* where:{estado: 'A'}, */
+    /* order: [['fechamod','DESC']], */
     include: [
         {model: models.Centro_Costo},
         {model: models.Labores_Cultivo_Packing, include: [{all: true}]}

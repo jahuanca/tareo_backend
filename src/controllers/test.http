@@ -1,0 +1,16 @@
+
+POST https://200.107.154.142:44300/sap/bc/srt/rfc/sap/zhcm_ws_absentismo/200/zhcm_ws_absentismo/zhcm_ws_absentismo_b HTTP/1.1
+Content-Type: text/xml;charset=UTF-8
+Authorization: Basic bnNvc2E6TmVzdG9yLjIwMjA=
+SOAPAction: application/soap+xml;charset=UTF-8;action="urn:sap-com:document:sap:soap:functions:mc-style:ZHCM_WS_ABSENTISMO:ZhcmWsAbsentismoRequest"
+
+
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:sap-com:document:sap:soap:functions:mc-style">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <urn:ZhcmWsAbsentismo>
+         <IDesde>2021-05-01</IDesde>
+         <IHasta>2021-05-10</IHasta>
+      </urn:ZhcmWsAbsentismo>
+   </soapenv:Body>
+</soapenv:Envelope>
