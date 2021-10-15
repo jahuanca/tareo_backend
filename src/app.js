@@ -92,7 +92,7 @@ fs
       fs.mkdirSync(dir);
     }
     app.use(`/${f}`, require(`./routes/${f}`)); 
-    //app.use(`node/node/${f}`, require(`./routes/${f}`)); 
+    //app.use(`/node/node/${f}`, require(`./routes/${f}`)); 
   });
 
 
