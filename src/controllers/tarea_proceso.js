@@ -50,7 +50,6 @@ async function createAllTareaProceso(req, res) {
                 idcentrocosto: req.body.idcentrocosto,
                 turnotareo: req.body.turnotareo,
                 fechamod: new Date(req.body.fechamod),
-                idusuario: 1,
                 escampo: req.body.escampo,
                 espacking: req.body.espacking,
                 esjornal: req.body.esjornal,
@@ -70,16 +69,12 @@ async function createAllTareaProceso(req, res) {
             if (req.body.personal) {
                 for (let i = 0; i < req.body.personal.length; i++) {
                     req.body.personal[i].itemtareoproceso=tarea.itemtareoproceso;
-                    req.body.personal[i].idusuario=1;
                     req.body.personal[i].fechamod= Date.now();
                     req.body.personal[i].cantidadHoras= 2;
                     req.body.personal[i].cantidadrendimiento= 5;
                     req.body.personal[i].cantidadavance= 5;
                     req.body.personal[i].transferidosap= true;
                     req.body.personal[i].idestado= 1;
-                    req.body.personal[i].idusuario= 1;
-
-
                     
                     req.body.idactividad=tarea.idactividad;
                     //await models.PersonalTareaProceso.create(req.body.personal[i],{transaction: t})

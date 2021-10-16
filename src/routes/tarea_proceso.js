@@ -2,7 +2,7 @@
 const express=require('express')
 const router=express.Router()
 const tareaProceso=require('../controllers/tarea_proceso')
- const upload_controller=require('../controllers/upload_controller')
+const upload_controller=require('../controllers/upload_controller')
 /*const auth=require('../middlewares/auth') */
 
 /**

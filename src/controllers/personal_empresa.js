@@ -1,9 +1,10 @@
 'use strict'
 const models=require('../models')
+const moment=require('moment')
 
 async function getPersonal_Empresas(req,res){
   let [err,personal_empresas]=await get(models.Personal_Empresa.findAll({
-    /* where:{estado: 'A'}, */
+    where:{itemgrupopersonal: 1,},
     include: [{all: true}]
   }))
   if(err) return res.status(500).json({message: `${err}`})

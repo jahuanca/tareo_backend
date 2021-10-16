@@ -22,6 +22,7 @@ module.exports = (sequelize, DataTypes) => {
     bloqueado: {type: DataTypes.BOOLEAN, allowNull: true, validate: {notEmpty: true, len: [1,200]}},
     fechacese: {type: DataTypes.DATE, allowNull: true, validate: {notEmpty: true, len: [1,200]}},
     idusuario: {type: DataTypes.INTEGER, allowNull: true, validate: {notEmpty: true, len: [1,200]}},
+    itemgrupopersonal: {type: DataTypes.INTEGER, allowNull: false},
 
     accion: {type: DataTypes.VIRTUAL},
     usuario: {type: DataTypes.VIRTUAL},
