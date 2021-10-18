@@ -62,9 +62,9 @@ async function createAllPreTareoProceso(req, res) {
           fechamod: new Date(req.body.fechamod),
           activo: true,
           idusuario: req.body.idusuario,
-          /* idestado: 4,
+          /* idestado: 4,*/
           turnotareo: req.body.turnotareo,          
-          diasiguiente: req.body.diasiguiente, */
+          diasiguiente: req.body.diasiguiente,
 
           accion: 'I',
           usuario: 0,
