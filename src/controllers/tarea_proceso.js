@@ -46,7 +46,7 @@ async function createAllTareaProceso(req, res) {
                 fecha: new Date(req.body.fecha),
                 idactividad: req.body.idactividad,
                 idlabor: req.body.idlabor,
-                idestado: 4,
+                idestado: 1,
                 idcentrocosto: req.body.idcentrocosto,
                 turnotareo: req.body.turnotareo,
                 fechamod: new Date(req.body.fechamod),
