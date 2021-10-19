@@ -47,7 +47,6 @@ const handlersImages = {
     return async (req, res, next) => {
         
         if (!req.file) return next();
-        console.log('regreso');
         const cadena=crypto
                     .createHash('RSA-SHA256')
                     .update(req.file.originalname)
