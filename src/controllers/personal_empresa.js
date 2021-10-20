@@ -14,14 +14,14 @@ async function getPersonal_Empresas(req,res){
 
 async function getPersonal_Empresa(req,res){
   let [err,personal_empresa]=await get(models.Personal_Empresa.findOne({
-    where:{id: req.params.id, estado: 'A'},
+    where:{codigoempresa: req.params.id,},
     include: [{all: true}]
   }))
-  console.log(err)
   if(err) return res.status(500).json({message: `err`})
   if(personal_empresa==null) return res.status(404).json({message: `Personal_Empresas nulos`})
   res.status(200).json(personal_empresa)
 }
+//0000679_ 218
 
 async function getPersonal_EmpresaBySubdivision(req,res){
   let [err,personal_empresa]=await get(models.Personal_Empresa.findAll({
