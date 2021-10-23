@@ -38,7 +38,6 @@ async function createTareaProceso(req, res) {
 
 async function createAllTareaProceso(req, res) {
     try {
-        /* console.log(req.body); */
         const result = await models.sequelize.transaction(async (t) => {
             const tarea = await models.TareaProceso.create({
 
@@ -59,7 +58,6 @@ async function createAllTareaProceso(req, res) {
                 pausainicio: new Date(req.body.pausainicio),
                 pausafin: new Date(req.body.pausafin),
                 diasiguiente: req.body.diasiguiente,
-
                 accion: 'I',
                 usuario: 0,
                 ip: req.ip,
@@ -70,10 +68,7 @@ async function createAllTareaProceso(req, res) {
                 for (let i = 0; i < req.body.personal.length; i++) {
                     req.body.personal[i].itemtareoproceso=tarea.itemtareoproceso;
                     req.body.personal[i].fechamod= Date.now();
-                    req.body.personal[i].cantidadHoras= 2;
-                    req.body.personal[i].cantidadrendimiento= 5;
-                    req.body.personal[i].cantidadavance= 5;
-                    req.body.personal[i].transferidosap= true;
+                    req.body.personal[i].transferidosap= false;
                     req.body.personal[i].idestado= 1;
                     
                     req.body.idactividad=tarea.idactividad;

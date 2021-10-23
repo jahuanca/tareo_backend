@@ -20,6 +20,7 @@ router.get('/id/:id',personalTareaProceso.getPersonalTareaProceso)
 router.post('/create',personalTareaProceso.createPersonalTareaProceso)
 router.put('/update',personalTareaProceso.updatePersonalTareaProceso)
 router.delete('/delete/:id', personalTareaProceso.deletePersonalTareaProceso)
+router.post('/rango',personalTareaProceso.personalTareaProcesoByRango)
 
 module.exports=router
 /** 

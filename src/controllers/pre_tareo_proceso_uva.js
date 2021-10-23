@@ -42,7 +42,6 @@ async function createPre_Tareo_Proceso_Uva(req, res) {
 
 async function createAllPreTareoProcesoUva(req, res) {
   try {
-    console.log(req.body);
     const result = await models.sequelize.transaction(async (t) => {
       if (req.body.itempretareaprocesouva == null) {
         const tarea = await models.Pre_Tareo_Proceso_Uva.create({
@@ -52,10 +51,7 @@ async function createAllPreTareoProcesoUva(req, res) {
           horafin: new Date(req.body.horafin),
           pausainicio: new Date(req.body.pausainicio),
           pausafin: new Date(req.body.pausafin),
-          /* linea: new Date(req.body.linea),
-          item: new Date(req.body.item), */
           linea: 1,
-          item: 3,
           idcentrocosto: req.body.idcentrocosto,
           codigoempresasupervisor: req.body.codigoempresasupervisor,
           codigoempresadigitador: req.body.codigoempresadigitador,

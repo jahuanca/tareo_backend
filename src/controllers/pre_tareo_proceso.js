@@ -42,7 +42,6 @@ async function createPre_Tareo_Proceso(req, res) {
 
 async function createAllPreTareoProceso(req, res) {
   try {
-    console.log(req.body);
     const result = await models.sequelize.transaction(async (t) => {
       if (req.body.itempretareaproceso == null) {
         const tarea = await models.Pre_Tareo_Proceso.create({

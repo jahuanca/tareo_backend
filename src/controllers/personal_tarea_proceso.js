@@ -22,6 +22,18 @@ async function getPersonalTareaProceso(req,res){
   res.status(200).json(personalTareaProceso)
 }
 
+async function personalTareaProcesoByRango(req,res){
+  console.log(req.body);
+  let [err,personalTareaProceso]=await get(models.PersonalTareaProceso.findOne({
+    where:{id: req.params.id, estado: 'A'},
+    include: [{all: true}]
+  }))
+  console.log(err)
+  if(err) return res.status(500).json({message: `err`})
+  if(personalTareaProceso==null) return res.status(404).json({message: `PersonalTareaProcesos nulos`})
+  res.status(200).json(personalTareaProceso)
+}
+
 async function createPersonalTareaProceso(req,res){
   let [err,personalTareaProceso]=await get(models.PersonalTareaProceso.create({
        //all fields to insert
@@ -90,5 +102,6 @@ module.exports={
   getPersonalTareaProceso,
   createPersonalTareaProceso,
   updatePersonalTareaProceso,
-  deletePersonalTareaProceso
+  deletePersonalTareaProceso,
+  personalTareaProcesoByRango,
 }

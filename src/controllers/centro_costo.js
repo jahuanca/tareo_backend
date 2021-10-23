@@ -13,7 +13,7 @@ async function getCentro_Costos(req,res){
 
 async function getCentro_Costo(req,res){
   let [err,centro_costo]=await get(models.Centro_Costo.findOne({
-    where:{id: req.params.id, estado: 'A'},
+    where:{idcentrocosto: req.params.id},
     include: [{all: true}]
   }))
   console.log(err)

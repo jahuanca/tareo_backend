@@ -44,8 +44,9 @@ fileSystem.readdirSync(models)
 //midlewares
 //app.use(cors({origin: 'http://localhost:4200'}))
 app.use(cors({corsOptions}))
-app.use(bodyParser.urlencoded({extended: false}))
-app.use(bodyParser.json())
+app.use(bodyParser.urlencoded({extended: false, limit: '50mb',}))
+app.use(bodyParser.json({limit: '50mb'}))
+//app.use(express.json({limit: '50mb'}));
 app.use(morgan('dev'))
 
 //valores por defecto
@@ -112,6 +113,7 @@ app.set('socketV', io);
 app.set('trust proxy', true);
 
 http.listen(config.port,()=>{
+  
   console.log(`API REST: corriendo en el puerto: ${config.port}`)
 })
 
