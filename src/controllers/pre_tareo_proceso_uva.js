@@ -53,6 +53,7 @@ async function createAllPreTareoProcesoUva(req, res) {
           pausafin: new Date(req.body.pausafin),
           linea: 1,
           idcentrocosto: req.body.idcentrocosto,
+          idcultivo: req.body.idcultivo,
           codigoempresasupervisor: req.body.codigoempresasupervisor,
           codigoempresadigitador: req.body.codigoempresadigitador,
           /* fechamod: new Date(req.body.fechamod), */
