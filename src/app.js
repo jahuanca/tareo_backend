@@ -119,7 +119,7 @@ http.listen(config.port,()=>{
 
 
 cron.schedule('14 0 * * *', () => {
-    actualizacion_datos.actualizarDeudores();
+    //actualizacion_datos.actualizarDeudores();
 });
 
 function get(promise) {

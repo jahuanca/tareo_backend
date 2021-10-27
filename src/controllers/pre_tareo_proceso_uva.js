@@ -42,55 +42,43 @@ async function createPre_Tareo_Proceso_Uva(req, res) {
 
 async function createAllPreTareoProcesoUva(req, res) {
   try {
+    /* console.log(req.body) */
     const result = await models.sequelize.transaction(async (t) => {
-      if (req.body.itempretareaprocesouva == null) {
-        const tarea = await models.Pre_Tareo_Proceso_Uva.create({
-          
-          fecha: new Date(req.body.fecha),
-          horainicio: new Date(req.body.horainicio),
-          horafin: new Date(req.body.horafin),
-          pausainicio: new Date(req.body.pausainicio),
-          pausafin: new Date(req.body.pausafin),
-          linea: 1,
-          idcentrocosto: req.body.idcentrocosto,
-          idcultivo: req.body.idcultivo,
-          codigoempresasupervisor: req.body.codigoempresasupervisor,
-          codigoempresadigitador: req.body.codigoempresadigitador,
-          /* fechamod: new Date(req.body.fechamod), */
-          /* activo: true, */
-          idusuario: req.body.idusuario,
-          idestado: 1,
-          turnotareo: req.body.turnotareo,          
-          diasiguiente: req.body.diasiguiente,
 
-          accion: 'I',
-          usuario: 0,
-          ip: req.ip,
-          accion_usuario: 'Creo un nuevo pre tareo completo.',
-        }, { transaction: t });
+      const tarea = await models.Pre_Tareo_Proceso_Uva.create({
+        fecha: new Date(req.body.fecha),
+        horainicio: new Date(req.body.horainicio),
+        horafin: new Date(req.body.horafin),
+        pausainicio: new Date(req.body.pausainicio),
+        pausafin: new Date(req.body.pausafin),
+        linea: 1,
+        idcentrocosto: req.body.idcentrocosto,
+        idcultivo: req.body.idcultivo,
+        codigoempresasupervisor: req.body.codigoempresasupervisor,
+        codigoempresadigitador: req.body.codigoempresadigitador,
+        /* fechamod: new Date(req.body.fechamod), */
+        /* activo: true, */
+        idusuario: req.body.idusuario,
+        idestado: 1,
+        turnotareo: req.body.turnotareo,
+        diasiguiente: req.body.diasiguiente,
 
-        if (req.body.Pre_Tareo_Proceso_Uva_Detalles) {
-          for (let i = 0; i < req.body.Pre_Tareo_Proceso_Uva_Detalles.length; i++) {
-            req.body.Pre_Tareo_Proceso_Uva_Detalles[i].itempretareaprocesouva = tarea.itempretareaprocesouva;
-            req.body.Pre_Tareo_Proceso_Uva_Detalles[i].fechamod = Date.now();
-            //req.body.Pre_Tareo_Proceso_Uva_Detalles[i].transferidosap = true;
-            req.body.Pre_Tareo_Proceso_Uva_Detalles[i].idestado = 1;
-          }
-          await models.Pre_Tareo_Proceso_Uva_Detalle.bulkCreate(req.body.Pre_Tareo_Proceso_Uva_Detalles, { transaction: t });
+        accion: 'I',
+        usuario: 0,
+        ip: req.ip,
+        accion_usuario: 'Creo un nuevo pre tareo completo.',
+      }, { transaction: t });
+
+      if (req.body.Pre_Tareo_Proceso_Uva_Detalles) {
+        for (let i = 0; i < req.body.Pre_Tareo_Proceso_Uva_Detalles.length; i++) {
+          req.body.Pre_Tareo_Proceso_Uva_Detalles[i].itempretareaprocesouva = tarea.itempretareaprocesouva;
+          req.body.Pre_Tareo_Proceso_Uva_Detalles[i].fechamod = Date.now();
+          req.body.Pre_Tareo_Proceso_Uva_Detalles[i].idestado = 1;
         }
-        /* trabajador.dataValues.usuario=user; */
-        return tarea;
-      } else {
-        const result = await models.sequelize.transaction(async (t) => {
-
-          if (req.body.Pre_Tareo_Proceso_Uva_Detalles) {
-            await models.Pre_Tareo_Proceso_Uva_Detalle.bulkCreate(req.body.Pre_Tareo_Proceso_Uva_Detalles, { transaction: t });
-          }
-          return req.body;
-        });
+        await models.Pre_Tareo_Proceso_Uva_Detalle.bulkCreate(req.body.Pre_Tareo_Proceso_Uva_Detalles, { transaction: t });
       }
+      return tarea;
     });
-
     res.status(200).json(result)
   } catch (error) {
     console.log(error);
@@ -141,7 +129,7 @@ async function deletePre_Tareo_Proceso_Uva(req, res) {
 
 async function uploadFilePreTareoProcesoUva(req, res) {
 
-  console.log(req.body);
+  /* console.log(req.body); */
 
   let [err, pretareoProcesoUva] = await get(models.Pre_Tareo_Proceso_Uva.update({
     firmasupervisor: req.file.filename,
@@ -157,8 +145,8 @@ async function uploadFilePreTareoProcesoUva(req, res) {
     individualHooks: true,
     validate: false
   }))
+  /* console.log(err); */
   if (err) return res.status(500).json({ message: `${err}` })
-  console.log(err);
   if (pretareoProcesoUva == null) return res.status(404).json({ message: `Pretareos nulos` })
   res.status(200).json(pretareoProcesoUva[1][0].dataValues)
 }

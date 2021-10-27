@@ -19,7 +19,6 @@ module.exports = (sequelize, DataTypes) => {
     pausainicio: {type: DataTypes.DATE, allowNull: false,},
     pausafin: {type: DataTypes.DATE, allowNull: false,},
     linea: {type: DataTypes.INTEGER, allowNull: false,},
-    item: {type: DataTypes.INTEGER, allowNull: false,},
     turnotareo: {type: DataTypes.STRING, allowNull: false},
     idcentrocosto: {type: DataTypes.INTEGER, allowNull: false,},
     diasiguiente: {type: DataTypes.BOOLEAN, allowNull: false,},

@@ -70,7 +70,6 @@ async function createAllTareaProceso(req, res) {
                     req.body.personal[i].fechamod= Date.now();
                     req.body.personal[i].transferidosap= false;
                     req.body.personal[i].idestado= 1;
-                    
                     req.body.idactividad=tarea.idactividad;
                     //await models.PersonalTareaProceso.create(req.body.personal[i],{transaction: t})
                 }

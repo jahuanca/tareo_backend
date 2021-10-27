@@ -12,7 +12,7 @@ module.exports = (sequelize, DataTypes) => {
   };
   Pre_Tareo_Proceso_Uva.init({
     //add new parameters
-    itempretareaprocesouva: {primaryKey: true, autoIncrement: true, type: DataTypes.INTEGER},
+    itempretareaprocesouva: {primaryKey: true, type: DataTypes.INTEGER, autoIncrement: true},
     fecha: {type: DataTypes.DATE, allowNull: false,},
     horainicio: {type: DataTypes.DATE, allowNull: false,},
     horafin: {type: DataTypes.DATE, allowNull: false,},
@@ -21,6 +21,7 @@ module.exports = (sequelize, DataTypes) => {
     linea: {type: DataTypes.INTEGER, allowNull: false,},
     /* item: {type: DataTypes.INTEGER, allowNull: false,}, */
     idcentrocosto: {type: DataTypes.INTEGER, allowNull: false,},
+    idcultivo: {type: DataTypes.INTEGER, allowNull: false,},
     diasiguiente: {type: DataTypes.BOOLEAN, allowNull: false,},
     turnotareo: {type: DataTypes.STRING, allowNull: false},
     idestado: {type: DataTypes.INTEGER, allowNull: false,},
