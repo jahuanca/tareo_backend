@@ -118,6 +118,7 @@ async function createAllPreTareaEsparrago(req, res) {
         codigodigitador: req.body.codigodigitador,
         /* fechamod: new Date(req.body.fechamod), */
         /* activo: true, */
+        idtipotarea: req.body.idtipotarea,
         idusuario: req.body.idusuario,
         idestado: 1,
         turnotareo: req.body.turnotareo,
@@ -137,8 +138,12 @@ async function createAllPreTareaEsparrago(req, res) {
           req.body.Pre_Tarea_Esparrago_Formato[i].idestado = 1;
 
           const formato= await models.Pre_Tarea_Esparrago_Formato.create(req.body.Pre_Tarea_Esparrago_Formato[i], {transaction: t});
-          req.body.Pre_Tarea_Esparrago_Formato[i].itemprestareaesparragoformato=formato.itemprestareaesparragoformato;
-          await models.Pre_Tarea_Esparrago_Detalle.create(req.body.Pre_Tarea_Esparrago_Formato[i], {transaction: t});
+          
+          for (let j = 0; j < req.body.Pre_Tarea_Esparrago_Formato[i].Pre_Tarea_Esparrago_Detalle.length; j++) {
+            const element = req.body.Pre_Tarea_Esparrago_Formato[i].Pre_Tarea_Esparrago_Detalle[j];
+            element.itemprestareaesparragoformato=formato.itemprestareaesparragoformato;
+            await models.Pre_Tarea_Esparrago_Detalle.create(element, {transaction: t});
+          }
         }
         //await models.Pre_Tarea_Esparrago_Formato.bulkCreate(req.body.Pre_Tarea_Esparrago_Formato, { transaction: t });
       }

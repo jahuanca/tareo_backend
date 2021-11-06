@@ -12,13 +12,15 @@ module.exports = (sequelize, DataTypes) => {
   PreTareaEsparragoFormato.init({
     //add new parameters
     itemprestareaesparragoformato: {primaryKey:true, autoIncrement: true, type: DataTypes.INTEGER, allowNull: null,},
-    fecha: {type: DataTypes.DATE, allowNull: null,},
-    hora: {type: DataTypes.DATE, allowNull: null,},
-    idestado: {type: DataTypes.INTEGER, allowNull: null,},
-    itempretareaesparrago: {type: DataTypes.INTEGER, allowNull: null,},
-    codigotk: {type: DataTypes.STRING, allowNull: null,},
-    idlabor: {type: DataTypes.INTEGER, allowNull: null,},
-    idactividad: {type: DataTypes.INTEGER, allowNull: null,},
+    fecha: {type: DataTypes.DATE, allowNull: false,},
+    hora: {type: DataTypes.DATE, allowNull: false,},
+    idestado: {type: DataTypes.INTEGER, allowNull: false,},
+    itempretareaesparrago: {type: DataTypes.INTEGER, allowNull: false,},
+    codigotk: {type: DataTypes.STRING, allowNull: false,},
+    idlabor: {type: DataTypes.INTEGER, allowNull: false,},
+    idcliente: {type: DataTypes.INTEGER, allowNull: false,},
+    idusuario: {type: DataTypes.INTEGER, allowNull: true,},
+    idactividad: {type: DataTypes.INTEGER, allowNull: false,},
 
     accion: {type: DataTypes.VIRTUAL},
     usuario: {type: DataTypes.VIRTUAL},

@@ -21,6 +21,7 @@ module.exports = (sequelize, DataTypes) => {
     codigosupervisor: {type: DataTypes.STRING, allowNull: false}, 
     codigodigitador: {type: DataTypes.STRING, allowNull: false}, 
     linea: {type: DataTypes.INTEGER, allowNull: false}, 
+    idtipotarea: {type: DataTypes.INTEGER, allowNull: false}, 
 
     accion: {type: DataTypes.VIRTUAL},
     usuario: {type: DataTypes.VIRTUAL},
