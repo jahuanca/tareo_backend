@@ -120,7 +120,7 @@ async function createAllPreTareaEsparragoGrupo(req, res) {
         idactividad: req.body.idactividad,
         codigosupervisor: req.body.codigosupervisor,
         codigodigitador: req.body.codigodigitador,
-        /* fechamod: new Date(req.body.fechamod), */
+        fechamod: new Date(req.body.fechamod),
         /* activo: true, */
         idusuario: req.body.idusuario,
         idestado: 1,
