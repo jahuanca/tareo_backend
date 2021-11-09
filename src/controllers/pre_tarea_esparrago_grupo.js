@@ -1,6 +1,7 @@
 
 'use strict'
 const models=require('../models')
+const moment=require('moment');
 
 async function getPreTareaEsparragoGrupos(req,res){
   let [err,pre_tarea_esparrago_grupos]=await get(models.PreTareaEsparragoGrupo.findAll({
@@ -96,7 +97,6 @@ async function uploadFilePreTareaEsparragoGrupo(req, res) {
     individualHooks: true,
     validate: false
   }))
-  /* console.log(err); */
   if (err) return res.status(500).json({ message: `${err}` })
   if (pretareoProcesoUva == null) return res.status(404).json({ message: `Pretareos nulos` })
   res.status(200).json(pretareoProcesoUva[1][0].dataValues)
@@ -104,15 +104,15 @@ async function uploadFilePreTareaEsparragoGrupo(req, res) {
 
 async function createAllPreTareaEsparragoGrupo(req, res) {
   try {
-    /* console.log(req.body) */
+    console.log(req.body)
     const result = await models.sequelize.transaction(async (t) => {
 
       const tarea = await models.Pre_Tarea_Esparrago_Grupo.create({
-        fecha: new Date(req.body.fecha),
+        fecha: req.body.fecha,
         horainicio: new Date(req.body.horainicio),
         horafin: new Date(req.body.horafin),
-        pausainicio: new Date(req.body.pausainicio),
-        pausafin: new Date(req.body.pausafin),
+        pausainicio: req.body.pausainicio,
+        pausafin: req.body.pausafin,
         linea: 1,
         idcentrocosto: req.body.idcentrocosto,
         kilosavance: req.body.kilosavance,
@@ -120,7 +120,6 @@ async function createAllPreTareaEsparragoGrupo(req, res) {
         idactividad: req.body.idactividad,
         codigosupervisor: req.body.codigosupervisor,
         codigodigitador: req.body.codigodigitador,
-        fechamod: new Date(req.body.fechamod),
         /* activo: true, */
         idusuario: req.body.idusuario,
         idestado: 1,
