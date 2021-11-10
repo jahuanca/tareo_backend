@@ -24,8 +24,8 @@ module.exports = (sequelize, DataTypes) => {
     esrendimiento: {type: DataTypes.BOOLEAN, allowNull: false},
     horainicio: {type: DataTypes.DATE, allowNull: false},
     horafin: {type: DataTypes.DATE, allowNull: false},
-    pausainicio: {type: DataTypes.DATE, allowNull: false},
-    pausafin: {type: DataTypes.DATE, allowNull: false},
+    pausainicio: {type: DataTypes.DATE, allowNull: true},
+    pausafin: {type: DataTypes.DATE, allowNull: true},
     diasiguiente: {type: DataTypes.BOOLEAN, allowNull: false},
     firmasupervisor: {type: DataTypes.STRING, allowNull: true},
 
