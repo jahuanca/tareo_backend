@@ -14,7 +14,7 @@ module.exports = (sequelize, DataTypes) => {
     codigoempresa: {type: DataTypes.STRING, allowNull: false,},
     itempretareaprocesouva: {type: DataTypes.INTEGER, allowNull: false,},
     numcaja: {type: DataTypes.INTEGER, allowNull: false,},
-    fecha: {type: DataTypes.DATE, allowNull: false,},
+    fecha: {type: DataTypes.DATEONLY, allowNull: false,},
     hora: {type: DataTypes.DATE, allowNull: false,},
     imei: {type: DataTypes.STRING, allowNull: false,},
     idusuario: {type: DataTypes.INTEGER, allowNull: false,},

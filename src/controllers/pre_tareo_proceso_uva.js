@@ -46,11 +46,11 @@ async function createAllPreTareoProcesoUva(req, res) {
     const result = await models.sequelize.transaction(async (t) => {
 
       const tarea = await models.Pre_Tareo_Proceso_Uva.create({
-        fecha: new Date(req.body.fecha),
-        horainicio: new Date(req.body.horainicio),
-        horafin: new Date(req.body.horafin),
-        pausainicio: new Date(req.body.pausainicio),
-        pausafin: new Date(req.body.pausafin),
+        fecha: req.body.fecha,
+        horainicio: req.body.horainicio,
+        horafin: req.body.horafin,
+        pausainicio: req.body.pausainicio,
+        pausafin: req.body.pausafin,
         linea: 1,
         idcentrocosto: req.body.idcentrocosto,
         idcultivo: req.body.idcultivo,

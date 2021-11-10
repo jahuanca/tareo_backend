@@ -12,7 +12,7 @@ module.exports = (sequelize, DataTypes) => {
   PreTareaEsparragoVarios.init({
     //add new parameters
     itempretareaesparragovarios: {primaryKey:true, autoIncrement: true, type: DataTypes.INTEGER, allowNull: null, },
-    fecha: {type: DataTypes.DATE, allowNull: null, },
+    fecha: {type: DataTypes.DATEONLY, allowNull: null, },
     hora: {type: DataTypes.DATE, allowNull: null, },
     horainicio: {type: DataTypes.DATE, allowNull: null, },
     horafin: {type: DataTypes.DATE, allowNull: null, },

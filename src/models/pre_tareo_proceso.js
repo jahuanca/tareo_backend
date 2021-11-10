@@ -13,7 +13,7 @@ module.exports = (sequelize, DataTypes) => {
   Pre_Tareo_Proceso.init({
     //add new parameters
     itempretareaproceso: {primaryKey: true, autoIncrement: true, type: DataTypes.INTEGER},
-    fecha: {type: DataTypes.DATE, allowNull: false,},
+    fecha: {type: DataTypes.DATEONLY, allowNull: false,},
     horainicio: {type: DataTypes.DATE, allowNull: false,},
     horafin: {type: DataTypes.DATE, allowNull: false,},
     pausainicio: {type: DataTypes.DATE, allowNull: false,},

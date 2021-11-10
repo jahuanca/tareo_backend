@@ -10,7 +10,7 @@ module.exports = (sequelize, DataTypes) => {
     //add new parameters
     itemtareoproceso: {primaryKey: true, type: DataTypes.INTEGER, autoIncrement: true},
     codigoempresa: {type: DataTypes.STRING, allowNull: false},
-    fecha: {type: DataTypes.DATE, allowNull: false},
+    fecha: {type: DataTypes.DATEONLY, allowNull: false},
     idactividad: {type: DataTypes.INTEGER, allowNull: false},
     idlabor: {type: DataTypes.INTEGER, allowNull: false},
     idcentrocosto: {type: DataTypes.INTEGER, allowNull: false},

@@ -12,7 +12,7 @@ module.exports = (sequelize, DataTypes) => {
   PreTareaEsparragoFormato.init({
     //add new parameters
     itemprestareaesparragoformato: {primaryKey:true, autoIncrement: true, type: DataTypes.INTEGER, allowNull: null,},
-    fecha: {type: DataTypes.DATE, allowNull: false,},
+    fecha: {type: DataTypes.DATEONLY, allowNull: false,},
     hora: {type: DataTypes.DATE, allowNull: false,},
     idestado: {type: DataTypes.INTEGER, allowNull: false,},
     itempretareaesparrago: {type: DataTypes.INTEGER, allowNull: false,},
