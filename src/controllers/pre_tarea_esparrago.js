@@ -101,15 +101,15 @@ async function uploadFilePreTareaEsparrago(req, res) {
 
 async function createAllPreTareaEsparrago(req, res) {
   try {
-    /* console.log(req.body) */
+    
     const result = await models.sequelize.transaction(async (t) => {
 
       const tarea = await models.Pre_Tarea_Esparrago.create({
-        fecha: new Date(req.body.fecha),
-        horainicio: new Date(req.body.horainicio),
-        horafin: new Date(req.body.horafin),
-        pausainicio: new Date(req.body.pausainicio),
-        pausafin: new Date(req.body.pausafin),
+        fecha: req.body.fecha,
+        horainicio: req.body.horainicio,
+        horafin: req.body.horafin,
+        pausainicio: req.body.pausainicio,
+        pausafin: req.body.pausafin,
         linea: 1,
         idcentrocosto: req.body.idcentrocosto,
         idlabor: req.body.idlabor,
@@ -133,7 +133,7 @@ async function createAllPreTareaEsparrago(req, res) {
       if (req.body.Pre_Tarea_Esparrago_Formato) {
         for (let i = 0; i < req.body.Pre_Tarea_Esparrago_Formato.length; i++) {
           req.body.Pre_Tarea_Esparrago_Formato[i].itempretareaesparrago = tarea.itempretareaesparrago;
-          req.body.Pre_Tarea_Esparrago_Formato[i].hora = new Date(req.body.fecha);
+          req.body.Pre_Tarea_Esparrago_Formato[i].hora = req.body.fecha;
           req.body.Pre_Tarea_Esparrago_Formato[i].fechamod = Date.now();
           req.body.Pre_Tarea_Esparrago_Formato[i].idestado = 1;
 
