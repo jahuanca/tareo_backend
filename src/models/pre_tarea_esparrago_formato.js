@@ -13,6 +13,7 @@ module.exports = (sequelize, DataTypes) => {
     //add new parameters
     itemprestareaesparragoformato: {primaryKey:true, autoIncrement: true, type: DataTypes.INTEGER, allowNull: null,},
     fecha: {type: DataTypes.DATEONLY, allowNull: false,},
+    fechamod: {type: DataTypes.DATE, allowNull: false,},
     hora: {type: DataTypes.DATE, allowNull: false,},
     idestado: {type: DataTypes.INTEGER, allowNull: false,},
     itempretareaesparrago: {type: DataTypes.INTEGER, allowNull: false,},
@@ -21,6 +22,7 @@ module.exports = (sequelize, DataTypes) => {
     idcliente: {type: DataTypes.INTEGER, allowNull: false,},
     idusuario: {type: DataTypes.INTEGER, allowNull: true,},
     idactividad: {type: DataTypes.INTEGER, allowNull: false,},
+    linea: {type: DataTypes.INTEGER, allowNull: false,},
 
     accion: {type: DataTypes.VIRTUAL},
     usuario: {type: DataTypes.VIRTUAL},

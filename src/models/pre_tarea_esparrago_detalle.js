@@ -20,6 +20,8 @@ module.exports = (sequelize, DataTypes) => {
     codigotk: {type: DataTypes.STRING, allowNull: false, },
     correlativo: {type: DataTypes.INTEGER, allowNull: false, },
     idusuario: {type: DataTypes.INTEGER, allowNull: false, },
+    idcliente: {type: DataTypes.INTEGER, allowNull: false, },
+    linea: {type: DataTypes.INTEGER, allowNull: false,},
     idlabor: {type: DataTypes.INTEGER, allowNull: false, },
     idactividad: {type: DataTypes.INTEGER, allowNull: false, },
 
