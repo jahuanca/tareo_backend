@@ -10,7 +10,7 @@ module.exports = (sequelize, DataTypes) => {
   };
   Pre_Tareo_Proceso_Uva_Detalle.init({
     //add new parameters
-    itempretareaprocesouvadetalle: {primaryKey: true, autoIncrement: true, type: DataTypes.INTEGER},
+    itempretareoprocesouvadetalle: {primaryKey: true, autoIncrement: true, type: DataTypes.INTEGER},
     codigoempresa: {type: DataTypes.STRING, allowNull: false,},
     itempretareaprocesouva: {type: DataTypes.INTEGER, allowNull: false,},
     numcaja: {type: DataTypes.INTEGER, allowNull: false,},

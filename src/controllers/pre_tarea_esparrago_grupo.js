@@ -104,7 +104,6 @@ async function uploadFilePreTareaEsparragoGrupo(req, res) {
 
 async function createAllPreTareaEsparragoGrupo(req, res) {
   try {
-    console.log(req.body)
     const result = await models.sequelize.transaction(async (t) => {
 
       const tarea = await models.Pre_Tarea_Esparrago_Grupo.create({

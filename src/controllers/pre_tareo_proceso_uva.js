@@ -17,11 +17,11 @@ async function getPre_Tareo_Proceso_Uvas(req, res) {
 
 async function getPre_Tareo_Proceso_Uva(req, res) {
   let [err, pre_tareo_proceso_uva] = await get(models.Pre_Tareo_Proceso_Uva.findOne({
-    where: { id: req.params.id, estado: 'A' },
+    where: { itempretareaprocesouva: req.params.id,/*  estado: 'A'  */},
     include: [{ all: true }]
   }))
-  console.log(err)
-  if (err) return res.status(500).json({ message: `err` })
+  console.log(pre_tareo_proceso_uva.Pre_Tareo_Proceso_Uva_Detalles.length);
+  if (err) return res.status(500).json({ message: `${err}` })
   if (pre_tareo_proceso_uva == null) return res.status(404).json({ message: `Pre_Tareo_Proceso_Uvas nulos` })
   res.status(200).json(pre_tareo_proceso_uva)
 }
@@ -42,7 +42,7 @@ async function createPre_Tareo_Proceso_Uva(req, res) {
 
 async function createAllPreTareoProcesoUva(req, res) {
   try {
-    /* console.log(req.body) */
+    console.log(req.body.Pre_Tareo_Proceso_Uva_Detalles.length);    
     const result = await models.sequelize.transaction(async (t) => {
 
       const tarea = await models.Pre_Tareo_Proceso_Uva.create({

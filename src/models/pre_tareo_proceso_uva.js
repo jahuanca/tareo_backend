@@ -8,6 +8,7 @@ module.exports = (sequelize, DataTypes) => {
         //Pre_Tareo_Proceso_Uva.belongsTo(models.Usuario, {foreignKey: "idusuario",targetKey: 'idusuario'})
         /* Pre_Tareo_Proceso_Uva.belongsTo(models.Labores_Cultivo_Packing, {foreignKey: "item",targetKey: 'item'}); */
         Pre_Tareo_Proceso_Uva.belongsTo(models.Centro_Costo, {foreignKey: "idcentrocosto",targetKey: 'idcentrocosto'});
+        Pre_Tareo_Proceso_Uva.hasMany(models.Pre_Tareo_Proceso_Uva_Detalle, {foreignKey: "itempretareaprocesouva", targetKey: 'itempretareaprocesouva'});
     }
   };
   Pre_Tareo_Proceso_Uva.init({
