@@ -1,40 +1,41 @@
 'use strict'
 
-const path=require('path')
-const express=require('express')
-const bodyParser=require('body-parser')
-const morgan=require('morgan')
-const cors=require('cors')
-const fileSystem=require('file-system')
-const app=express()
-const config=require('./config')
+const path = require('path')
+const express = require('express')
+const bodyParser = require('body-parser')
+const morgan = require('morgan')
+const cors = require('cors')
+const fileSystem = require('file-system')
+const app = express()
+const config = require('./config')
 const swaggerJsDoc = require("swagger-jsdoc")
 const swaggerUi = require("swagger-ui-express")
 const http = require('http').createServer(app);
-const io=require('socket.io')(http);
+const io = require('socket.io')(http);
 const cron = require('node-cron');
- 
+
+app.set('socketio', io);
 
 
-app.use(function(req, res, next) {
+app.use(function (req, res, next) {
   //set headers to allow cross origin request.
-      res.header("Access-Control-Allow-Origin", "*");
-      res.header('Access-Control-Allow-Methods', 'PUT, GET, POST, DELETE, OPTIONS');
-      res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
-      next();
-  });
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header('Access-Control-Allow-Methods', 'PUT, GET, POST, DELETE, OPTIONS');
+  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+  next();
+});
 
 
-  const whitelist = ['http://localhost:4200', 'http://localhost']
-  const corsOptions = {
-    origin: function (origin, callback) {
-      if (whitelist.indexOf(origin) !== -1) {
-        callback(null, true)
-      } else {
-        callback(new Error('Not allowed by CORS'))
-      }
+const whitelist = ['http://localhost:4200', 'http://localhost']
+const corsOptions = {
+  origin: function (origin, callback) {
+    if (whitelist.indexOf(origin) !== -1) {
+      callback(null, true)
+    } else {
+      callback(new Error('Not allowed by CORS'))
     }
   }
+}
 //configuracion lectura models
 const models = path.join(__dirname, './models');
 fileSystem.readdirSync(models)
@@ -43,9 +44,9 @@ fileSystem.readdirSync(models)
 
 //midlewares
 //app.use(cors({origin: 'http://localhost:4200'}))
-app.use(cors({corsOptions}))
-app.use(bodyParser.urlencoded({extended: false, limit: '50mb',}))
-app.use(bodyParser.json({limit: '50mb'}))
+app.use(cors({ corsOptions }))
+app.use(bodyParser.urlencoded({ extended: false, limit: '50mb', }))
+app.use(bodyParser.json({ limit: '50mb' }))
 //app.use(express.json({limit: '50mb'}));
 app.use(morgan('dev'))
 
@@ -80,51 +81,70 @@ const fs = require('fs');
 const basename = path.basename(__filename);
 
 fs
-  .readdirSync(path.join(__dirname,'routes'))
+  .readdirSync(path.join(__dirname, 'routes'))
   .filter(file => {
     return (file.indexOf('.') !== 0) && (file !== basename) && (file.slice(-3) === '.js');
   })
   .forEach(file => {
-    
-    let f=file.replace('.js','');
-    let name=f.replace(/_/g,'-');
-    const dir = path.join(__dirname, '..','public','uploads',`${name}s`);
-    if (!fs.existsSync(dir)){
+
+    let f = file.replace('.js', '');
+    let name = f.replace(/_/g, '-');
+    const dir = path.join(__dirname, '..', 'public', 'uploads', `${name}s`);
+    if (!fs.existsSync(dir)) {
       fs.mkdirSync(dir);
     }
-    app.use(`/${f}`, require(`./routes/${f}`)); 
+    app.use(`/${f}`, require(`./routes/${f}`));
     //app.use(`/canastas/${f}`, require(`./routes/${f}`)); 
   });
 
 
 
 
-app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerDocs)); 
+app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerDocs));
 
 
 app.use(express.static('./public'));
 
-io.on('connection', function(socket){
-  console.log('Client connected..');
+io.on('connection', function (socket) {
+  /* socket.on('registrarse', (idUser) => {
+    socket.join(idUser);
+    console.log('se registro el usuario ' + idUser)
+  })
+
+  socket.on('enviar', (data) => {
+
+    console.log('se enviara un mensaje al usuario ' + data.destino);
+    socket.broadcast.to(data.destino).emit('nuevoPedido', data.origen);
+  })
+
+  socket.on('enviarDelivery', (data) => {
+    console.log('se enviara un mensaje al usuario ' + data.destino);
+    socket.broadcast.to(data.destino).emit('nuevoPedidoDelivery', data.origen);
+  })
+
+  socket.on('enviarUsuario', (data) => {
+    console.log('se enviara un mensaje al usuario ' + data.destino);
+    socket.broadcast.to(data.destino).emit('mensajeUsuario', data.mensaje);
+  }) */
 });
 
 
 app.set('socketV', io);
 app.set('trust proxy', true);
 
-http.listen(config.port,()=>{
-  
+http.listen(config.port, () => {
+
   console.log(`API REST: corriendo en el puerto: ${config.port}`)
 })
 
 
 cron.schedule('14 0 * * *', () => {
-    //actualizacion_datos.actualizarDeudores();
+  //actualizacion_datos.actualizarDeudores();
 });
 
 function get(promise) {
   return promise.then(data => {
-     return [null, data];
+    return [null, data];
   })
-  .catch(err => [err]);
+    .catch(err => [err]);
 }
