@@ -10,9 +10,10 @@ module.exports = {
       },
       imei: { type: Sequelize.STRING(200), allowNull: true, },
       turno: { type: Sequelize.STRING, allowNull: true, },
-      fecha: { type: Sequelize.DATE, allowNull: true, },
+      fecha: { type: Sequelize.DATEONLY, allowNull: true, },
       cantidad_cajas: { type: Sequelize.INTEGER, allowNull: true, },
       cantidad_personas: { type: Sequelize.INTEGER, allowNull: true, },
+      idlabor: { type: Sequelize.INTEGER, allowNull: true, },
 
       createdAt: {
         allowNull: false,

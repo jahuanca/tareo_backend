@@ -3,9 +3,9 @@
 const models=require('../models')
 
 async function getPreTareaEsparragoVarioss(req,res){
-  let [err,pre_tarea_esparrago_varios]=await get(models.PreTareaEsparragoVarios.findAll({
-    where:{estado: 'A'},
-    include: [{all: true}]
+  let [err,pre_tarea_esparrago_varios]=await get(models.Pre_Tarea_Esparrago_Varios.findAll({
+    /* where:{estado: 'A'},
+    include: [{all: true}] */
   }))
   if(err) return res.status(500).json({message: `${err}`})
   if(pre_tarea_esparrago_varios==null) return res.status(404).json({message: `PreTareaEsparragoVarioss nulos`})

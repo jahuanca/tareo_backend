@@ -12,9 +12,10 @@ module.exports = (sequelize, DataTypes) => {
     //add new parameters
     imei: {type: DataTypes.STRING(200), allowNull: true,},
     turno: {type: DataTypes.STRING, allowNull: true,},
-    fecha: {type: DataTypes.DATE, allowNull: true,},
+    fecha: {type: DataTypes.DATEONLY, allowNull: true,},
     cantidad_cajas: {type: DataTypes.INTEGER, allowNull: true,},
     cantidad_personas: {type: DataTypes.INTEGER, allowNull: true,},
+    idlabor: {type: DataTypes.INTEGER, allowNull: true,},
 
     createdAt: {type: DataTypes.DATE, allowNull: false, defaultValue: Date.now},
     updatedAt: {type: DataTypes.DATE, allowNull: true},

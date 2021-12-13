@@ -38,6 +38,7 @@ async function createResumen_Varios(req, res) {
         let [err, resumen_varios] = await get(models.Resumen_Varios.create({
             imei: req.body.imei,
             turno: req.body.turno,
+            idlabor: req.body.idlabor,
             fecha: req.body.fecha,
             cantidad_cajas: req.body.cantidad_cajas,
             cantidad_personas: req.body.cantidad_personas,
@@ -54,6 +55,7 @@ async function createResumen_Varios(req, res) {
         let [err, resumen_varios] = await get(models.Resumen_Varios.update({
             cantidad_cajas: req.body.cantidad_cajas,
             cantidad_personas: req.body.cantidad_personas,
+            idlabor: req.body.idlabor,
     
             accion: 'U',
             accion_usuario: 'Edito un resumen_varios.',

@@ -38,6 +38,9 @@ async function createTareaProceso(req, res) {
 
 async function createAllTareaProceso(req, res) {
     try {
+        /* console.log(req.body.personal.length)
+        return res.status(500).json({ message: `Error en el servidor prueba` }); */
+
         const result = await models.sequelize.transaction(async (t) => {
             const tarea = await models.TareaProceso.create({
 
@@ -47,6 +50,7 @@ async function createAllTareaProceso(req, res) {
                 idlabor: req.body.idlabor,
                 idestado: 1,
                 idcentrocosto: req.body.idcentrocosto,
+                idusuario: req.body.idusuario,
                 turnotareo: req.body.turnotareo,
                 fechamod: new Date(req.body.fechamod),
                 escampo: req.body.escampo,

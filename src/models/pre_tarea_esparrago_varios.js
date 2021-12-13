@@ -19,6 +19,7 @@ module.exports = (sequelize, DataTypes) => {
     pausainicio: {type: DataTypes.DATE, allowNull: true, },
     pausafin: {type: DataTypes.DATE, allowNull: true, },
     idestado: {type: DataTypes.INTEGER, allowNull: false, },
+    idusuario: {type: DataTypes.INTEGER, allowNull: false, },
     idcentrocosto: {type: DataTypes.INTEGER, allowNull: false, },
     idtipotarea: {type: DataTypes.INTEGER, allowNull: false, },
     diasiguiente: {type: DataTypes.BOOLEAN, allowNull: false, },
