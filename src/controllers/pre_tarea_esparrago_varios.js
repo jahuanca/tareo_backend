@@ -117,11 +117,9 @@ async function createAllPreTareaEsparragoVarios(req, res) {
         idcentrocosto: req.body.idcentrocosto,
         idlabor: req.body.idlabor,
         idtipotarea: req.body.idtipotarea,
-        /* 
-        idactividad: req.body.idactividad, */
         codigosupervisor: req.body.codigosupervisor,
         codigodigitador: req.body.codigodigitador,
-        fechamod: new Date(req.body.fechamod),
+        fechamod: req.body.fechamod,
         /* activo: true, */
         idusuario: req.body.idusuario,
         idestado: 1,
