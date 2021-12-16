@@ -25,6 +25,8 @@ module.exports = (sequelize, DataTypes) => {
     idusuario: {type: DataTypes.INTEGER, allowNull: false, },
     idlabor: {type: DataTypes.INTEGER, allowNull: false, },
     idactividad: {type: DataTypes.INTEGER, allowNull: false, },
+    linea: {type: DataTypes.INTEGER, allowNull: false, },
+    
 
     accion: {type: DataTypes.VIRTUAL},
     usuario: {type: DataTypes.VIRTUAL},

@@ -13,6 +13,7 @@ module.exports = (sequelize, DataTypes) => {
     //add new parameters
     itempretareaesparragovarios: {primaryKey:true, autoIncrement: true, type: DataTypes.INTEGER, allowNull: null, },
     fecha: {type: DataTypes.DATEONLY, allowNull: false, },
+    fechamod: {type: DataTypes.DATE, allowNull: false, },
     hora: {type: DataTypes.DATE, allowNull: false, },
     horainicio: {type: DataTypes.DATE, allowNull: false, },
     horafin: {type: DataTypes.DATE, allowNull: null, },
@@ -25,6 +26,7 @@ module.exports = (sequelize, DataTypes) => {
     diasiguiente: {type: DataTypes.BOOLEAN, allowNull: false, },
     codigosupervisor: {type: DataTypes.STRING, allowNull: false, },
     codigodigitador: {type: DataTypes.STRING, allowNull: false, },
+    turnotareo: {type: DataTypes.STRING, allowNull: false, },
     linea: {type: DataTypes.INTEGER, allowNull: false, },
 
     accion: {type: DataTypes.VIRTUAL},

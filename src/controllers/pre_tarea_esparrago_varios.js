@@ -107,12 +107,12 @@ async function createAllPreTareaEsparragoVarios(req, res) {
     const result = await models.sequelize.transaction(async (t) => {
 
       const tarea = await models.Pre_Tarea_Esparrago_Varios.create({
-        fecha: new Date(req.body.fecha),
-        hora: new Date(req.body.fecha),
-        horainicio: new Date(req.body.horainicio),
-        horafin: new Date(req.body.horafin),
-        pausainicio: new Date(req.body.pausainicio),
-        pausafin: new Date(req.body.pausafin),
+        fecha: req.body.fecha,
+        hora: req.body.fecha,
+        horainicio: req.body.horainicio,
+        horafin: req.body.horafin,
+        pausainicio: req.body.pausainicio,
+        pausafin: req.body.pausafin,
         linea: 1,
         idcentrocosto: req.body.idcentrocosto,
         idlabor: req.body.idlabor,
@@ -121,7 +121,7 @@ async function createAllPreTareaEsparragoVarios(req, res) {
         idactividad: req.body.idactividad, */
         codigosupervisor: req.body.codigosupervisor,
         codigodigitador: req.body.codigodigitador,
-        /* fechamod: new Date(req.body.fechamod), */
+        fechamod: new Date(req.body.fechamod),
         /* activo: true, */
         idusuario: req.body.idusuario,
         idestado: 1,
