@@ -13,7 +13,7 @@ module.exports = (sequelize, DataTypes) => {
     //add new parameters
     itempretareaesparragodetallevarios: {primaryKey:true, autoIncrement: true, type: DataTypes.INTEGER, allowNull: false, },
     fecha: {type: DataTypes.DATEONLY, allowNull: false, },
-    fechamod: {type: DataTypes.DATE, allowNull: false, },
+    fechamod: {type: DataTypes.DATE, allowNull: true, },
     hora: {type: DataTypes.DATE, allowNull: false, },
     idestado: {type: DataTypes.INTEGER, allowNull: false, },
     itempretareaesparragovarios: {type: DataTypes.INTEGER, allowNull: false, },
