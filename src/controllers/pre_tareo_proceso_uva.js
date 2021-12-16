@@ -42,7 +42,6 @@ async function createPre_Tareo_Proceso_Uva(req, res) {
 
 async function createAllPreTareoProcesoUva(req, res) {
   try {
-    console.log(req.body.Pre_Tareo_Proceso_Uva_Detalles.length);    
     const result = await models.sequelize.transaction(async (t) => {
 
       const tarea = await models.Pre_Tareo_Proceso_Uva.create({

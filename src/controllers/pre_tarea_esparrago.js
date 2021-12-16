@@ -101,6 +101,9 @@ async function uploadFilePreTareaEsparrago(req, res) {
 
 async function createAllPreTareaEsparrago(req, res) {
   try {
+    console.log(req.body.Pre_Tarea_Esparrago_Formato.length);
+    console.log(req.body.Pre_Tarea_Esparrago_Formato[0].Pre_Tarea_Esparrago_Detalle.length);
+    return res.status(500).json({ message: `Error en el servidor prueba` });
     const result = await models.sequelize.transaction(async (t) => {
 
       const tarea = await models.Pre_Tarea_Esparrago.create({
