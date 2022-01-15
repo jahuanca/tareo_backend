@@ -5,7 +5,10 @@ const {
 module.exports = (sequelize, DataTypes) => {
   class Pre_Tareo_Proceso_Uva_Detalle extends Model {
     static associate(models) {
-      
+      Pre_Tareo_Proceso_Uva_Detalle.belongsTo(models.Pre_Tareo_Proceso_Uva, {foreignKey: 'itempretareoprocesouvadetalle'});
+      Pre_Tareo_Proceso_Uva_Detalle.belongsTo(models.Labor, {foreignKey: 'idlabor'});
+      Pre_Tareo_Proceso_Uva_Detalle.belongsTo(models.Pre_Tareo_Proceso_Uva, {foreignKey: 'itempretareaprocesouva'});
+      Pre_Tareo_Proceso_Uva_Detalle.belongsTo(models.Actividad, {foreignKey: 'idactividad'});
     }
   };
   Pre_Tareo_Proceso_Uva_Detalle.init({

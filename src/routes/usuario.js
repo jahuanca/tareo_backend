@@ -16,6 +16,8 @@ const auth=require('../middlewares/auth') */
  *        description: A successful response
  */
 router.get('/',usuario.getUsuarios)
+router.get('/count',usuario.getUsuariosCount)
+router.get('/range&limit=:limit?&offset=:offset',usuario.getUsuariosByLimitAndOffset)
 router.get('/id/:id',usuario.getUsuario)
 router.post('/create',usuario.createUsuario)
 router.put('/update',usuario.updateUsuario)

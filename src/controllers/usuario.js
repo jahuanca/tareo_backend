@@ -1,6 +1,27 @@
 'use strict'
 const models=require('../models')
 
+async function getUsuariosCount(req,res){
+  let [err,usuarios]=await get(models.Usuario.count({
+    /* where:{estado: 'A'},*/
+  }))
+  if(err) return res.status(500).json({message: `${err}`})
+  if(usuarios==null) return res.status(404).json({message: `Usuarios nulos`})
+  res.status(200).json(usuarios)
+}
+
+async function getUsuariosByLimitAndOffset(req,res){
+
+  let [err,usuarios]=await get(models.Usuario.findAll({
+    /* where:{estado: 'A'},*/
+    offset: req.params.offset ? parseInt(req.params.offset) : 0,
+    limit: req.params.limit ? parseInt(req.params.limit) : 10,
+  }))
+  if(err) return res.status(500).json({message: `${err}`})
+  if(usuarios==null) return res.status(404).json({message: `Usuarios nulos`})
+  res.status(200).json(usuarios)
+}
+
 async function getUsuarios(req,res){
   let [err,usuarios]=await get(models.Usuario.findAll({
     /* where:{estado: 'A'},*/
@@ -87,6 +108,8 @@ function get(promise) {
 }
 
 module.exports={
+  getUsuariosCount,
+  getUsuariosByLimitAndOffset,
   getUsuarios,
   getUsuario,
   createUsuario,

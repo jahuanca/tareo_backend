@@ -29,7 +29,7 @@ async function createResumen_Varios(req, res) {
     let [errB, resumen]= await get(models.Resumen_Varios.findOne(
         {
             where: {
-                imei: req.body.imei, turno: req.body.turno, fecha: req.body.fecha
+                imei: req.body.imei, turno: req.body.turno, fecha: req.body.fecha, idlabor: req.body.idlabor
             }
         }
     ));
