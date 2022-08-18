@@ -1,6 +1,27 @@
 'use strict'
 const models=require('../models')
 
+async function getActividadsCount(req,res){
+  let [err,actividads]=await get(models.Actividad.count({
+    /* where:{estado: 'A'},*/
+  }))
+  if(err) return res.status(500).json({message: `${err}`})
+  if(actividads==null) return res.status(404).json({message: `Actividads nulos`})
+  res.status(200).json(actividads)
+}
+
+async function getActividadsByLimitAndOffset(req,res){
+  let [err,actividads]=await get(models.Actividad.findAll({
+    /* where:{estado: 'A'},*/
+    include: [{all: true}],
+    offset: req.params.offset ? parseInt(req.params.offset) : 0,
+    limit: req.params.limit ? parseInt(req.params.limit) : 10,
+  }))
+  if(err) return res.status(500).json({message: `${err}`})
+  if(actividads==null) return res.status(404).json({message: `Actividads nulos`})
+  res.status(200).json(actividads)
+}
+
 async function getActividads(req,res){
   let [err,actividads]=await get(models.Actividad.findAll({
     /* where:{estado: 'A'},
@@ -27,9 +48,9 @@ async function createActividad(req,res){
        //all fields to insert
       
       accion: 'I',
-      accion_usuario: 'Creo un nuevo actividad.',
+      accion_actividad: 'Creo un nuevo actividad.',
       ip: req.ip,
-      usuario: 0
+      actividad: 0
   }))
   if(err) return res.status(500).json({message: `err`})
   if(actividad==null) return res.status(404).json({message: `Actividads nulos`})
@@ -42,9 +63,9 @@ async function updateActividad(req,res){
     //all fields to update
     
     accion: 'U',
-    accion_usuario: 'Edito un actividad.',
+    accion_actividad: 'Edito un actividad.',
     ip: req.ip,
-    usuario: 0
+    actividad: 0
   },{
     where:{
       id: req.body.id, estado:'A'
@@ -62,10 +83,10 @@ async function deleteActividad(req,res){
   let [err,actividad]=await get(models.Actividad.update({
     estado: 'I',
 
-    accion_usuario: 'Elimino un actividad.',
+    accion_actividad: 'Elimino un actividad.',
     accion: 'D',
     ip: req.ip,
-    usuario: 0
+    actividad: 0
   },{
     where:{
       id: req.params.id, estado:'A'
@@ -86,6 +107,8 @@ function get(promise) {
 }
 
 module.exports={
+  getActividadsCount,
+  getActividadsByLimitAndOffset,
   getActividads,
   getActividad,
   createActividad,

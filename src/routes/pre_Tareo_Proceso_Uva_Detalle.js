@@ -17,6 +17,7 @@ const upload_controller=require('../controllers/upload_controller')
  */
 router.get('/',pre_Tareo_Proceso_Uva_Detalle.getPre_Tareo_Proceso_Uva_Detalles)
 router.get('/id/:id',pre_Tareo_Proceso_Uva_Detalle.getPre_Tareo_Proceso_Uva_Detalle)
+router.get('/master/:id',pre_Tareo_Proceso_Uva_Detalle.getPre_Tareo_Proceso_Uva_DetalleByMaster)
 router.post('/create',pre_Tareo_Proceso_Uva_Detalle.createPre_Tareo_Proceso_Uva_Detalle)
 router.post('/rango',pre_Tareo_Proceso_Uva_Detalle.preTareaProcesoUvaDetalleByRango)
 router.put('/update',pre_Tareo_Proceso_Uva_Detalle.updatePre_Tareo_Proceso_Uva_Detalle)

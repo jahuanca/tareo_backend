@@ -5,7 +5,7 @@ const {
 module.exports = (sequelize, DataTypes) => {
   class Actividad extends Model {
     static associate(models) {
-      
+      Actividad.hasMany(models.Labor, {foreignKey: "idactividad",targetKey: 'idactividad'})
     }
   };
   Actividad.init({

@@ -1,8 +1,8 @@
 'use strict'
-const express=require('express')
-const router=express.Router()
-const pre_tareo_proceso_uva=require('../controllers/pre_tareo_proceso_uva')
-const upload_controller=require('../controllers/upload_controller')
+const express = require('express')
+const router = express.Router()
+const pre_tareo_proceso_uva = require('../controllers/pre_tareo_proceso_uva')
+const upload_controller = require('../controllers/upload_controller')
 /* const auth=require('../middlewares/auth') */
 
 /**
@@ -15,15 +15,16 @@ const upload_controller=require('../controllers/upload_controller')
  *      '200':
  *        description: A successful response
  */
-router.get('/',pre_tareo_proceso_uva.getPre_Tareo_Proceso_Uvas)
-router.get('/id/:id',pre_tareo_proceso_uva.getPre_Tareo_Proceso_Uva)
-router.post('/create',pre_tareo_proceso_uva.createPre_Tareo_Proceso_Uva)
-router.put('/updateFile', upload_controller.upload() ,upload_controller.save('pre-tarea-proceso-uvas') ,pre_tareo_proceso_uva.uploadFilePreTareoProcesoUva)
-router.post('/createAll',pre_tareo_proceso_uva.createAllPreTareoProcesoUva)
-router.put('/update',pre_tareo_proceso_uva.updatePre_Tareo_Proceso_Uva)
+router.get('/', pre_tareo_proceso_uva.getPre_Tareo_Proceso_Uvas)
+router.get('/id/:id', pre_tareo_proceso_uva.getPre_Tareo_Proceso_Uva)
+router.post('/create', pre_tareo_proceso_uva.createPre_Tareo_Proceso_Uva)
+router.post('/rango', pre_tareo_proceso_uva.preTareaProcesoUvaByRango)
+router.put('/updateFile', upload_controller.upload(), upload_controller.save('pre-tarea-proceso-uvas'), pre_tareo_proceso_uva.uploadFilePreTareoProcesoUva)
+router.post('/createAll', pre_tareo_proceso_uva.createAllPreTareoProcesoUva)
+router.put('/update', pre_tareo_proceso_uva.updatePre_Tareo_Proceso_Uva)
 router.delete('/delete/:id', pre_tareo_proceso_uva.deletePre_Tareo_Proceso_Uva)
 
-module.exports=router
+module.exports = router
 /** 
 * @swagger
 *definitions:

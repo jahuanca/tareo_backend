@@ -16,6 +16,8 @@ const auth=require('../middlewares/auth') */
  *        description: A successful response
  */
 router.get('/',actividad.getActividads)
+router.get('/count',actividad.getActividadsCount)
+router.get('/range&limit=:limit?&offset=:offset',actividad.getActividadsByLimitAndOffset)
 router.get('/id/:id',actividad.getActividad)
 router.post('/create',actividad.createActividad)
 router.put('/update',actividad.updateActividad)

@@ -47,6 +47,17 @@ async function getPre_Tareo_Proceso_Uva_Detalle(req, res) {
   res.status(200).json(name_min)
 }
 
+async function getPre_Tareo_Proceso_Uva_DetalleByMaster(req, res) {
+  let [err, name_min] = await get(models.Pre_Tareo_Proceso_Uva_Detalle.findAll({
+    where: { itempretareaprocesouva: req.params.id},
+    include: [{ all: true }]
+  }))
+  console.log(err)
+  if (err) return res.status(500).json({ message: `err` })
+  if (name_min == null) return res.status(404).json({ message: `Pre_Tareo_Proceso_Uva_Detalles nulos` })
+  res.status(200).json(name_min)
+}
+
 async function createPre_Tareo_Proceso_Uva_Detalle(req, res) {
   let [err, name_min] = await get(models.Pre_Tareo_Proceso_Uva_Detalle.create({
     //all fields to insert
@@ -113,6 +124,7 @@ function get(promise) {
 module.exports = {
   getPre_Tareo_Proceso_Uva_Detalles,
   getPre_Tareo_Proceso_Uva_Detalle,
+  getPre_Tareo_Proceso_Uva_DetalleByMaster,
   createPre_Tareo_Proceso_Uva_Detalle,
   updatePre_Tareo_Proceso_Uva_Detalle,
   deletePre_Tareo_Proceso_Uva_Detalle,

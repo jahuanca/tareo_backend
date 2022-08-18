@@ -17,13 +17,61 @@ async function getPre_Tareo_Proceso_Uvas(req, res) {
 
 async function getPre_Tareo_Proceso_Uva(req, res) {
   let [err, pre_tareo_proceso_uva] = await get(models.Pre_Tareo_Proceso_Uva.findOne({
-    where: { itempretareaprocesouva: req.params.id,/*  estado: 'A'  */},
+    where: { itempretareaprocesouva: req.params.id,/*  estado: 'A'  */ },
     include: [{ all: true }]
   }))
   console.log(pre_tareo_proceso_uva.Pre_Tareo_Proceso_Uva_Detalles.length);
   if (err) return res.status(500).json({ message: `${err}` })
   if (pre_tareo_proceso_uva == null) return res.status(404).json({ message: `Pre_Tareo_Proceso_Uvas nulos` })
   res.status(200).json(pre_tareo_proceso_uva)
+}
+
+async function preTareaProcesoUvaByRango(req, res) {
+  console.log(req.body)
+  let where;
+  if (req.body.idcultivo == '-1') {
+    where = {
+      fecha: {
+        [models.Sequelize.Op.between]: [new Date(req.body.inicio).setHours(0, 0, 0), new Date(req.body.fin).setHours(23, 59, 59)]
+      },
+    };
+  } else {
+    where = {
+      fecha: {
+        [models.Sequelize.Op.between]: [new Date(req.body.inicio).setHours(0, 0, 0), new Date(req.body.fin).setHours(23, 59, 59)]
+      },
+      idcultivo: req.body.idcultivo,
+    };
+  }
+
+  let [err, pretareoProcesoUva] = await get(models.Pre_Tareo_Proceso_Uva.findAll({
+    where: where,
+    raw: true,
+    attributes: [
+      'itempretareaprocesouva',
+      'turnotareo',
+      'fecha',
+      [models.sequelize.col('Centro_Costo.detallecentrocosto'), 'centroCosto'],
+      [models.sequelize.col('Cultivo.detallecultivo'), 'cultivo'],
+      [models.sequelize.fn('count', models.sequelize.col('Pre_Tareo_Proceso_Uva.itempretareaprocesouva')) ,'detalles'],
+    ],
+    group: [
+      'Pre_Tareo_Proceso_Uva.itempretareaprocesouva',
+      'Pre_Tareo_Proceso_Uva.turnotareo',
+      'Pre_Tareo_Proceso_Uva.fecha',
+      'Centro_Costo.detallecentrocosto',
+      'Cultivo.detallecultivo',
+    ],
+    include: [
+      { model: models.Centro_Costo, attributes: []},
+      {model: models.Cultivo, attributes: []},
+      {model: models.Pre_Tareo_Proceso_Uva_Detalle, attributes: []},
+    ]
+  }))
+  console.log(err)
+  if (err) return res.status(500).json({ message: `${err}` })
+  if (pretareoProcesoUva == null) return res.status(404).json({ message: `Packing nulos` })
+  res.status(200).json(pretareoProcesoUva)
 }
 
 async function createPre_Tareo_Proceso_Uva(req, res) {
@@ -166,4 +214,5 @@ module.exports = {
   updatePre_Tareo_Proceso_Uva,
   deletePre_Tareo_Proceso_Uva,
   uploadFilePreTareoProcesoUva,
+  preTareaProcesoUvaByRango,
 }
