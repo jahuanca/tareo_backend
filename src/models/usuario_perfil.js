@@ -13,7 +13,7 @@ module.exports = (sequelize, DataTypes) => {
 
     idusuario:{type: DataTypes.INTEGER, allowNull: false, primaryKey: true},
     idPerfil:{type: DataTypes.INTEGER, allowNull: false, primaryKey: true},
-    idsubdivision:{type: DataTypes.INTEGER, allowNull: false},
+    idsubdivision:{type: DataTypes.INTEGER, allowNull: false, primaryKey: true},
 
     accion: {type: DataTypes.VIRTUAL},
     usuario: {type: DataTypes.VIRTUAL},
