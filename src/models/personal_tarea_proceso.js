@@ -43,5 +43,10 @@ module.exports = (sequelize, DataTypes) => {
     freezeTableName: true,
     tableName: 'PersonalTareoProceso'
   });
+
+  PersonalTareaProceso.associate = function(models) {
+    PersonalTareaProceso.belongsTo(models.Actividad, {foreignKey: "idactividad"})
+  };
+
   return PersonalTareaProceso;
 };
