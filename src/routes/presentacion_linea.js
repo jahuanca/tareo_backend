@@ -17,9 +17,12 @@ const auth=require('../middlewares/auth') */
  */
 router.get('/',presentacion_linea.getPresentacion_Lineas)
 router.get('/id/:id',presentacion_linea.getPresentacion_Linea)
-router.post('/create',presentacion_linea.createPresentacion_Linea)
-router.put('/update',presentacion_linea.updatePresentacion_Linea)
-router.delete('/delete/:id', presentacion_linea.deletePresentacion_Linea)
+router.get('/count',presentacion_linea.getPresentacion_LineaCount)
+router.get('/range&limit=:limit?&offset=:offset',presentacion_linea.getPresentacion_LineaByLimitAndOffset)
+
+//router.post('/create',presentacion_linea.createPresentacion_Linea)
+//router.put('/update',presentacion_linea.updatePresentacion_Linea)
+//router.delete('/delete/:id', presentacion_linea.deletePresentacion_Linea)
 
 module.exports=router
 /** 
