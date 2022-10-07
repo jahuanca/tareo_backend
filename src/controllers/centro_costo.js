@@ -1,6 +1,15 @@
 'use strict'
 const models=require('../models')
 
+async function getCentro_CostoCount(req,res){
+  let [err,centro_costo]=await get(models.Centro_Costo.count({
+    /* where:{estado: 'A'},*/
+  }))
+  if(err) return res.status(500).json({message: `${err}`})
+  if(centro_costo==null) return res.status(404).json({message: `centro_costo nulos`})
+  res.status(200).json(centro_costo)
+}
+
 async function getCentro_Costos(req,res){
   let [err,centro_costos]=await get(models.Centro_Costo.findAll({
     /* where:{estado: 'A'},
@@ -77,6 +86,18 @@ async function deleteCentro_Costo(req,res){
   res.status(200).json(centro_costo[1][0].dataValues)
 }
 
+async function getCentro_CostoByLimitAndOffset(req,res){
+  let [err,centrocosto]=await get(models.Centro_Costo.findAll({
+    /* where:{estado: 'A'},*/
+    include: [{all: true}],
+    offset: req.params.offset ? parseInt(req.params.offset) : 0,
+    limit: req.params.limit ? parseInt(req.params.limit) : 10,
+  }))
+  if(err) return res.status(500).json({message: `${err}`})
+  if(centrocosto==null) return res.status(404).json({message: `centrocosto nulos`})
+  res.status(200).json(centrocosto)
+}
+
 
 function get(promise) {
   return promise.then(data => {
@@ -90,5 +111,7 @@ module.exports={
   getCentro_Costo,
   createCentro_Costo,
   updateCentro_Costo,
-  deleteCentro_Costo
+  deleteCentro_Costo,
+  getCentro_CostoCount,
+  getCentro_CostoByLimitAndOffset
 }

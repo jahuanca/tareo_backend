@@ -1,6 +1,27 @@
 'use strict'
 const models=require('../models')
 
+async function getPresentacion_LineaCount(req,res){
+  let [err,presentacion_lineas]=await get(models.Presentacion_Linea.count({
+    /* where:{estado: 'A'},*/
+  }))
+  if(err) return res.status(500).json({message: `${err}`})
+  if(presentacion_lineas==null) return res.status(404).json({message: `presentacion_lineas nulos`})
+  res.status(200).json(presentacion_lineas)
+}
+
+async function getPresentacion_LineaByLimitAndOffset(req,res){
+
+  let [err,presentacion_lineas]=await get(models.Presentacion_Linea.findAll({
+    /* where:{estado: 'A'},*/
+    offset: req.params.offset ? parseInt(req.params.offset) : 0,
+    limit: req.params.limit ? parseInt(req.params.limit) : 10,
+  }))
+  if(err) return res.status(500).json({message: `${err}`})
+  if(presentacion_lineas==null) return res.status(404).json({message: `presentacion_lineas nulos`})
+  res.status(200).json(presentacion_lineas)
+}
+
 async function getPresentacion_Lineas(req,res){
   let [err,presentacion_lineas]=await get(models.Presentacion_Linea.findAll({
     /* where:{estado: 'A'}, */
@@ -88,7 +109,9 @@ function get(promise) {
 module.exports={
   getPresentacion_Lineas,
   getPresentacion_Linea,
-  createPresentacion_Linea,
-  updatePresentacion_Linea,
-  deletePresentacion_Linea
+  getPresentacion_LineaByLimitAndOffset,
+  getPresentacion_LineaCount,
+  //createPresentacion_Linea,
+  //updatePresentacion_Linea,
+  //deletePresentacion_Linea
 }

@@ -23,7 +23,12 @@ module.exports = (sequelize, DataTypes) => {
     fechacese: {type: DataTypes.DATE, allowNull: true, validate: {notEmpty: true, len: [1,200]}},
     idusuario: {type: DataTypes.INTEGER, allowNull: true, validate: {notEmpty: true, len: [1,200]}},
     itemgrupopersonal: {type: DataTypes.INTEGER, allowNull: false},
-
+    areanomina: {type: DataTypes.STRING(20), allowNull: true, validate: {notEmpty: true, len: [1,20]}},
+    subdivision: {type: DataTypes.STRING(20), allowNull: true, validate: {notEmpty: true, len: [1,20]}},
+    idareanomina: {type: DataTypes.INTEGER, allowNull: true, validate: {notEmpty: true, len: [1,200]}},
+    idsubdivision: {type: DataTypes.INTEGER, allowNull: true, validate: {notEmpty: true, len: [1,200]}},
+    posicion: {type: DataTypes.STRING(20), allowNull: true, validate: {notEmpty: true, len: [1,20]}},
+    cargo: {type: DataTypes.STRING(200), allowNull: true, validate: {notEmpty: true, len: [1,200]}},
     accion: {type: DataTypes.VIRTUAL},
     usuario: {type: DataTypes.VIRTUAL},
     ip: {type: DataTypes.VIRTUAL},
