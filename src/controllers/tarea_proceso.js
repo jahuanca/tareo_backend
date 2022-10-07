@@ -44,7 +44,8 @@ async function createAllTareaProceso(req, res) {
         const result = await models.sequelize.transaction(async (t) => {
             const tarea = await models.TareaProceso.create({
 
-                codigoempresa: req.body.codigoempresa,
+                codigoempresasupervisor: req.body.codigoempresasupervisor,
+                codigoempresadigitador: req.body.codigoempresadigitador,
                 fecha: new Date(req.body.fecha),
                 idactividad: req.body.idactividad,
                 idlabor: req.body.idlabor,

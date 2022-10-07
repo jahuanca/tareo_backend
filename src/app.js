@@ -97,36 +97,12 @@ fs
     //app.use(`/canastas/${f}`, require(`./routes/${f}`)); 
   });
 
-
-
-
 app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerDocs));
 
 
 app.use(express.static('./public'));
 
-io.on('connection', function (socket) {
-  /* socket.on('registrarse', (idUser) => {
-    socket.join(idUser);
-    console.log('se registro el usuario ' + idUser)
-  })
-
-  socket.on('enviar', (data) => {
-
-    console.log('se enviara un mensaje al usuario ' + data.destino);
-    socket.broadcast.to(data.destino).emit('nuevoPedido', data.origen);
-  })
-
-  socket.on('enviarDelivery', (data) => {
-    console.log('se enviara un mensaje al usuario ' + data.destino);
-    socket.broadcast.to(data.destino).emit('nuevoPedidoDelivery', data.origen);
-  })
-
-  socket.on('enviarUsuario', (data) => {
-    console.log('se enviara un mensaje al usuario ' + data.destino);
-    socket.broadcast.to(data.destino).emit('mensajeUsuario', data.mensaje);
-  }) */
-});
+io.on('connection', function (socket) {});
 
 
 app.set('socketV', io);
