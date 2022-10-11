@@ -14,6 +14,7 @@ module.exports = (sequelize, DataTypes) => {
     idlabor: {primaryKey: true, type: DataTypes.INTEGER, allowNull: false},
     idactividad: {type: DataTypes.INTEGER, allowNull: false},
     labor: {type: DataTypes.STRING, allowNull: false},
+    codigopresenta: {type: DataTypes.STRING, allowNull: true},
     descripcion: {type: DataTypes.STRING, allowNull: false},
     activo: {type: DataTypes.BOOLEAN, allowNull: false},
     idusuario: {type: DataTypes.INTEGER, allowNull: false},

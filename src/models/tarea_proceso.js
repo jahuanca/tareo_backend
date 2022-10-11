@@ -42,5 +42,12 @@ module.exports = (sequelize, DataTypes) => {
     tableName: 'TareoProceso'
   });
 
+  TareaProceso.associate = function(models) {
+    TareaProceso.belongsTo(models.Centro_Costo, {foreignKey: "idcentrocosto", targetKey: 'idcentrocosto'})
+    TareaProceso.belongsTo(models.Labor, {foreignKey: "idlabor", targetKey: 'idlabor'})
+    TareaProceso.belongsTo(models.Actividad, {foreignKey: "idactividad", targetKey: 'idactividad'})
+    /* TareaProceso.belongsTo(models.Personal_Empresa, {foreignKey: "codigoempresa",targetKey: 'codigoempresa'}) */
+  };
+
   return TareaProceso;
 };

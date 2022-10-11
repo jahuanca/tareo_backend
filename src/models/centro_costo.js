@@ -26,6 +26,7 @@ module.exports = (sequelize, DataTypes) => {
     zetapa: {type: DataTypes.STRING, allowNull: false},
     zcampo: {type: DataTypes.STRING, allowNull: false},
     zturno: {type: DataTypes.STRING, allowNull: false},
+    zcultivo: {type: DataTypes.STRING, allowNull: false},
     zvaried: {type: DataTypes.STRING, allowNull: false},
 
     accion: {type: DataTypes.VIRTUAL},

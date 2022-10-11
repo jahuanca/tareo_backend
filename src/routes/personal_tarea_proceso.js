@@ -21,6 +21,7 @@ router.post('/create',personalTareaProceso.createPersonalTareaProceso)
 router.put('/update',personalTareaProceso.updatePersonalTareaProceso)
 router.delete('/delete/:id', personalTareaProceso.deletePersonalTareaProceso)
 router.post('/rango',personalTareaProceso.personalTareaProcesoByRango)
+router.post('/migrar',personalTareaProceso.migrarContenido)
 
 module.exports=router
 /** 

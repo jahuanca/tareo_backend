@@ -30,7 +30,7 @@ module.exports = (sequelize, DataTypes) => {
     cantidadavance: {type: DataTypes.DOUBLE, allowNull: false},
     idestado: {type: DataTypes.INTEGER, allowNull: false},
     idusuario: {type: DataTypes.INTEGER, allowNull: false},
-    idactividad: {type: DataTypes.INTEGER, allowNull: false},
+    
 
     accion: {type: DataTypes.VIRTUAL},
     usuario: {type: DataTypes.VIRTUAL},
@@ -45,7 +45,9 @@ module.exports = (sequelize, DataTypes) => {
   });
 
   PersonalTareaProceso.associate = function(models) {
-    PersonalTareaProceso.belongsTo(models.Actividad, {foreignKey: "idactividad"})
+    /* PersonalTareaProceso.belongsTo(models.Actividad, {foreignKey: "idactividad"}) */
+    PersonalTareaProceso.belongsTo(models.TareaProceso, {foreignKey: "itemtareoproceso", targetKey: 'itemtareoproceso'})
+    PersonalTareaProceso.belongsTo(models.Personal_Empresa, {foreignKey: "codigoempresa",targetKey: 'codigoempresa'})
   };
 
   return PersonalTareaProceso;
