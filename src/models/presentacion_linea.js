@@ -11,8 +11,9 @@ module.exports = (sequelize, DataTypes) => {
   Presentacion_Linea.init({
     //add new parameters
     idpresentacion: {primaryKey: true, type: DataTypes.INTEGER, allowNull: false},
-    descripcion: {type: DataTypes.STRING, allowNull: false},
+    detalle: {type: DataTypes.STRING, allowNull: false},
     codigoempresa: {type: DataTypes.STRING, allowNull: false},
+
 
     accion: {type: DataTypes.VIRTUAL},
     usuario: {type: DataTypes.VIRTUAL},
@@ -23,7 +24,8 @@ module.exports = (sequelize, DataTypes) => {
     modelName: 'Presentacion_Linea',
     freezeTableName: true,
     timestamps:false,
-    tableName: 'PresentacionLinea'
+    //tableName: 'PresentacionLinea'
+    tableName: 'Presentacion'
   });
   return Presentacion_Linea;
 };
