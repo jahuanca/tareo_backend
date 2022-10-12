@@ -28,7 +28,7 @@ function returnFormatDate(value){
   var month= d.getMonth() < 10 ? `0${d.getMonth()}` : d.getMonth();
   var year= d.getFullYear() < 10 ? `0${d.getFullYear()}` : d.getFullYear();
 
-  //return `10.10.2022`;
+  return `20.10.2022`;
   return `${day}.${month}.${year}`;
 }
 
@@ -49,7 +49,7 @@ async function post(url, form, headers) {
   return new Promise((resolve, reject) => {
     request.post({
       url,
-      body:JSON.stringify(form),
+      body: JSON.stringify(form),
       headers: headers
     }, (error, response, b) => {
       if (error) return reject(error)

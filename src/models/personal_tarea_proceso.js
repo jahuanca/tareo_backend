@@ -30,6 +30,8 @@ module.exports = (sequelize, DataTypes) => {
     cantidadavance: {type: DataTypes.DOUBLE, allowNull: false},
     idestado: {type: DataTypes.INTEGER, allowNull: false},
     idusuario: {type: DataTypes.INTEGER, allowNull: false},
+    Mensajesap: {type: DataTypes.STRING, allowNull: true},
+    estadosap: {type: DataTypes.STRING, allowNull: true},
     
 
     accion: {type: DataTypes.VIRTUAL},

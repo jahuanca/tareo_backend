@@ -169,10 +169,9 @@ async function migrarContenido(req, res) {
           datos.CODIGO_PRESENTACION = element.TareaProceso.Labor.codigopresenta ?? "RAC.",
           //campo: cantidadrendimiento
           datos.CANTIDAD = element.cantidadrendimiento ?? "0.00",
-          //VACIO
           datos.UNIDAD_MEDIDA = element.UNIDAD_MEDID ?? "",
           //fechamod
-          datos.fecha = "2022-10-04",
+          datos.fecha = "2022-10-14",
           //fecha en que el frontend lo envia.
           //datos.fechagmo = "2022-10-04 07:27:06",
           datos.fechagmo = new Date(),
@@ -181,12 +180,43 @@ async function migrarContenido(req, res) {
           /* console.log(datos); */
       }
 
-      console.log(contenido);
+      /* console.log(contenido); */
 
-      let resultSBS = await request.post(rutas.rutaODATA, [contenido[0]], headersODATA);
+      let resultSBS = await request.post(rutas.rutaODATA, contenido, headersODATA);
       if (resultSBS.response.statusCode >= 200 && resultSBS.response.statusCode <= 299) {
         console.log("exito al enviar")
         console.log(resultSBS.response.body)
+        let retorno=[];
+        let respuestas= JSON.parse(resultSBS.response.body);
+
+        for (let i = 0; i < respuestas.length; i++) {
+          const element = respuestas[i];
+          let [err, personalTareaProceso] = await get(models.PersonalTareaProceso.update({
+            Mensajesap: element.MENSAJE,
+            estadosap: element.ESTADO,
+        
+            accion: 'U',
+            accion_usuario: 'Se registro la migración.',
+            ip: req.ip,
+            usuario: 0
+          }, {
+            where: {
+              item: req.body[i].item, [models.Sequelize.Op.or]: [
+                { estadosap: null },
+                { estadosap: 'E' },
+                /* { estadosap: 'T' } */
+              ]
+            },
+            individualHooks: true,
+            validate: false
+          }))
+          if (err) return res.status(500).json({ message: `err` })
+          if (personalTareaProceso == null) return res.status(404).json({ message: `PersonalTareaProcesos nulos` })
+          retorno.push(personalTareaProceso[1][0]?.dataValues ?? req.body[i])
+        }
+
+        res.status(200).json(retorno)
+
       } else {
         console.log(resultSBS.response.body);
       }
@@ -195,7 +225,6 @@ async function migrarContenido(req, res) {
     console.log('Error try: ' + error);
   }
 }
-
 
 
 function get(promise) {
