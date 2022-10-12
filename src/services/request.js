@@ -29,7 +29,7 @@ function returnFormatDate(value){
   var year= d.getFullYear() < 10 ? `0${d.getFullYear()}` : d.getFullYear();
 
   return `20.10.2022`;
-  return `${day}.${month}.${year}`;
+  //return `${day}.${month}.${year}`;
 }
 
 /*async function post (url, data, headers) {
