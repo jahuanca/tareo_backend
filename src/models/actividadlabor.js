@@ -20,6 +20,7 @@ module.exports = (sequelize, DataTypes) => {
     sociedad       : {type: DataTypes.STRING(200), allowNull: false},
     tipolabor      : {type: DataTypes.STRING(200), allowNull: false},
     estado         : {type: DataTypes.STRING(200), allowNull: false},
+    codigopresenta : {type: DataTypes.STRING(200), allowNull: false},
     
     accion: {type: DataTypes.VIRTUAL},
     usuario: {type: DataTypes.VIRTUAL},
