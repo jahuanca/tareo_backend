@@ -102,7 +102,7 @@ async function uploadFilePreTareaEsparragoVarios(req, res) {
 
 async function createAllPreTareaEsparragoVarios(req, res) {
   try {
-    /* console.log(req.body.Pre_Tarea_Esparrago_Detalle_Varios);
+    /* console.log(req.body.Personal_Pre_Tarea_Esparrago);
     return res.status(500).json({ message: `Error en el servidor prueba` }) */
     const result = await models.sequelize.transaction(async (t) => {
 
@@ -132,13 +132,21 @@ async function createAllPreTareaEsparragoVarios(req, res) {
         accion_usuario: 'Creo un nuevo pre tareo completo.',
       }, { transaction: t });
 
-      if (req.body.Pre_Tarea_Esparrago_Detalle_Varios) {
+      /* if (req.body.Pre_Tarea_Esparrago_Detalle_Varios) {
         for (let i = 0; i < req.body.Pre_Tarea_Esparrago_Detalle_Varios.length; i++) {
           req.body.Pre_Tarea_Esparrago_Detalle_Varios[i].itempretareaesparragovarios = tarea.itempretareaesparragovarios;
           req.body.Pre_Tarea_Esparrago_Detalle_Varios[i].fechamod = Date.now();
           req.body.Pre_Tarea_Esparrago_Detalle_Varios[i].idestado = 1;
         }
         await models.Pre_Tarea_Esparrago_Detalle_Varios.bulkCreate(req.body.Pre_Tarea_Esparrago_Detalle_Varios, { transaction: t });
+      } */
+      if (req.body.Personal_Pre_Tarea_Esparrago) {
+        for (let i = 0; i < req.body.Personal_Pre_Tarea_Esparrago.length; i++) {
+          req.body.Personal_Pre_Tarea_Esparrago[i].itempretareaesparragovarios = tarea.itempretareaesparragovarios;
+          req.body.Personal_Pre_Tarea_Esparrago[i].fechamod = Date.now();
+          req.body.Personal_Pre_Tarea_Esparrago[i].idestado = 1;
+        }
+        await models.Personal_Pre_Tarea_Esparrago.bulkCreate(req.body.Personal_Pre_Tarea_Esparrago, { transaction: t });
       }
       return tarea;
     });
