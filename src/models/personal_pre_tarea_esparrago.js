@@ -11,14 +11,13 @@ module.exports = (sequelize, DataTypes) => {
   Personal_Pre_Tarea_Esparrago.init({
     //add new parameters
     itempersonalpretareaesparrago: {primaryKey: true, type: DataTypes.INTEGER, allowNull: true, autoIncrement: true},
-    fecha: {type: DataTypes.DATE, allowNull: false},
+    fecha: {type: DataTypes.DATEONLY, allowNull: false},
     hora: {type: DataTypes.DATE, allowNull: false},
     idestado: {type: DataTypes.INTEGER, allowNull: false},
     itempretareaesparragovarios: {type: DataTypes.INTEGER, allowNull: true,},
     codigotkcaja: {type: DataTypes.STRING, allowNull: false},
     idlabor: {type: DataTypes.INTEGER, allowNull: false},
     idcliente: {type: DataTypes.INTEGER, allowNull: false},
-    idviaenvio: {type: DataTypes.INTEGER, allowNull: false},
     idcalibre: {type: DataTypes.INTEGER, allowNull: false},
     idvia: {type: DataTypes.INTEGER, allowNull: false},
     correlativocaja: {type: DataTypes.INTEGER, allowNull: false},
@@ -40,5 +39,11 @@ module.exports = (sequelize, DataTypes) => {
     freezeTableName: true,
     tableName: 'PersonalPreTareaEsparrago'
   });
+
+  Personal_Pre_Tarea_Esparrago.associate = function(models) {
+    Personal_Pre_Tarea_Esparrago.belongsTo(models.Pre_Tarea_Esparrago_Varios, {foreignKey: "itempretareaesparragovarios",targetKey: 'itempretareaesparragovarios'})
+    Personal_Pre_Tarea_Esparrago.belongsTo(models.Cliente, {foreignKey: "idcliente",targetKey: 'idcliente'})
+  };
+
   return Personal_Pre_Tarea_Esparrago;
 };

@@ -16,6 +16,7 @@ const auth=require('../middlewares/auth') */
  *        description: A successful response
  */
 router.get('/',personal_pre_tarea_esparrago.getPersonal_Pre_Tarea_Esparragos)
+router.get('/acumulativos',personal_pre_tarea_esparrago.getPersonal_Pre_Tarea_Esparragos_Acumulativos)
 router.get('/count',personal_pre_tarea_esparrago.getPersonal_Pre_Tarea_EsparragosCount)
 router.get('/range&limit=:limit?&offset=:offset',personal_pre_tarea_esparrago.getPersonal_Pre_Tarea_EsparragosByLimitAndOffset)
 router.get('/id/:id',personal_pre_tarea_esparrago.getPersonal_Pre_Tarea_Esparrago)

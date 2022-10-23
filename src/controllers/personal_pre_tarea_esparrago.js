@@ -31,6 +31,36 @@ async function getPersonal_Pre_Tarea_Esparragos(req,res){
   res.status(200).json(personal_pre_tarea_esparragos)
 }
 
+async function getPersonal_Pre_Tarea_Esparragos_Acumulativos(req,res){
+  let [err,personal_pre_tarea_esparragos]=await get(models.Personal_Pre_Tarea_Esparrago.findAll({
+    raw: true,
+    attributes: [
+      'idcliente',
+      'idlabor',
+      'idcalibre',
+      'mesa',
+      'linea',
+      'fecha',
+      /*[models.sequelize.fn("COUNT", models.sequelize.col("mesa")), "cantidad"],*/],
+    group: [
+      'idcliente',
+      'idlabor',
+      'fecha',
+      'idcalibre',
+      'mesa',
+      'linea',
+    ],
+    include: [
+      {
+        model: models.Cliente, attributes: ['abreviatura'],
+      }
+    ]
+  }))
+  if(err) return res.status(500).json({message: `${err}`})
+  if(personal_pre_tarea_esparragos==null) return res.status(404).json({message: `Personal_Pre_Tarea_Esparragos nulos`})
+  res.status(200).json(personal_pre_tarea_esparragos)
+}
+
 async function getPersonal_Pre_Tarea_Esparrago(req,res){
   let [err,personal_pre_tarea_esparrago]=await get(models.Personal_Pre_Tarea_Esparrago.findOne({
     where:{id: req.params.id, estado: 'A'},
@@ -109,6 +139,7 @@ module.exports={
   getPersonal_Pre_Tarea_EsparragosCount,
   getPersonal_Pre_Tarea_EsparragosByLimitAndOffset,
   getPersonal_Pre_Tarea_Esparragos,
+  getPersonal_Pre_Tarea_Esparragos_Acumulativos,
   getPersonal_Pre_Tarea_Esparrago,
   createPersonal_Pre_Tarea_Esparrago,
   updatePersonal_Pre_Tarea_Esparrago,
