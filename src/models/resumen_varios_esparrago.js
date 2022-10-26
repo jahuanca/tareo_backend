@@ -13,6 +13,7 @@ module.exports = (sequelize, DataTypes) => {
     idcliente: { type: DataTypes.INTEGER, allowNull: true, },
     idlabor: { type: DataTypes.INTEGER, allowNull: true, },
     mesa: { type: DataTypes.STRING, allowNull: true, },
+    cantidad: { type: DataTypes.INTEGER, allowNull: true, },
     linea: { type: DataTypes.STRING, allowNull: true, },
 
     createdAt: { type: DataTypes.DATE, allowNull: false, defaultValue: Date.now },

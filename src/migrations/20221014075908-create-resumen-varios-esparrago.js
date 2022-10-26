@@ -14,6 +14,7 @@ module.exports = {
       idlabor: { type: Sequelize.INTEGER, allowNull: true, },
       mesa: { type: Sequelize.STRING, allowNull: true, },
       linea: { type: Sequelize.STRING, allowNull: true, },
+      cantidad: { type: Sequelize.INTEGER, allowNull: true, },
       
       createdAt: {
         allowNull: false,
