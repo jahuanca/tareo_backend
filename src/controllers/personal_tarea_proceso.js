@@ -31,11 +31,11 @@ async function personalTareaProcesoByRango(req, res) {
 
   let [err, personalTareaProceso] = await get(models.PersonalTareaProceso.findAll({
     where: {
-      /* [models.Sequelize.Op.and]: 
+      [models.Sequelize.Op.and]: 
         [
           { fechamod: { [models.Sequelize.Op.gt]: dInicio } },
           { fechamod: { [models.Sequelize.Op.lte]: dFin } } 
-        ] */
+        ]
 
     },
     include: [
