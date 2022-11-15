@@ -25,23 +25,45 @@ async function getPersonalTareaProceso(req, res) {
 }
 
 async function personalTareaProcesoByRango(req, res) {
+  console.log(req.body);
   let dInicio = new Date(req.body.inicio).setHours(0, 0, 0);
   let dFin = new Date(req.body.fin).setHours(23, 59, 59);
+  let mantenedor=req.body.mantenedor;
+  let tipo= req.body.tipo;
+
+  let whereActividad={};
+
+  switch (mantenedor) {
+    case 1:
+      whereActividad={esjornal: 1};
+      break;
+    case 2:
+      whereActividad={esrendimiento: 1};
+      break;
+    case 3:
+      whereActividad={esjornal: 1};
+      break;
+    case 4:
+      whereActividad={esrendimiento: 1};
+      break;
+    default:
+      break;
+  }
 
 
   let [err, personalTareaProceso] = await get(models.PersonalTareaProceso.findAll({
     where: {
+      estadosap: (tipo==3) ? null : (tipo==2) ? 'E' : 'T',
       [models.Sequelize.Op.and]: 
         [
           { fechamod: { [models.Sequelize.Op.gt]: dInicio } },
           { fechamod: { [models.Sequelize.Op.lte]: dFin } } 
         ]
-
     },
     include: [
       {model: models.Personal_Empresa },
-      {model: models.TareaProceso, 
-        include: [{model: models.Centro_Costo}, { model: models.Actividad}, {model: models.Labor}] }
+      {model: models.TareaProceso,
+        include: [{model: models.Centro_Costo}, { model: models.Actividad, where: whereActividad}, {model: models.Labor}] }
     ]
   }))
 
