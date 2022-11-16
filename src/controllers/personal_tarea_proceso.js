@@ -148,13 +148,13 @@ async function migrarContenido(req, res) {
       headersODATA['cookie'] = resultODATA.response.headers['set-cookie'];
 
       let elementos = req.body
+      console.log(elementos.length);
       let contenido = [];
       let datos={};
 
       for (let i = 0; i < elementos.length; i++) {
         const element = elementos[i];
-        console.log(element)
-        
+          datos.ID=element.item;
           datos.mantenedor_destino ="CAMPO_DESTAJO",
           //sacar de MantenedorTareo -> codigosap
           datos.CODIGO_TRABAJADOR = element.codigoempresa ?? "",
@@ -193,16 +193,15 @@ async function migrarContenido(req, res) {
           datos.CANTIDAD = element.cantidadrendimiento ?? "0.00",
           datos.UNIDAD_MEDIDA = element.UNIDAD_MEDID ?? "",
           //fechamod
-          datos.fecha = "2022-10-14",
+          datos.fecha = "2022-11-15",
           //fecha en que el frontend lo envia.
           //datos.fechagmo = "2022-10-04 07:27:06",
           datos.fechagmo = new Date(),
           contenido.push(datos);
-
-          /* console.log(datos); */
+          datos={}
       }
 
-      /* console.log(contenido); */
+      console.log(contenido);
 
       let resultSBS = await request.post(rutas.rutaODATA, contenido, headersODATA);
       if (resultSBS.response.statusCode >= 200 && resultSBS.response.statusCode <= 299) {
@@ -223,7 +222,7 @@ async function migrarContenido(req, res) {
             usuario: 0
           }, {
             where: {
-              item: req.body[i].item, [models.Sequelize.Op.or]: [
+              item: parseInt(element.ID), [models.Sequelize.Op.or]: [
                 { estadosap: null },
                 { estadosap: 'E' },
                 /* { estadosap: 'T' } */
