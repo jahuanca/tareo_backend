@@ -63,13 +63,13 @@ async function personalTareaProcesoByRango(req, res) {
     include: [
       {model: models.Personal_Empresa },
       {model: models.TareaProceso,
-        include: [{model: models.Centro_Costo}, { model: models.Actividad, where: whereActividad}, {model: models.Labor}] }
+        include: [{model: models.Centro_Costo}, { model: models.Actividad,}, {model: models.Labor}] }
     ]
   }))
 
   console.log(err);
 
-  if (err) return res.status(500).json({ message: `err` })
+  if (err) return res.status(500).json({ message: `${err}` })
   if (personalTareaProceso == null) return res.status(404).json({ message: `PersonalTareaProcesos nulos` })
   res.status(200).json(personalTareaProceso)
 }
@@ -193,15 +193,16 @@ async function migrarContenido(req, res) {
           datos.CANTIDAD = element.cantidadrendimiento ?? "0.00",
           datos.UNIDAD_MEDIDA = element.UNIDAD_MEDID ?? "",
           //fechamod
-          datos.fecha = "2022-11-15",
+          //datos.fecha = "2022-11-15",
+          datos.fecha = request.returnFormatDate(element.TareaProceso?.fecha),
           //fecha en que el frontend lo envia.
           //datos.fechagmo = "2022-10-04 07:27:06",
           datos.fechagmo = new Date(),
           contenido.push(datos);
+          console.log(request.returnFormatDate(element.TareaProceso?.fecha));
           datos={}
       }
-
-      console.log(contenido);
+      //console.log(contenido);
 
       let resultSBS = await request.post(rutas.rutaODATA, contenido, headersODATA);
       if (resultSBS.response.statusCode >= 200 && resultSBS.response.statusCode <= 299) {
