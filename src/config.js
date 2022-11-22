@@ -1,4 +1,11 @@
 'use strict'
+
+const ips= {
+    qas: '100',
+    dev: '200',
+    prd: '300',
+}
+
 module.exports={
     port: process.env.PORT || 3000,
     db: process.env.SQLSERVER || '',
@@ -7,10 +14,4 @@ module.exports={
     sizeSupervisors:1,
     sizeGestores:1,
     mantenedorNow: ips.prd,
-}
-
-const ips= {
-    qas: '100',
-    dev: '200',
-    prd: '300',
 }
