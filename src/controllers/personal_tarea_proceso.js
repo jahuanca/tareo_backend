@@ -1,4 +1,5 @@
 'use strict'
+const config = require('../config')
 const models = require('../models')
 const request = require('../services/request')
 const rutas = require('../services/rutas')
@@ -135,7 +136,7 @@ async function migrarContenido(req, res) {
     'x-csrf-token': 'fetch',
     'Host': 'ecs-hanaqas.agrovision.com:44300',
     'Authorization': 'Basic bnNvc2E6TmVzdG9yLjIwMjI=',
-    'Cookie': 'sap-XSRF_AVQ_200=U0ubRSFepSItc8C9jQLEsQ%3d%3d20221010063437SXMBwXw3m1v0ccoODUGUKy4P9ApG0-CXPMX0sQsObGc%3d; sap-usercontext=sap-client=200',
+    'Cookie': `sap-XSRF_AVQ_200=U0ubRSFepSItc8C9jQLEsQ%3d%3d20221010063437SXMBwXw3m1v0ccoODUGUKy4P9ApG0-CXPMX0sQsObGc%3d; sap-usercontext=sap-client=${config.mantenedorNow}`,
   }
   process.env["NODE_TLS_REJECT_UNAUTHORIZED"] = 0;
 

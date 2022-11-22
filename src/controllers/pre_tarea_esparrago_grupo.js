@@ -112,7 +112,7 @@ async function createAllPreTareaEsparragoGrupo(req, res) {
         horafin: new Date(req.body.horafin),
         pausainicio: req.body.pausainicio,
         pausafin: req.body.pausafin,
-        linea: 1,
+        linea: req.body.linea ?? 1,
         idcentrocosto: req.body.idcentrocosto,
         kilosavance: req.body.kilosavance,
         idlabor: req.body.idlabor,
