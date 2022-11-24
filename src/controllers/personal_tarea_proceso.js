@@ -183,7 +183,7 @@ async function migrarContenido(req, res) {
           datos.INICIO_PAUSA = request.returnOnlyHours(element.pausainicio) ?? "",
           datos.FIN_PAUSA = request.returnOnlyHours(element.pausafin) ?? "",
           //campo calculador por la aplicación
-          datos.HORA_TRABAJADA = element.HORA_TRABAJADA ?? "",
+          datos.HORA_TRABAJADA = element.cantidadhoras ?? "",
           datos.DIA_SIG = element.diasiguiente ? 1 : 0,
           //vacio
           datos.CODIGO_BONO = element.CODIGO_BONO ?? "",
