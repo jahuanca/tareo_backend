@@ -25,7 +25,7 @@ function returnOnlyHours(value){
 function returnFormatDate(value){
   var d = new Date(value);
   var day= d.getDate() < 10 ? `0${d.getDate()}` : d.getDate();
-  var month= d.getMonth() < 10 ? `0${d.getMonth()}` : d.getMonth();
+  var month= d.getMonth()+1 < 10 ? `0${d.getMonth()+1}` : d.getMonth()+1;
   var year= d.getFullYear() < 10 ? `0${d.getFullYear()}` : d.getFullYear();
 
   /* return `20.10.2022`; */
