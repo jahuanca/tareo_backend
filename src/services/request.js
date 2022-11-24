@@ -4,7 +4,7 @@ async function get(url, headers) {
   return new Promise((resolve, reject) => {
     request.get(url, {
       json: true,
-      headers: headers
+      headers: headers,
 
     }, (error, response, body) => {
       if (error) return reject(error)
