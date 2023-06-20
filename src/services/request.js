@@ -3,7 +3,7 @@ const request = require('request')
 async function get(url, headers) {
   return new Promise((resolve, reject) => {
     request.get(url, {
-      json: true,
+      json: false,
       headers: headers,
 
     }, (error, response, body) => {

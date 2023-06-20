@@ -1,9 +1,9 @@
 {
   "development": {
-    "username": "AgvDeveloper",
-    "password": "Agv2021++",
+    "username": "nsosa",
+    "password": "Nestor2023",
     "database": "AGV_CONTROLES",
-    "host": "64.150.187.45",
+    "host": "ec2-35-175-69-142.compute-1.amazonaws.com",
     "dialect": "mssql",
     "operatorsAliases": false,
     "logging": false,
