@@ -3,6 +3,7 @@ const models=require('../models')
 
 async function getActividadsCount(req,res){
   let [err,actividads]=await get(models.Actividad.count({
+    where:{activo: true},
     /* where:{estado: 'A'},*/
   }))
   if(err) return res.status(500).json({message: `${err}`})
@@ -12,6 +13,7 @@ async function getActividadsCount(req,res){
 
 async function getActividadsByLimitAndOffset(req,res){
   let [err,actividads]=await get(models.Actividad.findAll({
+    where:{activo: true},
     /* where:{estado: 'A'},*/
     include: [{all: true}],
     offset: req.params.offset ? parseInt(req.params.offset) : 0,
@@ -24,6 +26,7 @@ async function getActividadsByLimitAndOffset(req,res){
 
 async function getActividads(req,res){
   let [err,actividads]=await get(models.Actividad.findAll({
+    where:{activo: true},
     /* where:{estado: 'A'},
     include: [{all: true}] */
   }))
