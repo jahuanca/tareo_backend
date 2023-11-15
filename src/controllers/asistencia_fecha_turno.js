@@ -300,4 +300,5 @@ ON AF.idturno  = T.idturno
 INNER JOIN Asistencia_Ubicacion as U ON AF.idubicacion = U.idubicacion 
 WHERE idusuario = ${idusuario} 
 AND estado != 'I'
+ORDER BY idasistenciaturno DESC
 `;
