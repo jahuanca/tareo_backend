@@ -1,35 +1,57 @@
 'use strict'
+const logger = require('../config/logger')
 const models=require('../models')
-const moment=require('moment')
 
 async function getPersonal_Empresas(req,res){
   let [err,personal_empresas]=await get(models.Personal_Empresa.findAll({
-    where:{itemgrupopersonal: 1,},
+    where:{itemgrupopersonal: 1},
     include: [{all: true}]
   }))
-  if(err) return res.status(500).json({message: `${err}`})
-  if(personal_empresas==null) return res.status(404).json({message: `Personal_Empresas nulos`})
+  if(err){
+    logger.error(`500 GET get_personal_empresas, ${err}.`)
+    return res.status(500).json({message: `${err}`})
+  }
+  if(personal_empresas==null){ 
+    logger.error(`404 GET get_personal_empresas, valor nulo.`)
+    return res.status(404).json({message: `personal_empresas nulos`})
+  }
+  logger.info(`200 GET get_personal_empresas ${personal_empresas.length} values.`)
   res.status(200).json(personal_empresas)
 }
 
 async function getPersonal_EmpresasCount(req,res){
   let [err,personal_empresas]=await get(models.Personal_Empresa.count({
-    /* where:{estado: 'A'},*/
+    where:{itemgrupopersonal: 1},
+    include: [{all: true}]
   }))
-  if(err) return res.status(500).json({message: `${err}`})
-  if(personal_empresas==null) return res.status(404).json({message: `Personal_Empresas nulos`})
+  if(err){
+    logger.error(`500 GET getPersonal_EmpresasCount, ${err}.`)
+    return res.status(500).json({message: `${err}`})
+  }
+  if(personal_empresas==null){ 
+    logger.error(`404 GET getPersonal_EmpresasCount, valor nulo.`)
+    return res.status(404).json({message: `personal_empresas nulos`})
+  }
+  logger.info(`200 GET getPersonal_EmpresasCount ${personal_empresas} values.`)
   res.status(200).json(personal_empresas)
 }
 
 async function getPersonal_EmpresasByLimitAndOffset(req,res){
-
   let [err,personal_empresas]=await get(models.Personal_Empresa.findAll({
-    /* where:{estado: 'A'},*/
-    offset: req.params.offset ? parseInt(req.params.offset) : 0,
-    limit: req.params.limit ? parseInt(req.params.limit) : 10,
+    where:{itemgrupopersonal: 1},
+    include: [{all: true}],
+    offset: req.query.offset ? parseInt(req.query.offset) : 0,
+    limit: req.query.limit ? parseInt(req.query.limit) : 10,
   }))
-  if(err) return res.status(500).json({message: `${err}`})
-  if(personal_empresas==null) return res.status(404).json({message: `Personal_Empresas nulos`})
+  if(err){
+    logger.error(`500 GET getPersonal_EmpresasByLimitAndOffset, ${err}.`)
+    return res.status(500).json({message: `${err}`})
+  }
+  if(personal_empresas==null){ 
+    logger.error(`404 GET getPersonal_EmpresasByLimitAndOffset, valor nulo.`)
+    return res.status(404).json({message: `personal_empresas nulos`})
+  }
+  logger.info(`200 GET getPersonal_EmpresasByLimitAndOffset, limit: ${req.query.limit} y offset: ${req.query.offset}.`)
   res.status(200).json(personal_empresas)
 }
 

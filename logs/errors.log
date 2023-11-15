@@ -1,0 +1,101 @@
+[Nov-06-2023 17:36:54]  'error' 404 GET GET_CENTRO_COSTOS 
+ERR: nulos.
+[Nov-06-2023 17:38:42]  'error' 404 GET GET_CENTRO_COSTOS ,message: nulos.
+[Nov-06-2023 17:38:56]  'error' 404 GET GET_CENTRO_COSTOS ,message: nulos.
+[Nov-07-2023 21:03:23]  'error' 500 GET getTurnos, SequelizeDatabaseError: Invalid column name 'estado'..
+[Nov-11-2023 00:54:14]  'error' 500 GET getAsistenciaUbicacions, SequelizeDatabaseError: Invalid column name 'estado'..
+[Nov-11-2023 01:18:31]  'error' 500 GET getPersonal_EmpresasByLimitAndOffset, SequelizeConnectionError: Failed to connect to 35.175.69.142:1433 in 15000ms.
+[Nov-13-2023 01:46:33]  'error' 500 GET createAsistenciaFechaTurno, SequelizeDatabaseError: Cannot insert explicit value for identity column in table 'Asistencia_FechaxTurno' when IDENTITY_INSERT is set to OFF..
+[Nov-13-2023 01:51:50]  'error' 500 GET createAsistenciaFechaTurno, SequelizeDatabaseError: Cannot insert explicit value for identity column in table 'Asistencia_FechaxTurno' when IDENTITY_INSERT is set to OFF..
+[Nov-13-2023 01:55:47]  'error' Error: POST createAllAsistenciaFechaTurno, asistenciaFechaTurno nulos.
+[Nov-13-2023 01:55:47]  'error' 500 GET createAsistenciaFechaTurno, SequelizeDatabaseError: Cannot insert explicit value for identity column in table 'Asistencia_FechaxTurno' when IDENTITY_INSERT is set to OFF..
+[Nov-13-2023 01:56:57]  'error' Error: POST createAllAsistenciaFechaTurno, SequelizeDatabaseError: Cannot insert explicit value for identity column in table 'Asistencia_FechaxTurno' when IDENTITY_INSERT is set to OFF.
+[Nov-13-2023 01:58:59]  'error' Error: POST createAllAsistenciaFechaTurno, SequelizeDatabaseError: Cannot insert explicit value for identity column in table 'Asistencia_FechaxTurno' when IDENTITY_INSERT is set to OFF.
+[Nov-13-2023 09:48:26]  'error' Error: POST createAllAsistenciaFechaTurno, SequelizeDatabaseError: Cannot insert explicit value for identity column in table 'Asistencia_FechaxTurno' when IDENTITY_INSERT is set to OFF.
+[Nov-13-2023 09:51:30]  'error' Error: POST createAllAsistenciaFechaTurno, SequelizeDatabaseError: Cannot insert explicit value for identity column in table 'Asistencia_FechaxTurno' when IDENTITY_INSERT is set to OFF.
+[Nov-13-2023 11:31:04]  'error' Error: POST createAllAsistenciaFechaTurno, ReferenceError: error is not defined
+[Nov-13-2023 11:31:51]  'error' Error: POST createAllAsistenciaFechaTurno, SequelizeDatabaseError: Cannot insert the value NULL into column 'fechamod', table 'AGV_CONTROLES.dbo.Asistencia_RegistrosPersonal'; column does not allow nulls. INSERT fails.
+[Nov-13-2023 11:39:47]  'error' Error: POST createAllAsistenciaFechaTurno, SequelizeDatabaseError: Cannot insert the value NULL into column 'fechaentrada', table 'AGV_CONTROLES.dbo.Asistencia_RegistrosPersonal'; column does not allow nulls. INSERT fails.
+[Nov-13-2023 11:40:14]  'error' Error: POST createAllAsistenciaFechaTurno, SequelizeDatabaseError: Cannot insert the value NULL into column 'horaentrada', table 'AGV_CONTROLES.dbo.Asistencia_RegistrosPersonal'; column does not allow nulls. INSERT fails.
+[Nov-13-2023 11:40:55]  'error' Error: POST createAllAsistenciaFechaTurno, SequelizeDatabaseError: Cannot insert the value NULL into column 'horaentrada', table 'AGV_CONTROLES.dbo.Asistencia_RegistrosPersonal'; column does not allow nulls. INSERT fails.
+[Nov-13-2023 11:41:42]  'error' Error: POST createAllAsistenciaFechaTurno, SequelizeDatabaseError: Cannot insert the value NULL into column 'horaentrada', table 'AGV_CONTROLES.dbo.Asistencia_RegistrosPersonal'; column does not allow nulls. INSERT fails.
+[Nov-13-2023 11:45:55]  'error' 500 PUT updateAsistenciaFechaTurno, Error: WHERE parameter "id" has invalid "undefined" value.
+[Nov-13-2023 11:49:48]  'error' 500 PUT updateAsistenciaFechaTurno, SequelizeDatabaseError: Conversion failed when converting the nvarchar value 'null' to data type int..
+[Nov-13-2023 13:19:20]  'error' 500 PUT updateAsistenciaFechaTurno, SequelizeDatabaseError: Conversion failed when converting the nvarchar value 'null' to data type int..
+[Nov-14-2023 12:41:33]  'error' 500 GET getAsistenciaFechaTurnos, SequelizeDatabaseError: Invalid column name 'firmasupervisor'..
+[Nov-14-2023 12:41:52]  'error' 500 GET getAsistenciaFechaTurnos, SequelizeDatabaseError: Invalid column name 'firmasupervisor'..
+[Nov-14-2023 12:49:21]  'error' 500 GET getAsistenciaFechaTurnos, SequelizeDatabaseError: Invalid column name 'firmasupervisor'..
+[Nov-14-2023 12:50:38]  'error' 500 GET getAsistenciaFechaTurnos, SequelizeDatabaseError: Invalid column name 'firmasupervisor'..
+[Nov-14-2023 13:22:42]  'error' 500 DELETE deleteAsistenciaFechaTurno, SequelizeDatabaseError: Invalid column name 'id'..
+[Nov-14-2023 17:14:29]  'error' 500 GET getAsistenciaRegistroPersonals, SequelizeDatabaseError: Invalid column name 'estado'..
+[Nov-14-2023 17:14:45]  'error' 500 GET getAsistenciaRegistroPersonals, SequelizeDatabaseError: Invalid column name 'estado'..
+[Nov-14-2023 17:20:50]  'error' 500 GET createAsistenciaRegistroPersonal, SequelizeValidationError: notNull Violation: AsistenciaRegistroPersonal.tipomovimiento cannot be null,
+notNull Violation: AsistenciaRegistroPersonal.idturno cannot be null,
+notNull Violation: AsistenciaRegistroPersonal.fechaturno cannot be null.
+[Nov-14-2023 17:28:39]  'error' 500 GET createAsistenciaRegistroPersonal, SequelizeValidationError: notNull Violation: AsistenciaRegistroPersonal.tipomovimiento cannot be null.
+[Nov-14-2023 17:34:00]  'error' 500 GET getAsistenciaFechaTurnos, SequelizeDatabaseError: Invalid column name 'tipomovimiento'..
+[Nov-14-2023 17:34:19]  'error' 500 GET getAsistenciaFechaTurnos, SequelizeDatabaseError: Invalid column name 'tipomovimiento'..
+[Nov-14-2023 17:34:45]  'error' 500 GET getAsistenciaFechaTurnos, SequelizeDatabaseError: Invalid column name 'tipomovimiento'..
+[Nov-14-2023 17:41:12]  'error' 500 PUT getAsistenciaRegistroPersonalsCount, Error: WHERE parameter "id" has invalid "undefined" value.
+[Nov-14-2023 23:02:12]  'error' 500 GET getAsistenciaRegistroPersonals, Error: Invalid value { idusuario: '1' }.
+[Nov-14-2023 23:38:01]  'error' 500 PUT getAsistenciaRegistroPersonalsCount, Error: WHERE parameter "id" has invalid "undefined" value.
+[Nov-14-2023 23:59:36]  'error' 500 GET getAsistenciaFechaTurnos, SequelizeEagerLoadingError: AsistenciaRegistroPersonal is not associated to AsistenciaFechaTurno!.
+[Nov-15-2023 00:00:24]  'error' 500 GET getAsistenciaFechaTurnos, SequelizeEagerLoadingError: AsistenciaRegistroPersonal is not associated to AsistenciaFechaTurno!.
+[Nov-15-2023 00:00:26]  'error' 500 GET getAsistenciaFechaTurnos, SequelizeEagerLoadingError: AsistenciaRegistroPersonal is not associated to AsistenciaFechaTurno!.
+[Nov-15-2023 00:02:32]  'error' 500 GET getAsistenciaFechaTurnos, SequelizeEagerLoadingError: AsistenciaRegistroPersonal is associated to AsistenciaFechaTurno using an alias. You must use the 'as' keyword to specify the alias within your include statement..
+[Nov-15-2023 00:02:41]  'error' 500 GET getAsistenciaFechaTurnos, SequelizeEagerLoadingError: AsistenciaRegistroPersonal is associated to AsistenciaFechaTurno using an alias. You must use the 'as' keyword to specify the alias within your include statement..
+[Nov-15-2023 00:04:14]  'error' 500 GET getAsistenciaFechaTurnos, SequelizeEagerLoadingError: Turno is associated to AsistenciaFechaTurno using an alias. You must use the 'as' keyword to specify the alias within your include statement..
+[Nov-15-2023 00:04:33]  'error' 500 GET getAsistenciaFechaTurnos, SequelizeEagerLoadingError: AsistenciaUbicacion is associated to AsistenciaFechaTurno using an alias. You must use the 'as' keyword to specify the alias within your include statement..
+[Nov-15-2023 00:05:13]  'error' 500 GET getAsistenciaFechaTurnos, SequelizeEagerLoadingError: AsistenciaUbicacion is associated to AsistenciaFechaTurno using an alias. You've included an alias (AsistenciaUbicacion), but it does not match the alias(es) defined in your association (Ubicacion)..
+[Nov-15-2023 00:05:33]  'error' 500 GET getAsistenciaFechaTurnos, Error: WHERE parameter "idusuario" has invalid "undefined" value.
+[Nov-15-2023 00:05:53]  'error' 500 GET getAsistenciaFechaTurnos, SequelizeDatabaseError: Column 'Asistencia_FechaxTurno.idasistenciaturno' is invalid in the select list because it is not contained in either an aggregate function or the GROUP BY clause..
+[Nov-15-2023 00:06:40]  'error' 500 GET getAsistenciaFechaTurnos, SequelizeDatabaseError: Column 'Asistencia_FechaxTurno.idasistenciaturno' is invalid in the select list because it is not contained in either an aggregate function or the GROUP BY clause..
+[Nov-15-2023 00:07:09]  'error' 500 GET getAsistenciaFechaTurnos, SequelizeDatabaseError: Invalid column name 'id'..
+[Nov-15-2023 00:07:24]  'error' 500 GET getAsistenciaFechaTurnos, SequelizeDatabaseError: Column 'Asistencia_FechaxTurno.idasistenciaturno' is invalid in the select list because it is not contained in either an aggregate function or the GROUP BY clause..
+[Nov-15-2023 00:12:24]  'error' 500 GET getAsistenciaFechaTurnos, Error: Include unexpected. Element has to be either a Model, an Association or an object..
+[Nov-15-2023 00:13:17]  'error' 500 GET getAsistenciaFechaTurnos, Error: Include unexpected. Element has to be either a Model, an Association or an object..
+[Nov-15-2023 00:13:19]  'error' 500 GET getAsistenciaFechaTurnos, Error: Include unexpected. Element has to be either a Model, an Association or an object..
+[Nov-15-2023 00:14:42]  'error' 500 GET getAsistenciaFechaTurnos, SequelizeDatabaseError: Incorrect syntax near ')'..
+[Nov-15-2023 00:14:55]  'error' 500 GET getAsistenciaFechaTurnos, SequelizeDatabaseError: Incorrect syntax near ','..
+[Nov-15-2023 00:16:23]  'error' 500 GET getAsistenciaFechaTurnos, SequelizeDatabaseError: Incorrect syntax near ')'..
+[Nov-15-2023 00:16:38]  'error' 500 GET getAsistenciaFechaTurnos, SequelizeDatabaseError: Incorrect syntax near ')'..
+[Nov-15-2023 00:16:49]  'error' 500 GET getAsistenciaFechaTurnos, SequelizeDatabaseError: Incorrect syntax near ','..
+[Nov-15-2023 00:19:41]  'error' 500 GET getAsistenciaFechaTurnos, SequelizeDatabaseError: Incorrect syntax near ','..
+[Nov-15-2023 00:25:13]  'error' 500 GET getAsistenciaFechaTurnos, SequelizeDatabaseError: Incorrect syntax near ','..
+[Nov-15-2023 00:28:01]  'error' 500 GET getAsistenciaFechaTurnos, SequelizeDatabaseError: Incorrect syntax near ')'..
+[Nov-15-2023 00:28:12]  'error' 500 GET getAsistenciaFechaTurnos, SequelizeDatabaseError: Incorrect syntax near ','..
+[Nov-15-2023 00:29:32]  'error' 500 GET getAsistenciaFechaTurnos, SequelizeDatabaseError: Incorrect syntax near ','..
+[Nov-15-2023 00:29:54]  'error' 500 GET getAsistenciaFechaTurnos, SequelizeEagerLoadingError: AsistenciaRegistroPersonal is associated to AsistenciaFechaTurno using an alias. You've included an alias (Registros), but it does not match the alias(es) defined in your association (AsistenciaRegistroPersonals)..
+[Nov-15-2023 00:30:25]  'error' 500 GET getAsistenciaFechaTurnos, SequelizeEagerLoadingError: AsistenciaRegistroPersonal is associated to AsistenciaFechaTurno using an alias. You've included an alias (Registros), but it does not match the alias(es) defined in your association (registros)..
+[Nov-15-2023 00:30:27]  'error' 500 GET getAsistenciaFechaTurnos, SequelizeEagerLoadingError: AsistenciaRegistroPersonal is associated to AsistenciaFechaTurno using an alias. You've included an alias (Registros), but it does not match the alias(es) defined in your association (registros)..
+[Nov-15-2023 00:31:29]  'error' 500 GET getAsistenciaFechaTurnos, SequelizeEagerLoadingError: AsistenciaRegistroPersonal is associated to AsistenciaFechaTurno using an alias. You've included an alias (Registros), but it does not match the alias(es) defined in your association (registros)..
+[Nov-15-2023 00:32:17]  'error' 500 GET getAsistenciaFechaTurnos, SequelizeEagerLoadingError: AsistenciaRegistroPersonal is associated to AsistenciaFechaTurno using an alias. You've included an alias (Registros), but it does not match the alias(es) defined in your association (registros)..
+[Nov-15-2023 00:32:19]  'error' 500 GET getAsistenciaFechaTurnos, SequelizeEagerLoadingError: AsistenciaRegistroPersonal is associated to AsistenciaFechaTurno using an alias. You've included an alias (Registros), but it does not match the alias(es) defined in your association (registros)..
+[Nov-15-2023 00:32:36]  'error' 500 GET getAsistenciaFechaTurnos, SequelizeDatabaseError: Incorrect syntax near ','..
+[Nov-15-2023 00:33:03]  'error' 500 GET getAsistenciaFechaTurnos, SequelizeDatabaseError: Incorrect syntax near ','..
+[Nov-15-2023 00:33:16]  'error' 500 GET getAsistenciaFechaTurnos, SequelizeDatabaseError: Incorrect syntax near the keyword 'FROM'..
+[Nov-15-2023 00:34:59]  'error' 500 GET getAsistenciaFechaTurnos, SequelizeDatabaseError: Invalid object name 'registros'..
+[Nov-15-2023 00:36:05]  'error' 500 GET getAsistenciaFechaTurnos, SequelizeDatabaseError: Invalid column name 'CuponsCount'..
+[Nov-15-2023 00:36:07]  'error' 500 GET getAsistenciaFechaTurnos, SequelizeDatabaseError: Invalid column name 'CuponsCount'..
+[Nov-15-2023 00:36:45]  'error' 500 GET getAsistenciaFechaTurnos, SequelizeDatabaseError: The multi-part identifier "Asistencia_FechaxTurno.idasistenciaturno" could not be bound..
+[Nov-15-2023 00:37:05]  'error' 500 GET getAsistenciaFechaTurnos, SequelizeDatabaseError: Invalid column name 'CuponsCount'..
+[Nov-15-2023 00:38:02]  'error' 500 GET getAsistenciaFechaTurnos, SequelizeDatabaseError: Invalid column name 'CuponsCount'..
+[Nov-15-2023 00:38:29]  'error' 500 GET getAsistenciaFechaTurnos, SequelizeEagerLoadingError: AsistenciaRegistroPersonal is associated to AsistenciaFechaTurno using an alias. You must use the 'as' keyword to specify the alias within your include statement..
+[Nov-15-2023 00:38:40]  'error' 500 GET getAsistenciaFechaTurnos, SequelizeDatabaseError: Invalid column name 'CuponsCount'..
+[Nov-15-2023 00:38:42]  'error' 500 GET getAsistenciaFechaTurnos, SequelizeDatabaseError: Invalid column name 'CuponsCount'..
+[Nov-15-2023 00:39:18]  'error' 500 GET getAsistenciaFechaTurnos, SequelizeDatabaseError: Invalid object name 'registros'..
+[Nov-15-2023 00:39:34]  'error' 500 GET getAsistenciaFechaTurnos, SequelizeDatabaseError: Invalid object name 'registros'..
+[Nov-15-2023 00:39:44]  'error' 500 GET getAsistenciaFechaTurnos, SequelizeDatabaseError: Invalid column name 'CuponsCount'..
+[Nov-15-2023 00:40:14]  'error' 500 GET getAsistenciaFechaTurnos, SequelizeDatabaseError: Invalid column name 'laughReactionsCount'..
+[Nov-15-2023 00:51:06]  'error' 500 GET getAsistenciaFechaTurnos, SequelizeDatabaseError: Invalid column name 'laughReactionsCount'..
+[Nov-15-2023 01:12:08]  'error' 500 GET getAsistenciaFechaTurnos, SequelizeDatabaseError: Invalid column name 'laughReactionsCount'..
+[Nov-15-2023 01:43:42]  'error' 500 GET createAsistenciaRegistroPersonal, SequelizeValidationError: notNull Violation: AsistenciaRegistroPersonal.idturno cannot be null.
+[Nov-15-2023 01:44:06]  'error' 500 GET getAsistenciaFechaTurnos, SequelizeDatabaseError: Invalid column name 'undefined'..
+[Nov-15-2023 01:45:12]  'error' 500 GET getAsistenciaFechaTurnos, SequelizeDatabaseError: Invalid column name 'undefined'..
+[Nov-15-2023 01:45:29]  'error' 500 GET getAsistenciaFechaTurnos, SequelizeDatabaseError: Invalid column name 'undefined'..
+[Nov-15-2023 01:45:39]  'error' 500 GET getAsistenciaFechaTurnos, SequelizeDatabaseError: Invalid column name 'undefined'..
+[Nov-15-2023 01:46:06]  'error' 500 GET getAsistenciaFechaTurnos, SequelizeDatabaseError: Invalid column name 'undefined'..
+[Nov-15-2023 01:46:09]  'error' 500 GET getAsistenciaFechaTurnos, SequelizeDatabaseError: Invalid column name 'undefined'..
+[Nov-15-2023 02:29:23]  'error' 500 GET getAsistenciaFechaTurnos, SequelizeDatabaseError: Invalid column name 'undefined'..
+[Nov-15-2023 02:31:23]  'error' 500 GET getAsistenciaFechaTurnos, SequelizeDatabaseError: Invalid column name 'undefined'..
+[Nov-15-2023 02:40:51]  'error' 500 PUT uploadFileAsistenciaFechaTurno, Error: WHERE parameter "id" has invalid "undefined" value.

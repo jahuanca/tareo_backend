@@ -3,13 +3,13 @@
     "username": "nsosa",
     "password": "Nestor2023",
     "database": "AGV_CONTROLES",
-    "host": "ec2-35-175-69-142.compute-1.amazonaws.com",
+    "host": "35.175.69.142",
     "dialect": "mssql",
-    "operatorsAliases": false,
+    "operatorsAliases": 0,
     "logging": false,
     "dialectOptions": {
       "multipleStatements": true,
-      "useUTC": false,
+      "useUTC": 0,
       "options": {
         "requestTimeout": 1500000
       }

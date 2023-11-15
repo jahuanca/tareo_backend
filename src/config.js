@@ -7,7 +7,7 @@ const ips= {
 }
 
 module.exports={
-    port: process.env.PORT || 3000,
+    port: process.env.PORT || 3002,
     db: process.env.SQLSERVER || '',
     SECRET_TOKEN: 'secretcobranzas2019',
     sizeSeeds: 0,

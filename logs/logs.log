@@ -1,0 +1,836 @@
+[Nov-05-2023 16:08:04]  'info' API REST, corriendo en el puerto: 3002
+[Nov-05-2023 16:09:24]  'info' API REST, corriendo en el puerto: 3002
+[Nov-05-2023 16:09:29]  'info' API REST, corriendo en el puerto: 3002
+[Nov-05-2023 16:09:58]  'info' API REST, corriendo en el puerto: 3002
+[Nov-05-2023 16:10:07]  'info' API REST, corriendo en el puerto: 3002
+[Nov-05-2023 16:10:34]  'info' API REST, corriendo en el puerto: 3002
+[Nov-05-2023 16:27:44]  'info' API REST, corriendo en el puerto: 3002
+[Nov-05-2023 16:30:12]  'info' API REST, corriendo en el puerto: 3002
+[Nov-05-2023 16:30:54]  'info' API REST, corriendo en el puerto: 3002
+[Nov-05-2023 16:31:02]  'info' API REST, corriendo en el puerto: 3002
+[Nov-05-2023 16:36:30]  'info' API REST, corriendo en el puerto: 3002
+[Nov-05-2023 16:38:30]  'info' API REST, corriendo en el puerto: 3002
+[Nov-05-2023 16:38:38]  'info' API REST, corriendo en el puerto: 3002
+[Nov-05-2023 16:39:28]  'info' API REST, corriendo en el puerto: 3002
+[Nov-05-2023 16:41:52]  'info' API REST, corriendo en el puerto: 3002
+[Nov-05-2023 16:42:12]  'info' API REST, corriendo en el puerto: 3002
+[Nov-05-2023 16:43:23]  'info' API REST, corriendo en el puerto: 3002
+[Nov-05-2023 16:43:41]  'info' API REST, corriendo en el puerto: 3002
+[Nov-05-2023 16:43:46]  'info' API REST, corriendo en el puerto: 3002
+[Nov-05-2023 17:10:56]  'info' API REST, corriendo en el puerto: 3002
+[Nov-05-2023 22:06:04]  'info' API REST, corriendo en el puerto: 3002
+[Nov-06-2023 16:54:52]  'info' API REST, corriendo en el puerto: 3002
+[Nov-06-2023 16:54:57]  'info' API REST, corriendo en el puerto: 3002
+[Nov-06-2023 16:59:05]  'info' API REST, corriendo en el puerto: 3002
+[Nov-06-2023 17:08:31]  'info' API REST, corriendo en el puerto: 3002
+[Nov-06-2023 17:14:12]  'info' API REST, corriendo en el puerto: 3002
+[Nov-06-2023 17:14:32]  'info' API REST, corriendo en el puerto: 3002
+[Nov-06-2023 17:17:39]  'info' API REST, corriendo en el puerto: 3002
+[Nov-06-2023 17:19:13]  'info' API REST, corriendo en el puerto: 3002
+[Nov-06-2023 17:23:15]  'info' API REST, corriendo en el puerto: 3002
+[Nov-06-2023 17:23:52]  'info' API REST, corriendo en el puerto: 3002
+[Nov-06-2023 17:23:56]  'info' API REST, corriendo en el puerto: 3002
+[Nov-06-2023 17:24:20]  'info' API REST, corriendo en el puerto: 3002
+[Nov-06-2023 17:26:00]  'info' API REST, corriendo en el puerto: 3002
+[Nov-06-2023 17:31:56]  'info' API REST, corriendo en el puerto: 3002
+[Nov-06-2023 17:32:07]  'info' API REST, corriendo en el puerto: 3002
+[Nov-06-2023 17:32:14]  'info' 200 GET centro_costo GET_CENTRO_COSTOS undefined values.
+[Nov-06-2023 17:32:25]  'info' API REST, corriendo en el puerto: 3002
+[Nov-06-2023 17:32:31]  'info' 200 GET centro_costo GET_CENTRO_COSTOS 12259 values.
+[Nov-06-2023 17:36:17]  'info' API REST, corriendo en el puerto: 3002
+[Nov-06-2023 17:36:24]  'info' API REST, corriendo en el puerto: 3002
+[Nov-06-2023 17:36:54]  'error' 404 GET GET_CENTRO_COSTOS 
+ERR: nulos.
+[Nov-06-2023 17:37:39]  'info' API REST, corriendo en el puerto: 3002
+[Nov-06-2023 17:38:17]  'info' API REST, corriendo en el puerto: 3002
+[Nov-06-2023 17:38:24]  'info' API REST, corriendo en el puerto: 3002
+[Nov-06-2023 17:38:42]  'error' 404 GET GET_CENTRO_COSTOS ,message: nulos.
+[Nov-06-2023 17:38:56]  'error' 404 GET GET_CENTRO_COSTOS ,message: nulos.
+[Nov-06-2023 17:39:44]  'info' API REST, corriendo en el puerto: 3002
+[Nov-06-2023 18:39:06]  'info' API REST, corriendo en el puerto: 3002
+[Nov-07-2023 20:58:07]  'info' API REST, corriendo en el puerto: 3002
+[Nov-07-2023 20:58:26]  'info' API REST, corriendo en el puerto: 3002
+[Nov-07-2023 20:59:07]  'info' API REST, corriendo en el puerto: 3002
+[Nov-07-2023 21:02:31]  'info' API REST, corriendo en el puerto: 3002
+[Nov-07-2023 21:03:23]  'error' 500 GET getTurnos, SequelizeDatabaseError: Invalid column name 'estado'..
+[Nov-07-2023 21:04:20]  'info' API REST, corriendo en el puerto: 3002
+[Nov-07-2023 21:04:23]  'info' 200 GET getTurnos, 36 values.
+[Nov-07-2023 21:06:19]  'info' API REST, corriendo en el puerto: 3002
+[Nov-07-2023 21:06:27]  'info' API REST, corriendo en el puerto: 3002
+[Nov-07-2023 21:06:53]  'info' API REST, corriendo en el puerto: 3002
+[Nov-07-2023 21:07:19]  'info' API REST, corriendo en el puerto: 3002
+[Nov-07-2023 21:10:29]  'info' API REST, corriendo en el puerto: 3002
+[Nov-07-2023 21:12:57]  'info' API REST, corriendo en el puerto: 3002
+[Nov-07-2023 21:13:44]  'info' API REST, corriendo en el puerto: 3002
+[Nov-08-2023 21:02:32]  'info' API REST, corriendo en el puerto: 3002
+[Nov-08-2023 21:07:00]  'info' API REST, corriendo en el puerto: 3002
+[Nov-08-2023 21:08:31]  'info' API REST, corriendo en el puerto: 3002
+[Nov-08-2023 21:08:49]  'info' API REST, corriendo en el puerto: 3002
+[Nov-08-2023 21:10:04]  'info' API REST, corriendo en el puerto: 3002
+[Nov-08-2023 23:15:20]  'info' API REST, corriendo en el puerto: 3002
+[Nov-08-2023 23:16:22]  'info' API REST, corriendo en el puerto: 3002
+[Nov-08-2023 23:16:34]  'info' API REST, corriendo en el puerto: 3002
+[Nov-08-2023 23:16:49]  'info' API REST, corriendo en el puerto: 3002
+[Nov-08-2023 23:16:56]  'info' API REST, corriendo en el puerto: 3002
+[Nov-08-2023 23:18:46]  'info' API REST, corriendo en el puerto: 3002
+[Nov-08-2023 23:24:16]  'info' API REST, corriendo en el puerto: 3002
+[Nov-08-2023 23:24:23]  'info' API REST, corriendo en el puerto: 3002
+[Nov-08-2023 23:25:27]  'info' API REST, corriendo en el puerto: 3002
+[Nov-08-2023 23:25:48]  'info' API REST, corriendo en el puerto: 3002
+[Nov-08-2023 23:26:07]  'info' API REST, corriendo en el puerto: 3002
+[Nov-08-2023 23:28:09]  'info' API REST, corriendo en el puerto: 3002
+[Nov-08-2023 23:29:05]  'info' API REST, corriendo en el puerto: 3002
+[Nov-08-2023 23:29:24]  'info' API REST, corriendo en el puerto: 3002
+[Nov-08-2023 23:31:38]  'info' API REST, corriendo en el puerto: 3002
+[Nov-08-2023 23:31:48]  'info' API REST, corriendo en el puerto: 3002
+[Nov-08-2023 23:32:03]  'info' API REST, corriendo en el puerto: 3002
+[Nov-08-2023 23:33:06]  'info' API REST, corriendo en el puerto: 3002
+[Nov-08-2023 23:35:09]  'info' API REST, corriendo en el puerto: 3002
+[Nov-08-2023 23:35:15]  'info' API REST, corriendo en el puerto: 3002
+[Nov-08-2023 23:35:51]  'info' API REST, corriendo en el puerto: 3002
+[Nov-08-2023 23:37:37]  'info' API REST, corriendo en el puerto: 3002
+[Nov-08-2023 23:37:53]  'info' API REST, corriendo en el puerto: 3002
+[Nov-08-2023 23:38:41]  'info' API REST, corriendo en el puerto: 3002
+[Nov-08-2023 23:39:56]  'info' API REST, corriendo en el puerto: 3002
+[Nov-08-2023 23:40:32]  'info' API REST, corriendo en el puerto: 3002
+[Nov-08-2023 23:42:34]  'info' API REST, corriendo en el puerto: 3002
+[Nov-08-2023 23:44:32]  'info' API REST, corriendo en el puerto: 3002
+[Nov-08-2023 23:45:48]  'info' API REST, corriendo en el puerto: 3002
+[Nov-08-2023 23:47:32]  'info' API REST, corriendo en el puerto: 3002
+[Nov-08-2023 23:47:38]  'info' API REST, corriendo en el puerto: 3002
+[Nov-08-2023 23:48:04]  'info' API REST, corriendo en el puerto: 3002
+[Nov-08-2023 23:49:42]  'info' API REST, corriendo en el puerto: 3002
+[Nov-08-2023 23:53:14]  'info' API REST, corriendo en el puerto: 3002
+[Nov-08-2023 23:53:32]  'info' API REST, corriendo en el puerto: 3002
+[Nov-08-2023 23:53:51]  'info' API REST, corriendo en el puerto: 3002
+[Nov-08-2023 23:54:57]  'info' API REST, corriendo en el puerto: 3002
+[Nov-08-2023 23:55:13]  'info' API REST, corriendo en el puerto: 3002
+[Nov-08-2023 23:55:28]  'info' API REST, corriendo en el puerto: 3002
+[Nov-08-2023 23:55:46]  'info' API REST, corriendo en el puerto: 3002
+[Nov-08-2023 23:57:38]  'info' API REST, corriendo en el puerto: 3002
+[Nov-08-2023 23:57:58]  'info' API REST, corriendo en el puerto: 3002
+[Nov-08-2023 23:58:29]  'info' API REST, corriendo en el puerto: 3002
+[Nov-08-2023 23:59:00]  'info' API REST, corriendo en el puerto: 3002
+[Nov-08-2023 23:59:13]  'info' API REST, corriendo en el puerto: 3002
+[Nov-09-2023 00:05:12]  'info' API REST, corriendo en el puerto: 3002
+[Nov-09-2023 00:05:25]  'info' API REST, corriendo en el puerto: 3002
+[Nov-09-2023 00:05:44]  'info' API REST, corriendo en el puerto: 3002
+[Nov-09-2023 00:05:50]  'info' API REST, corriendo en el puerto: 3002
+[Nov-09-2023 00:06:15]  'info' API REST, corriendo en el puerto: 3002
+[Nov-09-2023 00:07:12]  'info' API REST, corriendo en el puerto: 3002
+[Nov-09-2023 00:08:32]  'info' API REST, corriendo en el puerto: 3002
+[Nov-09-2023 00:10:10]  'info' API REST, corriendo en el puerto: 3002
+[Nov-09-2023 00:10:22]  'info' API REST, corriendo en el puerto: 3002
+[Nov-09-2023 00:11:09]  'info' API REST, corriendo en el puerto: 3002
+[Nov-09-2023 00:11:22]  'info' API REST, corriendo en el puerto: 3002
+[Nov-09-2023 00:12:47]  'info' API REST, corriendo en el puerto: 3002
+[Nov-09-2023 00:13:32]  'info' API REST, corriendo en el puerto: 3002
+[Nov-09-2023 00:13:56]  'info' API REST, corriendo en el puerto: 3002
+[Nov-09-2023 00:14:19]  'info' API REST, corriendo en el puerto: 3002
+[Nov-09-2023 00:16:31]  'info' API REST, corriendo en el puerto: 3002
+[Nov-09-2023 00:16:35]  'info' API REST, corriendo en el puerto: 3002
+[Nov-09-2023 00:17:39]  'info' API REST, corriendo en el puerto: 3002
+[Nov-09-2023 00:17:49]  'info' API REST, corriendo en el puerto: 3002
+[Nov-09-2023 00:17:59]  'info' API REST, corriendo en el puerto: 3002
+[Nov-09-2023 00:18:18]  'info' API REST, corriendo en el puerto: 3002
+[Nov-09-2023 22:11:52]  'info' API REST, corriendo en el puerto: 3002
+[Nov-10-2023 23:21:30]  'info' API REST, corriendo en el puerto: 3002
+[Nov-10-2023 23:27:53]  'info' 200 GET GET_CENTRO_COSTOS 12259 values.
+[Nov-10-2023 23:29:40]  'info' API REST, corriendo en el puerto: 3002
+[Nov-10-2023 23:31:42]  'info' 200 GET GET_CENTRO_COSTOS 12259 values.
+[Nov-10-2023 23:32:43]  'info' 200 GET GET_CENTRO_COSTOS 12259 values.
+[Nov-10-2023 23:34:31]  'info' 200 GET GET_CENTRO_COSTOS 12259 values.
+[Nov-10-2023 23:36:27]  'info' API REST, corriendo en el puerto: 3002
+[Nov-10-2023 23:39:45]  'info' 200 GET GET_CENTRO_COSTOS 12259 values.
+[Nov-10-2023 23:46:14]  'info' 200 GET GET_CENTRO_COSTOS 12259 values.
+[Nov-10-2023 23:53:57]  'info' 200 GET GET_CENTRO_COSTOS 12259 values.
+[Nov-10-2023 23:57:33]  'info' 200 GET GET_CENTRO_COSTOS 12259 values.
+[Nov-11-2023 00:04:03]  'info' 200 GET GET_CENTRO_COSTOS 12259 values.
+[Nov-11-2023 00:04:11]  'info' 200 GET get_personal_empresas 40875 values.
+[Nov-11-2023 00:06:42]  'info' 200 GET get_personal_empresas 76233 values.
+[Nov-11-2023 00:07:09]  'info' 200 GET get_personal_empresas 25130 values.
+[Nov-11-2023 00:07:31]  'info' 200 GET getPersonal_EmpresasCount 25130 values.
+[Nov-11-2023 00:08:21]  'info' 200 GET get_personal_empresas 40875 values.
+[Nov-11-2023 00:10:35]  'info' 200 GET getPersonal_EmpresasCount 40875 values.
+[Nov-11-2023 00:28:33]  'info' 200 GET GET_CENTRO_COSTOS 12259 values.
+[Nov-11-2023 00:33:48]  'info' API REST, corriendo en el puerto: 3002
+[Nov-11-2023 00:34:12]  'info' API REST, corriendo en el puerto: 3002
+[Nov-11-2023 00:35:24]  'info' API REST, corriendo en el puerto: 3002
+[Nov-11-2023 00:36:07]  'info' API REST, corriendo en el puerto: 3002
+[Nov-11-2023 00:36:25]  'info' API REST, corriendo en el puerto: 3002
+[Nov-11-2023 00:37:54]  'info' API REST, corriendo en el puerto: 3002
+[Nov-11-2023 00:39:20]  'info' API REST, corriendo en el puerto: 3002
+[Nov-11-2023 00:40:26]  'info' API REST, corriendo en el puerto: 3002
+[Nov-11-2023 00:42:19]  'info' 200 GET GET_CENTRO_COSTOS 12259 values.
+[Nov-11-2023 00:42:24]  'info' 200 GET getTurnos, 36 values.
+[Nov-11-2023 00:54:09]  'info' 200 GET GET_CENTRO_COSTOS 12259 values.
+[Nov-11-2023 00:54:14]  'info' 200 GET getTurnos, 36 values.
+[Nov-11-2023 00:54:14]  'error' 500 GET getAsistenciaUbicacions, SequelizeDatabaseError: Invalid column name 'estado'..
+[Nov-11-2023 00:54:58]  'info' API REST, corriendo en el puerto: 3002
+[Nov-11-2023 00:56:26]  'info' 200 GET GET_CENTRO_COSTOS 12259 values.
+[Nov-11-2023 00:56:31]  'info' 200 GET getTurnos, 36 values.
+[Nov-11-2023 00:56:31]  'info' 200 GET getAsistenciaUbicacions, 3 values.
+[Nov-11-2023 01:01:17]  'info' 200 GET GET_CENTRO_COSTOS 12259 values.
+[Nov-11-2023 01:01:23]  'info' 200 GET getTurnos, 36 values.
+[Nov-11-2023 01:01:23]  'info' 200 GET getAsistenciaUbicacions, 3 values.
+[Nov-11-2023 01:01:23]  'info' 200 GET getPersonal_EmpresasCount 40875 values.
+[Nov-11-2023 01:06:47]  'info' 200 GET GET_CENTRO_COSTOS 12259 values.
+[Nov-11-2023 01:06:52]  'info' 200 GET getTurnos, 36 values.
+[Nov-11-2023 01:06:52]  'info' 200 GET getAsistenciaUbicacions, 3 values.
+[Nov-11-2023 01:06:52]  'info' 200 GET getPersonal_EmpresasCount 40875 values.
+[Nov-11-2023 01:11:17]  'info' API REST, corriendo en el puerto: 3002
+[Nov-11-2023 01:13:16]  'info' API REST, corriendo en el puerto: 3002
+[Nov-11-2023 01:17:14]  'info' API REST, corriendo en el puerto: 3002
+[Nov-11-2023 01:17:16]  'info' 200 GET getPersonal_EmpresasByLimitAndOffset, limit: undefined y offset: undefined.
+[Nov-11-2023 01:18:12]  'info' API REST, corriendo en el puerto: 3002
+[Nov-11-2023 01:18:31]  'error' 500 GET getPersonal_EmpresasByLimitAndOffset, SequelizeConnectionError: Failed to connect to 35.175.69.142:1433 in 15000ms.
+[Nov-11-2023 01:18:47]  'info' API REST, corriendo en el puerto: 3002
+[Nov-11-2023 01:18:54]  'info' 200 GET getPersonal_EmpresasByLimitAndOffset, limit: undefined y offset: undefined.
+[Nov-11-2023 01:19:18]  'info' API REST, corriendo en el puerto: 3002
+[Nov-11-2023 01:19:26]  'info' 200 GET getPersonal_EmpresasByLimitAndOffset, limit: 5000 y offset: 0.
+[Nov-11-2023 01:24:07]  'info' 200 GET GET_CENTRO_COSTOS 12259 values.
+[Nov-11-2023 01:24:12]  'info' 200 GET getTurnos, 36 values.
+[Nov-11-2023 01:24:13]  'info' 200 GET getAsistenciaUbicacions, 3 values.
+[Nov-11-2023 01:24:13]  'info' 200 GET getPersonal_EmpresasCount 40875 values.
+[Nov-11-2023 01:24:16]  'info' 200 GET getPersonal_EmpresasByLimitAndOffset, limit: 5000 y offset: 0.
+[Nov-11-2023 01:24:20]  'info' 200 GET getPersonal_EmpresasByLimitAndOffset, limit: 5000 y offset: 1.
+[Nov-11-2023 01:24:24]  'info' 200 GET getPersonal_EmpresasByLimitAndOffset, limit: 5000 y offset: 2.
+[Nov-11-2023 01:24:27]  'info' 200 GET getPersonal_EmpresasByLimitAndOffset, limit: 5000 y offset: 3.
+[Nov-11-2023 01:24:31]  'info' 200 GET getPersonal_EmpresasByLimitAndOffset, limit: 5000 y offset: 4.
+[Nov-11-2023 01:24:35]  'info' 200 GET getPersonal_EmpresasByLimitAndOffset, limit: 5000 y offset: 5.
+[Nov-11-2023 01:24:39]  'info' 200 GET getPersonal_EmpresasByLimitAndOffset, limit: 5000 y offset: 6.
+[Nov-11-2023 01:24:43]  'info' 200 GET getPersonal_EmpresasByLimitAndOffset, limit: 5000 y offset: 7.
+[Nov-11-2023 01:29:10]  'info' 200 GET GET_CENTRO_COSTOS 12259 values.
+[Nov-11-2023 01:29:15]  'info' 200 GET getTurnos, 36 values.
+[Nov-11-2023 01:29:16]  'info' 200 GET getAsistenciaUbicacions, 3 values.
+[Nov-11-2023 01:29:16]  'info' 200 GET getPersonal_EmpresasCount 40875 values.
+[Nov-11-2023 01:29:17]  'info' 200 GET getPersonal_EmpresasByLimitAndOffset, limit: 5000 y offset: 0.
+[Nov-11-2023 01:29:20]  'info' 200 GET getPersonal_EmpresasByLimitAndOffset, limit: 5000 y offset: 1.
+[Nov-11-2023 01:29:22]  'info' 200 GET getPersonal_EmpresasByLimitAndOffset, limit: 5000 y offset: 2.
+[Nov-11-2023 01:29:25]  'info' 200 GET getPersonal_EmpresasByLimitAndOffset, limit: 5000 y offset: 3.
+[Nov-11-2023 01:29:27]  'info' 200 GET getPersonal_EmpresasByLimitAndOffset, limit: 5000 y offset: 4.
+[Nov-11-2023 01:29:30]  'info' 200 GET getPersonal_EmpresasByLimitAndOffset, limit: 5000 y offset: 5.
+[Nov-11-2023 01:29:32]  'info' 200 GET getPersonal_EmpresasByLimitAndOffset, limit: 5000 y offset: 6.
+[Nov-11-2023 01:29:35]  'info' 200 GET getPersonal_EmpresasByLimitAndOffset, limit: 5000 y offset: 7.
+[Nov-11-2023 01:29:37]  'info' 200 GET getPersonal_EmpresasByLimitAndOffset, limit: 5000 y offset: 8.
+[Nov-11-2023 01:31:20]  'info' 200 GET getPersonal_EmpresasByLimitAndOffset, limit: 5000 y offset: 0.
+[Nov-11-2023 01:31:57]  'info' 200 GET getPersonal_EmpresasByLimitAndOffset, limit: 5000 y offset: 2.
+[Nov-11-2023 01:32:06]  'info' 200 GET getPersonal_EmpresasByLimitAndOffset, limit: 5000 y offset: 3.
+[Nov-11-2023 01:33:12]  'info' 200 GET GET_CENTRO_COSTOS 12259 values.
+[Nov-11-2023 01:33:16]  'info' 200 GET getTurnos, 36 values.
+[Nov-11-2023 01:33:17]  'info' 200 GET getAsistenciaUbicacions, 3 values.
+[Nov-11-2023 01:33:17]  'info' 200 GET getPersonal_EmpresasCount 40875 values.
+[Nov-11-2023 01:33:20]  'info' 200 GET getPersonal_EmpresasByLimitAndOffset, limit: 5000 y offset: 0.
+[Nov-11-2023 01:33:24]  'info' 200 GET getPersonal_EmpresasByLimitAndOffset, limit: 5000 y offset: 5000.
+[Nov-11-2023 01:33:28]  'info' 200 GET getPersonal_EmpresasByLimitAndOffset, limit: 5000 y offset: 10000.
+[Nov-11-2023 01:33:32]  'info' 200 GET getPersonal_EmpresasByLimitAndOffset, limit: 5000 y offset: 15000.
+[Nov-11-2023 01:33:36]  'info' 200 GET getPersonal_EmpresasByLimitAndOffset, limit: 5000 y offset: 20000.
+[Nov-11-2023 01:33:39]  'info' 200 GET getPersonal_EmpresasByLimitAndOffset, limit: 5000 y offset: 25000.
+[Nov-11-2023 01:33:43]  'info' 200 GET getPersonal_EmpresasByLimitAndOffset, limit: 5000 y offset: 30000.
+[Nov-11-2023 01:33:47]  'info' 200 GET getPersonal_EmpresasByLimitAndOffset, limit: 5000 y offset: 35000.
+[Nov-11-2023 01:33:49]  'info' 200 GET getPersonal_EmpresasByLimitAndOffset, limit: 5000 y offset: 40000.
+[Nov-11-2023 01:35:10]  'info' 200 GET GET_CENTRO_COSTOS 12259 values.
+[Nov-11-2023 01:35:17]  'info' 200 GET getTurnos, 36 values.
+[Nov-11-2023 01:35:17]  'info' 200 GET getAsistenciaUbicacions, 3 values.
+[Nov-11-2023 01:35:18]  'info' 200 GET getPersonal_EmpresasCount 40875 values.
+[Nov-11-2023 01:35:23]  'info' 200 GET getPersonal_EmpresasByLimitAndOffset, limit: 8000 y offset: 0.
+[Nov-11-2023 01:35:33]  'info' 200 GET getPersonal_EmpresasByLimitAndOffset, limit: 8000 y offset: 8000.
+[Nov-11-2023 01:35:41]  'info' 200 GET getPersonal_EmpresasByLimitAndOffset, limit: 8000 y offset: 16000.
+[Nov-11-2023 01:35:48]  'info' 200 GET getPersonal_EmpresasByLimitAndOffset, limit: 8000 y offset: 24000.
+[Nov-11-2023 01:35:56]  'info' 200 GET getPersonal_EmpresasByLimitAndOffset, limit: 8000 y offset: 32000.
+[Nov-11-2023 01:35:59]  'info' 200 GET getPersonal_EmpresasByLimitAndOffset, limit: 8000 y offset: 40000.
+[Nov-11-2023 01:37:56]  'info' 200 GET GET_CENTRO_COSTOS 12259 values.
+[Nov-11-2023 01:38:25]  'info' 200 GET getTurnos, 36 values.
+[Nov-11-2023 01:38:25]  'info' 200 GET getAsistenciaUbicacions, 3 values.
+[Nov-11-2023 01:38:26]  'info' 200 GET getPersonal_EmpresasCount 40875 values.
+[Nov-11-2023 01:38:27]  'info' 200 GET getPersonal_EmpresasByLimitAndOffset, limit: 8000 y offset: 0.
+[Nov-11-2023 01:38:31]  'info' 200 GET getPersonal_EmpresasByLimitAndOffset, limit: 8000 y offset: 8000.
+[Nov-11-2023 01:38:34]  'info' 200 GET getPersonal_EmpresasByLimitAndOffset, limit: 8000 y offset: 16000.
+[Nov-11-2023 01:38:38]  'info' 200 GET getPersonal_EmpresasByLimitAndOffset, limit: 8000 y offset: 24000.
+[Nov-11-2023 01:38:41]  'info' 200 GET getPersonal_EmpresasByLimitAndOffset, limit: 8000 y offset: 32000.
+[Nov-11-2023 01:38:43]  'info' 200 GET getPersonal_EmpresasByLimitAndOffset, limit: 8000 y offset: 40000.
+[Nov-11-2023 01:44:11]  'info' 200 GET GET_CENTRO_COSTOS 12259 values.
+[Nov-11-2023 01:44:18]  'info' 200 GET getTurnos, 36 values.
+[Nov-11-2023 01:44:18]  'info' 200 GET getAsistenciaUbicacions, 3 values.
+[Nov-11-2023 01:44:18]  'info' 200 GET getPersonal_EmpresasCount 40875 values.
+[Nov-11-2023 01:44:19]  'info' 200 GET getPersonal_EmpresasByLimitAndOffset, limit: 8000 y offset: 0.
+[Nov-11-2023 01:44:26]  'info' 200 GET getPersonal_EmpresasByLimitAndOffset, limit: 8000 y offset: 8000.
+[Nov-11-2023 01:44:30]  'info' 200 GET getPersonal_EmpresasByLimitAndOffset, limit: 8000 y offset: 16000.
+[Nov-11-2023 01:44:37]  'info' 200 GET getPersonal_EmpresasByLimitAndOffset, limit: 8000 y offset: 24000.
+[Nov-11-2023 01:44:41]  'info' 200 GET getPersonal_EmpresasByLimitAndOffset, limit: 8000 y offset: 32000.
+[Nov-11-2023 01:44:44]  'info' 200 GET getPersonal_EmpresasByLimitAndOffset, limit: 8000 y offset: 40000.
+[Nov-11-2023 02:00:08]  'info' 200 GET GET_CENTRO_COSTOS 12259 values.
+[Nov-11-2023 02:00:13]  'info' 200 GET getTurnos, 36 values.
+[Nov-11-2023 02:00:14]  'info' 200 GET getAsistenciaUbicacions, 3 values.
+[Nov-11-2023 02:00:14]  'info' 200 GET getPersonal_EmpresasCount 40875 values.
+[Nov-11-2023 02:00:15]  'info' 200 GET getPersonal_EmpresasByLimitAndOffset, limit: 8000 y offset: 0.
+[Nov-11-2023 02:00:23]  'info' 200 GET getPersonal_EmpresasByLimitAndOffset, limit: 8000 y offset: 8000.
+[Nov-11-2023 02:00:27]  'info' 200 GET getPersonal_EmpresasByLimitAndOffset, limit: 8000 y offset: 16000.
+[Nov-11-2023 02:00:31]  'info' 200 GET getPersonal_EmpresasByLimitAndOffset, limit: 8000 y offset: 24000.
+[Nov-11-2023 02:00:35]  'info' 200 GET getPersonal_EmpresasByLimitAndOffset, limit: 8000 y offset: 32000.
+[Nov-11-2023 02:00:39]  'info' 200 GET getPersonal_EmpresasByLimitAndOffset, limit: 8000 y offset: 40000.
+[Nov-11-2023 02:08:32]  'info' 200 GET GET_CENTRO_COSTOS 12259 values.
+[Nov-11-2023 02:08:38]  'info' 200 GET getTurnos, 36 values.
+[Nov-11-2023 02:08:38]  'info' 200 GET getAsistenciaUbicacions, 3 values.
+[Nov-11-2023 02:08:38]  'info' 200 GET getPersonal_EmpresasCount 40875 values.
+[Nov-11-2023 02:08:40]  'info' 200 GET getPersonal_EmpresasByLimitAndOffset, limit: 8000 y offset: 0.
+[Nov-11-2023 02:08:44]  'info' 200 GET getPersonal_EmpresasByLimitAndOffset, limit: 8000 y offset: 8000.
+[Nov-11-2023 02:08:47]  'info' 200 GET getPersonal_EmpresasByLimitAndOffset, limit: 8000 y offset: 16000.
+[Nov-11-2023 02:08:50]  'info' 200 GET getPersonal_EmpresasByLimitAndOffset, limit: 8000 y offset: 24000.
+[Nov-11-2023 02:08:54]  'info' 200 GET getPersonal_EmpresasByLimitAndOffset, limit: 8000 y offset: 32000.
+[Nov-11-2023 02:08:57]  'info' 200 GET getPersonal_EmpresasByLimitAndOffset, limit: 8000 y offset: 40000.
+[Nov-11-2023 04:23:18]  'info' 200 GET GET_CENTRO_COSTOS 12259 values.
+[Nov-11-2023 04:23:26]  'info' 200 GET getTurnos, 36 values.
+[Nov-11-2023 04:23:26]  'info' 200 GET getAsistenciaUbicacions, 3 values.
+[Nov-11-2023 04:23:26]  'info' 200 GET getPersonal_EmpresasCount 40876 values.
+[Nov-11-2023 04:23:30]  'info' 200 GET getPersonal_EmpresasByLimitAndOffset, limit: 8000 y offset: 0.
+[Nov-11-2023 04:23:38]  'info' 200 GET getPersonal_EmpresasByLimitAndOffset, limit: 8000 y offset: 8000.
+[Nov-11-2023 04:23:45]  'info' 200 GET getPersonal_EmpresasByLimitAndOffset, limit: 8000 y offset: 16000.
+[Nov-11-2023 04:23:52]  'info' 200 GET getPersonal_EmpresasByLimitAndOffset, limit: 8000 y offset: 24000.
+[Nov-11-2023 04:23:59]  'info' 200 GET getPersonal_EmpresasByLimitAndOffset, limit: 8000 y offset: 32000.
+[Nov-11-2023 04:24:04]  'info' 200 GET getPersonal_EmpresasByLimitAndOffset, limit: 8000 y offset: 40000.
+[Nov-11-2023 12:30:34]  'info' 200 GET GET_CENTRO_COSTOS 12259 values.
+[Nov-11-2023 12:30:43]  'info' 200 GET getTurnos, 36 values.
+[Nov-11-2023 12:30:43]  'info' 200 GET getAsistenciaUbicacions, 3 values.
+[Nov-11-2023 12:30:44]  'info' 200 GET getPersonal_EmpresasCount 40876 values.
+[Nov-11-2023 12:30:47]  'info' 200 GET getPersonal_EmpresasByLimitAndOffset, limit: 8000 y offset: 0.
+[Nov-11-2023 12:30:55]  'info' 200 GET getPersonal_EmpresasByLimitAndOffset, limit: 8000 y offset: 8000.
+[Nov-11-2023 12:31:04]  'info' 200 GET getPersonal_EmpresasByLimitAndOffset, limit: 8000 y offset: 16000.
+[Nov-11-2023 12:31:12]  'info' 200 GET getPersonal_EmpresasByLimitAndOffset, limit: 8000 y offset: 24000.
+[Nov-11-2023 12:31:20]  'info' 200 GET getPersonal_EmpresasByLimitAndOffset, limit: 8000 y offset: 32000.
+[Nov-11-2023 12:31:25]  'info' 200 GET getPersonal_EmpresasByLimitAndOffset, limit: 8000 y offset: 40000.
+[Nov-11-2023 13:28:45]  'info' 200 GET GET_CENTRO_COSTOS 12259 values.
+[Nov-11-2023 13:28:54]  'info' 200 GET getTurnos, 36 values.
+[Nov-11-2023 13:28:54]  'info' 200 GET getAsistenciaUbicacions, 3 values.
+[Nov-11-2023 13:28:55]  'info' 200 GET getPersonal_EmpresasCount 40876 values.
+[Nov-11-2023 13:28:56]  'info' 200 GET getPersonal_EmpresasByLimitAndOffset, limit: 8000 y offset: 0.
+[Nov-11-2023 13:29:03]  'info' 200 GET getPersonal_EmpresasByLimitAndOffset, limit: 8000 y offset: 8000.
+[Nov-11-2023 13:29:08]  'info' 200 GET getPersonal_EmpresasByLimitAndOffset, limit: 8000 y offset: 16000.
+[Nov-11-2023 13:29:13]  'info' 200 GET getPersonal_EmpresasByLimitAndOffset, limit: 8000 y offset: 24000.
+[Nov-11-2023 13:29:19]  'info' 200 GET getPersonal_EmpresasByLimitAndOffset, limit: 8000 y offset: 32000.
+[Nov-11-2023 13:29:25]  'info' 200 GET getPersonal_EmpresasByLimitAndOffset, limit: 8000 y offset: 40000.
+[Nov-11-2023 14:17:41]  'info' 200 GET GET_CENTRO_COSTOS 12259 values.
+[Nov-11-2023 14:17:50]  'info' 200 GET getTurnos, 36 values.
+[Nov-11-2023 14:17:51]  'info' 200 GET getAsistenciaUbicacions, 3 values.
+[Nov-11-2023 14:17:51]  'info' 200 GET getPersonal_EmpresasCount 40876 values.
+[Nov-11-2023 14:17:54]  'info' 200 GET getPersonal_EmpresasByLimitAndOffset, limit: 8000 y offset: 0.
+[Nov-11-2023 14:18:01]  'info' 200 GET getPersonal_EmpresasByLimitAndOffset, limit: 8000 y offset: 8000.
+[Nov-11-2023 14:18:10]  'info' 200 GET getPersonal_EmpresasByLimitAndOffset, limit: 8000 y offset: 16000.
+[Nov-11-2023 14:18:19]  'info' 200 GET getPersonal_EmpresasByLimitAndOffset, limit: 8000 y offset: 24000.
+[Nov-11-2023 14:18:27]  'info' 200 GET getPersonal_EmpresasByLimitAndOffset, limit: 8000 y offset: 32000.
+[Nov-11-2023 14:18:31]  'info' 200 GET getPersonal_EmpresasByLimitAndOffset, limit: 8000 y offset: 40000.
+[Nov-11-2023 14:48:04]  'info' 200 GET GET_CENTRO_COSTOS 12259 values.
+[Nov-11-2023 14:48:13]  'info' 200 GET getTurnos, 36 values.
+[Nov-11-2023 14:48:13]  'info' 200 GET getAsistenciaUbicacions, 3 values.
+[Nov-11-2023 14:48:13]  'info' 200 GET getPersonal_EmpresasCount 40876 values.
+[Nov-11-2023 14:48:14]  'info' 200 GET getPersonal_EmpresasByLimitAndOffset, limit: 8000 y offset: 0.
+[Nov-11-2023 14:48:20]  'info' 200 GET getPersonal_EmpresasByLimitAndOffset, limit: 8000 y offset: 8000.
+[Nov-11-2023 14:48:24]  'info' 200 GET getPersonal_EmpresasByLimitAndOffset, limit: 8000 y offset: 16000.
+[Nov-11-2023 14:48:29]  'info' 200 GET getPersonal_EmpresasByLimitAndOffset, limit: 8000 y offset: 24000.
+[Nov-11-2023 14:48:33]  'info' 200 GET getPersonal_EmpresasByLimitAndOffset, limit: 8000 y offset: 32000.
+[Nov-11-2023 14:48:40]  'info' 200 GET getPersonal_EmpresasByLimitAndOffset, limit: 8000 y offset: 40000.
+[Nov-11-2023 15:03:17]  'info' 200 GET GET_CENTRO_COSTOS 12259 values.
+[Nov-11-2023 15:03:26]  'info' 200 GET getTurnos, 36 values.
+[Nov-11-2023 15:03:27]  'info' 200 GET getAsistenciaUbicacions, 3 values.
+[Nov-11-2023 15:03:27]  'info' 200 GET getPersonal_EmpresasCount 40876 values.
+[Nov-11-2023 15:03:30]  'info' 200 GET getPersonal_EmpresasByLimitAndOffset, limit: 8000 y offset: 0.
+[Nov-11-2023 15:03:51]  'info' 200 GET getPersonal_EmpresasByLimitAndOffset, limit: 8000 y offset: 8000.
+[Nov-11-2023 15:04:00]  'info' 200 GET getPersonal_EmpresasByLimitAndOffset, limit: 8000 y offset: 16000.
+[Nov-11-2023 15:04:09]  'info' 200 GET getPersonal_EmpresasByLimitAndOffset, limit: 8000 y offset: 24000.
+[Nov-11-2023 15:04:16]  'info' 200 GET getPersonal_EmpresasByLimitAndOffset, limit: 8000 y offset: 32000.
+[Nov-11-2023 15:04:22]  'info' 200 GET getPersonal_EmpresasByLimitAndOffset, limit: 8000 y offset: 40000.
+[Nov-12-2023 10:59:37]  'info' API REST, corriendo en el puerto: 3002
+[Nov-12-2023 11:00:36]  'info' API REST, corriendo en el puerto: 3002
+[Nov-12-2023 11:03:51]  'info' 200 GET getPersonal_EmpresasByLimitAndOffset, limit: 5000 y offset: 3.
+[Nov-12-2023 22:44:08]  'info' API REST, corriendo en el puerto: 3002
+[Nov-12-2023 22:49:44]  'info' API REST, corriendo en el puerto: 3002
+[Nov-12-2023 22:54:44]  'info' API REST, corriendo en el puerto: 3002
+[Nov-12-2023 23:04:47]  'info' API REST, corriendo en el puerto: 3002
+[Nov-13-2023 01:31:19]  'info' API REST, corriendo en el puerto: 3002
+[Nov-13-2023 01:31:27]  'info' API REST, corriendo en el puerto: 3002
+[Nov-13-2023 01:46:33]  'error' 500 GET createAsistenciaFechaTurno, SequelizeDatabaseError: Cannot insert explicit value for identity column in table 'Asistencia_FechaxTurno' when IDENTITY_INSERT is set to OFF..
+[Nov-13-2023 01:48:57]  'info' API REST, corriendo en el puerto: 3002
+[Nov-13-2023 01:50:54]  'info' API REST, corriendo en el puerto: 3002
+[Nov-13-2023 01:51:24]  'info' API REST, corriendo en el puerto: 3002
+[Nov-13-2023 01:51:50]  'error' 500 GET createAsistenciaFechaTurno, SequelizeDatabaseError: Cannot insert explicit value for identity column in table 'Asistencia_FechaxTurno' when IDENTITY_INSERT is set to OFF..
+[Nov-13-2023 01:52:07]  'info' API REST, corriendo en el puerto: 3002
+[Nov-13-2023 01:52:17]  'info' API REST, corriendo en el puerto: 3002
+[Nov-13-2023 01:55:43]  'info' API REST, corriendo en el puerto: 3002
+[Nov-13-2023 01:55:47]  'error' Error: POST createAllAsistenciaFechaTurno, asistenciaFechaTurno nulos.
+[Nov-13-2023 01:55:47]  'error' 500 GET createAsistenciaFechaTurno, SequelizeDatabaseError: Cannot insert explicit value for identity column in table 'Asistencia_FechaxTurno' when IDENTITY_INSERT is set to OFF..
+[Nov-13-2023 01:56:50]  'info' API REST, corriendo en el puerto: 3002
+[Nov-13-2023 01:56:53]  'info' API REST, corriendo en el puerto: 3002
+[Nov-13-2023 01:56:57]  'error' Error: POST createAllAsistenciaFechaTurno, SequelizeDatabaseError: Cannot insert explicit value for identity column in table 'Asistencia_FechaxTurno' when IDENTITY_INSERT is set to OFF.
+[Nov-13-2023 01:57:28]  'info' API REST, corriendo en el puerto: 3002
+[Nov-13-2023 01:58:17]  'info' API REST, corriendo en el puerto: 3002
+[Nov-13-2023 01:58:32]  'info' API REST, corriendo en el puerto: 3002
+[Nov-13-2023 01:58:42]  'info' API REST, corriendo en el puerto: 3002
+[Nov-13-2023 01:58:59]  'error' Error: POST createAllAsistenciaFechaTurno, SequelizeDatabaseError: Cannot insert explicit value for identity column in table 'Asistencia_FechaxTurno' when IDENTITY_INSERT is set to OFF.
+[Nov-13-2023 09:45:50]  'info' API REST, corriendo en el puerto: 3002
+[Nov-13-2023 09:46:30]  'info' API REST, corriendo en el puerto: 3002
+[Nov-13-2023 09:48:26]  'error' Error: POST createAllAsistenciaFechaTurno, SequelizeDatabaseError: Cannot insert explicit value for identity column in table 'Asistencia_FechaxTurno' when IDENTITY_INSERT is set to OFF.
+[Nov-13-2023 09:51:30]  'error' Error: POST createAllAsistenciaFechaTurno, SequelizeDatabaseError: Cannot insert explicit value for identity column in table 'Asistencia_FechaxTurno' when IDENTITY_INSERT is set to OFF.
+[Nov-13-2023 09:57:43]  'info' API REST, corriendo en el puerto: 3002
+[Nov-13-2023 09:59:07]  'info' API REST, corriendo en el puerto: 3002
+[Nov-13-2023 10:00:19]  'info' API REST, corriendo en el puerto: 3002
+[Nov-13-2023 10:00:32]  'info' API REST, corriendo en el puerto: 3002
+[Nov-13-2023 11:30:10]  'info' API REST, corriendo en el puerto: 3002
+[Nov-13-2023 11:30:23]  'info' API REST, corriendo en el puerto: 3002
+[Nov-13-2023 11:30:53]  'info' API REST, corriendo en el puerto: 3002
+[Nov-13-2023 11:31:04]  'error' Error: POST createAllAsistenciaFechaTurno, ReferenceError: error is not defined
+[Nov-13-2023 11:31:26]  'info' API REST, corriendo en el puerto: 3002
+[Nov-13-2023 11:31:48]  'info' API REST, corriendo en el puerto: 3002
+[Nov-13-2023 11:31:51]  'error' Error: POST createAllAsistenciaFechaTurno, SequelizeDatabaseError: Cannot insert the value NULL into column 'fechamod', table 'AGV_CONTROLES.dbo.Asistencia_RegistrosPersonal'; column does not allow nulls. INSERT fails.
+[Nov-13-2023 11:38:26]  'info' API REST, corriendo en el puerto: 3002
+[Nov-13-2023 11:39:43]  'info' API REST, corriendo en el puerto: 3002
+[Nov-13-2023 11:39:47]  'error' Error: POST createAllAsistenciaFechaTurno, SequelizeDatabaseError: Cannot insert the value NULL into column 'fechaentrada', table 'AGV_CONTROLES.dbo.Asistencia_RegistrosPersonal'; column does not allow nulls. INSERT fails.
+[Nov-13-2023 11:40:11]  'info' API REST, corriendo en el puerto: 3002
+[Nov-13-2023 11:40:14]  'error' Error: POST createAllAsistenciaFechaTurno, SequelizeDatabaseError: Cannot insert the value NULL into column 'horaentrada', table 'AGV_CONTROLES.dbo.Asistencia_RegistrosPersonal'; column does not allow nulls. INSERT fails.
+[Nov-13-2023 11:40:52]  'info' API REST, corriendo en el puerto: 3002
+[Nov-13-2023 11:40:55]  'error' Error: POST createAllAsistenciaFechaTurno, SequelizeDatabaseError: Cannot insert the value NULL into column 'horaentrada', table 'AGV_CONTROLES.dbo.Asistencia_RegistrosPersonal'; column does not allow nulls. INSERT fails.
+[Nov-13-2023 11:41:42]  'error' Error: POST createAllAsistenciaFechaTurno, SequelizeDatabaseError: Cannot insert the value NULL into column 'horaentrada', table 'AGV_CONTROLES.dbo.Asistencia_RegistrosPersonal'; column does not allow nulls. INSERT fails.
+[Nov-13-2023 11:42:09]  'info' API REST, corriendo en el puerto: 3002
+[Nov-13-2023 11:42:11]  'info' 200 POST createAllAsistenciaFechaTurno, new id: 10.
+[Nov-13-2023 11:42:57]  'info' API REST, corriendo en el puerto: 3002
+[Nov-13-2023 11:45:46]  'info' API REST, corriendo en el puerto: 3002
+[Nov-13-2023 11:45:54]  'info' 200 POST createAllAsistenciaFechaTurno, new id: 11.
+[Nov-13-2023 11:45:55]  'error' 500 PUT updateAsistenciaFechaTurno, Error: WHERE parameter "id" has invalid "undefined" value.
+[Nov-13-2023 11:47:34]  'info' API REST, corriendo en el puerto: 3002
+[Nov-13-2023 11:49:06]  'info' API REST, corriendo en el puerto: 3002
+[Nov-13-2023 11:49:10]  'info' API REST, corriendo en el puerto: 3002
+[Nov-13-2023 11:49:48]  'info' 200 POST createAllAsistenciaFechaTurno, new id: 12.
+[Nov-13-2023 11:49:48]  'error' 500 PUT updateAsistenciaFechaTurno, SequelizeDatabaseError: Conversion failed when converting the nvarchar value 'null' to data type int..
+[Nov-13-2023 11:50:41]  'info' API REST, corriendo en el puerto: 3002
+[Nov-13-2023 11:51:34]  'info' API REST, corriendo en el puerto: 3002
+[Nov-13-2023 12:01:13]  'info' API REST, corriendo en el puerto: 3002
+[Nov-13-2023 13:19:19]  'info' 200 POST createAllAsistenciaFechaTurno, new id: 13.
+[Nov-13-2023 13:19:20]  'error' 500 PUT updateAsistenciaFechaTurno, SequelizeDatabaseError: Conversion failed when converting the nvarchar value 'null' to data type int..
+[Nov-14-2023 11:09:39]  'info' API REST, corriendo en el puerto: 3002
+[Nov-14-2023 12:41:33]  'error' 500 GET getAsistenciaFechaTurnos, SequelizeDatabaseError: Invalid column name 'firmasupervisor'..
+[Nov-14-2023 12:41:52]  'error' 500 GET getAsistenciaFechaTurnos, SequelizeDatabaseError: Invalid column name 'firmasupervisor'..
+[Nov-14-2023 12:49:21]  'error' 500 GET getAsistenciaFechaTurnos, SequelizeDatabaseError: Invalid column name 'firmasupervisor'..
+[Nov-14-2023 12:50:22]  'info' API REST, corriendo en el puerto: 3002
+[Nov-14-2023 12:50:38]  'error' 500 GET getAsistenciaFechaTurnos, SequelizeDatabaseError: Invalid column name 'firmasupervisor'..
+[Nov-14-2023 12:51:15]  'info' API REST, corriendo en el puerto: 3002
+[Nov-14-2023 12:51:23]  'info' 200 GET getAsistenciaFechaTurnos, 0 values.
+[Nov-14-2023 12:51:44]  'info' 200 GET getAsistenciaFechaTurnos, 0 values.
+[Nov-14-2023 12:53:03]  'info' API REST, corriendo en el puerto: 3002
+[Nov-14-2023 12:56:18]  'info' API REST, corriendo en el puerto: 3002
+[Nov-14-2023 12:56:26]  'info' 200 GET getAsistenciaFechaTurnos, 0 values.
+[Nov-14-2023 12:56:30]  'info' 200 GET getAsistenciaFechaTurnos, 0 values.
+[Nov-14-2023 12:56:40]  'info' 200 GET getAsistenciaFechaTurnos, 0 values.
+[Nov-14-2023 12:58:41]  'info' 200 GET getAsistenciaFechaTurnos, 0 values.
+[Nov-14-2023 12:58:49]  'info' 200 GET GET_CENTRO_COSTOS 12618 values.
+[Nov-14-2023 13:00:28]  'info' API REST, corriendo en el puerto: 3002
+[Nov-14-2023 13:00:49]  'info' API REST, corriendo en el puerto: 3002
+[Nov-14-2023 13:01:07]  'info' 200 GET getAsistenciaFechaTurnos, 0 values.
+[Nov-14-2023 13:02:09]  'info' 200 GET GET_CENTRO_COSTOS 12618 values.
+[Nov-14-2023 13:02:16]  'info' 200 GET getTurnos, 2 values.
+[Nov-14-2023 13:02:16]  'info' 200 GET getAsistenciaUbicacions, 3 values.
+[Nov-14-2023 13:02:17]  'info' 200 GET getPersonal_EmpresasCount 40121 values.
+[Nov-14-2023 13:02:18]  'info' 200 GET getPersonal_EmpresasByLimitAndOffset, limit: 8000 y offset: 0.
+[Nov-14-2023 13:02:22]  'info' 200 GET getPersonal_EmpresasByLimitAndOffset, limit: 8000 y offset: 8000.
+[Nov-14-2023 13:02:27]  'info' 200 GET getPersonal_EmpresasByLimitAndOffset, limit: 8000 y offset: 16000.
+[Nov-14-2023 13:02:31]  'info' 200 GET getPersonal_EmpresasByLimitAndOffset, limit: 8000 y offset: 24000.
+[Nov-14-2023 13:02:37]  'info' 200 GET getPersonal_EmpresasByLimitAndOffset, limit: 8000 y offset: 32000.
+[Nov-14-2023 13:02:41]  'info' 200 GET getPersonal_EmpresasByLimitAndOffset, limit: 8000 y offset: 40000.
+[Nov-14-2023 13:02:56]  'info' 200 GET getAsistenciaFechaTurnos, 0 values.
+[Nov-14-2023 13:03:15]  'info' 200 GET getAsistenciaFechaTurnos, 0 values.
+[Nov-14-2023 13:08:06]  'info' API REST, corriendo en el puerto: 3002
+[Nov-14-2023 13:08:15]  'info' 200 POST createAsistenciaFechaTurno, new id: 14.
+[Nov-14-2023 13:08:21]  'info' 200 GET getAsistenciaFechaTurnos, 1 values.
+[Nov-14-2023 13:11:11]  'info' API REST, corriendo en el puerto: 3002
+[Nov-14-2023 13:11:17]  'info' 200 GET getAsistenciaFechaTurnos, 1 values.
+[Nov-14-2023 13:11:38]  'info' API REST, corriendo en el puerto: 3002
+[Nov-14-2023 13:11:40]  'info' 200 GET getAsistenciaFechaTurnos, 1 values.
+[Nov-14-2023 13:11:54]  'info' API REST, corriendo en el puerto: 3002
+[Nov-14-2023 13:11:57]  'info' 200 GET getAsistenciaFechaTurnos, 1 values.
+[Nov-14-2023 13:12:56]  'info' API REST, corriendo en el puerto: 3002
+[Nov-14-2023 13:12:59]  'info' 200 GET getAsistenciaFechaTurnos, 1 values.
+[Nov-14-2023 13:14:57]  'info' 200 GET getAsistenciaFechaTurnos, 1 values.
+[Nov-14-2023 13:15:51]  'info' 200 GET getAsistenciaFechaTurnos, 1 values.
+[Nov-14-2023 13:15:54]  'info' 200 GET getAsistenciaFechaTurnos, 1 values.
+[Nov-14-2023 13:17:56]  'info' API REST, corriendo en el puerto: 3002
+[Nov-14-2023 13:21:19]  'info' API REST, corriendo en el puerto: 3002
+[Nov-14-2023 13:21:29]  'info' 200 GET getAsistenciaFechaTurnos, 1 values.
+[Nov-14-2023 13:22:33]  'info' API REST, corriendo en el puerto: 3002
+[Nov-14-2023 13:22:42]  'error' 500 DELETE deleteAsistenciaFechaTurno, SequelizeDatabaseError: Invalid column name 'id'..
+[Nov-14-2023 13:23:01]  'info' API REST, corriendo en el puerto: 3002
+[Nov-14-2023 13:23:04]  'info' 200 DELETE deleteAsistenciaFechaTurno, undefined values.
+[Nov-14-2023 13:23:11]  'info' 200 GET getAsistenciaFechaTurnos, 1 values.
+[Nov-14-2023 13:24:25]  'info' 200 GET getAsistenciaFechaTurnos, 1 values.
+[Nov-14-2023 13:25:33]  'info' API REST, corriendo en el puerto: 3002
+[Nov-14-2023 13:25:42]  'info' API REST, corriendo en el puerto: 3002
+[Nov-14-2023 13:25:57]  'info' API REST, corriendo en el puerto: 3002
+[Nov-14-2023 13:27:41]  'info' API REST, corriendo en el puerto: 3002
+[Nov-14-2023 13:27:47]  'info' 200 GET getAsistenciaFechaTurnos, 0 values.
+[Nov-14-2023 13:27:49]  'info' 200 GET getAsistenciaFechaTurnos, 0 values.
+[Nov-14-2023 13:27:51]  'info' 200 GET getAsistenciaFechaTurnos, 0 values.
+[Nov-14-2023 13:29:05]  'info' 200 GET getAsistenciaFechaTurnos, 0 values.
+[Nov-14-2023 13:36:13]  'info' 200 GET getAsistenciaFechaTurnos, 0 values.
+[Nov-14-2023 16:28:16]  'info' 200 GET getAsistenciaFechaTurnos, 0 values.
+[Nov-14-2023 16:30:51]  'info' 200 GET getAsistenciaFechaTurnos, 0 values.
+[Nov-14-2023 16:38:47]  'info' 200 GET getAsistenciaFechaTurnos, 0 values.
+[Nov-14-2023 16:47:19]  'info' 200 GET getAsistenciaFechaTurnos, 0 values.
+[Nov-14-2023 16:48:52]  'info' 200 GET getAsistenciaFechaTurnos, 0 values.
+[Nov-14-2023 16:49:02]  'info' 200 POST createAsistenciaFechaTurno, new id: 15.
+[Nov-14-2023 16:54:20]  'info' API REST, corriendo en el puerto: 3002
+[Nov-14-2023 16:54:41]  'info' 200 GET getAsistenciaFechaTurnos, 1 values.
+[Nov-14-2023 16:57:45]  'info' API REST, corriendo en el puerto: 3002
+[Nov-14-2023 16:58:38]  'info' 200 GET getAsistenciaFechaTurnos, 1 values.
+[Nov-14-2023 16:58:40]  'info' 200 GET getAsistenciaFechaTurnos, 1 values.
+[Nov-14-2023 16:58:47]  'info' 200 GET getAsistenciaFechaTurnos, 1 values.
+[Nov-14-2023 16:59:47]  'info' 200 GET getAsistenciaFechaTurnos, 1 values.
+[Nov-14-2023 16:59:55]  'info' 200 GET getAsistenciaFechaTurnos, 1 values.
+[Nov-14-2023 17:01:06]  'info' 200 GET getAsistenciaFechaTurnos, 1 values.
+[Nov-14-2023 17:01:12]  'info' 200 GET getAsistenciaFechaTurnos, 1 values.
+[Nov-14-2023 17:01:21]  'info' 200 GET getAsistenciaFechaTurnos, 1 values.
+[Nov-14-2023 17:03:43]  'info' 200 GET getAsistenciaFechaTurnos, 1 values.
+[Nov-14-2023 17:03:51]  'info' 200 GET getAsistenciaFechaTurnos, 1 values.
+[Nov-14-2023 17:04:17]  'info' 200 GET getAsistenciaFechaTurnos, 1 values.
+[Nov-14-2023 17:14:23]  'info' 200 GET getAsistenciaFechaTurnos, 1 values.
+[Nov-14-2023 17:14:29]  'error' 500 GET getAsistenciaRegistroPersonals, SequelizeDatabaseError: Invalid column name 'estado'..
+[Nov-14-2023 17:14:45]  'error' 500 GET getAsistenciaRegistroPersonals, SequelizeDatabaseError: Invalid column name 'estado'..
+[Nov-14-2023 17:17:50]  'info' 200 GET getAsistenciaFechaTurnos, 1 values.
+[Nov-14-2023 17:17:55]  'info' 200 GET getAsistenciaRegistroPersonals, 0 values.
+[Nov-14-2023 17:20:50]  'error' 500 GET createAsistenciaRegistroPersonal, SequelizeValidationError: notNull Violation: AsistenciaRegistroPersonal.tipomovimiento cannot be null,
+notNull Violation: AsistenciaRegistroPersonal.idturno cannot be null,
+notNull Violation: AsistenciaRegistroPersonal.fechaturno cannot be null.
+[Nov-14-2023 17:23:03]  'info' 200 GET getAsistenciaFechaTurnos, 1 values.
+[Nov-14-2023 17:23:57]  'info' 200 GET getAsistenciaRegistroPersonals, 0 values.
+[Nov-14-2023 17:25:26]  'info' 200 GET getAsistenciaFechaTurnos, 1 values.
+[Nov-14-2023 17:28:12]  'info' 200 GET getAsistenciaRegistroPersonals, 0 values.
+[Nov-14-2023 17:28:39]  'error' 500 GET createAsistenciaRegistroPersonal, SequelizeValidationError: notNull Violation: AsistenciaRegistroPersonal.tipomovimiento cannot be null.
+[Nov-14-2023 17:32:13]  'info' API REST, corriendo en el puerto: 3002
+[Nov-14-2023 17:34:00]  'error' 500 GET getAsistenciaFechaTurnos, SequelizeDatabaseError: Invalid column name 'tipomovimiento'..
+[Nov-14-2023 17:34:19]  'error' 500 GET getAsistenciaFechaTurnos, SequelizeDatabaseError: Invalid column name 'tipomovimiento'..
+[Nov-14-2023 17:34:45]  'error' 500 GET getAsistenciaFechaTurnos, SequelizeDatabaseError: Invalid column name 'tipomovimiento'..
+[Nov-14-2023 17:35:09]  'info' API REST, corriendo en el puerto: 3002
+[Nov-14-2023 17:35:20]  'info' API REST, corriendo en el puerto: 3002
+[Nov-14-2023 17:35:29]  'info' 200 GET getAsistenciaFechaTurnos, 1 values.
+[Nov-14-2023 17:35:35]  'info' 200 GET getAsistenciaRegistroPersonals, 0 values.
+[Nov-14-2023 17:35:42]  'info' 200 GET createAsistenciaRegistroPersonal, undefined values.
+[Nov-14-2023 17:36:34]  'info' API REST, corriendo en el puerto: 3002
+[Nov-14-2023 17:41:12]  'error' 500 PUT getAsistenciaRegistroPersonalsCount, Error: WHERE parameter "id" has invalid "undefined" value.
+[Nov-14-2023 22:33:03]  'info' API REST, corriendo en el puerto: 3002
+[Nov-14-2023 22:33:42]  'info' 200 GET getAsistenciaFechaTurnos, 1 values.
+[Nov-14-2023 22:33:51]  'info' 200 GET getAsistenciaFechaTurnos, 1 values.
+[Nov-14-2023 22:33:53]  'info' 200 GET getAsistenciaRegistroPersonals, 0 values.
+[Nov-14-2023 22:40:31]  'info' 200 GET getAsistenciaRegistroPersonals, 1 values.
+[Nov-14-2023 22:45:25]  'info' 200 GET getAsistenciaRegistroPersonals, 1 values.
+[Nov-14-2023 22:45:47]  'info' 200 GET getAsistenciaRegistroPersonals, 1 values.
+[Nov-14-2023 22:51:09]  'info' 200 GET getAsistenciaFechaTurnos, 1 values.
+[Nov-14-2023 22:51:21]  'info' 200 GET getAsistenciaFechaTurnos, 1 values.
+[Nov-14-2023 22:51:26]  'info' 200 POST createAsistenciaFechaTurno, new id: 16.
+[Nov-14-2023 22:51:29]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[Nov-14-2023 22:51:31]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[Nov-14-2023 22:52:07]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[Nov-14-2023 22:53:10]  'info' 200 GET getAsistenciaRegistroPersonals, 1 values.
+[Nov-14-2023 22:53:14]  'info' 200 GET getAsistenciaRegistroPersonals, 1 values.
+[Nov-14-2023 22:56:59]  'info' 200 GET getAsistenciaRegistroPersonals, 1 values.
+[Nov-14-2023 23:00:45]  'info' API REST, corriendo en el puerto: 3002
+[Nov-14-2023 23:00:48]  'info' 200 GET getAsistenciaRegistroPersonals, 1 values.
+[Nov-14-2023 23:00:55]  'info' 200 GET getAsistenciaRegistroPersonals, 1 values.
+[Nov-14-2023 23:01:05]  'info' API REST, corriendo en el puerto: 3002
+[Nov-14-2023 23:01:24]  'info' API REST, corriendo en el puerto: 3002
+[Nov-14-2023 23:01:30]  'info' 200 GET getAsistenciaRegistroPersonals, 1 values.
+[Nov-14-2023 23:02:09]  'info' API REST, corriendo en el puerto: 3002
+[Nov-14-2023 23:02:12]  'error' 500 GET getAsistenciaRegistroPersonals, Error: Invalid value { idusuario: '1' }.
+[Nov-14-2023 23:02:28]  'info' API REST, corriendo en el puerto: 3002
+[Nov-14-2023 23:02:38]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[Nov-14-2023 23:02:51]  'info' 200 GET getAsistenciaRegistroPersonals, 1 values.
+[Nov-14-2023 23:03:49]  'info' 200 GET getAsistenciaRegistroPersonals, 0 values.
+[Nov-14-2023 23:04:19]  'info' API REST, corriendo en el puerto: 3002
+[Nov-14-2023 23:04:26]  'info' 200 GET getAsistenciaRegistroPersonals, 0 values.
+[Nov-14-2023 23:05:20]  'info' API REST, corriendo en el puerto: 3002
+[Nov-14-2023 23:06:57]  'info' API REST, corriendo en el puerto: 3002
+[Nov-14-2023 23:07:01]  'info' API REST, corriendo en el puerto: 3002
+[Nov-14-2023 23:07:05]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[Nov-14-2023 23:07:07]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[Nov-14-2023 23:07:09]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[Nov-14-2023 23:07:20]  'info' 200 GET getAsistenciaRegistroPersonals, 0 values.
+[Nov-14-2023 23:07:23]  'info' 200 GET getAsistenciaRegistroPersonals, 0 values.
+[Nov-14-2023 23:07:27]  'info' 200 GET getAsistenciaRegistroPersonals, 0 values.
+[Nov-14-2023 23:07:29]  'info' 200 GET getAsistenciaRegistroPersonals, 0 values.
+[Nov-14-2023 23:08:16]  'info' API REST, corriendo en el puerto: 3002
+[Nov-14-2023 23:08:28]  'info' 200 GET getAsistenciaRegistroPersonals, 0 values.
+[Nov-14-2023 23:09:10]  'info' 200 GET getAsistenciaRegistroPersonals, 0 values.
+[Nov-14-2023 23:11:32]  'info' 200 GET getAsistenciaRegistroPersonals, 0 values.
+[Nov-14-2023 23:11:34]  'info' 200 GET getAsistenciaRegistroPersonals, 0 values.
+[Nov-14-2023 23:11:36]  'info' 200 GET getAsistenciaRegistroPersonals, 0 values.
+[Nov-14-2023 23:11:37]  'info' 200 GET getAsistenciaRegistroPersonals, 0 values.
+[Nov-14-2023 23:11:38]  'info' 200 GET getAsistenciaRegistroPersonals, 0 values.
+[Nov-14-2023 23:11:49]  'info' 200 GET getAsistenciaRegistroPersonals, 0 values.
+[Nov-14-2023 23:11:52]  'info' 200 GET getAsistenciaRegistroPersonals, 0 values.
+[Nov-14-2023 23:11:54]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[Nov-14-2023 23:12:11]  'info' 200 GET getAsistenciaRegistroPersonals, 0 values.
+[Nov-14-2023 23:12:19]  'info' 200 GET getAsistenciaRegistroPersonals, 1 values.
+[Nov-14-2023 23:13:35]  'info' API REST, corriendo en el puerto: 3002
+[Nov-14-2023 23:13:49]  'info' API REST, corriendo en el puerto: 3002
+[Nov-14-2023 23:16:15]  'info' API REST, corriendo en el puerto: 3002
+[Nov-14-2023 23:18:38]  'info' 200 GET getAsistenciaRegistroPersonals, 1 values.
+[Nov-14-2023 23:18:43]  'info' 200 GET getAsistenciaRegistroPersonals, 0 values.
+[Nov-14-2023 23:18:45]  'info' 200 GET getAsistenciaRegistroPersonals, 0 values.
+[Nov-14-2023 23:18:49]  'info' 200 GET getAsistenciaRegistroPersonals, 1 values.
+[Nov-14-2023 23:23:52]  'info' API REST, corriendo en el puerto: 3002
+[Nov-14-2023 23:24:19]  'info' 200 GET getAsistenciaRegistroPersonals, 1 values.
+[Nov-14-2023 23:37:20]  'info' 200 GET getAsistenciaRegistroPersonals, 1 values.
+[Nov-14-2023 23:37:34]  'info' 200 GET getAsistenciaRegistroPersonals, 1 values.
+[Nov-14-2023 23:37:42]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[Nov-14-2023 23:37:47]  'info' 200 GET getAsistenciaRegistroPersonals, 1 values.
+[Nov-14-2023 23:37:50]  'info' 200 GET getAsistenciaRegistroPersonals, 1 values.
+[Nov-14-2023 23:38:01]  'error' 500 PUT getAsistenciaRegistroPersonalsCount, Error: WHERE parameter "id" has invalid "undefined" value.
+[Nov-14-2023 23:41:38]  'info' API REST, corriendo en el puerto: 3002
+[Nov-14-2023 23:42:20]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[Nov-14-2023 23:42:32]  'info' 200 GET getAsistenciaRegistroPersonals, 1 values.
+[Nov-14-2023 23:42:44]  'info' 200 PUT updateAsistenciaRegistroPersonal, undefined values.
+[Nov-14-2023 23:42:48]  'info' 200 GET getAsistenciaRegistroPersonals, 1 values.
+[Nov-14-2023 23:50:10]  'info' 200 GET getAsistenciaRegistroPersonals, 1 values.
+[Nov-14-2023 23:50:16]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[Nov-14-2023 23:59:29]  'info' API REST, corriendo en el puerto: 3002
+[Nov-14-2023 23:59:36]  'error' 500 GET getAsistenciaFechaTurnos, SequelizeEagerLoadingError: AsistenciaRegistroPersonal is not associated to AsistenciaFechaTurno!.
+[Nov-15-2023 00:00:24]  'error' 500 GET getAsistenciaFechaTurnos, SequelizeEagerLoadingError: AsistenciaRegistroPersonal is not associated to AsistenciaFechaTurno!.
+[Nov-15-2023 00:00:26]  'error' 500 GET getAsistenciaFechaTurnos, SequelizeEagerLoadingError: AsistenciaRegistroPersonal is not associated to AsistenciaFechaTurno!.
+[Nov-15-2023 00:01:24]  'info' API REST, corriendo en el puerto: 3002
+[Nov-15-2023 00:01:37]  'info' API REST, corriendo en el puerto: 3002
+[Nov-15-2023 00:01:59]  'info' API REST, corriendo en el puerto: 3002
+[Nov-15-2023 00:02:03]  'info' API REST, corriendo en el puerto: 3002
+[Nov-15-2023 00:02:32]  'error' 500 GET getAsistenciaFechaTurnos, SequelizeEagerLoadingError: AsistenciaRegistroPersonal is associated to AsistenciaFechaTurno using an alias. You must use the 'as' keyword to specify the alias within your include statement..
+[Nov-15-2023 00:02:41]  'error' 500 GET getAsistenciaFechaTurnos, SequelizeEagerLoadingError: AsistenciaRegistroPersonal is associated to AsistenciaFechaTurno using an alias. You must use the 'as' keyword to specify the alias within your include statement..
+[Nov-15-2023 00:04:04]  'info' API REST, corriendo en el puerto: 3002
+[Nov-15-2023 00:04:11]  'info' API REST, corriendo en el puerto: 3002
+[Nov-15-2023 00:04:14]  'error' 500 GET getAsistenciaFechaTurnos, SequelizeEagerLoadingError: Turno is associated to AsistenciaFechaTurno using an alias. You must use the 'as' keyword to specify the alias within your include statement..
+[Nov-15-2023 00:04:32]  'info' API REST, corriendo en el puerto: 3002
+[Nov-15-2023 00:04:33]  'error' 500 GET getAsistenciaFechaTurnos, SequelizeEagerLoadingError: AsistenciaUbicacion is associated to AsistenciaFechaTurno using an alias. You must use the 'as' keyword to specify the alias within your include statement..
+[Nov-15-2023 00:04:55]  'info' API REST, corriendo en el puerto: 3002
+[Nov-15-2023 00:05:13]  'error' 500 GET getAsistenciaFechaTurnos, SequelizeEagerLoadingError: AsistenciaUbicacion is associated to AsistenciaFechaTurno using an alias. You've included an alias (AsistenciaUbicacion), but it does not match the alias(es) defined in your association (Ubicacion)..
+[Nov-15-2023 00:05:30]  'info' API REST, corriendo en el puerto: 3002
+[Nov-15-2023 00:05:33]  'error' 500 GET getAsistenciaFechaTurnos, Error: WHERE parameter "idusuario" has invalid "undefined" value.
+[Nov-15-2023 00:05:50]  'info' API REST, corriendo en el puerto: 3002
+[Nov-15-2023 00:05:53]  'error' 500 GET getAsistenciaFechaTurnos, SequelizeDatabaseError: Column 'Asistencia_FechaxTurno.idasistenciaturno' is invalid in the select list because it is not contained in either an aggregate function or the GROUP BY clause..
+[Nov-15-2023 00:06:35]  'info' API REST, corriendo en el puerto: 3002
+[Nov-15-2023 00:06:40]  'error' 500 GET getAsistenciaFechaTurnos, SequelizeDatabaseError: Column 'Asistencia_FechaxTurno.idasistenciaturno' is invalid in the select list because it is not contained in either an aggregate function or the GROUP BY clause..
+[Nov-15-2023 00:07:07]  'info' API REST, corriendo en el puerto: 3002
+[Nov-15-2023 00:07:09]  'error' 500 GET getAsistenciaFechaTurnos, SequelizeDatabaseError: Invalid column name 'id'..
+[Nov-15-2023 00:07:22]  'info' API REST, corriendo en el puerto: 3002
+[Nov-15-2023 00:07:24]  'error' 500 GET getAsistenciaFechaTurnos, SequelizeDatabaseError: Column 'Asistencia_FechaxTurno.idasistenciaturno' is invalid in the select list because it is not contained in either an aggregate function or the GROUP BY clause..
+[Nov-15-2023 00:10:28]  'info' API REST, corriendo en el puerto: 3002
+[Nov-15-2023 00:10:30]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[Nov-15-2023 00:12:22]  'info' API REST, corriendo en el puerto: 3002
+[Nov-15-2023 00:12:24]  'error' 500 GET getAsistenciaFechaTurnos, Error: Include unexpected. Element has to be either a Model, an Association or an object..
+[Nov-15-2023 00:13:16]  'info' API REST, corriendo en el puerto: 3002
+[Nov-15-2023 00:13:17]  'error' 500 GET getAsistenciaFechaTurnos, Error: Include unexpected. Element has to be either a Model, an Association or an object..
+[Nov-15-2023 00:13:19]  'error' 500 GET getAsistenciaFechaTurnos, Error: Include unexpected. Element has to be either a Model, an Association or an object..
+[Nov-15-2023 00:14:38]  'info' API REST, corriendo en el puerto: 3002
+[Nov-15-2023 00:14:42]  'error' 500 GET getAsistenciaFechaTurnos, SequelizeDatabaseError: Incorrect syntax near ')'..
+[Nov-15-2023 00:14:52]  'info' API REST, corriendo en el puerto: 3002
+[Nov-15-2023 00:14:55]  'error' 500 GET getAsistenciaFechaTurnos, SequelizeDatabaseError: Incorrect syntax near ','..
+[Nov-15-2023 00:16:10]  'info' API REST, corriendo en el puerto: 3002
+[Nov-15-2023 00:16:23]  'error' 500 GET getAsistenciaFechaTurnos, SequelizeDatabaseError: Incorrect syntax near ')'..
+[Nov-15-2023 00:16:37]  'info' API REST, corriendo en el puerto: 3002
+[Nov-15-2023 00:16:38]  'error' 500 GET getAsistenciaFechaTurnos, SequelizeDatabaseError: Incorrect syntax near ')'..
+[Nov-15-2023 00:16:44]  'info' API REST, corriendo en el puerto: 3002
+[Nov-15-2023 00:16:49]  'error' 500 GET getAsistenciaFechaTurnos, SequelizeDatabaseError: Incorrect syntax near ','..
+[Nov-15-2023 00:19:38]  'info' API REST, corriendo en el puerto: 3002
+[Nov-15-2023 00:19:41]  'error' 500 GET getAsistenciaFechaTurnos, SequelizeDatabaseError: Incorrect syntax near ','..
+[Nov-15-2023 00:25:09]  'info' API REST, corriendo en el puerto: 3002
+[Nov-15-2023 00:25:13]  'error' 500 GET getAsistenciaFechaTurnos, SequelizeDatabaseError: Incorrect syntax near ','..
+[Nov-15-2023 00:27:54]  'info' API REST, corriendo en el puerto: 3002
+[Nov-15-2023 00:27:59]  'info' API REST, corriendo en el puerto: 3002
+[Nov-15-2023 00:28:01]  'error' 500 GET getAsistenciaFechaTurnos, SequelizeDatabaseError: Incorrect syntax near ')'..
+[Nov-15-2023 00:28:09]  'info' API REST, corriendo en el puerto: 3002
+[Nov-15-2023 00:28:12]  'error' 500 GET getAsistenciaFechaTurnos, SequelizeDatabaseError: Incorrect syntax near ','..
+[Nov-15-2023 00:29:29]  'info' API REST, corriendo en el puerto: 3002
+[Nov-15-2023 00:29:32]  'error' 500 GET getAsistenciaFechaTurnos, SequelizeDatabaseError: Incorrect syntax near ','..
+[Nov-15-2023 00:29:54]  'info' API REST, corriendo en el puerto: 3002
+[Nov-15-2023 00:29:54]  'error' 500 GET getAsistenciaFechaTurnos, SequelizeEagerLoadingError: AsistenciaRegistroPersonal is associated to AsistenciaFechaTurno using an alias. You've included an alias (Registros), but it does not match the alias(es) defined in your association (AsistenciaRegistroPersonals)..
+[Nov-15-2023 00:30:19]  'info' API REST, corriendo en el puerto: 3002
+[Nov-15-2023 00:30:25]  'error' 500 GET getAsistenciaFechaTurnos, SequelizeEagerLoadingError: AsistenciaRegistroPersonal is associated to AsistenciaFechaTurno using an alias. You've included an alias (Registros), but it does not match the alias(es) defined in your association (registros)..
+[Nov-15-2023 00:30:27]  'error' 500 GET getAsistenciaFechaTurnos, SequelizeEagerLoadingError: AsistenciaRegistroPersonal is associated to AsistenciaFechaTurno using an alias. You've included an alias (Registros), but it does not match the alias(es) defined in your association (registros)..
+[Nov-15-2023 00:30:38]  'info' API REST, corriendo en el puerto: 3002
+[Nov-15-2023 00:31:28]  'info' API REST, corriendo en el puerto: 3002
+[Nov-15-2023 00:31:29]  'error' 500 GET getAsistenciaFechaTurnos, SequelizeEagerLoadingError: AsistenciaRegistroPersonal is associated to AsistenciaFechaTurno using an alias. You've included an alias (Registros), but it does not match the alias(es) defined in your association (registros)..
+[Nov-15-2023 00:32:17]  'info' API REST, corriendo en el puerto: 3002
+[Nov-15-2023 00:32:17]  'error' 500 GET getAsistenciaFechaTurnos, SequelizeEagerLoadingError: AsistenciaRegistroPersonal is associated to AsistenciaFechaTurno using an alias. You've included an alias (Registros), but it does not match the alias(es) defined in your association (registros)..
+[Nov-15-2023 00:32:19]  'error' 500 GET getAsistenciaFechaTurnos, SequelizeEagerLoadingError: AsistenciaRegistroPersonal is associated to AsistenciaFechaTurno using an alias. You've included an alias (Registros), but it does not match the alias(es) defined in your association (registros)..
+[Nov-15-2023 00:32:34]  'info' API REST, corriendo en el puerto: 3002
+[Nov-15-2023 00:32:36]  'error' 500 GET getAsistenciaFechaTurnos, SequelizeDatabaseError: Incorrect syntax near ','..
+[Nov-15-2023 00:33:03]  'error' 500 GET getAsistenciaFechaTurnos, SequelizeDatabaseError: Incorrect syntax near ','..
+[Nov-15-2023 00:33:14]  'info' API REST, corriendo en el puerto: 3002
+[Nov-15-2023 00:33:16]  'error' 500 GET getAsistenciaFechaTurnos, SequelizeDatabaseError: Incorrect syntax near the keyword 'FROM'..
+[Nov-15-2023 00:34:56]  'info' API REST, corriendo en el puerto: 3002
+[Nov-15-2023 00:34:59]  'error' 500 GET getAsistenciaFechaTurnos, SequelizeDatabaseError: Invalid object name 'registros'..
+[Nov-15-2023 00:36:02]  'info' API REST, corriendo en el puerto: 3002
+[Nov-15-2023 00:36:05]  'error' 500 GET getAsistenciaFechaTurnos, SequelizeDatabaseError: Invalid column name 'CuponsCount'..
+[Nov-15-2023 00:36:07]  'error' 500 GET getAsistenciaFechaTurnos, SequelizeDatabaseError: Invalid column name 'CuponsCount'..
+[Nov-15-2023 00:36:43]  'info' API REST, corriendo en el puerto: 3002
+[Nov-15-2023 00:36:45]  'error' 500 GET getAsistenciaFechaTurnos, SequelizeDatabaseError: The multi-part identifier "Asistencia_FechaxTurno.idasistenciaturno" could not be bound..
+[Nov-15-2023 00:36:56]  'info' API REST, corriendo en el puerto: 3002
+[Nov-15-2023 00:37:05]  'error' 500 GET getAsistenciaFechaTurnos, SequelizeDatabaseError: Invalid column name 'CuponsCount'..
+[Nov-15-2023 00:37:59]  'info' API REST, corriendo en el puerto: 3002
+[Nov-15-2023 00:38:02]  'error' 500 GET getAsistenciaFechaTurnos, SequelizeDatabaseError: Invalid column name 'CuponsCount'..
+[Nov-15-2023 00:38:23]  'info' API REST, corriendo en el puerto: 3002
+[Nov-15-2023 00:38:29]  'error' 500 GET getAsistenciaFechaTurnos, SequelizeEagerLoadingError: AsistenciaRegistroPersonal is associated to AsistenciaFechaTurno using an alias. You must use the 'as' keyword to specify the alias within your include statement..
+[Nov-15-2023 00:38:38]  'info' API REST, corriendo en el puerto: 3002
+[Nov-15-2023 00:38:40]  'error' 500 GET getAsistenciaFechaTurnos, SequelizeDatabaseError: Invalid column name 'CuponsCount'..
+[Nov-15-2023 00:38:42]  'error' 500 GET getAsistenciaFechaTurnos, SequelizeDatabaseError: Invalid column name 'CuponsCount'..
+[Nov-15-2023 00:39:17]  'info' API REST, corriendo en el puerto: 3002
+[Nov-15-2023 00:39:18]  'error' 500 GET getAsistenciaFechaTurnos, SequelizeDatabaseError: Invalid object name 'registros'..
+[Nov-15-2023 00:39:33]  'info' API REST, corriendo en el puerto: 3002
+[Nov-15-2023 00:39:34]  'error' 500 GET getAsistenciaFechaTurnos, SequelizeDatabaseError: Invalid object name 'registros'..
+[Nov-15-2023 00:39:42]  'info' API REST, corriendo en el puerto: 3002
+[Nov-15-2023 00:39:44]  'error' 500 GET getAsistenciaFechaTurnos, SequelizeDatabaseError: Invalid column name 'CuponsCount'..
+[Nov-15-2023 00:40:04]  'info' API REST, corriendo en el puerto: 3002
+[Nov-15-2023 00:40:14]  'error' 500 GET getAsistenciaFechaTurnos, SequelizeDatabaseError: Invalid column name 'laughReactionsCount'..
+[Nov-15-2023 00:42:52]  'info' API REST, corriendo en el puerto: 3002
+[Nov-15-2023 00:50:43]  'info' API REST, corriendo en el puerto: 3002
+[Nov-15-2023 00:51:06]  'error' 500 GET getAsistenciaFechaTurnos, SequelizeDatabaseError: Invalid column name 'laughReactionsCount'..
+[Nov-15-2023 01:08:03]  'info' API REST, corriendo en el puerto: 3002
+[Nov-15-2023 01:12:08]  'error' 500 GET getAsistenciaFechaTurnos, SequelizeDatabaseError: Invalid column name 'laughReactionsCount'..
+[Nov-15-2023 01:12:47]  'info' API REST, corriendo en el puerto: 3002
+[Nov-15-2023 01:13:37]  'info' API REST, corriendo en el puerto: 3002
+[Nov-15-2023 01:15:42]  'info' API REST, corriendo en el puerto: 3002
+[Nov-15-2023 01:16:00]  'info' API REST, corriendo en el puerto: 3002
+[Nov-15-2023 01:16:55]  'info' API REST, corriendo en el puerto: 3002
+[Nov-15-2023 01:17:09]  'info' API REST, corriendo en el puerto: 3002
+[Nov-15-2023 01:17:34]  'info' API REST, corriendo en el puerto: 3002
+[Nov-15-2023 01:17:38]  'info' API REST, corriendo en el puerto: 3002
+[Nov-15-2023 01:17:42]  'info' 200 GET getAsistenciaFechaTurnos, 3 values.
+[Nov-15-2023 01:19:54]  'info' 200 GET getAsistenciaFechaTurnos, 3 values.
+[Nov-15-2023 01:20:27]  'info' 200 GET getAsistenciaFechaTurnos, 3 values.
+[Nov-15-2023 01:20:29]  'info' 200 GET getAsistenciaFechaTurnos, 3 values.
+[Nov-15-2023 01:22:00]  'info' API REST, corriendo en el puerto: 3002
+[Nov-15-2023 01:22:27]  'info' API REST, corriendo en el puerto: 3002
+[Nov-15-2023 01:22:32]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[Nov-15-2023 01:22:54]  'info' API REST, corriendo en el puerto: 3002
+[Nov-15-2023 01:22:56]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[Nov-15-2023 01:24:21]  'info' API REST, corriendo en el puerto: 3002
+[Nov-15-2023 01:24:59]  'info' API REST, corriendo en el puerto: 3002
+[Nov-15-2023 01:25:01]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[Nov-15-2023 01:25:29]  'info' API REST, corriendo en el puerto: 3002
+[Nov-15-2023 01:25:32]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[Nov-15-2023 01:25:46]  'info' API REST, corriendo en el puerto: 3002
+[Nov-15-2023 01:25:52]  'info' API REST, corriendo en el puerto: 3002
+[Nov-15-2023 01:25:56]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[Nov-15-2023 01:26:06]  'info' API REST, corriendo en el puerto: 3002
+[Nov-15-2023 01:26:08]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[Nov-15-2023 01:26:17]  'info' API REST, corriendo en el puerto: 3002
+[Nov-15-2023 01:26:19]  'info' 200 GET getAsistenciaFechaTurnos, 3 values.
+[Nov-15-2023 01:26:39]  'info' API REST, corriendo en el puerto: 3002
+[Nov-15-2023 01:26:41]  'info' 200 GET getAsistenciaFechaTurnos, 3 values.
+[Nov-15-2023 01:26:55]  'info' 200 GET getAsistenciaFechaTurnos, 3 values.
+[Nov-15-2023 01:28:12]  'info' 200 GET getAsistenciaFechaTurnos, 3 values.
+[Nov-15-2023 01:28:48]  'info' API REST, corriendo en el puerto: 3002
+[Nov-15-2023 01:28:49]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[Nov-15-2023 01:29:07]  'info' API REST, corriendo en el puerto: 3002
+[Nov-15-2023 01:29:13]  'info' API REST, corriendo en el puerto: 3002
+[Nov-15-2023 01:29:15]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[Nov-15-2023 01:30:38]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[Nov-15-2023 01:32:23]  'info' API REST, corriendo en el puerto: 3002
+[Nov-15-2023 01:32:43]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[Nov-15-2023 01:33:32]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[Nov-15-2023 01:34:36]  'info' API REST, corriendo en el puerto: 3002
+[Nov-15-2023 01:34:41]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[Nov-15-2023 01:34:47]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[Nov-15-2023 01:35:00]  'info' 200 GET getAsistenciaRegistroPersonals, 1 values.
+[Nov-15-2023 01:35:04]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[Nov-15-2023 01:36:40]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[Nov-15-2023 01:36:42]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[Nov-15-2023 01:36:52]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[Nov-15-2023 01:37:25]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[Nov-15-2023 01:37:28]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[Nov-15-2023 01:37:30]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[Nov-15-2023 01:40:38]  'info' 200 POST createAsistenciaFechaTurno, new id: 17.
+[Nov-15-2023 01:40:40]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[Nov-15-2023 01:41:59]  'info' API REST, corriendo en el puerto: 3002
+[Nov-15-2023 01:42:02]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[Nov-15-2023 01:42:03]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[Nov-15-2023 01:42:04]  'info' 200 GET getAsistenciaRegistroPersonals, 0 values.
+[Nov-15-2023 01:42:06]  'info' 200 GET getAsistenciaRegistroPersonals, 0 values.
+[Nov-15-2023 01:43:00]  'info' 200 GET getAsistenciaRegistroPersonals, 0 values.
+[Nov-15-2023 01:43:42]  'error' 500 GET createAsistenciaRegistroPersonal, SequelizeValidationError: notNull Violation: AsistenciaRegistroPersonal.idturno cannot be null.
+[Nov-15-2023 01:44:06]  'error' 500 GET getAsistenciaFechaTurnos, SequelizeDatabaseError: Invalid column name 'undefined'..
+[Nov-15-2023 01:45:12]  'error' 500 GET getAsistenciaFechaTurnos, SequelizeDatabaseError: Invalid column name 'undefined'..
+[Nov-15-2023 01:45:26]  'info' API REST, corriendo en el puerto: 3002
+[Nov-15-2023 01:45:29]  'error' 500 GET getAsistenciaFechaTurnos, SequelizeDatabaseError: Invalid column name 'undefined'..
+[Nov-15-2023 01:45:39]  'error' 500 GET getAsistenciaFechaTurnos, SequelizeDatabaseError: Invalid column name 'undefined'..
+[Nov-15-2023 01:46:06]  'error' 500 GET getAsistenciaFechaTurnos, SequelizeDatabaseError: Invalid column name 'undefined'..
+[Nov-15-2023 01:46:09]  'error' 500 GET getAsistenciaFechaTurnos, SequelizeDatabaseError: Invalid column name 'undefined'..
+[Nov-15-2023 01:46:25]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[Nov-15-2023 01:48:03]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[Nov-15-2023 01:48:40]  'info' 200 GET getAsistenciaRegistroPersonals, 0 values.
+[Nov-15-2023 01:52:27]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[Nov-15-2023 01:53:15]  'info' API REST, corriendo en el puerto: 3002
+[Nov-15-2023 01:53:28]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[Nov-15-2023 01:53:52]  'info' API REST, corriendo en el puerto: 3002
+[Nov-15-2023 01:53:56]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[Nov-15-2023 01:54:14]  'info' API REST, corriendo en el puerto: 3002
+[Nov-15-2023 01:54:17]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[Nov-15-2023 01:55:20]  'info' API REST, corriendo en el puerto: 3002
+[Nov-15-2023 01:55:23]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[Nov-15-2023 01:55:55]  'info' 200 GET getAsistenciaRegistroPersonals, 0 values.
+[Nov-15-2023 01:56:01]  'info' 200 GET createAsistenciaRegistroPersonal, undefined values.
+[Nov-15-2023 01:56:20]  'info' 200 GET createAsistenciaRegistroPersonal, undefined values.
+[Nov-15-2023 02:03:55]  'info' 200 PUT updateAsistenciaRegistroPersonal, undefined values.
+[Nov-15-2023 02:03:59]  'info' 200 GET getAsistenciaRegistroPersonals, 2 values.
+[Nov-15-2023 02:04:47]  'info' 200 PUT updateAsistenciaRegistroPersonal, undefined values.
+[Nov-15-2023 02:04:51]  'info' 200 GET getAsistenciaRegistroPersonals, 2 values.
+[Nov-15-2023 02:06:38]  'info' 200 GET createAsistenciaRegistroPersonal, undefined values.
+[Nov-15-2023 02:06:44]  'info' 200 GET createAsistenciaRegistroPersonal, undefined values.
+[Nov-15-2023 02:07:19]  'info' 200 GET getAsistenciaRegistroPersonals, 4 values.
+[Nov-15-2023 02:07:29]  'info' 200 GET createAsistenciaRegistroPersonal, undefined values.
+[Nov-15-2023 02:09:24]  'info' 200 GET createAsistenciaRegistroPersonal, undefined values.
+[Nov-15-2023 02:10:06]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[Nov-15-2023 02:10:07]  'info' 200 GET getAsistenciaRegistroPersonals, 0 values.
+[Nov-15-2023 02:10:16]  'info' 200 GET createAsistenciaRegistroPersonal, undefined values.
+[Nov-15-2023 02:11:53]  'info' 200 GET createAsistenciaRegistroPersonal, undefined values.
+[Nov-15-2023 02:17:59]  'info' 200 PUT updateAsistenciaRegistroPersonal, undefined values.
+[Nov-15-2023 02:18:04]  'info' 200 GET getAsistenciaRegistroPersonals, 2 values.
+[Nov-15-2023 02:18:49]  'info' 200 GET createAsistenciaRegistroPersonal, undefined values.
+[Nov-15-2023 02:19:02]  'info' 200 PUT updateAsistenciaRegistroPersonal, undefined values.
+[Nov-15-2023 02:25:23]  'info' 200 PUT updateAsistenciaRegistroPersonal, undefined values.
+[Nov-15-2023 02:25:28]  'info' 200 GET createAsistenciaRegistroPersonal, undefined values.
+[Nov-15-2023 02:25:37]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[Nov-15-2023 02:25:39]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[Nov-15-2023 02:25:42]  'info' 200 GET getAsistenciaRegistroPersonals, 4 values.
+[Nov-15-2023 02:25:45]  'info' 200 GET getAsistenciaRegistroPersonals, 4 values.
+[Nov-15-2023 02:29:12]  'info' 200 GET getAsistenciaRegistroPersonals, 4 values.
+[Nov-15-2023 02:29:15]  'info' 200 GET getAsistenciaRegistroPersonals, 4 values.
+[Nov-15-2023 02:29:23]  'error' 500 GET getAsistenciaFechaTurnos, SequelizeDatabaseError: Invalid column name 'undefined'..
+[Nov-15-2023 02:31:06]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[Nov-15-2023 02:31:14]  'info' 200 GET getAsistenciaRegistroPersonals, 4 values.
+[Nov-15-2023 02:31:23]  'error' 500 GET getAsistenciaFechaTurnos, SequelizeDatabaseError: Invalid column name 'undefined'..
+[Nov-15-2023 02:31:35]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[Nov-15-2023 02:34:36]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[Nov-15-2023 02:35:10]  'info' API REST, corriendo en el puerto: 3002
+[Nov-15-2023 02:35:46]  'info' API REST, corriendo en el puerto: 3002
+[Nov-15-2023 02:35:50]  'info' 200 GET getAsistenciaRegistroPersonals, 4 values.
+[Nov-15-2023 02:35:59]  'info' 200 PUT updateAsistenciaFechaTurno, undefined values.
+[Nov-15-2023 02:37:50]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[Nov-15-2023 02:39:25]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[Nov-15-2023 02:39:31]  'info' 200 PUT updateAsistenciaFechaTurno, undefined values.
+[Nov-15-2023 02:39:31]  'info' 200 PUT updateAsistenciaFechaTurno, undefined values.
+[Nov-15-2023 02:40:02]  'info' API REST, corriendo en el puerto: 3002
+[Nov-15-2023 02:40:10]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[Nov-15-2023 02:40:14]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[Nov-15-2023 02:40:36]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[Nov-15-2023 02:40:38]  'info' 200 GET getAsistenciaRegistroPersonals, 4 values.
+[Nov-15-2023 02:40:45]  'info' 200 PUT updateAsistenciaFechaTurno, undefined values.
+[Nov-15-2023 02:40:50]  'info' 200 PUT updateAsistenciaFechaTurno, undefined values.
+[Nov-15-2023 02:40:50]  'info' 200 PUT updateAsistenciaFechaTurno, undefined values.
+[Nov-15-2023 02:40:51]  'error' 500 PUT uploadFileAsistenciaFechaTurno, Error: WHERE parameter "id" has invalid "undefined" value.
+[Nov-15-2023 02:40:51]  'info' 200 PUT updateAsistenciaFechaTurno, undefined values.
+[Nov-15-2023 02:40:53]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[Nov-15-2023 02:41:56]  'info' API REST, corriendo en el puerto: 3002
+[Nov-15-2023 02:42:10]  'info' 200 POST createAsistenciaFechaTurno, new id: 18.
+[Nov-15-2023 02:43:48]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[Nov-15-2023 02:43:50]  'info' 200 GET getAsistenciaRegistroPersonals, 0 values.
+[Nov-15-2023 02:43:57]  'info' 200 GET createAsistenciaRegistroPersonal, undefined values.
+[Nov-15-2023 02:44:01]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[Nov-15-2023 02:44:03]  'info' 200 GET getAsistenciaRegistroPersonals, 1 values.
+[Nov-15-2023 02:44:09]  'info' 200 PUT updateAsistenciaFechaTurno, undefined values.
+[Nov-15-2023 02:44:13]  'info' 200 PUT updateAsistenciaFechaTurno, undefined values.
+[Nov-15-2023 02:44:13]  'info' 200 PUT updateAsistenciaFechaTurno, undefined values.
+[Nov-15-2023 02:44:14]  'info' 200 PUT uploadFileAsistenciaFechaTurno, undefined values.
+[Nov-15-2023 02:44:14]  'info' 200 PUT updateAsistenciaFechaTurno, undefined values.
+[Nov-15-2023 02:44:45]  'info' API REST, corriendo en el puerto: 3002

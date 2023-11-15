@@ -1,5 +1,6 @@
 'use strict'
 const models=require('../models')
+const logger=require('./../config/logger')
 
 async function getCentro_CostoCount(req,res){
   let [err,centro_costo]=await get(models.Centro_Costo.count({
@@ -14,9 +15,31 @@ async function getCentro_Costos(req,res){
   let [err,centro_costos]=await get(models.Centro_Costo.findAll({
     /* where:{estado: 'A'},
     include: [{all: true}] */
+    /*attributes: { 
+      exclude: [
+        'fechamod', 
+        'idusuario', 
+        'bukrs', 
+        'fechainicio', 
+        'fechabaja',
+        'zfundo',
+        'zetapa',
+        'zcampo',
+        'zturno',
+        'zcultivo',
+        'zvaried'
+      ]
+    }*/
   }))
-  if(err) return res.status(500).json({message: `${err}`})
-  if(centro_costos==null) return res.status(404).json({message: `Centro_Costos nulos`})
+  if(err){
+    logger.error(`500 GET GET_CENTRO_COSTOS, ${err}.`)
+    return res.status(500).json({message: `${err}`})
+  }
+  if(centro_costos==null){ 
+    logger.error(`404 GET GET_CENTRO_COSTOS, valor nulo.`)
+    return res.status(404).json({message: `Centro_Costos nulos`})
+  }
+  logger.info(`200 GET GET_CENTRO_COSTOS ${centro_costos.length} values.`)
   res.status(200).json(centro_costos)
 }
 
