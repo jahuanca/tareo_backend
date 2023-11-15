@@ -1,6 +1,7 @@
 'use strict'
 const models = require('../models')
 const logger = require('./../config/logger')
+const moment= require('moment')
 
 async function getAsistenciaRegistroPersonalsCount(req, res) {
   let [err, asistenciaRegistroPersonals] = await get(models.AsistenciaRegistroPersonal.count({
@@ -79,16 +80,20 @@ async function createAsistenciaRegistroPersonal(req, res) {
     idasistenciaturno: req.body.idasistenciaturno,
     codigoempresa: req.body.codigoempresa,
     tipomovimiento: req.body.tipomovimiento,
-    fechaentrada: req.body.fechaentrada,
-    horaentrada: req.body.horaentrada,
     idubicacionentrada: req.body.idubicacionentrada,
     idubicacionsalida: req.body.idubicacionsalida,
-    fechasalida: req.body.fechasalida,
-    horasalida: req.body.horasalida,
     idturno: req.body.idturno,
     fechaturno: req.body.fechaturno,
     idusuario: req.body.idusuario,
     fechamod: req.body.fechamod,
+
+    fechaentrada: new Date(),
+    horaentrada: new Date(),
+
+    /*fechaentrada: req.body.fechaentrada,
+    horaentrada: req.body.horaentrada,
+    fechasalida: req.body.fechasalida,
+    horasalida: req.body.horasalida,*/
 
     accion: 'I',
     accion_usuario: 'Creo un nuevo asistenciaRegistroPersonal.',
@@ -108,11 +113,42 @@ async function createAsistenciaRegistroPersonal(req, res) {
 }
 
 async function updateAsistenciaRegistroPersonal(req, res) {
+
+  let [errU, valueToUpdate]= await get(
+    models.AsistenciaRegistroPersonal.findOne(
+      {
+        where: {idasistencia :req.body.idasistencia}
+      }
+    )
+  );
+
+  if (errU) {
+    logger.error(`500 PUT updateAsistenciaRegistroPersonal, ${errU}.`)
+    return res.status(500).json({ message: `${errU}` })
+  }
+
+  if(valueToUpdate){
+    console.log(valueToUpdate);
+    let horaMinima = addMinutes(valueToUpdate.horaentrada, 5);
+    console.log('Min:'+ horaMinima.getTime());
+    console.log('Act:'+ Date.now());
+    if(
+      horaMinima.getTime() > Date.now()
+    ){
+      logger.error(`500 PUT updateAsistenciaRegistroPersonal, Debe esperar 5 minutos.`)
+      console.log('es mayor');
+      return res.status(500).json({ message: `Debe esperar 5 minutos.` })
+    }
+  }
+
   let [err, asistenciaRegistroPersonal] = await get(models.AsistenciaRegistroPersonal.update({
-    horasalida: req.body.horasalida,
     tipomovimiento: req.body.tipomovimiento,
-    fechasalida: req.body.fechasalida,
     fechamod: req.body.fechamod,
+    fechasalida: new Date(),
+    horasalida: new Date(),
+
+    /*horasalida: req.body.horasalida,
+    fechasalida: req.body.fechasalida,*/
 
     accion: 'U',
     accion_usuario: 'Edito un asistenciaRegistroPersonal.',
@@ -133,7 +169,7 @@ async function updateAsistenciaRegistroPersonal(req, res) {
     logger.error(`404 PUT updateAsistenciaRegistroPersonal, asistenciaRegistroPersonal nulos.`)
     return res.status(404).json({ message: `asistenciaRegistroPersonals nulos` })
   }
-  logger.info(`200 PUT updateAsistenciaRegistroPersonal, ${asistenciaRegistroPersonal[1][0].dataValues.length} values.`)
+  logger.info(`200 PUT updateAsistenciaRegistroPersonal, ${asistenciaRegistroPersonal[1][0].dataValues.idasistencia} values.`)
   res.status(200).json(asistenciaRegistroPersonal[1][0].dataValues)
 }
 
@@ -178,4 +214,8 @@ module.exports = {
   createAsistenciaRegistroPersonal,
   updateAsistenciaRegistroPersonal,
   deleteAsistenciaRegistroPersonal
+}
+
+function addMinutes(date, minutes) {
+  return new Date(date.getTime() + minutes*60000 + 5 * 3600000);
 }

@@ -104,3 +104,17 @@ notNull Violation: AsistenciaRegistroPersonal.fechaturno cannot be null.
 [Nov-15-2023 12:43:17]  'error' 500 DELETE deleteAsistenciaRegistroPersonal, Error: WHERE parameter "idasistencia" has invalid "undefined" value.
 [Nov-15-2023 13:17:19]  'error' 500 GET createAsistenciaRegistroPersonal, SequelizeValidationError: notNull Violation: AsistenciaRegistroPersonal.idturno cannot be null.
 [Nov-15-2023 13:21:27]  'error' 500 GET getAsistenciaFechaTurnos, SequelizeDatabaseError: Ambiguous column name 'idTurno'..
+[Nov-15-2023 13:22:40]  'error' 500 GET createAsistenciaRegistroPersonal, SequelizeValidationError: notNull Violation: AsistenciaRegistroPersonal.idturno cannot be null.
+[Nov-15-2023 15:04:48]  'error' 500 PUT updateAsistenciaRegistroPersonal, Debe esperar 5 minutos.
+[Nov-15-2023 15:10:22]  'error' 500 PUT updateAsistenciaRegistroPersonal, Debe esperar 5 minutos.
+[Nov-15-2023 15:12:14]  'error' 500 PUT updateAsistenciaRegistroPersonal, Debe esperar 5 minutos.
+[Nov-15-2023 15:12:19]  'error' 500 PUT updateAsistenciaRegistroPersonal, Debe esperar 5 minutos.
+[Nov-15-2023 15:13:28]  'error' 500 PUT updateAsistenciaRegistroPersonal, Debe esperar 5 minutos.
+[Nov-15-2023 15:19:19]  'error' 500 PUT updateAsistenciaRegistroPersonal, Debe esperar 5 minutos.
+[Nov-15-2023 15:28:54]  'error' 500 PUT updateAsistenciaRegistroPersonal, Debe esperar 5 minutos.
+[Nov-15-2023 15:31:12]  'error' 500 PUT updateAsistenciaRegistroPersonal, Debe esperar 5 minutos.
+[Nov-15-2023 15:37:46]  'error' 500 PUT updateAsistenciaRegistroPersonal, Debe esperar 5 minutos.
+[Nov-15-2023 15:40:20]  'error' 500 PUT updateAsistenciaRegistroPersonal, Debe esperar 5 minutos.
+[Nov-15-2023 15:53:45]  'error' 500 PUT updateAsistenciaRegistroPersonal, Debe esperar 5 minutos.
+[Nov-15-2023 16:20:10]  'error' 500 PUT updateAsistenciaRegistroPersonal, Debe esperar 5 minutos.
+[Nov-15-2023 16:35:11]  'error' 500 PUT updateAsistenciaRegistroPersonal, Debe esperar 5 minutos.

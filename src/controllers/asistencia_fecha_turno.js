@@ -258,6 +258,8 @@ SELECT AF.idasistenciaturno as "idasistenciaturno",
 	T.idturno  as "Turno.idturno",
 	T.turno as "Turno.turno",
 	U.ubicacion  as "Ubicacion.ubicacion",
+  U.idubicacion  as "Ubicacion.idubicacion",
+  AF.idubicacion  as "idubicacion",
 	AF.estado as "estado",
 	(SELECT COUNT(*) FROM Asistencia_RegistrosPersonal 
 	where Asistencia_RegistrosPersonal.idasistenciaturno = AF.idasistenciaturno 
