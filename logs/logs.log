@@ -1092,3 +1092,6 @@ notNull Violation: AsistenciaRegistroPersonal.fechaturno cannot be null.
 [Nov-15-2023 16:37:48]  'info' 200 GET getAsistenciaRegistroPersonals, 7 values.
 [Nov-15-2023 16:40:18]  'info' 200 PUT updateAsistenciaRegistroPersonal, 61 values.
 [Nov-15-2023 16:40:19]  'info' 200 GET getAsistenciaRegistroPersonals, 7 values.
+[Nov-15-2023 18:16:01]  'info' API REST, corriendo en el puerto: 3002
+[Nov-15-2023 18:20:04]  'info' API REST, corriendo en el puerto: 3002
+[Nov-15-2023 18:20:36]  'info' API REST, corriendo en el puerto: 3002

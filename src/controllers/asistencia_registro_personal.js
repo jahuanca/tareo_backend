@@ -87,8 +87,8 @@ async function createAsistenciaRegistroPersonal(req, res) {
     idusuario: req.body.idusuario,
     fechamod: req.body.fechamod,
 
-    fechaentrada: new Date(),
-    horaentrada: new Date(),
+    fechaentrada: getNowTime(new Date()),
+    horaentrada: getNowTime(new Date()),
 
     /*fechaentrada: req.body.fechaentrada,
     horaentrada: req.body.horaentrada,
@@ -144,8 +144,8 @@ async function updateAsistenciaRegistroPersonal(req, res) {
   let [err, asistenciaRegistroPersonal] = await get(models.AsistenciaRegistroPersonal.update({
     tipomovimiento: req.body.tipomovimiento,
     fechamod: req.body.fechamod,
-    fechasalida: new Date(),
-    horasalida: new Date(),
+    fechasalida: getNowTime(new Date()),
+    horasalida: getNowTime(new Date()),
 
     /*horasalida: req.body.horasalida,
     fechasalida: req.body.fechasalida,*/
@@ -217,5 +217,9 @@ module.exports = {
 }
 
 function addMinutes(date, minutes) {
-  return new Date(date.getTime() + minutes*60000/* + 5 * 3600000 */);
+  return new Date(date.getTime() + minutes*60000 - 5 * 3600000 );
+}
+
+function getNowTime(date) {
+  return new Date(date.getTime() - 5 * 3600000);
 }
