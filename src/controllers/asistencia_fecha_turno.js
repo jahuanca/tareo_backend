@@ -38,41 +38,8 @@ async function getAsistenciaFechaTurnosByLimitAndOffset(req, res) {
 }
 
 async function getAsistenciaFechaTurnos(req, res) {
-
-  /*let [err, AsistenciaFechaTurnos] = await get(models.AsistenciaFechaTurno.findAll({
-    where: {
-      estado: {
-        [models.Sequelize.Op.ne]: 'I'
-      },
-      //idusuario: req.query.idusuario,
-    },
-    /*attributes: {
-      include: [[models.Sequelize.fn("COUNT", models.Sequelize.col("AsistenciaRegistroPersonals.idasistencia")), "sizeDetails"]]
-    },
-    include: [
-      {
-        model: models.AsistenciaRegistroPersonal,
-        as: 'registros',
-        attributes: {
-          include: [
-            models.sequelize.literal(
-              "(SELECT COUNT(*) FROM Asistencia_RegistrosPersonal where Asistencia_RegistrosPersonal.idasistenciaturno = 15)"
-              ), "laughReactionsCount"
-          ]
-        }
-      }
-      //{model: models.AsistenciaRegistroPersonal, attributes: [], as: 'AsistenciaRegistroPersonals'},
-      //{model: models.Turno, as: 'Turno'},
-      //{model: models.AsistenciaUbicacion, as: 'Ubicacion'},
-    ],
-    //group: ['AsistenciaRegistroPersonals.idasistencia']
-  }))*/
-
   const [err, AsistenciaFechaTurnos] = await get(models.sequelize.query(
-    getQuery(req.query.idusuario,), {
-    //model: models.AsistenciaFechaTurno,
-    //mapToModel: true
-  }))
+    getQuery(req.query.idusuario)))
   if (err) {
     logger.error(`500 GET getAsistenciaFechaTurnos, ${err}.`)
     return res.status(500).json({ message: `${err}` })
@@ -82,6 +49,7 @@ async function getAsistenciaFechaTurnos(req, res) {
     return res.status(404).json({ message: `AsistenciaFechaTurnos nulos` })
   }
   logger.info(`200 GET getAsistenciaFechaTurnos, ${AsistenciaFechaTurnos.length} values.`)
+  console.log('resultado');
   res.status(200).json(transform(AsistenciaFechaTurnos[0]))
 }
 
@@ -232,7 +200,7 @@ async function deleteAsistenciaFechaTurno(req, res) {
     logger.error(`404 DELETE deleteAsistenciaFechaTurno, AsistenciaFechaTurno nulos.`)
     return res.status(404).json({ message: `AsistenciaFechaTurno nulos` })
   }
-  logger.info(`200 DELETE deleteAsistenciaFechaTurno, ${AsistenciaFechaTurno[1][0].length} values.`)
+  logger.info(`200 DELETE deleteAsistenciaFechaTurno, ${AsistenciaFechaTurno[1][0].dataValues} values.`)
   res.status(200).json(AsistenciaFechaTurno[1][0].dataValues)
 }
 
@@ -283,22 +251,22 @@ module.exports = {
   uploadFileAsistenciaFechaTurno,
 }
 
-const getQuery= (idusuario)=> `SELECT AF.idasistenciaturno as "idasistenciaturno", 
-AF.fecha as "fecha",
-T.idturno  as "Turno.idturno",
-AF.idturno  as "idturno",
-AF.idubicacion  as "idubicacion",
-AF.idusuario  as "idusuario",
-T.turno as "Turno.turno",
-U.ubicacion  as "Ubicacion.ubicacion",
-U.idubicacion  as "Ubicacion.idubicacion",
-AF.estado as "estado",
-(SELECT COUNT(*) FROM Asistencia_RegistrosPersonal 
-where Asistencia_RegistrosPersonal.idasistenciaturno = AF.idasistenciaturno) as sizeDetails
-FROM Asistencia_FechaxTurno as AF INNER JOIN Turno as T
-ON AF.idturno  = T.idturno  
-INNER JOIN Asistencia_Ubicacion as U ON AF.idubicacion = U.idubicacion 
-WHERE idusuario = ${idusuario} 
-AND estado != 'I'
-ORDER BY idasistenciaturno DESC
+const getQuery= (idusuario)=> `
+SELECT AF.idasistenciaturno as "idasistenciaturno", 
+	AF.fecha as "fecha",
+	T.idturno  as "Turno.idturno",
+	T.turno as "Turno.turno",
+	U.ubicacion  as "Ubicacion.ubicacion",
+	AF.estado as "estado",
+	(SELECT COUNT(*) FROM Asistencia_RegistrosPersonal 
+	where Asistencia_RegistrosPersonal.idasistenciaturno = AF.idasistenciaturno 
+	AND Asistencia_RegistrosPersonal.tipomovimiento= 'S') as sizeSalidas,
+	(SELECT COUNT(*) FROM Asistencia_RegistrosPersonal 
+	where Asistencia_RegistrosPersonal.idasistenciaturno = AF.idasistenciaturno
+	AND Asistencia_RegistrosPersonal.tipomovimiento= 'I') as sizeEntradas
+	FROM Asistencia_FechaxTurno as AF INNER JOIN Turno as T
+	ON AF.idturno  = T.idturno  
+	INNER JOIN Asistencia_Ubicacion as U ON AF.idubicacion = U.idubicacion 
+	WHERE idusuario = 1 AND estado != 'I'
+	ORDER BY idasistenciaturno DESC;
 `;

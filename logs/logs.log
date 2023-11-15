@@ -834,3 +834,75 @@ notNull Violation: AsistenciaRegistroPersonal.fechaturno cannot be null.
 [Nov-15-2023 02:44:14]  'info' 200 PUT uploadFileAsistenciaFechaTurno, undefined values.
 [Nov-15-2023 02:44:14]  'info' 200 PUT updateAsistenciaFechaTurno, undefined values.
 [Nov-15-2023 02:44:45]  'info' API REST, corriendo en el puerto: 3002
+[Nov-15-2023 11:42:55]  'info' API REST, corriendo en el puerto: 3002
+[Nov-15-2023 11:43:19]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[Nov-15-2023 11:43:40]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[Nov-15-2023 11:45:00]  'info' API REST, corriendo en el puerto: 3002
+[Nov-15-2023 11:45:48]  'info' API REST, corriendo en el puerto: 3002
+[Nov-15-2023 11:46:08]  'info' API REST, corriendo en el puerto: 3002
+[Nov-15-2023 11:46:34]  'info' API REST, corriendo en el puerto: 3002
+[Nov-15-2023 11:46:38]  'info' API REST, corriendo en el puerto: 3002
+[Nov-15-2023 11:48:01]  'info' API REST, corriendo en el puerto: 3002
+[Nov-15-2023 11:48:50]  'info' API REST, corriendo en el puerto: 3002
+[Nov-15-2023 11:49:35]  'info' API REST, corriendo en el puerto: 3002
+[Nov-15-2023 11:50:02]  'info' API REST, corriendo en el puerto: 3002
+[Nov-15-2023 11:50:16]  'info' API REST, corriendo en el puerto: 3002
+[Nov-15-2023 11:51:04]  'info' API REST, corriendo en el puerto: 3002
+[Nov-15-2023 11:51:35]  'info' API REST, corriendo en el puerto: 3002
+[Nov-15-2023 11:52:12]  'info' API REST, corriendo en el puerto: 3002
+[Nov-15-2023 11:52:26]  'info' API REST, corriendo en el puerto: 3002
+[Nov-15-2023 11:53:08]  'info' API REST, corriendo en el puerto: 3002
+[Nov-15-2023 11:53:15]  'info' API REST, corriendo en el puerto: 3002
+[Nov-15-2023 11:53:40]  'info' API REST, corriendo en el puerto: 3002
+[Nov-15-2023 11:53:48]  'info' API REST, corriendo en el puerto: 3002
+[Nov-15-2023 11:54:39]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[Nov-15-2023 11:54:51]  'info' API REST, corriendo en el puerto: 3002
+[Nov-15-2023 11:55:02]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[Nov-15-2023 11:57:16]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[Nov-15-2023 11:57:44]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[Nov-15-2023 11:58:56]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[Nov-15-2023 12:01:51]  'info' 200 DELETE deleteAsistenciaFechaTurno, undefined values.
+[Nov-15-2023 12:03:23]  'info' API REST, corriendo en el puerto: 3002
+[Nov-15-2023 12:04:10]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[Nov-15-2023 12:05:08]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[Nov-15-2023 12:05:28]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[Nov-15-2023 12:05:30]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[Nov-15-2023 12:05:48]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[Nov-15-2023 12:05:49]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[Nov-15-2023 12:05:58]  'info' 200 DELETE deleteAsistenciaFechaTurno, [object Object] values.
+[Nov-15-2023 12:06:01]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[Nov-15-2023 12:06:15]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[Nov-15-2023 12:07:21]  'info' 200 DELETE deleteAsistenciaFechaTurno, [object Object] values.
+[Nov-15-2023 12:08:30]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[Nov-15-2023 12:08:32]  'info' 200 DELETE deleteAsistenciaFechaTurno, [object Object] values.
+[Nov-15-2023 12:08:37]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[Nov-15-2023 12:15:48]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[Nov-15-2023 12:16:12]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[Nov-15-2023 12:17:09]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[Nov-15-2023 12:17:58]  'info' API REST, corriendo en el puerto: 3002
+[Nov-15-2023 12:18:01]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[Nov-15-2023 12:27:56]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[Nov-15-2023 12:29:52]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[Nov-15-2023 12:31:11]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[Nov-15-2023 12:31:48]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[Nov-15-2023 12:32:46]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[Nov-15-2023 12:34:23]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[Nov-15-2023 12:34:54]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[Nov-15-2023 12:35:07]  'info' 200 GET getAsistenciaRegistroPersonals, 13 values.
+[Nov-15-2023 12:36:32]  'info' 200 GET getAsistenciaRegistroPersonals, 13 values.
+[Nov-15-2023 12:36:58]  'info' API REST, corriendo en el puerto: 3002
+[Nov-15-2023 12:37:00]  'info' 200 GET getAsistenciaRegistroPersonals, 13 values.
+[Nov-15-2023 12:37:06]  'info' 200 GET getAsistenciaRegistroPersonals, 13 values.
+[Nov-15-2023 12:37:45]  'info' API REST, corriendo en el puerto: 3002
+[Nov-15-2023 12:37:49]  'error' 500 GET getAsistenciaRegistroPersonals, SequelizeDatabaseError: Invalid column name 'DESC'..
+[Nov-15-2023 12:38:10]  'info' API REST, corriendo en el puerto: 3002
+[Nov-15-2023 12:38:15]  'info' 200 GET getAsistenciaRegistroPersonals, 13 values.
+[Nov-15-2023 12:38:18]  'info' 200 GET getAsistenciaRegistroPersonals, 13 values.
+[Nov-15-2023 12:39:17]  'error' 500 DELETE getAsistenciaRegistroPersonalsCount, SequelizeDatabaseError: Invalid column name 'id'..
+[Nov-15-2023 12:40:03]  'info' API REST, corriendo en el puerto: 3002
+[Nov-15-2023 12:40:45]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[Nov-15-2023 12:41:14]  'info' API REST, corriendo en el puerto: 3002
+[Nov-15-2023 12:41:29]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[Nov-15-2023 12:43:02]  'info' 200 GET getAsistenciaRegistroPersonals, 13 values.
+[Nov-15-2023 12:43:13]  'info' 200 GET getAsistenciaRegistroPersonals, 13 values.
+[Nov-15-2023 12:43:17]  'error' 500 DELETE deleteAsistenciaRegistroPersonal, Error: WHERE parameter "idasistencia" has invalid "undefined" value.

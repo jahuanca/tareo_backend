@@ -42,6 +42,7 @@ async function getAsistenciaRegistroPersonals(req, res) {
   console.log(querys)
   let [err, asistenciaRegistroPersonals] = await get(models.AsistenciaRegistroPersonal.findAll({
     where: querys,
+    order: [['idasistencia', 'DESC']],
     include: [{ all: true }]
   }))
   if (err) {
@@ -146,19 +147,19 @@ async function deleteAsistenciaRegistroPersonal(req, res) {
     usuario: 0
   }, {
     where: {
-      id: req.params.id, estado: 'A'
+      idasistencia: req.params.id
     },
     individualHooks: true
   }))
   if (err) {
-    logger.error(`500 DELETE getAsistenciaRegistroPersonalsCount, ${err}.`)
+    logger.error(`500 DELETE deleteAsistenciaRegistroPersonal, ${err}.`)
     return res.status(500).json({ message: `${err}` })
   }
   if (asistenciaRegistroPersonal == null) {
     logger.error(`404 DELETE deleteAsistenciaRegistroPersonal, asistenciaRegistroPersonal nulos.`)
     return res.status(404).json({ message: `AsistenciaRegistroPersonal nulos` })
   }
-  logger.info(`200 DELETE deleteAsistenciaRegistroPersonal, ${asistenciaRegistroPersonal[1][0].length} values.`)
+  logger.info(`200 DELETE deleteAsistenciaRegistroPersonal, ${asistenciaRegistroPersonal[1][0].dataValues} values.`)
   res.status(200).json(asistenciaRegistroPersonal[1][0].dataValues)
 }
 

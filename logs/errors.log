@@ -99,3 +99,6 @@ notNull Violation: AsistenciaRegistroPersonal.fechaturno cannot be null.
 [Nov-15-2023 02:29:23]  'error' 500 GET getAsistenciaFechaTurnos, SequelizeDatabaseError: Invalid column name 'undefined'..
 [Nov-15-2023 02:31:23]  'error' 500 GET getAsistenciaFechaTurnos, SequelizeDatabaseError: Invalid column name 'undefined'..
 [Nov-15-2023 02:40:51]  'error' 500 PUT uploadFileAsistenciaFechaTurno, Error: WHERE parameter "id" has invalid "undefined" value.
+[Nov-15-2023 12:37:49]  'error' 500 GET getAsistenciaRegistroPersonals, SequelizeDatabaseError: Invalid column name 'DESC'..
+[Nov-15-2023 12:39:17]  'error' 500 DELETE getAsistenciaRegistroPersonalsCount, SequelizeDatabaseError: Invalid column name 'id'..
+[Nov-15-2023 12:43:17]  'error' 500 DELETE deleteAsistenciaRegistroPersonal, Error: WHERE parameter "idasistencia" has invalid "undefined" value.
