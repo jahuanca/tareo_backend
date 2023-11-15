@@ -1095,3 +1095,6 @@ notNull Violation: AsistenciaRegistroPersonal.fechaturno cannot be null.
 [Nov-15-2023 18:16:01]  'info' API REST, corriendo en el puerto: 3002
 [Nov-15-2023 18:20:04]  'info' API REST, corriendo en el puerto: 3002
 [Nov-15-2023 18:20:36]  'info' API REST, corriendo en el puerto: 3002
+[Nov-15-2023 18:21:30]  'info' API REST, corriendo en el puerto: 3002
+[Nov-15-2023 18:26:16]  'info' API REST, corriendo en el puerto: 3002
+[Nov-15-2023 18:46:27]  'info' API REST, corriendo en el puerto: 3002

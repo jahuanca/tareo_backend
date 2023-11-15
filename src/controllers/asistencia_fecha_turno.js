@@ -267,9 +267,9 @@ SELECT AF.idasistenciaturno as "idasistenciaturno",
 	(SELECT COUNT(*) FROM Asistencia_RegistrosPersonal 
 	where Asistencia_RegistrosPersonal.idasistenciaturno = AF.idasistenciaturno
 	AND Asistencia_RegistrosPersonal.tipomovimiento= 'I') as sizeEntradas
-	FROM Asistencia_FechaxTurno as AF INNER JOIN Turno as T
+	FROM Asistencia_FechaxTurno as AF INNER JOIN asistencia_turno as T
 	ON AF.idturno  = T.idturno  
 	INNER JOIN Asistencia_Ubicacion as U ON AF.idubicacion = U.idubicacion 
-	WHERE idusuario = 1 AND estado != 'I'
+	WHERE idusuario = ${idusuario} AND estado != 'I'
 	ORDER BY idasistenciaturno DESC;
 `;

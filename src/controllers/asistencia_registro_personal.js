@@ -217,7 +217,7 @@ module.exports = {
 }
 
 function addMinutes(date, minutes) {
-  return new Date(date.getTime() + minutes*60000 - 5 * 3600000 );
+  return new Date(date.getTime() + minutes*60000 + 5 * 3600000 );
 }
 
 function getNowTime(date) {
