@@ -1083,3 +1083,12 @@ notNull Violation: AsistenciaRegistroPersonal.fechaturno cannot be null.
 [Nov-15-2023 16:34:39]  'info' API REST, corriendo en el puerto: 3002
 [Nov-15-2023 16:35:06]  'info' 200 GET createAsistenciaRegistroPersonal, undefined values.
 [Nov-15-2023 16:35:11]  'error' 500 PUT updateAsistenciaRegistroPersonal, Debe esperar 5 minutos.
+[Nov-15-2023 16:35:48]  'info' API REST, corriendo en el puerto: 3002
+[Nov-15-2023 16:35:59]  'error' 500 PUT updateAsistenciaRegistroPersonal, Debe esperar 5 minutos.
+[Nov-15-2023 16:36:02]  'error' 500 PUT updateAsistenciaRegistroPersonal, Debe esperar 5 minutos.
+[Nov-15-2023 16:36:08]  'info' 200 GET getAsistenciaRegistroPersonals, 7 values.
+[Nov-15-2023 16:37:43]  'info' 200 GET getAsistenciaRegistroPersonals, 7 values.
+[Nov-15-2023 16:37:45]  'error' 500 PUT updateAsistenciaRegistroPersonal, Debe esperar 5 minutos.
+[Nov-15-2023 16:37:48]  'info' 200 GET getAsistenciaRegistroPersonals, 7 values.
+[Nov-15-2023 16:40:18]  'info' 200 PUT updateAsistenciaRegistroPersonal, 61 values.
+[Nov-15-2023 16:40:19]  'info' 200 GET getAsistenciaRegistroPersonals, 7 values.

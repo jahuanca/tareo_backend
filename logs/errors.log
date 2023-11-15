@@ -118,3 +118,6 @@ notNull Violation: AsistenciaRegistroPersonal.fechaturno cannot be null.
 [Nov-15-2023 15:53:45]  'error' 500 PUT updateAsistenciaRegistroPersonal, Debe esperar 5 minutos.
 [Nov-15-2023 16:20:10]  'error' 500 PUT updateAsistenciaRegistroPersonal, Debe esperar 5 minutos.
 [Nov-15-2023 16:35:11]  'error' 500 PUT updateAsistenciaRegistroPersonal, Debe esperar 5 minutos.
+[Nov-15-2023 16:35:59]  'error' 500 PUT updateAsistenciaRegistroPersonal, Debe esperar 5 minutos.
+[Nov-15-2023 16:36:02]  'error' 500 PUT updateAsistenciaRegistroPersonal, Debe esperar 5 minutos.
+[Nov-15-2023 16:37:45]  'error' 500 PUT updateAsistenciaRegistroPersonal, Debe esperar 5 minutos.
