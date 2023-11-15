@@ -1,4 +1,5 @@
 node_modules/
+logs/*
 node.rar
 config/config.json
 public/uploads/*

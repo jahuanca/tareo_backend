@@ -906,3 +906,19 @@ notNull Violation: AsistenciaRegistroPersonal.fechaturno cannot be null.
 [Nov-15-2023 12:43:02]  'info' 200 GET getAsistenciaRegistroPersonals, 13 values.
 [Nov-15-2023 12:43:13]  'info' 200 GET getAsistenciaRegistroPersonals, 13 values.
 [Nov-15-2023 12:43:17]  'error' 500 DELETE deleteAsistenciaRegistroPersonal, Error: WHERE parameter "idasistencia" has invalid "undefined" value.
+[Nov-15-2023 12:43:37]  'info' API REST, corriendo en el puerto: 3002
+[Nov-15-2023 12:43:45]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[Nov-15-2023 12:44:49]  'info' 200 GET getAsistenciaRegistroPersonals, 13 values.
+[Nov-15-2023 12:44:57]  'info' 200 DELETE deleteAsistenciaRegistroPersonal, [object Object] values.
+[Nov-15-2023 12:46:47]  'info' 200 DELETE deleteAsistenciaRegistroPersonal, [object Object] values.
+[Nov-15-2023 13:16:37]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[Nov-15-2023 13:17:05]  'info' 200 GET getAsistenciaRegistroPersonals, 0 values.
+[Nov-15-2023 13:17:08]  'info' 200 GET getAsistenciaRegistroPersonals, 0 values.
+[Nov-15-2023 13:17:19]  'error' 500 GET createAsistenciaRegistroPersonal, SequelizeValidationError: notNull Violation: AsistenciaRegistroPersonal.idturno cannot be null.
+[Nov-15-2023 13:19:26]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[Nov-15-2023 13:19:59]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[Nov-15-2023 13:20:04]  'info' 200 GET getAsistenciaRegistroPersonals, 0 values.
+[Nov-15-2023 13:21:24]  'info' API REST, corriendo en el puerto: 3002
+[Nov-15-2023 13:21:27]  'error' 500 GET getAsistenciaFechaTurnos, SequelizeDatabaseError: Ambiguous column name 'idTurno'..
+[Nov-15-2023 13:21:42]  'info' API REST, corriendo en el puerto: 3002
+[Nov-15-2023 13:21:45]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.

@@ -254,6 +254,7 @@ module.exports = {
 const getQuery= (idusuario)=> `
 SELECT AF.idasistenciaturno as "idasistenciaturno", 
 	AF.fecha as "fecha",
+  AF.idTurno as "idturno",
 	T.idturno  as "Turno.idturno",
 	T.turno as "Turno.turno",
 	U.ubicacion  as "Ubicacion.ubicacion",
