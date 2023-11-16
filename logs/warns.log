@@ -125,3 +125,4 @@ notNull Violation: AsistenciaRegistroPersonal.fechaturno cannot be null.
 [Nov-15-2023 23:25:44]  'error' 500 DELETE deleteAsistenciaRegistroPersonal, SequelizeDatabaseError: Invalid column name 'horasalida'..
 [Nov-15-2023 23:27:15]  'error' 404 DELETE deleteAsistenciaRegistroPersonal, asistenciaRegistroPersonal nulos.
 [Nov-15-2023 23:27:24]  'error' 404 DELETE deleteAsistenciaRegistroPersonal, asistenciaRegistroPersonal nulos.
+[Nov-16-2023 01:05:20]  'error' 500 GET getAsistenciaFechaTurnos, SequelizeDatabaseError: Incorrect syntax near the keyword 'as'..
