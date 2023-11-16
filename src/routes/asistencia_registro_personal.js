@@ -22,6 +22,7 @@ router.get('/id/:id',asistenciaRegistroPersonal.getAsistenciaRegistroPersonal)
 router.post('/create',asistenciaRegistroPersonal.createAsistenciaRegistroPersonal)
 router.put('/update',asistenciaRegistroPersonal.updateAsistenciaRegistroPersonal)
 router.delete('/delete/:id', asistenciaRegistroPersonal.deleteAsistenciaRegistroPersonal)
+router.post('/registrar',asistenciaRegistroPersonal.registrar)
 
 module.exports=router
 /** 

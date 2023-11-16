@@ -1098,3 +1098,19 @@ notNull Violation: AsistenciaRegistroPersonal.fechaturno cannot be null.
 [Nov-15-2023 18:21:30]  'info' API REST, corriendo en el puerto: 3002
 [Nov-15-2023 18:26:16]  'info' API REST, corriendo en el puerto: 3002
 [Nov-15-2023 18:46:27]  'info' API REST, corriendo en el puerto: 3002
+[Nov-15-2023 18:46:40]  'info' API REST, corriendo en el puerto: 3002
+[Nov-15-2023 23:05:16]  'info' API REST, corriendo en el puerto: 3002
+[Nov-15-2023 23:14:26]  'info' API REST, corriendo en el puerto: 3002
+[Nov-15-2023 23:16:35]  'info' API REST, corriendo en el puerto: 3002
+[Nov-15-2023 23:21:09]  'info' API REST, corriendo en el puerto: 3002
+[Nov-15-2023 23:22:21]  'info' API REST, corriendo en el puerto: 3002
+[Nov-15-2023 23:22:47]  'info' API REST, corriendo en el puerto: 3002
+[Nov-15-2023 23:22:51]  'info' API REST, corriendo en el puerto: 3002
+[Nov-15-2023 23:24:14]  'error' 500 DELETE deleteAsistenciaRegistroPersonal, SequelizeDatabaseError: Invalid column name 'fechasalida'..
+[Nov-15-2023 23:25:35]  'info' API REST, corriendo en el puerto: 3002
+[Nov-15-2023 23:25:44]  'error' 500 DELETE deleteAsistenciaRegistroPersonal, SequelizeDatabaseError: Invalid column name 'horasalida'..
+[Nov-15-2023 23:25:58]  'info' API REST, corriendo en el puerto: 3002
+[Nov-15-2023 23:26:00]  'info' 200 DELETE deleteAsistenciaRegistroPersonal, 26 values.
+[Nov-15-2023 23:27:02]  'info' 200 DELETE deleteAsistenciaRegistroPersonal, 26 values.
+[Nov-15-2023 23:27:15]  'error' 404 DELETE deleteAsistenciaRegistroPersonal, asistenciaRegistroPersonal nulos.
+[Nov-15-2023 23:27:24]  'error' 404 DELETE deleteAsistenciaRegistroPersonal, asistenciaRegistroPersonal nulos.

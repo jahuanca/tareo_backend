@@ -199,6 +199,107 @@ async function deleteAsistenciaRegistroPersonal(req, res) {
   res.status(200).json(asistenciaRegistroPersonal[1][0].dataValues)
 }
 
+async function registrar(req, res){
+  let [err, registro] = await get(models.AsistenciaRegistroPersonal.findOne({
+    where: { 
+      idasistenciaturno: req.body.idasistenciaturno,
+      codigoempresa:  req.body.codigoempresa,
+      horasalida: null,
+    }
+  }))
+  if (err) {
+    logger.error(`500 DELETE deleteAsistenciaRegistroPersonal, ${err}.`)
+    return res.status(500).json({ message: `${err}` })
+  }
+  if (registro == null) {
+    //creacion
+    let [err, asistenciaRegistroPersonal] = await get(models.AsistenciaRegistroPersonal.create({
+      idasistenciaturno: req.body.idasistenciaturno,
+      codigoempresa: req.body.codigoempresa,
+      tipomovimiento: 'I',
+      idubicacionentrada: req.body.idubicacionentrada,
+      idubicacionsalida: req.body.idubicacionsalida,
+      idturno: req.body.idturno,
+      fechaturno: req.body.fechaturno,
+      idusuario: req.body.idusuario,
+      fechamod: req.body.fechamod,
+  
+      fechaentrada: getNowTime(new Date()),
+      horaentrada: getNowTime(new Date()),
+  
+      accion: 'I',
+      accion_usuario: 'Creo un nuevo asistenciaRegistroPersonal.',
+      ip: req.ip,
+      usuario: 0
+    }))
+    if (err) {
+      logger.error(`500 GET createAsistenciaRegistroPersonal, ${err}.`)
+      return res.status(500).json({ message: `${err}` })
+    }
+    if (asistenciaRegistroPersonal == null) {
+      logger.error(`400 GET createAsistenciaRegistroPersonal, asistenciaRegistroPersonal nulos.`)
+      return res.status(404).json({ message: `asistenciaRegistroPersonal nulos` })
+    }
+    logger.info(`200 GET createAsistenciaRegistroPersonal, ${asistenciaRegistroPersonal.idasistencia} values.`)
+    return res.status(200).json(asistenciaRegistroPersonal)
+  }else{
+    //modificacion
+    let [errU, valueToUpdate]= await get(
+      models.AsistenciaRegistroPersonal.findOne(
+        {
+          where: {idasistencia :req.body.idasistencia}
+        }
+      )
+    );
+  
+    if (errU) {
+      logger.error(`500 PUT updateAsistenciaRegistroPersonal, ${errU}.`)
+      return res.status(500).json({ message: `${errU}` })
+    }
+  
+    if(valueToUpdate){
+      console.log(valueToUpdate);
+      let horaMinima = addMinutes(valueToUpdate.horaentrada, 5);
+      console.log('Min:'+ horaMinima.getTime());
+      console.log('Act:'+ Date.now());
+      if(
+        horaMinima.getTime() > Date.now()
+      ){
+        logger.error(`500 PUT updateAsistenciaRegistroPersonal, Debe esperar 5 minutos.`)
+        console.log('es mayor');
+        return res.status(500).json({ message: `Debe esperar 5 minutos.` })
+      }
+    }
+  
+    let [err, asistenciaRegistroPersonal] = await get(models.AsistenciaRegistroPersonal.update({
+      tipomovimiento: 'S',
+      fechamod: req.body.fechamod,
+      fechasalida: getNowTime(new Date()),
+      horasalida: getNowTime(new Date()),  
+      accion: 'U',
+      accion_usuario: 'Edito un asistenciaRegistroPersonal.',
+      ip: req.ip,
+      usuario: 0
+    }, {
+      where: {
+        idasistencia: req.body.idasistencia, estado: 'A'
+      },
+      individualHooks: true,
+      validate: false
+    }))
+    if (err) {
+      logger.error(`500 PUT updateAsistenciaRegistroPersonal, ${err}.`)
+      return res.status(500).json({ message: `${err}` })
+    }
+    if (asistenciaRegistroPersonal == null) {
+      logger.error(`404 PUT updateAsistenciaRegistroPersonal, asistenciaRegistroPersonal nulos.`)
+      return res.status(404).json({ message: `asistenciaRegistroPersonals nulos` })
+    }
+    logger.info(`200 PUT updateAsistenciaRegistroPersonal, ${asistenciaRegistroPersonal[1][0].dataValues.idasistencia} values.`)
+    return res.status(200).json(asistenciaRegistroPersonal[1][0].dataValues)
+  }
+}
+
 function get(promise) {
   return promise.then(data => {
     return [null, data];
@@ -213,7 +314,8 @@ module.exports = {
   getAsistenciaRegistroPersonal,
   createAsistenciaRegistroPersonal,
   updateAsistenciaRegistroPersonal,
-  deleteAsistenciaRegistroPersonal
+  deleteAsistenciaRegistroPersonal,
+  registrar,
 }
 
 function addMinutes(date, minutes) {
