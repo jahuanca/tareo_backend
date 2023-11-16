@@ -247,7 +247,7 @@ async function registrar(req, res){
     let [errU, valueToUpdate]= await get(
       models.AsistenciaRegistroPersonal.findOne(
         {
-          where: {idasistencia :req.body.idasistencia}
+          where: {idasistencia : registro.idasistencia}
         }
       )
     );
@@ -282,7 +282,7 @@ async function registrar(req, res){
       usuario: 0
     }, {
       where: {
-        idasistencia: req.body.idasistencia, estado: 'A'
+        idasistencia: registro.idasistencia
       },
       individualHooks: true,
       validate: false
@@ -291,8 +291,8 @@ async function registrar(req, res){
       logger.error(`500 PUT updateAsistenciaRegistroPersonal, ${err}.`)
       return res.status(500).json({ message: `${err}` })
     }
-    if (asistenciaRegistroPersonal == null) {
-      logger.error(`404 PUT updateAsistenciaRegistroPersonal, asistenciaRegistroPersonal nulos.`)
+    if (asistenciaRegistroPersonal[0] == 0) {
+      logger.error(`404 PUT updateAsistenciaRegistroPersonal, no se encontro asistenciaRegistroPersonal para modfiicar`)
       return res.status(404).json({ message: `asistenciaRegistroPersonals nulos` })
     }
     logger.info(`200 PUT updateAsistenciaRegistroPersonal, ${asistenciaRegistroPersonal[1][0].dataValues.idasistencia} values.`)
@@ -319,6 +319,7 @@ module.exports = {
 }
 
 function addMinutes(date, minutes) {
+  //return new Date(date.getTime() + minutes*60000 + 10 * 3600000 );
   return new Date(date.getTime() + minutes*60000 + 5 * 3600000 );
 }
 

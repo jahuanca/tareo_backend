@@ -126,3 +126,13 @@ notNull Violation: AsistenciaRegistroPersonal.fechaturno cannot be null.
 [Nov-15-2023 23:27:15]  'error' 404 DELETE deleteAsistenciaRegistroPersonal, asistenciaRegistroPersonal nulos.
 [Nov-15-2023 23:27:24]  'error' 404 DELETE deleteAsistenciaRegistroPersonal, asistenciaRegistroPersonal nulos.
 [Nov-16-2023 01:05:20]  'error' 500 GET getAsistenciaFechaTurnos, SequelizeDatabaseError: Incorrect syntax near the keyword 'as'..
+[Nov-16-2023 02:25:59]  'error' 500 PUT updateAsistenciaRegistroPersonal, Debe esperar 5 minutos.
+[Nov-16-2023 02:28:32]  'error' 500 PUT updateAsistenciaRegistroPersonal, Debe esperar 5 minutos.
+[Nov-16-2023 02:29:41]  'error' 500 PUT updateAsistenciaRegistroPersonal, Debe esperar 5 minutos.
+[Nov-16-2023 02:30:12]  'error' 500 PUT updateAsistenciaRegistroPersonal, Debe esperar 5 minutos.
+[Nov-16-2023 02:30:30]  'error' 500 PUT updateAsistenciaRegistroPersonal, Debe esperar 5 minutos.
+[Nov-16-2023 02:32:58]  'error' 500 PUT updateAsistenciaRegistroPersonal, Debe esperar 5 minutos.
+[Nov-16-2023 02:36:39]  'error' 500 PUT updateAsistenciaRegistroPersonal, Debe esperar 5 minutos.
+[Nov-16-2023 02:36:51]  'error' 500 PUT updateAsistenciaRegistroPersonal, Debe esperar 5 minutos.
+[Nov-16-2023 02:37:13]  'error' 500 PUT updateAsistenciaRegistroPersonal, Debe esperar 5 minutos.
+[Nov-16-2023 02:37:42]  'error' 500 PUT updateAsistenciaRegistroPersonal, Debe esperar 5 minutos.

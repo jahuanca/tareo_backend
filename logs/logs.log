@@ -1118,3 +1118,125 @@ notNull Violation: AsistenciaRegistroPersonal.fechaturno cannot be null.
 [Nov-16-2023 01:04:36]  'info' API REST, corriendo en el puerto: 3002
 [Nov-16-2023 01:05:07]  'info' API REST, corriendo en el puerto: 3002
 [Nov-16-2023 01:05:20]  'error' 500 GET getAsistenciaFechaTurnos, SequelizeDatabaseError: Incorrect syntax near the keyword 'as'..
+[Nov-16-2023 01:06:16]  'info' API REST, corriendo en el puerto: 3002
+[Nov-16-2023 01:06:27]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[Nov-16-2023 01:07:09]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[Nov-16-2023 01:16:14]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[Nov-16-2023 01:16:24]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[Nov-16-2023 01:16:25]  'info' 200 GET getAsistenciaRegistroPersonals, 0 values.
+[Nov-16-2023 01:16:31]  'info' 200 GET getAsistenciaRegistroPersonals, 0 values.
+[Nov-16-2023 01:16:34]  'info' 200 GET getAsistenciaRegistroPersonals, 0 values.
+[Nov-16-2023 01:18:38]  'info' API REST, corriendo en el puerto: 3002
+[Nov-16-2023 01:19:39]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[Nov-16-2023 01:20:42]  'info' 200 GET getAsistenciaRegistroPersonals, 0 values.
+[Nov-16-2023 01:25:16]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[Nov-16-2023 01:25:32]  'info' 200 GET getAsistenciaRegistroPersonals, 0 values.
+[Nov-16-2023 01:27:25]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[Nov-16-2023 01:27:31]  'info' 200 GET getAsistenciaRegistroPersonals, 0 values.
+[Nov-16-2023 01:28:12]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[Nov-16-2023 01:30:08]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[Nov-16-2023 01:30:19]  'info' 200 GET getAsistenciaRegistroPersonals, 0 values.
+[Nov-16-2023 01:30:24]  'info' 200 GET createAsistenciaRegistroPersonal, 99 values.
+[Nov-16-2023 01:32:42]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[Nov-16-2023 01:32:45]  'info' 200 GET getAsistenciaRegistroPersonals, 1 values.
+[Nov-16-2023 01:33:48]  'info' API REST, corriendo en el puerto: 3002
+[Nov-16-2023 01:33:59]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[Nov-16-2023 01:34:38]  'info' API REST, corriendo en el puerto: 3002
+[Nov-16-2023 01:34:44]  'info' 200 GET getAsistenciaRegistroPersonals, 1 values.
+[Nov-16-2023 01:35:44]  'info' API REST, corriendo en el puerto: 3002
+[Nov-16-2023 01:35:54]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[Nov-16-2023 01:37:20]  'info' API REST, corriendo en el puerto: 3002
+[Nov-16-2023 01:37:28]  'info' 200 GET getAsistenciaRegistroPersonals, 1 values.
+[Nov-16-2023 01:37:37]  'info' 200 PUT updateAsistenciaRegistroPersonal, 99 values.
+[Nov-16-2023 01:46:45]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[Nov-16-2023 01:46:51]  'info' 200 GET getAsistenciaRegistroPersonals, 1 values.
+[Nov-16-2023 01:46:55]  'info' 200 GET getAsistenciaRegistroPersonals, 1 values.
+[Nov-16-2023 01:47:04]  'info' 200 GET getAsistenciaRegistroPersonals, 1 values.
+[Nov-16-2023 01:47:29]  'info' 200 GET createAsistenciaRegistroPersonal, 100 values.
+[Nov-16-2023 01:48:07]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[Nov-16-2023 01:48:18]  'info' 200 GET getAsistenciaRegistroPersonals, 2 values.
+[Nov-16-2023 01:48:25]  'info' 200 PUT updateAsistenciaRegistroPersonal, 100 values.
+[Nov-16-2023 01:50:39]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[Nov-16-2023 01:51:10]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[Nov-16-2023 01:51:43]  'info' 200 GET getAsistenciaRegistroPersonals, 2 values.
+[Nov-16-2023 01:51:48]  'info' 200 GET createAsistenciaRegistroPersonal, 101 values.
+[Nov-16-2023 01:52:24]  'info' 200 GET getAsistenciaRegistroPersonals, 3 values.
+[Nov-16-2023 01:53:36]  'info' 200 PUT updateAsistenciaRegistroPersonal, 101 values.
+[Nov-16-2023 01:54:03]  'info' 200 GET getAsistenciaRegistroPersonals, 3 values.
+[Nov-16-2023 01:54:08]  'info' 200 GET createAsistenciaRegistroPersonal, 102 values.
+[Nov-16-2023 01:55:37]  'info' 200 GET getAsistenciaRegistroPersonals, 4 values.
+[Nov-16-2023 01:55:44]  'info' 200 PUT updateAsistenciaRegistroPersonal, 102 values.
+[Nov-16-2023 01:58:02]  'info' 200 GET createAsistenciaRegistroPersonal, 103 values.
+[Nov-16-2023 02:00:05]  'info' 200 GET getAsistenciaRegistroPersonals, 5 values.
+[Nov-16-2023 02:00:14]  'info' 200 PUT updateAsistenciaRegistroPersonal, 103 values.
+[Nov-16-2023 02:01:09]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[Nov-16-2023 02:01:14]  'info' 200 GET getAsistenciaRegistroPersonals, 5 values.
+[Nov-16-2023 02:01:23]  'info' 200 GET createAsistenciaRegistroPersonal, 104 values.
+[Nov-16-2023 02:03:49]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[Nov-16-2023 02:03:59]  'info' 200 GET getAsistenciaRegistroPersonals, 6 values.
+[Nov-16-2023 02:04:05]  'info' 200 PUT updateAsistenciaRegistroPersonal, 104 values.
+[Nov-16-2023 02:05:46]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[Nov-16-2023 02:06:04]  'info' 200 GET getAsistenciaRegistroPersonals, 2 values.
+[Nov-16-2023 02:06:14]  'info' 200 GET createAsistenciaRegistroPersonal, 105 values.
+[Nov-16-2023 02:08:48]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[Nov-16-2023 02:09:13]  'info' 200 GET getAsistenciaRegistroPersonals, 3 values.
+[Nov-16-2023 02:09:19]  'info' 200 PUT updateAsistenciaRegistroPersonal, 105 values.
+[Nov-16-2023 02:09:52]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[Nov-16-2023 02:10:45]  'info' 200 GET getAsistenciaRegistroPersonals, 3 values.
+[Nov-16-2023 02:10:51]  'info' 200 GET createAsistenciaRegistroPersonal, 106 values.
+[Nov-16-2023 02:13:59]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[Nov-16-2023 02:14:11]  'info' 200 GET getAsistenciaRegistroPersonals, 4 values.
+[Nov-16-2023 02:14:15]  'info' 200 PUT updateAsistenciaRegistroPersonal, 106 values.
+[Nov-16-2023 02:19:10]  'info' API REST, corriendo en el puerto: 3002
+[Nov-16-2023 02:19:36]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[Nov-16-2023 02:19:41]  'info' 200 GET getAsistenciaRegistroPersonals, 5 values.
+[Nov-16-2023 02:19:59]  'info' 200 PUT updateAsistenciaRegistroPersonal, 107 values.
+[Nov-16-2023 02:20:03]  'info' 200 GET createAsistenciaRegistroPersonal, 108 values.
+[Nov-16-2023 02:20:24]  'info' API REST, corriendo en el puerto: 3002
+[Nov-16-2023 02:20:32]  'info' 200 PUT updateAsistenciaRegistroPersonal, 108 values.
+[Nov-16-2023 02:21:00]  'info' API REST, corriendo en el puerto: 3002
+[Nov-16-2023 02:21:04]  'info' 200 GET createAsistenciaRegistroPersonal, 109 values.
+[Nov-16-2023 02:21:15]  'info' API REST, corriendo en el puerto: 3002
+[Nov-16-2023 02:21:19]  'info' 200 PUT updateAsistenciaRegistroPersonal, 109 values.
+[Nov-16-2023 02:21:52]  'info' 200 GET getAsistenciaRegistroPersonals, 7 values.
+[Nov-16-2023 02:22:28]  'info' API REST, corriendo en el puerto: 3002
+[Nov-16-2023 02:22:37]  'info' 200 GET createAsistenciaRegistroPersonal, 110 values.
+[Nov-16-2023 02:22:40]  'info' 200 PUT updateAsistenciaRegistroPersonal, 110 values.
+[Nov-16-2023 02:23:49]  'info' API REST, corriendo en el puerto: 3002
+[Nov-16-2023 02:24:12]  'info' 200 GET createAsistenciaRegistroPersonal, 111 values.
+[Nov-16-2023 02:24:16]  'info' 200 PUT updateAsistenciaRegistroPersonal, 111 values.
+[Nov-16-2023 02:25:04]  'info' API REST, corriendo en el puerto: 3002
+[Nov-16-2023 02:25:23]  'info' API REST, corriendo en el puerto: 3002
+[Nov-16-2023 02:25:42]  'info' 200 GET createAsistenciaRegistroPersonal, 112 values.
+[Nov-16-2023 02:25:59]  'error' 500 PUT updateAsistenciaRegistroPersonal, Debe esperar 5 minutos.
+[Nov-16-2023 02:26:52]  'info' API REST, corriendo en el puerto: 3002
+[Nov-16-2023 02:27:03]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[Nov-16-2023 02:28:27]  'info' 200 GET getAsistenciaRegistroPersonals, 10 values.
+[Nov-16-2023 02:28:32]  'error' 500 PUT updateAsistenciaRegistroPersonal, Debe esperar 5 minutos.
+[Nov-16-2023 02:29:41]  'error' 500 PUT updateAsistenciaRegistroPersonal, Debe esperar 5 minutos.
+[Nov-16-2023 02:30:12]  'error' 500 PUT updateAsistenciaRegistroPersonal, Debe esperar 5 minutos.
+[Nov-16-2023 02:30:30]  'error' 500 PUT updateAsistenciaRegistroPersonal, Debe esperar 5 minutos.
+[Nov-16-2023 02:30:42]  'info' 200 PUT updateAsistenciaRegistroPersonal, 112 values.
+[Nov-16-2023 02:30:50]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[Nov-16-2023 02:31:22]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[Nov-16-2023 02:31:31]  'info' 200 GET getAsistenciaRegistroPersonals, 10 values.
+[Nov-16-2023 02:31:59]  'info' 200 GET getAsistenciaRegistroPersonals, 0 values.
+[Nov-16-2023 02:32:15]  'info' 200 GET createAsistenciaRegistroPersonal, 113 values.
+[Nov-16-2023 02:32:26]  'info' 200 GET createAsistenciaRegistroPersonal, 114 values.
+[Nov-16-2023 02:32:38]  'info' 200 GET createAsistenciaRegistroPersonal, 115 values.
+[Nov-16-2023 02:32:58]  'error' 500 PUT updateAsistenciaRegistroPersonal, Debe esperar 5 minutos.
+[Nov-16-2023 02:33:12]  'info' 200 GET createAsistenciaRegistroPersonal, 116 values.
+[Nov-16-2023 02:36:39]  'error' 500 PUT updateAsistenciaRegistroPersonal, Debe esperar 5 minutos.
+[Nov-16-2023 02:36:43]  'info' 200 GET getAsistenciaRegistroPersonals, 4 values.
+[Nov-16-2023 02:36:51]  'error' 500 PUT updateAsistenciaRegistroPersonal, Debe esperar 5 minutos.
+[Nov-16-2023 02:37:13]  'error' 500 PUT updateAsistenciaRegistroPersonal, Debe esperar 5 minutos.
+[Nov-16-2023 02:37:23]  'info' 200 PUT updateAsistenciaRegistroPersonal, 113 values.
+[Nov-16-2023 02:37:26]  'info' 200 GET createAsistenciaRegistroPersonal, 117 values.
+[Nov-16-2023 02:37:42]  'error' 500 PUT updateAsistenciaRegistroPersonal, Debe esperar 5 minutos.
+[Nov-16-2023 02:38:14]  'info' 200 PUT updateAsistenciaRegistroPersonal, 116 values.
+[Nov-16-2023 02:38:31]  'info' 200 PUT updateAsistenciaRegistroPersonal, 114 values.
+[Nov-16-2023 02:40:03]  'info' 200 PUT updateAsistenciaRegistroPersonal, 115 values.
+[Nov-16-2023 02:41:54]  'info' API REST, corriendo en el puerto: 3002
+[Nov-16-2023 02:42:22]  'info' API REST, corriendo en el puerto: 3002
+[Nov-16-2023 02:42:34]  'info' 200 GET createAsistenciaRegistroPersonal, 118 values.
+[Nov-16-2023 02:42:53]  'info' API REST, corriendo en el puerto: 3002
