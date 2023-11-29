@@ -38,15 +38,6 @@ async function sincronizarPersonal(req,res){
       xmlParser(data, {trim: true, strict: true, explicitArray: false} ,function (err, result) {
         res.status(200).json(result.feed.entry);  
       });
-      /* let arreglo=[];
-
-      let [err, encuestas] = await get(models.sequelize.query('EXEC SetImportPersonalSyncSap :data' ,
-       {replacements: { data: JSON.stringify(data)} , type: models.Sequelize.QueryTypes.BULKUPDATE }))
-      if (err) return res.status(500).json({ message: `${err}` })
-      if (encuestas == null) return res.status(404).json({ message: `Encuestas nulos` }) */
-
-      
-      /* res.status(200).json(obj); */
       
     }
   }catch(error){

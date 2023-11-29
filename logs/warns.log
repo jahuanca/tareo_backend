@@ -136,3 +136,46 @@ notNull Violation: AsistenciaRegistroPersonal.fechaturno cannot be null.
 [Nov-16-2023 02:36:51]  'error' 500 PUT updateAsistenciaRegistroPersonal, Debe esperar 5 minutos.
 [Nov-16-2023 02:37:13]  'error' 500 PUT updateAsistenciaRegistroPersonal, Debe esperar 5 minutos.
 [Nov-16-2023 02:37:42]  'error' 500 PUT updateAsistenciaRegistroPersonal, Debe esperar 5 minutos.
+[Nov-16-2023 11:49:11]  'error' 500 GET getAsistenciaRegistroPersonal, SequelizeDatabaseError: Invalid column name 'id'..
+[Nov-23-2023 01:29:01]  'error' 500 GET getLineasMesas, SequelizeDatabaseError: Invalid column name '
+'..
+[Nov-25-2023 01:18:54]  'error' 500 GET getDetalles, SequelizeDatabaseError: Invalid column name 'estado'..
+[Nov-25-2023 13:09:42]  'error' 500 POST createDetalle, Esta persona ya ha sido registrada en este grupo.
+[Nov-25-2023 13:12:42]  'error' 500 POST createDetalle, Esta persona ya ha sido registrada en este grupo.
+[Nov-25-2023 13:13:16]  'error' 500 POST createDetalle, Esta persona ya ha sido registrada en este grupo.
+[Nov-25-2023 13:13:32]  'error' 500 POST createDetalle, Esta persona ya ha sido registrada en este grupo.
+[Nov-25-2023 13:13:50]  'error' 500 POST createDetalle, Esta persona ya ha sido registrada en este grupo.
+[Nov-25-2023 13:14:52]  'error' 500 POST createDetalle, Esta persona ya ha sido registrada en este grupo.
+[Nov-25-2023 13:16:26]  'error' 500 POST createDetalle, Esta persona ya ha sido registrada en este grupo.
+[Nov-25-2023 13:17:08]  'error' 500 POST createDetalle, Esta persona ya ha sido registrada en este grupo.
+[Nov-28-2023 23:57:09]  'error' 500 GET getLineasMesas, SequelizeDatabaseError: Operand type clash: date is incompatible with int.
+[Nov-29-2023 00:02:59]  'error' 500 GET getLineasMesas, SequelizeDatabaseError: Operand type clash: date is incompatible with int.
+[Nov-29-2023 00:03:14]  'error' 500 GET getLineasMesas, SequelizeDatabaseError: Invalid column name 'N'..
+[Nov-29-2023 00:04:05]  'error' 500 GET getLineasMesas, SequelizeDatabaseError: Invalid column name 'N'..
+[Nov-29-2023 00:05:53]  'error' 500 GET getLineasMesas, SequelizeDatabaseError: Invalid column name 'D'..
+[Nov-29-2023 00:13:18]  'error' 500 GET getLineasMesas, SequelizeDatabaseError: Incorrect syntax near the keyword 'FROM'..
+[Nov-29-2023 00:58:54]  'error' 500 POST createDetalle, SequelizeValidationError: Validation error: Validation notEmpty on codigoempresa failed,
+Validation error: Validation len on codigoempresa failed.
+[Nov-29-2023 01:11:13]  'error' 500 POST createDetalle, SequelizeValidationError: Validation error: Validation notEmpty on codigoempresa failed,
+Validation error: Validation len on codigoempresa failed.
+[Nov-29-2023 01:11:34]  'error' 500 POST createDetalle, SequelizeValidationError: Validation error: Validation notEmpty on codigoempresa failed,
+Validation error: Validation len on codigoempresa failed.
+[Nov-29-2023 01:13:13]  'error' 500 POST createDetalle, SequelizeValidationError: Validation error: Validation notEmpty on codigoempresa failed,
+Validation error: Validation len on codigoempresa failed.
+[Nov-29-2023 01:14:09]  'error' 500 POST createDetalle, SequelizeValidationError: Validation error: Validation notEmpty on codigoempresa failed,
+Validation error: Validation len on codigoempresa failed.
+[Nov-29-2023 01:19:19]  'error' 500 POST createDetalle, SequelizeValidationError: Validation error: Validation notEmpty on codigoempresa failed,
+Validation error: Validation len on codigoempresa failed.
+[Nov-29-2023 01:20:30]  'error' 500 POST createDetalle, SequelizeValidationError: Validation error: Validation notEmpty on codigoempresa failed,
+Validation error: Validation len on codigoempresa failed.
+[Nov-29-2023 01:22:32]  'error' 500 POST createDetalle, SequelizeValidationError: Validation error: Validation notEmpty on codigoempresa failed,
+Validation error: Validation len on codigoempresa failed.
+[Nov-29-2023 01:41:56]  'error' 500 POST createDetalle, Error: WHERE parameter "codigoempresa" has invalid "undefined" value
+[Nov-29-2023 01:42:27]  'error' 500 POST createDetalle, Esta persona ya ha sido registrada en este grupo.
+[Nov-29-2023 01:42:44]  'error' 500 POST createDetalle, Esta persona ya ha sido registrada en este grupo.
+[Nov-29-2023 01:58:42]  'error' 500 POST createDetalle, Esta persona ya ha sido registrada en este grupo.
+[Nov-29-2023 02:04:24]  'error' 500 POST createDetalle, Esta persona ya ha sido registrada en este grupo.
+[Nov-29-2023 02:13:24]  'error' 500 POST createDetalle, Esta persona ya ha sido registrada en este grupo.
+[Nov-29-2023 02:22:05]  'error' 500 POST createDetalle, Esta persona ya ha sido registrada en este grupo.
+[Nov-29-2023 02:31:36]  'error' 500 DELETE deleteDetalle, SequelizeDatabaseError: Invalid column name 'idasistencia'..
+[Nov-29-2023 02:31:49]  'error' 500 DELETE deleteDetalle, SequelizeDatabaseError: Invalid column name 'idasistencia'..

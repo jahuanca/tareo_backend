@@ -1,7 +1,6 @@
 'use strict'
 const models = require('../models')
 const logger = require('./../config/logger')
-const moment= require('moment')
 
 async function getAsistenciaRegistroPersonalsCount(req, res) {
   let [err, asistenciaRegistroPersonals] = await get(models.AsistenciaRegistroPersonal.count({
@@ -205,10 +204,11 @@ async function registrar(req, res){
       idasistenciaturno: req.body.idasistenciaturno,
       codigoempresa:  req.body.codigoempresa,
       horasalida: null,
+      estado: 'A'
     }
   }))
   if (err) {
-    logger.error(`500 DELETE deleteAsistenciaRegistroPersonal, ${err}.`)
+    logger.error(`500 POST registrar, ${err}.`)
     return res.status(500).json({ message: `${err}` })
   }
   if (registro == null) {
@@ -233,14 +233,14 @@ async function registrar(req, res){
       usuario: 0
     }))
     if (err) {
-      logger.error(`500 GET createAsistenciaRegistroPersonal, ${err}.`)
+      logger.error(`500 POST registrar, ${err}.`)
       return res.status(500).json({ message: `${err}` })
     }
     if (asistenciaRegistroPersonal == null) {
-      logger.error(`400 GET createAsistenciaRegistroPersonal, asistenciaRegistroPersonal nulos.`)
+      logger.error(`400 POST registrar, asistenciaRegistroPersonal nulos.`)
       return res.status(404).json({ message: `asistenciaRegistroPersonal nulos` })
     }
-    logger.info(`200 GET createAsistenciaRegistroPersonal, ${asistenciaRegistroPersonal.idasistencia} values.`)
+    logger.info(`200 POST registrar, ${asistenciaRegistroPersonal.idasistencia} values.`)
     return res.status(200).json(asistenciaRegistroPersonal)
   }else{
     //modificacion
@@ -253,12 +253,11 @@ async function registrar(req, res){
     );
   
     if (errU) {
-      logger.error(`500 PUT updateAsistenciaRegistroPersonal, ${errU}.`)
+      logger.error(`500 POST registrar, ${errU}.`)
       return res.status(500).json({ message: `${errU}` })
     }
   
     if(valueToUpdate){
-      console.log(valueToUpdate);
       let horaMinima = addMinutes(valueToUpdate.horaentrada, 5);
       console.log('Min:'+ horaMinima.getTime());
       console.log('Act:'+ Date.now());

@@ -1240,3 +1240,486 @@ notNull Violation: AsistenciaRegistroPersonal.fechaturno cannot be null.
 [Nov-16-2023 02:42:22]  'info' API REST, corriendo en el puerto: 3002
 [Nov-16-2023 02:42:34]  'info' 200 GET createAsistenciaRegistroPersonal, 118 values.
 [Nov-16-2023 02:42:53]  'info' API REST, corriendo en el puerto: 3002
+[Nov-16-2023 02:43:04]  'info' API REST, corriendo en el puerto: 3002
+[Nov-16-2023 03:12:44]  'info' API REST, corriendo en el puerto: 3002
+[Nov-16-2023 03:13:43]  'info' API REST, corriendo en el puerto: 3002
+[Nov-16-2023 03:14:02]  'info' API REST, corriendo en el puerto: 3002
+[Nov-16-2023 11:46:58]  'info' API REST, corriendo en el puerto: 3002
+[Nov-16-2023 11:49:08]  'info' API REST, corriendo en el puerto: 3002
+[Nov-16-2023 11:49:11]  'error' 500 GET getAsistenciaRegistroPersonal, SequelizeDatabaseError: Invalid column name 'id'..
+[Nov-16-2023 11:50:17]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[Nov-16-2023 11:50:35]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[Nov-16-2023 11:50:37]  'info' 200 GET getAsistenciaRegistroPersonals, 6 values.
+[Nov-16-2023 11:50:44]  'info' 200 GET getAsistenciaRegistroPersonals, 0 values.
+[Nov-16-2023 11:50:48]  'info' 200 GET getAsistenciaRegistroPersonals, 12 values.
+[Nov-16-2023 11:52:24]  'info' 200 GET getAsistenciaRegistroPersonals, 6 values.
+[Nov-16-2023 11:52:27]  'info' 200 GET getAsistenciaRegistroPersonals, 12 values.
+[Nov-16-2023 11:52:30]  'info' 200 GET getAsistenciaRegistroPersonals, 0 values.
+[Nov-16-2023 12:02:11]  'info' 200 POST createAsistenciaFechaTurno, new id: 37.
+[Nov-16-2023 12:02:15]  'info' 200 GET getAsistenciaRegistroPersonals, 0 values.
+[Nov-16-2023 12:04:38]  'info' 200 GET getAsistenciaRegistroPersonals, 0 values.
+[Nov-16-2023 12:04:54]  'info' 200 GET getAsistenciaRegistroPersonals, 0 values.
+[Nov-16-2023 12:05:25]  'info' 200 GET getAsistenciaRegistroPersonals, 0 values.
+[Nov-16-2023 12:09:21]  'info' API REST, corriendo en el puerto: 3002
+[Nov-16-2023 13:09:33]  'info' 200 GET getAsistenciaRegistroPersonals, 0 values.
+[Nov-16-2023 13:10:12]  'info' 200 GET getAsistenciaRegistroPersonals, 0 values.
+[Nov-16-2023 13:32:14]  'info' 200 GET getAsistenciaRegistroPersonals, 0 values.
+[Nov-16-2023 13:43:16]  'info' API REST, corriendo en el puerto: 3002
+[Nov-16-2023 13:45:59]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[Nov-16-2023 13:46:18]  'info' 200 POST createAsistenciaFechaTurno, new id: 42.
+[Nov-16-2023 13:46:20]  'info' 200 GET getAsistenciaRegistroPersonals, 0 values.
+[Nov-16-2023 13:46:25]  'info' 200 POST registrar, 192 values.
+[Nov-16-2023 13:46:37]  'info' 200 POST registrar, 193 values.
+[Nov-16-2023 13:46:52]  'info' 200 POST registrar, 195 values.
+[Nov-16-2023 13:47:01]  'info' 200 POST registrar, 196 values.
+[Nov-16-2023 13:47:22]  'info' 200 POST createAsistenciaFechaTurno, new id: 44.
+[Nov-16-2023 13:47:25]  'info' 200 GET getAsistenciaRegistroPersonals, 0 values.
+[Nov-16-2023 13:47:29]  'info' 200 POST registrar, 198 values.
+[Nov-16-2023 13:47:29]  'info' 200 PUT updateAsistenciaRegistroPersonal, 196 values.
+[Nov-16-2023 13:50:20]  'info' 200 GET getAsistenciaRegistroPersonals, 1 values.
+[Nov-16-2023 13:50:22]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[Nov-16-2023 13:56:34]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[Nov-16-2023 13:56:36]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[Nov-16-2023 13:57:56]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[Nov-16-2023 13:58:40]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[Nov-16-2023 13:58:52]  'info' 200 GET getAsistenciaRegistroPersonals, 1 values.
+[Nov-16-2023 13:58:55]  'info' 200 GET getAsistenciaRegistroPersonals, 1 values.
+[Nov-16-2023 17:28:27]  'info' 200 GET getPersonal_EmpresasCount 40121 values.
+[Nov-16-2023 18:00:40]  'info' 200 GET getPersonal_EmpresasCount 40100 values.
+[Nov-16-2023 18:00:43]  'info' 200 GET getPersonal_EmpresasCount 40100 values.
+[Nov-16-2023 18:05:10]  'info' 200 GET getPersonal_EmpresasCount 40100 values.
+[Nov-16-2023 18:21:07]  'info' 200 GET getPersonal_EmpresasCount 21514 values.
+[Nov-21-2023 13:50:27]  'info' API REST, corriendo en el puerto: 3002
+[Nov-21-2023 15:42:33]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[Nov-22-2023 22:45:22]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[Nov-22-2023 22:54:17]  'info' API REST, corriendo en el puerto: 3002
+[Nov-22-2023 22:54:24]  'info' API REST, corriendo en el puerto: 3002
+[Nov-22-2023 22:55:40]  'info' API REST, corriendo en el puerto: 3002
+[Nov-22-2023 22:59:12]  'info' API REST, corriendo en el puerto: 3002
+[Nov-22-2023 23:00:36]  'info' API REST, corriendo en el puerto: 3002
+[Nov-22-2023 23:01:10]  'info' API REST, corriendo en el puerto: 3002
+[Nov-22-2023 23:01:17]  'info' 200 GET getLineasMesas, undefined values.
+[Nov-22-2023 23:01:37]  'info' API REST, corriendo en el puerto: 3002
+[Nov-22-2023 23:01:47]  'info' 200 GET getLineasMesas, 4904 values.
+[Nov-23-2023 00:02:57]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[Nov-23-2023 00:06:32]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[Nov-23-2023 00:41:18]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[Nov-23-2023 00:44:03]  'info' API REST, corriendo en el puerto: 3002
+[Nov-23-2023 00:45:23]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[Nov-23-2023 00:50:38]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[Nov-23-2023 01:01:42]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[Nov-23-2023 01:09:31]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[Nov-23-2023 01:15:47]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[Nov-23-2023 01:17:14]  'info' API REST, corriendo en el puerto: 3002
+[Nov-23-2023 01:17:28]  'info' 200 GET getLineasMesas, 1063 values.
+[Nov-23-2023 01:18:16]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[Nov-23-2023 01:19:03]  'info' 200 GET getLineasMesas, 0 values.
+[Nov-23-2023 01:22:06]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[Nov-23-2023 01:22:48]  'info' 200 GET getLineasMesas, 1063 values.
+[Nov-23-2023 01:23:44]  'info' 200 GET getLineasMesas, 3841 values.
+[Nov-23-2023 01:25:22]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[Nov-23-2023 01:28:37]  'info' 200 GET getLineasMesas, 0 values.
+[Nov-23-2023 01:29:01]  'error' 500 GET getLineasMesas, SequelizeDatabaseError: Invalid column name '
+'..
+[Nov-23-2023 01:29:04]  'info' 200 GET getLineasMesas, 0 values.
+[Nov-23-2023 01:29:06]  'info' 200 GET getLineasMesas, 0 values.
+[Nov-23-2023 01:29:23]  'info' 200 GET getLineasMesas, 3841 values.
+[Nov-23-2023 01:29:39]  'info' 200 GET getLineasMesas, 0 values.
+[Nov-23-2023 01:29:53]  'info' 200 GET getLineasMesas, 3841 values.
+[Nov-23-2023 01:30:35]  'info' 200 GET getLineasMesas, 0 values.
+[Nov-23-2023 01:35:22]  'info' API REST, corriendo en el puerto: 3002
+[Nov-23-2023 01:52:08]  'info' API REST, corriendo en el puerto: 3002
+[Nov-23-2023 01:52:12]  'info' 200 GET getLineasMesas, 0 values.
+[Nov-23-2023 01:52:24]  'info' API REST, corriendo en el puerto: 3002
+[Nov-23-2023 01:52:40]  'info' API REST, corriendo en el puerto: 3002
+[Nov-23-2023 01:53:48]  'info' 200 GET getLineasMesas, 0 values.
+[Nov-23-2023 01:53:53]  'info' 200 GET getLineasMesas, 3841 values.
+[Nov-23-2023 01:54:16]  'info' 200 GET getLineasMesas, 0 values.
+[Nov-23-2023 01:55:35]  'info' 200 GET getLineasMesas, 0 values.
+[Nov-23-2023 01:55:41]  'info' 200 GET getLineasMesas, 0 values.
+[Nov-23-2023 01:55:47]  'info' 200 GET getLineasMesas, 3841 values.
+[Nov-23-2023 01:56:05]  'info' 200 GET getLineasMesas, 0 values.
+[Nov-23-2023 01:59:03]  'info' 200 GET getLineasMesas, 3841 values.
+[Nov-23-2023 02:05:40]  'info' 200 GET getLineasMesas, 34 values.
+[Nov-23-2023 02:05:54]  'info' 200 GET getLineasMesas, 3841 values.
+[Nov-23-2023 02:06:11]  'info' 200 GET getLineasMesas, 0 values.
+[Nov-23-2023 02:06:17]  'info' 200 GET getLineasMesas, 34 values.
+[Nov-23-2023 02:07:17]  'info' 200 GET getLineasMesas, 34 values.
+[Nov-23-2023 12:26:38]  'info' 200 GET getLineasMesas, 34 values.
+[Nov-23-2023 12:50:49]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[Nov-23-2023 12:57:46]  'info' 200 GET getLineasMesas, 9 values.
+[Nov-23-2023 13:05:19]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[Nov-23-2023 13:06:47]  'info' 200 GET getLineasMesas, 9 values.
+[Nov-23-2023 13:06:51]  'info' 200 GET getLineasMesas, 3 values.
+[Nov-23-2023 13:08:07]  'info' API REST, corriendo en el puerto: 3002
+[Nov-23-2023 13:08:19]  'info' 200 GET getLineasMesas, 3 values.
+[Nov-23-2023 13:12:07]  'info' 200 GET getLineasMesas, 5 values.
+[Nov-23-2023 13:12:10]  'info' 200 GET getLineasMesas, 5 values.
+[Nov-23-2023 14:42:10]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[Nov-23-2023 14:42:35]  'info' 200 GET getLineasMesas, 9 values.
+[Nov-23-2023 14:42:43]  'info' 200 GET getLineasMesas, 3 values.
+[Nov-23-2023 14:44:45]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[Nov-23-2023 14:44:54]  'info' 200 GET getLineasMesas, 9 values.
+[Nov-23-2023 14:44:57]  'info' 200 GET getLineasMesas, 3 values.
+[Nov-23-2023 14:46:34]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[Nov-23-2023 14:46:55]  'info' 200 GET getLineasMesas, 9 values.
+[Nov-23-2023 14:46:58]  'info' 200 GET getLineasMesas, 1 values.
+[Nov-23-2023 14:54:53]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[Nov-24-2023 22:27:01]  'info' API REST, corriendo en el puerto: 3002
+[Nov-24-2023 22:28:19]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[Nov-24-2023 22:31:50]  'info' API REST, corriendo en el puerto: 3002
+[Nov-24-2023 22:33:32]  'info' API REST, corriendo en el puerto: 3002
+[Nov-24-2023 22:41:48]  'info' 200 GET getLineasMesas, 9 values.
+[Nov-24-2023 22:41:51]  'info' 200 GET getLineasMesas, 3 values.
+[Nov-24-2023 22:42:03]  'info' 200 GET getLineasMesas, 1 values.
+[Nov-24-2023 22:43:18]  'info' 200 GET getLineasMesas, 1 values.
+[Nov-24-2023 22:43:39]  'info' 200 GET getLineasMesas, 1 values.
+[Nov-24-2023 22:43:46]  'info' 200 GET getLineasMesas, 1 values.
+[Nov-24-2023 22:43:51]  'info' 200 GET getLineasMesas, 1 values.
+[Nov-25-2023 00:43:29]  'info' API REST, corriendo en el puerto: 3002
+[Nov-25-2023 00:49:14]  'info' API REST, corriendo en el puerto: 3002
+[Nov-25-2023 00:49:18]  'info' API REST, corriendo en el puerto: 3002
+[Nov-25-2023 00:49:35]  'info' 200 GET getLineasMesas, 3 values.
+[Nov-25-2023 01:08:44]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[Nov-25-2023 01:11:15]  'info' 200 GET getLineasMesas, 9 values.
+[Nov-25-2023 01:11:17]  'info' 200 GET getLineasMesas, 3 values.
+[Nov-25-2023 01:12:38]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[Nov-25-2023 01:12:45]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[Nov-25-2023 01:12:56]  'info' 200 GET getLineasMesas, 9 values.
+[Nov-25-2023 01:12:58]  'info' 200 GET getLineasMesas, 1 values.
+[Nov-25-2023 01:16:20]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[Nov-25-2023 01:16:26]  'info' 200 GET getLineasMesas, 34 values.
+[Nov-25-2023 01:16:28]  'info' 200 GET getLineasMesas, 7 values.
+[Nov-25-2023 01:18:21]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[Nov-25-2023 01:18:49]  'info' 200 GET getLineasMesas, 9 values.
+[Nov-25-2023 01:18:51]  'info' 200 GET getLineasMesas, 1 values.
+[Nov-25-2023 01:18:54]  'error' 500 GET getDetalles, SequelizeDatabaseError: Invalid column name 'estado'..
+[Nov-25-2023 01:19:29]  'info' API REST, corriendo en el puerto: 3002
+[Nov-25-2023 01:19:39]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[Nov-25-2023 01:20:40]  'info' 200 GET getLineasMesas, 9 values.
+[Nov-25-2023 01:20:42]  'info' 200 GET getLineasMesas, 1 values.
+[Nov-25-2023 01:20:45]  'info' 200 GET getDetalles, 0 values.
+[Nov-25-2023 01:21:12]  'info' 200 GET getDetalles, 0 values.
+[Nov-25-2023 01:22:39]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[Nov-25-2023 01:22:47]  'info' 200 GET getLineasMesas, 9 values.
+[Nov-25-2023 01:22:49]  'info' 200 GET getLineasMesas, 1 values.
+[Nov-25-2023 01:26:23]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[Nov-25-2023 01:44:36]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[Nov-25-2023 02:09:57]  'info' API REST, corriendo en el puerto: 3002
+[Nov-25-2023 02:10:29]  'info' API REST, corriendo en el puerto: 3002
+[Nov-25-2023 02:11:11]  'info' API REST, corriendo en el puerto: 3002
+[Nov-25-2023 02:11:15]  'info' API REST, corriendo en el puerto: 3002
+[Nov-25-2023 02:19:30]  'info' API REST, corriendo en el puerto: 3002
+[Nov-25-2023 02:19:56]  'info' API REST, corriendo en el puerto: 3002
+[Nov-25-2023 02:22:38]  'info' API REST, corriendo en el puerto: 3002
+[Nov-25-2023 02:38:18]  'info' API REST, corriendo en el puerto: 3002
+[Nov-25-2023 02:38:27]  'info' API REST, corriendo en el puerto: 3002
+[Nov-25-2023 02:41:52]  'info' API REST, corriendo en el puerto: 3002
+[Nov-25-2023 02:42:11]  'info' API REST, corriendo en el puerto: 3002
+[Nov-25-2023 03:09:13]  'info' 200 GET getLineasMesas, 9 values.
+[Nov-25-2023 03:09:15]  'info' 200 GET getLineasMesas, 1 values.
+[Nov-25-2023 03:09:18]  'info' 200 GET getDetalles, 0 values.
+[Nov-25-2023 03:09:22]  'info' 200 GET getDetalles, 0 values.
+[Nov-25-2023 03:12:48]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[Nov-25-2023 03:15:41]  'info' 200 GET getLineasMesas, 9 values.
+[Nov-25-2023 03:15:43]  'info' 200 GET getLineasMesas, 1 values.
+[Nov-25-2023 03:15:45]  'info' 200 GET getDetalles, 0 values.
+[Nov-25-2023 03:15:51]  'info' 200 POST createDetalle, 9056 itemagruparpersonaldetalle.
+[Nov-25-2023 03:17:12]  'info' 200 GET getDetalles, 1 values.
+[Nov-25-2023 03:17:13]  'info' 200 GET getDetalles, 1 values.
+[Nov-25-2023 03:17:19]  'info' 200 GET getDetalles, 1 values.
+[Nov-25-2023 03:17:20]  'info' 200 GET getDetalles, 1 values.
+[Nov-25-2023 03:17:21]  'info' 200 GET getDetalles, 1 values.
+[Nov-25-2023 03:18:05]  'info' 200 GET getDetalles, 1 values.
+[Nov-25-2023 03:18:06]  'info' 200 GET getDetalles, 1 values.
+[Nov-25-2023 03:18:07]  'info' 200 GET getDetalles, 1 values.
+[Nov-25-2023 11:05:37]  'info' API REST, corriendo en el puerto: 3002
+[Nov-25-2023 11:10:59]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[Nov-25-2023 11:21:54]  'info' API REST, corriendo en el puerto: 3002
+[Nov-25-2023 11:28:40]  'info' 200 GET getLineasMesas, 9 values.
+[Nov-25-2023 11:28:43]  'info' 200 GET getLineasMesas, 3 values.
+[Nov-25-2023 11:28:46]  'info' 200 GET getDetalles, 1 values.
+[Nov-25-2023 11:28:48]  'info' 200 GET getDetalles, 1 values.
+[Nov-25-2023 11:29:26]  'info' API REST, corriendo en el puerto: 3002
+[Nov-25-2023 11:30:10]  'info' 200 GET getDetalles, 1 values.
+[Nov-25-2023 11:30:44]  'info' 200 POST createDetalle, 9057 itemagruparpersonaldetalle.
+[Nov-25-2023 11:30:50]  'info' 200 GET getDetalles, 2 values.
+[Nov-25-2023 11:31:00]  'info' 200 GET getDetalles, 2 values.
+[Nov-25-2023 11:31:05]  'info' 200 POST createDetalle, 9058 itemagruparpersonaldetalle.
+[Nov-25-2023 11:31:09]  'info' 200 GET getDetalles, 3 values.
+[Nov-25-2023 11:31:15]  'info' 200 GET getDetalles, 3 values.
+[Nov-25-2023 11:31:23]  'info' 200 GET getDetalles, 3 values.
+[Nov-25-2023 11:31:29]  'info' 200 GET getDetalles, 3 values.
+[Nov-25-2023 11:31:35]  'info' 200 GET getDetalles, 3 values.
+[Nov-25-2023 11:31:57]  'info' 200 GET getDetalles, 3 values.
+[Nov-25-2023 11:32:56]  'info' 200 GET getLineasMesas, 5 values.
+[Nov-25-2023 11:33:10]  'info' 200 GET getLineasMesas, 5 values.
+[Nov-25-2023 11:33:34]  'info' 200 GET getLineasMesas, 5 values.
+[Nov-25-2023 11:36:01]  'info' 200 GET getDetalles, 3 values.
+[Nov-25-2023 11:39:03]  'info' 200 GET getDetalles, 3 values.
+[Nov-25-2023 11:39:14]  'info' 200 GET getLineasMesas, 3 values.
+[Nov-25-2023 11:39:18]  'info' 200 GET getLineasMesas, 3 values.
+[Nov-25-2023 11:41:40]  'info' 200 GET getLineasMesas, 5 values.
+[Nov-25-2023 11:41:57]  'info' 200 GET getLineasMesas, 5 values.
+[Nov-25-2023 11:43:39]  'info' 200 GET getLineasMesas, 5 values.
+[Nov-25-2023 12:00:17]  'info' 200 GET getLineasMesas, 5 values.
+[Nov-25-2023 12:00:22]  'info' 200 GET getLineasMesas, 5 values.
+[Nov-25-2023 12:01:11]  'info' 200 GET getLineasMesas, 5 values.
+[Nov-25-2023 12:01:31]  'info' 200 GET getLineasMesas, 5 values.
+[Nov-25-2023 12:01:45]  'info' 200 GET getLineasMesas, 5 values.
+[Nov-25-2023 12:01:56]  'info' 200 GET getLineasMesas, 5 values.
+[Nov-25-2023 12:01:59]  'info' 200 GET getLineasMesas, 5 values.
+[Nov-25-2023 12:02:03]  'info' 200 GET getLineasMesas, 5 values.
+[Nov-25-2023 12:02:15]  'info' 200 GET getLineasMesas, 3 values.
+[Nov-25-2023 12:02:17]  'info' 200 GET getLineasMesas, 3 values.
+[Nov-25-2023 12:02:27]  'info' 200 GET getDetalles, 3 values.
+[Nov-25-2023 12:02:31]  'info' 200 GET getDetalles, 3 values.
+[Nov-25-2023 12:02:35]  'info' 200 GET getDetalles, 2 values.
+[Nov-25-2023 12:02:37]  'info' 200 GET getDetalles, 2 values.
+[Nov-25-2023 12:02:41]  'info' 200 GET getDetalles, 3 values.
+[Nov-25-2023 12:02:54]  'info' 200 GET getDetalles, 3 values.
+[Nov-25-2023 12:02:55]  'info' 200 GET getDetalles, 3 values.
+[Nov-25-2023 12:03:05]  'info' 200 GET getDetalles, 3 values.
+[Nov-25-2023 12:04:36]  'info' API REST, corriendo en el puerto: 3002
+[Nov-25-2023 12:04:38]  'info' 200 GET getDetalles, 3 values.
+[Nov-25-2023 12:05:05]  'info' 200 GET getDetalles, 3 values.
+[Nov-25-2023 12:05:12]  'info' 200 GET getDetalles, 3 values.
+[Nov-25-2023 12:05:13]  'info' 200 GET getDetalles, 3 values.
+[Nov-25-2023 12:05:16]  'info' 200 GET getDetalles, 2 values.
+[Nov-25-2023 12:05:47]  'info' API REST, corriendo en el puerto: 3002
+[Nov-25-2023 12:05:50]  'info' 200 GET getDetalles, 2 values.
+[Nov-25-2023 12:05:52]  'info' 200 GET getDetalles, 2 values.
+[Nov-25-2023 12:06:07]  'info' 200 GET getDetalles, 2 values.
+[Nov-25-2023 12:06:08]  'info' 200 GET getDetalles, 2 values.
+[Nov-25-2023 12:06:53]  'info' API REST, corriendo en el puerto: 3002
+[Nov-25-2023 12:06:55]  'info' 200 GET getDetalles, 2 values.
+[Nov-25-2023 12:07:25]  'info' API REST, corriendo en el puerto: 3002
+[Nov-25-2023 12:07:27]  'info' 200 GET getDetalles, 2 values.
+[Nov-25-2023 12:07:32]  'info' 200 GET getDetalles, 2 values.
+[Nov-25-2023 12:09:41]  'info' 200 GET getDetalles, 2 values.
+[Nov-25-2023 12:10:49]  'info' 200 GET getDetalles, 2 values.
+[Nov-25-2023 12:12:01]  'info' 200 GET getDetalles, 2 values.
+[Nov-25-2023 12:12:05]  'info' 200 GET getDetalles, 3 values.
+[Nov-25-2023 12:12:07]  'info' 200 GET getDetalles, 3 values.
+[Nov-25-2023 12:17:00]  'info' 200 GET getDetalles, 3 values.
+[Nov-25-2023 12:17:26]  'info' 200 GET getDetalles, 2 values.
+[Nov-25-2023 12:17:46]  'info' 200 GET getDetalles, 3 values.
+[Nov-25-2023 12:17:47]  'info' 200 GET getDetalles, 3 values.
+[Nov-25-2023 12:20:11]  'info' 200 GET getLineasMesas, 5 values.
+[Nov-25-2023 12:20:13]  'info' 200 GET getLineasMesas, 5 values.
+[Nov-25-2023 12:20:17]  'info' 200 GET getDetalles, 0 values.
+[Nov-25-2023 12:20:18]  'info' 200 GET getDetalles, 0 values.
+[Nov-25-2023 12:20:21]  'info' 200 GET getDetalles, 0 values.
+[Nov-25-2023 12:20:46]  'info' API REST, corriendo en el puerto: 3002
+[Nov-25-2023 12:58:09]  'info' 200 GET getDetalles, 0 values.
+[Nov-25-2023 12:58:13]  'info' 200 POST createDetalle, 9059 itemagruparpersonaldetalle.
+[Nov-25-2023 12:58:19]  'info' 200 GET getDetalles, 1 values.
+[Nov-25-2023 12:58:23]  'info' 200 POST createDetalle, 9060 itemagruparpersonaldetalle.
+[Nov-25-2023 13:00:49]  'info' API REST, corriendo en el puerto: 3002
+[Nov-25-2023 13:06:18]  'info' 200 POST createDetalle, 9061 itemagruparpersonaldetalle.
+[Nov-25-2023 13:06:23]  'info' 200 GET getDetalles, 3 values.
+[Nov-25-2023 13:06:43]  'info' 200 GET getDetalles, 3 values.
+[Nov-25-2023 13:06:44]  'info' 200 GET getDetalles, 3 values.
+[Nov-25-2023 13:08:24]  'info' 200 GET getDetalles, 3 values.
+[Nov-25-2023 13:08:42]  'info' 200 GET getDetalles, 3 values.
+[Nov-25-2023 13:09:41]  'info' API REST, corriendo en el puerto: 3002
+[Nov-25-2023 13:09:42]  'error' 500 POST createDetalle, Esta persona ya ha sido registrada en este grupo.
+[Nov-25-2023 13:12:42]  'error' 500 POST createDetalle, Esta persona ya ha sido registrada en este grupo.
+[Nov-25-2023 13:12:52]  'info' 200 GET getDetalles, 3 values.
+[Nov-25-2023 13:13:16]  'error' 500 POST createDetalle, Esta persona ya ha sido registrada en este grupo.
+[Nov-25-2023 13:13:32]  'error' 500 POST createDetalle, Esta persona ya ha sido registrada en este grupo.
+[Nov-25-2023 13:13:39]  'info' 200 GET getDetalles, 3 values.
+[Nov-25-2023 13:13:50]  'error' 500 POST createDetalle, Esta persona ya ha sido registrada en este grupo.
+[Nov-25-2023 13:14:52]  'error' 500 POST createDetalle, Esta persona ya ha sido registrada en este grupo.
+[Nov-25-2023 13:15:58]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[Nov-25-2023 13:16:10]  'info' 200 GET getLineasMesas, 9 values.
+[Nov-25-2023 13:16:11]  'info' 200 GET getLineasMesas, 3 values.
+[Nov-25-2023 13:16:14]  'info' 200 GET getDetalles, 2 values.
+[Nov-25-2023 13:16:22]  'info' 200 POST createDetalle, 9062 itemagruparpersonaldetalle.
+[Nov-25-2023 13:16:26]  'error' 500 POST createDetalle, Esta persona ya ha sido registrada en este grupo.
+[Nov-25-2023 13:16:30]  'info' 200 GET getDetalles, 3 values.
+[Nov-25-2023 13:17:08]  'error' 500 POST createDetalle, Esta persona ya ha sido registrada en este grupo.
+[Nov-25-2023 13:20:36]  'info' 200 GET getDetalles, 3 values.
+[Nov-25-2023 13:21:43]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[Nov-25-2023 13:22:28]  'info' 200 GET getLineasMesas, 34 values.
+[Nov-25-2023 13:22:33]  'info' 200 GET getLineasMesas, 5 values.
+[Nov-25-2023 13:22:43]  'info' 200 GET getLineasMesas, 3 values.
+[Nov-25-2023 13:26:06]  'info' 200 GET getLineasMesas, 3 values.
+[Nov-25-2023 13:26:13]  'info' 200 GET getDetalles, 3 values.
+[Nov-25-2023 13:27:09]  'info' 200 GET getDetalles, 3 values.
+[Nov-28-2023 22:48:09]  'info' API REST, corriendo en el puerto: 3002
+[Nov-28-2023 23:07:02]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[Nov-28-2023 23:09:51]  'info' 200 GET getLineasMesas, 34 values.
+[Nov-28-2023 23:10:39]  'info' 200 GET getLineasMesas, 7 values.
+[Nov-28-2023 23:14:23]  'info' API REST, corriendo en el puerto: 3002
+[Nov-28-2023 23:29:52]  'info' API REST, corriendo en el puerto: 3002
+[Nov-28-2023 23:29:57]  'info' API REST, corriendo en el puerto: 3002
+[Nov-28-2023 23:42:25]  'info' API REST, corriendo en el puerto: 3002
+[Nov-28-2023 23:42:38]  'info' API REST, corriendo en el puerto: 3002
+[Nov-28-2023 23:51:57]  'info' API REST, corriendo en el puerto: 3002
+[Nov-28-2023 23:52:25]  'info' API REST, corriendo en el puerto: 3002
+[Nov-28-2023 23:52:46]  'info' API REST, corriendo en el puerto: 3002
+[Nov-28-2023 23:57:09]  'error' 500 GET getLineasMesas, SequelizeDatabaseError: Operand type clash: date is incompatible with int.
+[Nov-28-2023 23:58:10]  'info' 200 GET getLineasMesas, 2 values.
+[Nov-28-2023 23:58:20]  'info' API REST, corriendo en el puerto: 3002
+[Nov-28-2023 23:58:33]  'info' 200 GET getLineasMesas, 2 values.
+[Nov-28-2023 23:59:46]  'info' API REST, corriendo en el puerto: 3002
+[Nov-28-2023 23:59:50]  'info' 200 GET getLineasMesas, 2 values.
+[Nov-29-2023 00:01:39]  'info' API REST, corriendo en el puerto: 3002
+[Nov-29-2023 00:01:44]  'info' 200 GET getLineasMesas, 2 values.
+[Nov-29-2023 00:02:40]  'info' 200 GET getLineasMesas, 2 values.
+[Nov-29-2023 00:02:57]  'info' API REST, corriendo en el puerto: 3002
+[Nov-29-2023 00:02:59]  'error' 500 GET getLineasMesas, SequelizeDatabaseError: Operand type clash: date is incompatible with int.
+[Nov-29-2023 00:03:14]  'error' 500 GET getLineasMesas, SequelizeDatabaseError: Invalid column name 'N'..
+[Nov-29-2023 00:03:33]  'info' API REST, corriendo en el puerto: 3002
+[Nov-29-2023 00:03:49]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[Nov-29-2023 00:04:05]  'error' 500 GET getLineasMesas, SequelizeDatabaseError: Invalid column name 'N'..
+[Nov-29-2023 00:05:42]  'info' API REST, corriendo en el puerto: 3002
+[Nov-29-2023 00:05:53]  'error' 500 GET getLineasMesas, SequelizeDatabaseError: Invalid column name 'D'..
+[Nov-29-2023 00:06:22]  'info' API REST, corriendo en el puerto: 3002
+[Nov-29-2023 00:06:34]  'info' 200 GET getLineasMesas, 2 values.
+[Nov-29-2023 00:07:38]  'info' 200 GET getLineasMesas, 2 values.
+[Nov-29-2023 00:12:26]  'info' API REST, corriendo en el puerto: 3002
+[Nov-29-2023 00:12:33]  'info' 200 GET getLineasMesas, 2 values.
+[Nov-29-2023 00:13:04]  'info' API REST, corriendo en el puerto: 3002
+[Nov-29-2023 00:13:16]  'info' API REST, corriendo en el puerto: 3002
+[Nov-29-2023 00:13:18]  'error' 500 GET getLineasMesas, SequelizeDatabaseError: Incorrect syntax near the keyword 'FROM'..
+[Nov-29-2023 00:15:21]  'info' API REST, corriendo en el puerto: 3002
+[Nov-29-2023 00:15:24]  'info' 200 GET getLineasMesas, 2 values.
+[Nov-29-2023 00:17:35]  'info' API REST, corriendo en el puerto: 3002
+[Nov-29-2023 00:18:18]  'info' API REST, corriendo en el puerto: 3002
+[Nov-29-2023 00:18:21]  'info' 200 GET getLineasMesas, 2 values.
+[Nov-29-2023 00:18:41]  'info' 200 GET getLineasMesas, 2 values.
+[Nov-29-2023 00:20:59]  'info' API REST, corriendo en el puerto: 3002
+[Nov-29-2023 00:21:33]  'info' API REST, corriendo en el puerto: 3002
+[Nov-29-2023 00:21:41]  'info' 200 GET getLineasMesas, 2 values.
+[Nov-29-2023 00:21:44]  'info' 200 GET getLineasMesas, 2 values.
+[Nov-29-2023 00:22:10]  'info' 200 GET getLineasMesas, 2 values.
+[Nov-29-2023 00:22:28]  'info' 200 GET getLineasMesas, 2 values.
+[Nov-29-2023 00:23:58]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[Nov-29-2023 00:24:07]  'info' API REST, corriendo en el puerto: 3002
+[Nov-29-2023 00:24:12]  'info' 200 GET getLineasMesas, 2 values.
+[Nov-29-2023 00:24:56]  'info' 200 GET getLineasMesas, 2 values.
+[Nov-29-2023 00:25:00]  'info' 200 GET getLineasMesas, 2 values.
+[Nov-29-2023 00:26:41]  'info' 200 GET getLineasMesas, 2 values.
+[Nov-29-2023 00:26:42]  'info' 200 GET getLineasMesas, 2 values.
+[Nov-29-2023 00:27:03]  'info' 200 GET getLineasMesas, 2 values.
+[Nov-29-2023 00:53:02]  'info' 200 GET getLineasMesas, 2 values.
+[Nov-29-2023 00:53:27]  'info' 200 GET getDetalles, 3 values.
+[Nov-29-2023 00:58:15]  'info' 200 GET getDetalles, 3 values.
+[Nov-29-2023 00:58:54]  'error' 500 POST createDetalle, SequelizeValidationError: Validation error: Validation notEmpty on codigoempresa failed,
+Validation error: Validation len on codigoempresa failed.
+[Nov-29-2023 01:11:13]  'error' 500 POST createDetalle, SequelizeValidationError: Validation error: Validation notEmpty on codigoempresa failed,
+Validation error: Validation len on codigoempresa failed.
+[Nov-29-2023 01:11:34]  'error' 500 POST createDetalle, SequelizeValidationError: Validation error: Validation notEmpty on codigoempresa failed,
+Validation error: Validation len on codigoempresa failed.
+[Nov-29-2023 01:11:58]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[Nov-29-2023 01:13:02]  'info' 200 GET getLineasMesas, 2 values.
+[Nov-29-2023 01:13:04]  'info' 200 GET getLineasMesas, 2 values.
+[Nov-29-2023 01:13:11]  'info' 200 GET getDetalles, 3 values.
+[Nov-29-2023 01:13:13]  'error' 500 POST createDetalle, SequelizeValidationError: Validation error: Validation notEmpty on codigoempresa failed,
+Validation error: Validation len on codigoempresa failed.
+[Nov-29-2023 01:14:09]  'error' 500 POST createDetalle, SequelizeValidationError: Validation error: Validation notEmpty on codigoempresa failed,
+Validation error: Validation len on codigoempresa failed.
+[Nov-29-2023 01:19:19]  'error' 500 POST createDetalle, SequelizeValidationError: Validation error: Validation notEmpty on codigoempresa failed,
+Validation error: Validation len on codigoempresa failed.
+[Nov-29-2023 01:20:30]  'error' 500 POST createDetalle, SequelizeValidationError: Validation error: Validation notEmpty on codigoempresa failed,
+Validation error: Validation len on codigoempresa failed.
+[Nov-29-2023 01:22:32]  'error' 500 POST createDetalle, SequelizeValidationError: Validation error: Validation notEmpty on codigoempresa failed,
+Validation error: Validation len on codigoempresa failed.
+[Nov-29-2023 01:22:42]  'info' 200 GET getDetalles, 3 values.
+[Nov-29-2023 01:24:20]  'info' 200 POST createDetalle, 9063 itemagruparpersonaldetalle.
+[Nov-29-2023 01:24:36]  'info' 200 POST createDetalle, 9064 itemagruparpersonaldetalle.
+[Nov-29-2023 01:25:47]  'info' API REST, corriendo en el puerto: 3002
+[Nov-29-2023 01:36:50]  'info' API REST, corriendo en el puerto: 3002
+[Nov-29-2023 01:37:02]  'info' 200 POST createDetalle, 9065 itemagruparpersonaldetalle.
+[Nov-29-2023 01:41:26]  'info' API REST, corriendo en el puerto: 3002
+[Nov-29-2023 01:41:54]  'info' API REST, corriendo en el puerto: 3002
+[Nov-29-2023 01:41:56]  'error' 500 POST createDetalle, Error: WHERE parameter "codigoempresa" has invalid "undefined" value
+[Nov-29-2023 01:42:24]  'info' API REST, corriendo en el puerto: 3002
+[Nov-29-2023 01:42:27]  'error' 500 POST createDetalle, Esta persona ya ha sido registrada en este grupo.
+[Nov-29-2023 01:42:44]  'error' 500 POST createDetalle, Esta persona ya ha sido registrada en este grupo.
+[Nov-29-2023 01:49:42]  'info' API REST, corriendo en el puerto: 3002
+[Nov-29-2023 01:50:46]  'info' 200 GET getDetalles, 1 values.
+[Nov-29-2023 01:51:17]  'info' API REST, corriendo en el puerto: 3002
+[Nov-29-2023 01:51:28]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[Nov-29-2023 01:51:49]  'info' API REST, corriendo en el puerto: 3002
+[Nov-29-2023 01:52:04]  'info' 200 GET getLineasMesas, 2 values.
+[Nov-29-2023 01:52:06]  'info' 200 GET getLineasMesas, 2 values.
+[Nov-29-2023 01:52:09]  'info' 200 GET getLineasMesas, 2 values.
+[Nov-29-2023 01:54:38]  'info' 200 GET getLineasMesas, 2 values.
+[Nov-29-2023 01:54:42]  'info' 200 GET getLineasMesas, 2 values.
+[Nov-29-2023 01:56:38]  'info' 200 GET getDetalles, 0 values.
+[Nov-29-2023 01:56:44]  'info' 200 POST createDetalle, 9066 itemagruparpersonaldetalle.
+[Nov-29-2023 01:58:38]  'info' API REST, corriendo en el puerto: 3002
+[Nov-29-2023 01:58:40]  'info' 200 GET getDetalles, 1 values.
+[Nov-29-2023 01:58:42]  'error' 500 POST createDetalle, Esta persona ya ha sido registrada en este grupo.
+[Nov-29-2023 01:59:29]  'info' 200 GET getDetalles, 0 values.
+[Nov-29-2023 01:59:34]  'info' 200 POST createDetalle, 9067 itemagruparpersonaldetalle.
+[Nov-29-2023 02:04:19]  'info' API REST, corriendo en el puerto: 3002
+[Nov-29-2023 02:04:24]  'error' 500 POST createDetalle, Esta persona ya ha sido registrada en este grupo.
+[Nov-29-2023 02:04:53]  'info' 200 GET getDetalles, 0 values.
+[Nov-29-2023 02:05:16]  'info' API REST, corriendo en el puerto: 3002
+[Nov-29-2023 02:05:31]  'info' 200 POST createDetalle, 9068 itemagruparpersonaldetalle.
+[Nov-29-2023 02:06:45]  'info' API REST, corriendo en el puerto: 3002
+[Nov-29-2023 02:07:04]  'info' 200 GET getDetalles, 0 values.
+[Nov-29-2023 02:07:06]  'info' 200 POST createDetalle, 9069 itemagruparpersonaldetalle.
+[Nov-29-2023 02:07:34]  'info' API REST, corriendo en el puerto: 3002
+[Nov-29-2023 02:08:07]  'info' 200 GET getDetalles, 0 values.
+[Nov-29-2023 02:08:09]  'info' 200 POST createDetalle, 9070 itemagruparpersonaldetalle.
+[Nov-29-2023 02:09:21]  'info' 200 GET getDetalles, 1 values.
+[Nov-29-2023 02:09:26]  'info' 200 POST createDetalle, 9071 itemagruparpersonaldetalle.
+[Nov-29-2023 02:10:26]  'info' API REST, corriendo en el puerto: 3002
+[Nov-29-2023 02:10:40]  'info' 200 POST createDetalle, 9072 itemagruparpersonaldetalle.
+[Nov-29-2023 02:10:55]  'info' API REST, corriendo en el puerto: 3002
+[Nov-29-2023 02:11:15]  'info' API REST, corriendo en el puerto: 3002
+[Nov-29-2023 02:11:18]  'info' 200 POST createDetalle, 9073 itemagruparpersonaldetalle.
+[Nov-29-2023 02:11:27]  'info' API REST, corriendo en el puerto: 3002
+[Nov-29-2023 02:11:42]  'info' 200 GET getDetalles, 0 values.
+[Nov-29-2023 02:11:47]  'info' 200 POST createDetalle, 9074 itemagruparpersonaldetalle.
+[Nov-29-2023 02:11:57]  'info' 200 POST createDetalle, 9075 itemagruparpersonaldetalle.
+[Nov-29-2023 02:13:22]  'info' API REST, corriendo en el puerto: 3002
+[Nov-29-2023 02:13:24]  'error' 500 POST createDetalle, Esta persona ya ha sido registrada en este grupo.
+[Nov-29-2023 02:13:52]  'info' API REST, corriendo en el puerto: 3002
+[Nov-29-2023 02:13:59]  'info' 200 GET getDetalles, 0 values.
+[Nov-29-2023 02:14:05]  'info' 200 POST createDetalle, 9076 itemagruparpersonaldetalle.
+[Nov-29-2023 02:14:26]  'info' 200 POST createDetalle, 9077 itemagruparpersonaldetalle.
+[Nov-29-2023 02:14:50]  'info' API REST, corriendo en el puerto: 3002
+[Nov-29-2023 02:17:36]  'info' 200 GET getDetalles, 2 values.
+[Nov-29-2023 02:19:10]  'info' 200 GET getDetalles, 0 values.
+[Nov-29-2023 02:19:18]  'info' 200 POST createDetalle, 9078 itemagruparpersonaldetalle.
+[Nov-29-2023 02:20:58]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[Nov-29-2023 02:21:07]  'info' 200 GET getLineasMesas, 2 values.
+[Nov-29-2023 02:21:10]  'info' 200 GET getLineasMesas, 2 values.
+[Nov-29-2023 02:21:20]  'info' 200 GET getDetalles, 3 values.
+[Nov-29-2023 02:21:27]  'info' 200 GET getDetalles, 0 values.
+[Nov-29-2023 02:21:58]  'info' 200 POST createDetalle, 9079 itemagruparpersonaldetalle.
+[Nov-29-2023 02:22:05]  'error' 500 POST createDetalle, Esta persona ya ha sido registrada en este grupo.
+[Nov-29-2023 02:26:34]  'info' 200 GET getDetalles, 1 values.
+[Nov-29-2023 02:29:08]  'info' API REST, corriendo en el puerto: 3002
+[Nov-29-2023 02:29:10]  'info' API REST, corriendo en el puerto: 3002
+[Nov-29-2023 02:29:13]  'info' 200 GET getDetalles, 1 values.
+[Nov-29-2023 02:30:05]  'info' API REST, corriendo en el puerto: 3002
+[Nov-29-2023 02:30:08]  'info' API REST, corriendo en el puerto: 3002
+[Nov-29-2023 02:30:12]  'info' 200 GET getDetalles, 1 values.
+[Nov-29-2023 02:30:29]  'info' API REST, corriendo en el puerto: 3002
+[Nov-29-2023 02:30:31]  'info' 200 GET getDetalles, 1 values.
+[Nov-29-2023 02:31:31]  'info' API REST, corriendo en el puerto: 3002
+[Nov-29-2023 02:31:33]  'info' 200 GET getDetalles, 1 values.
+[Nov-29-2023 02:31:36]  'error' 500 DELETE deleteDetalle, SequelizeDatabaseError: Invalid column name 'idasistencia'..
+[Nov-29-2023 02:31:49]  'error' 500 DELETE deleteDetalle, SequelizeDatabaseError: Invalid column name 'idasistencia'..
+[Nov-29-2023 02:32:33]  'info' API REST, corriendo en el puerto: 3002
+[Nov-29-2023 02:32:34]  'info' 200 GET getDetalles, 1 values.
+[Nov-29-2023 02:32:39]  'info' 200 DELETE deleteDetalle, [object Object] values.
+[Nov-29-2023 02:32:42]  'info' 200 GET getDetalles, 1 values.
+[Nov-29-2023 02:33:32]  'info' 200 DELETE deleteDetalle, [object Object] values.
+[Nov-29-2023 02:34:11]  'info' API REST, corriendo en el puerto: 3002
+[Nov-29-2023 02:34:39]  'info' 200 DELETE deleteDetalle, [object Object] values.
+[Nov-29-2023 02:36:17]  'info' API REST, corriendo en el puerto: 3002
+[Nov-29-2023 02:36:19]  'info' 200 GET getDetalles, 1 values.
+[Nov-29-2023 02:36:21]  'info' 200 GET getDetalles, 1 values.
+[Nov-29-2023 02:36:22]  'info' 200 GET getDetalles, 1 values.
+[Nov-29-2023 02:37:11]  'info' 200 GET getDetalles, 1 values.
+[Nov-29-2023 02:37:13]  'info' 200 DELETE deleteDetalle, [object Object] values.
+[Nov-29-2023 02:37:16]  'info' 200 GET getDetalles, 0 values.
+[Nov-29-2023 02:37:17]  'info' 200 GET getDetalles, 0 values.
