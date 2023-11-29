@@ -74,12 +74,12 @@ async function createDetalle(req, res) {
     }
     let [errA, asistencia] = await get(models.AsistenciaRegistroPersonal.findOne({
         where: {
-            /*fechaturno: req.query.fechaturno,
+            fechaturno: req.query.fechaturno,
             idturno: req.query.idturno,
-            codigoempresa: req.query.codigoempresa,*/
-            fechaturno: req.body.fechaturno== 'D' ? 1 : 2,
-            idturno: (req.body.idturno== 'D' ? 1 : 2),
             codigoempresa: req.query.codigoempresa,
+            /*fechaturno: req.body.fechaturno== 'D' ? 1 : 2,
+            idturno: (req.body.idturno== 'D' ? 1 : 2),
+            codigoempresa: req.query.codigoempresa,*/
             estado: 'A',
         },
         include: [
