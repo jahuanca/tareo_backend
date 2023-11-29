@@ -1723,3 +1723,4 @@ Validation error: Validation len on codigoempresa failed.
 [Nov-29-2023 02:37:13]  'info' 200 DELETE deleteDetalle, [object Object] values.
 [Nov-29-2023 02:37:16]  'info' 200 GET getDetalles, 0 values.
 [Nov-29-2023 02:37:17]  'info' 200 GET getDetalles, 0 values.
+[Nov-29-2023 09:09:30]  'info' API REST, corriendo en el puerto: 3002

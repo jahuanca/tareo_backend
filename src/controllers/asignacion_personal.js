@@ -77,8 +77,8 @@ async function createDetalle(req, res) {
             /*fechaturno: req.query.fechaturno,
             idturno: req.query.idturno,
             codigoempresa: req.query.codigoempresa,*/
-            fechaturno: (req.body.fechaturno== 'D' ? 1 : 2),
-            idturno: req.query.idturno,
+            fechaturno: req.body.fechaturno== 'D' ? 1 : 2,
+            idturno: (req.body.idturno== 'D' ? 1 : 2),
             codigoempresa: req.query.codigoempresa,
             estado: 'A',
         },
