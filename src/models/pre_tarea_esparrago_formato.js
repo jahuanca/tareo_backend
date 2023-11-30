@@ -15,7 +15,7 @@ module.exports = (sequelize, DataTypes) => {
     fecha: {type: DataTypes.DATEONLY, allowNull: false,},
     fechamod: {type: DataTypes.DATE, allowNull: false,},
     hora: {type: DataTypes.DATE, allowNull: false,},
-    idestado: {type: DataTypes.INTEGER, allowNull: false,},
+    idestado: {type: DataTypes.INTEGER, allowNull: true, defaultValue: 1},
     itempretareaesparrago: {type: DataTypes.INTEGER, allowNull: false,},
     codigotk: {type: DataTypes.STRING, allowNull: false,},
     idlabor: {type: DataTypes.INTEGER, allowNull: false,},

@@ -10,13 +10,13 @@ module.exports = (sequelize, DataTypes) => {
   };
   Esparrago_Agrupa_Personal.init({
     itemagruparpersonal: {primaryKey: true ,type: DataTypes.INTEGER, allowNull: true,},
-    fecha: {type: DataTypes.DATEONLY, allowNull: true,},
+    fecha: {type: DataTypes.DATE, allowNull: true,},
     linea: {type: DataTypes.INTEGER, allowNull: true,},
     grupo: {type: DataTypes.INTEGER, allowNull: true,},
     turno: {type: DataTypes.STRING, allowNull: true,},
     fechamod: {type: DataTypes.DATE, allowNull: true,},
     idusuario: {type: DataTypes.INTEGER, allowNull: true,},
-    idestado: {type: DataTypes.INTEGER, allowNull: true,},
+    idestado: {type: DataTypes.INTEGER, allowNull: true, defaultValue: 1},
 
     accion: {type: DataTypes.VIRTUAL},
     usuario: {type: DataTypes.VIRTUAL},

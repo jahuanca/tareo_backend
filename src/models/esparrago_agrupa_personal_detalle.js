@@ -24,7 +24,7 @@ module.exports = (sequelize, DataTypes) => {
       validate: {notEmpty: true, len: [1,1], isIn: [['A', 'I']], isAlpha: true}
     },
     fecha: {type: DataTypes.DATEONLY, allowNull: true},
-    idestado: {type: DataTypes.INTEGER, allowNull: true},
+    idestado: {type: DataTypes.INTEGER, allowNull: true, defaultValue: 1},
     documento: {type: DataTypes.STRING(12), allowNull: true},
 
     accion: {type: DataTypes.VIRTUAL},

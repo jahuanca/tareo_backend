@@ -13,7 +13,8 @@
       "options": {
         "requestTimeout": 1500000
       }
-    }
+    },
+    "timezone": "-05:00"
   },
   "test": {
     "username": "root",

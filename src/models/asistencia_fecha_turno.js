@@ -16,7 +16,7 @@ module.exports = (sequelize, DataTypes) => {
     fecha: {type: DataTypes.DATEONLY, allowNull: true},
     idubicacion: {type: DataTypes.INTEGER, allowNull: true},
     idturno: {type: DataTypes.INTEGER, allowNull: true},
-    idestado: {type: DataTypes.INTEGER, allowNull: true},
+    idestado: {type: DataTypes.INTEGER, allowNull: true, defaultValue: 1},
     ipmovil: {type: DataTypes.STRING(50), allowNull: true, validate: {notEmpty: true, len: [1,50]}},
     fechamod: {type: DataTypes.DATE, allowNull: true},
     idusuario: {type: DataTypes.INTEGER, allowNull: true},

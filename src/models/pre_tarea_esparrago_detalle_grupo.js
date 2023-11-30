@@ -14,7 +14,7 @@
      itempretareaesparragodetallegrupo: {primaryKey:true, autoIncrement: true, type: DataTypes.INTEGER, allowNull: false, },
      fecha: {type: DataTypes.DATEONLY, allowNull: false, },
      hora: {type: DataTypes.DATE, allowNull: false, },
-     idestado: {type: DataTypes.INTEGER, allowNull: false, },
+     idestado: {type: DataTypes.INTEGER, allowNull: true, defaultValue: 1},
      itemprestareaesparragogrupo: {type: DataTypes.INTEGER, allowNull: false, },
      codigoempresa: {type: DataTypes.STRING, allowNull: false, },
      codigotk: {type: DataTypes.STRING, allowNull: false, },

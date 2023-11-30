@@ -6,9 +6,9 @@ const { transform } = require('dottie')
 async function getLineasMesas(req, res) {
     let query = req.query;
     let whereString = '';
-    let subQuery='';
+    let subQuery=''
     console.log(query)
-    if (query.fecha) whereString += ` fecha = '${query.fecha}' `
+    if (query.fecha) whereString += `WHERE fecha = '${query.fecha}' `
     if (query.turno) whereString += ` AND turno = '${query.turno}' `
     if (query.linea){
         whereString += ` AND linea = ${query.linea} `
@@ -88,7 +88,7 @@ async function createDetalle(req, res) {
     }));
 
     if (errA) return res.status(500).json({ message: `Error: ${errA}` })
-    if (asistencia == null) return res.status(404).json({ message: `Esta persona no se encuentra en la lista.` })
+    if (asistencia == null) return res.status(404).json({ message: `Esta persona no se encuentra en la lista de asistencia.` })
 
     let [err, detalle] = await get(models.EsparragoAgrupaPersonalDetalle.create({
         itemagruparpersonaldetalle: req.body.itemagruparpersonaldetalle,
@@ -162,7 +162,7 @@ const getQuery = (whereString, subQuery) => `
     SELECT *
         ${subQuery}
     FROM EsparragoAgrupaPersonal
-    WHERE ${whereString};
+    ${whereString};
 `;
 
 const selectSubQuery = `

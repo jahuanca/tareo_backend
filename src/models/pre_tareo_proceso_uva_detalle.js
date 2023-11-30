@@ -24,7 +24,7 @@ module.exports = (sequelize, DataTypes) => {
     idlabor: {type: DataTypes.INTEGER, allowNull: false,},
     idactividad: {type: DataTypes.INTEGER, allowNull: false,},
     idpresentacion: {type: DataTypes.INTEGER, allowNull: false, defaultValue: 1},
-    idestado: {type: DataTypes.INTEGER, allowNull: false,},
+    idestado: {type: DataTypes.INTEGER, allowNull: true, defaultValue: 1},
     codigotk: {type: DataTypes.STRING, allowNull: true,},
 
     accion: {type: DataTypes.VIRTUAL},

@@ -13,6 +13,7 @@ module.exports = (sequelize, DataTypes) => {
     idasistencia: {type: DataTypes.INTEGER, primaryKey: true, autoIncrement: true},
     idasistenciaturno: {type: DataTypes.INTEGER, allowNull: false},
     codigoempresa: {type: DataTypes.STRING(8), allowNull: true, validate: {notEmpty: true, len: [1,8]}},
+    nrodocumento: {type: DataTypes.STRING(8), allowNull: true, validate: {notEmpty: true, len: [1,8]}},
     tipomovimiento: {type: DataTypes.CHAR(1), allowNull: false, defaultValue: 'I',
       validate: {notEmpty: true, len: [1,1], isIn: [['I', 'S']], isAlpha: true}
     },

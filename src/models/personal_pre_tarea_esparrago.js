@@ -13,7 +13,7 @@ module.exports = (sequelize, DataTypes) => {
     itempersonalpretareaesparrago: {primaryKey: true, type: DataTypes.INTEGER, allowNull: true, autoIncrement: true},
     fecha: {type: DataTypes.DATEONLY, allowNull: false},
     hora: {type: DataTypes.DATE, allowNull: false},
-    idestado: {type: DataTypes.INTEGER, allowNull: false},
+    idestado: {type: DataTypes.INTEGER, allowNull: true, defaultValue: 1},
     itempretareaesparragovarios: {type: DataTypes.INTEGER, allowNull: true,},
     codigotkcaja: {type: DataTypes.STRING, allowNull: false},
     idlabor: {type: DataTypes.INTEGER, allowNull: false},

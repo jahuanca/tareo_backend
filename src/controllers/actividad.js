@@ -1,5 +1,6 @@
 'use strict'
 const models=require('../models')
+const logger = require('../config/logger')
 
 async function getActividadsCount(req,res){
   let [err,actividads]=await get(models.Actividad.count({

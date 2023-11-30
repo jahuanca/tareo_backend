@@ -18,7 +18,7 @@ module.exports = (sequelize, DataTypes) => {
     hora: {type: DataTypes.DATE, allowNull: false,},
     imei: {type: DataTypes.STRING, allowNull: false,},
     idusuario: {type: DataTypes.INTEGER, allowNull: false,},
-    idestado: {type: DataTypes.INTEGER, allowNull: false,},
+    idestado: {type: DataTypes.INTEGER, allowNull: true, defaultValue: 1},
     codigotk: {type: DataTypes.STRING, allowNull: true,},
 
     accion: {type: DataTypes.VIRTUAL},

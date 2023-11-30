@@ -19,7 +19,7 @@ module.exports = (sequelize, DataTypes) => {
     horafin: {type: DataTypes.DATE, allowNull: false, },
     pausainicio: {type: DataTypes.DATE, allowNull: true, },
     pausafin: {type: DataTypes.DATE, allowNull: true, },
-    idestado: {type: DataTypes.INTEGER, allowNull: false, },
+    idestado: {type: DataTypes.INTEGER, allowNull: true, defaultValue: 1},
     idcentrocosto: {type: DataTypes.INTEGER, allowNull: false, },
     diasiguiente: {type: DataTypes.BOOLEAN, allowNull: false, },
     codigosupervisor: {type: DataTypes.STRING, allowNull: false, },

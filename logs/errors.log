@@ -179,3 +179,4 @@ Validation error: Validation len on codigoempresa failed.
 [Nov-29-2023 02:22:05]  'error' 500 POST createDetalle, Esta persona ya ha sido registrada en este grupo.
 [Nov-29-2023 02:31:36]  'error' 500 DELETE deleteDetalle, SequelizeDatabaseError: Invalid column name 'idasistencia'..
 [Nov-29-2023 02:31:49]  'error' 500 DELETE deleteDetalle, SequelizeDatabaseError: Invalid column name 'idasistencia'..
+[Nov-29-2023 22:41:13]  'error' 500 GET getLineasMesas, SequelizeDatabaseError: Incorrect syntax near ';'..

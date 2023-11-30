@@ -23,7 +23,7 @@ module.exports = (sequelize, DataTypes) => {
     idcultivo: { type: DataTypes.INTEGER, allowNull: false, },
     diasiguiente: { type: DataTypes.BOOLEAN, allowNull: false, },
     turnotareo: { type: DataTypes.STRING, allowNull: false },
-    idestado: { type: DataTypes.INTEGER, allowNull: false, },
+    idestado: {type: DataTypes.INTEGER, allowNull: true, defaultValue: 1},
     codigoempresasupervisor: { type: DataTypes.STRING, allowNull: false, },
     codigoempresadigitador: { type: DataTypes.STRING, allowNull: false, },
     /* fechamod: {type: DataTypes.DATE, allowNull: false,}, */
