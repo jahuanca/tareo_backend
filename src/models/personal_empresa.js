@@ -42,7 +42,7 @@ module.exports = (sequelize, DataTypes) => {
   });
 
   Personal_Empresa.associate = function(models) {
-    Personal_Empresa.belongsTo(models.PersonalEmpresa_Subdivision, {foreignKey: "codigoempresa",targetKey: 'codigoempresa'})
+    Personal_Empresa.hasMany(models.PersonalEmpresa_Subdivision, {foreignKey: "codigoempresa",targetKey: 'codigoempresa'})
   };
 
   return Personal_Empresa;

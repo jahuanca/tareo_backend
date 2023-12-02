@@ -1794,3 +1794,102 @@ Validation error: Validation len on codigoempresa failed.
 [Nov-29-2023 23:30:54]  'info' API REST, corriendo en el puerto: 3002
 [Nov-29-2023 23:31:05]  'info' API REST, corriendo en el puerto: 3002
 [Nov-29-2023 23:31:11]  'info' API REST, corriendo en el puerto: 3002
+[Nov-29-2023 23:31:16]  'info' API REST, corriendo en el puerto: 3002
+[Dec-01-2023 19:49:42]  'info' API REST, corriendo en el puerto: 3002
+[Dec-01-2023 19:53:33]  'info' 200 GET getPersonal_EmpresasCount 25425 values.
+[Dec-01-2023 19:55:05]  'info' API REST, corriendo en el puerto: 3002
+[Dec-01-2023 19:55:10]  'info' API REST, corriendo en el puerto: 3002
+[Dec-01-2023 19:55:14]  'info' 200 GET getPersonal_EmpresasCount 25425 values.
+[Dec-01-2023 19:55:23]  'info' API REST, corriendo en el puerto: 3002
+[Dec-01-2023 19:55:28]  'info' 200 GET getPersonal_EmpresasCount 25425 values.
+[Dec-01-2023 19:56:43]  'info' API REST, corriendo en el puerto: 3002
+[Dec-01-2023 19:56:46]  'info' 200 GET getPersonal_EmpresasCount 13661 values.
+[Dec-01-2023 19:57:08]  'info' API REST, corriendo en el puerto: 3002
+[Dec-01-2023 19:57:13]  'info' 200 GET getPersonal_EmpresasCount 25425 values.
+[Dec-01-2023 19:57:15]  'info' 200 GET getPersonal_EmpresasCount 25425 values.
+[Dec-01-2023 19:57:56]  'info' API REST, corriendo en el puerto: 3002
+[Dec-01-2023 19:57:58]  'info' 200 GET getPersonal_EmpresasCount 25425 values.
+[Dec-01-2023 19:58:00]  'info' 200 GET getPersonal_EmpresasCount 25425 values.
+[Dec-01-2023 19:58:22]  'info' API REST, corriendo en el puerto: 3002
+[Dec-01-2023 19:58:34]  'info' API REST, corriendo en el puerto: 3002
+[Dec-01-2023 19:58:36]  'info' 200 GET getPersonal_EmpresasCount 25425 values.
+[Dec-01-2023 19:58:54]  'info' API REST, corriendo en el puerto: 3002
+[Dec-01-2023 19:59:56]  'info' API REST, corriendo en el puerto: 3002
+[Dec-01-2023 19:59:58]  'info' 200 GET getPersonal_EmpresasCount 25425 values.
+[Dec-01-2023 20:00:01]  'info' 200 GET getPersonal_EmpresasCount 25425 values.
+[Dec-01-2023 20:00:11]  'info' API REST, corriendo en el puerto: 3002
+[Dec-01-2023 20:01:46]  'info' API REST, corriendo en el puerto: 3002
+[Dec-01-2023 20:01:48]  'info' 200 GET getPersonal_EmpresasCount 25425 values.
+[Dec-01-2023 20:02:20]  'info' API REST, corriendo en el puerto: 3002
+[Dec-01-2023 20:02:50]  'info' API REST, corriendo en el puerto: 3002
+[Dec-01-2023 20:02:53]  'info' 200 GET getPersonal_EmpresasCount 25425 values.
+[Dec-01-2023 20:03:20]  'info' 200 GET getPersonal_EmpresasCount 25425 values.
+[Dec-01-2023 20:03:21]  'info' 200 GET getPersonal_EmpresasCount 25425 values.
+[Dec-01-2023 20:03:54]  'info' 200 GET get_personal_empresas 25425 values.
+[Dec-01-2023 20:04:43]  'info' API REST, corriendo en el puerto: 3002
+[Dec-01-2023 20:04:51]  'info' 200 GET get_personal_empresas 13661 values.
+[Dec-01-2023 20:05:21]  'info' 200 GET getPersonal_EmpresasCount 25425 values.
+[Dec-01-2023 20:05:29]  'info' API REST, corriendo en el puerto: 3002
+[Dec-01-2023 20:05:31]  'info' 200 GET getPersonal_EmpresasCount 25425 values.
+[Dec-01-2023 20:06:51]  'info' 200 GET get_personal_empresas 13661 values.
+[Dec-01-2023 20:07:09]  'info' API REST, corriendo en el puerto: 3002
+[Dec-01-2023 20:36:47]  'info' 200 GET get_personal_empresas 13661 values.
+[Dec-02-2023 00:40:30]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[Dec-02-2023 00:43:58]  'info' 200 GET GET_CENTRO_COSTOS 21292 values.
+[Dec-02-2023 00:44:07]  'info' 200 GET getTurnos, 2 values.
+[Dec-02-2023 00:44:07]  'info' 200 GET getAsistenciaUbicacions, 3 values.
+[Dec-02-2023 00:44:07]  'info' 200 GET getPersonal_EmpresasCount 25425 values.
+[Dec-02-2023 00:44:11]  'info' 200 GET getPersonal_EmpresasByLimitAndOffset, limit: 8000 y offset: 0.
+[Dec-02-2023 00:44:17]  'info' 200 GET getPersonal_EmpresasByLimitAndOffset, limit: 8000 y offset: 8000.
+[Dec-02-2023 00:44:19]  'info' 200 GET getPersonal_EmpresasByLimitAndOffset, limit: 8000 y offset: 16000.
+[Dec-02-2023 00:44:19]  'info' 200 GET getPersonal_EmpresasByLimitAndOffset, limit: 8000 y offset: 24000.
+[Dec-02-2023 00:46:51]  'info' 200 GET GET_CENTRO_COSTOS 21292 values.
+[Dec-02-2023 00:47:01]  'info' 200 GET getTurnos, 2 values.
+[Dec-02-2023 00:47:02]  'info' 200 GET getAsistenciaUbicacions, 3 values.
+[Dec-02-2023 00:47:02]  'info' 200 GET getPersonal_EmpresasCount 25425 values.
+[Dec-02-2023 00:47:08]  'info' 200 GET getPersonal_EmpresasByLimitAndOffset, limit: 8000 y offset: 0.
+[Dec-02-2023 00:47:14]  'info' 200 GET getPersonal_EmpresasByLimitAndOffset, limit: 8000 y offset: 8000.
+[Dec-02-2023 00:47:17]  'info' 200 GET getPersonal_EmpresasByLimitAndOffset, limit: 8000 y offset: 16000.
+[Dec-02-2023 00:47:17]  'info' 200 GET getPersonal_EmpresasByLimitAndOffset, limit: 8000 y offset: 24000.
+[Dec-02-2023 01:01:48]  'info' 200 GET GET_CENTRO_COSTOS 21292 values.
+[Dec-02-2023 01:01:56]  'info' 200 GET getTurnos, 2 values.
+[Dec-02-2023 01:01:56]  'info' 200 GET getAsistenciaUbicacions, 3 values.
+[Dec-02-2023 01:01:56]  'info' 200 GET getPersonal_EmpresasCount 25425 values.
+[Dec-02-2023 01:01:59]  'info' 200 GET getPersonal_EmpresasByLimitAndOffset, limit: 8000 y offset: 0.
+[Dec-02-2023 01:02:03]  'info' 200 GET getPersonal_EmpresasByLimitAndOffset, limit: 8000 y offset: 8000.
+[Dec-02-2023 01:02:05]  'info' 200 GET getPersonal_EmpresasByLimitAndOffset, limit: 8000 y offset: 16000.
+[Dec-02-2023 01:02:05]  'info' 200 GET getPersonal_EmpresasByLimitAndOffset, limit: 8000 y offset: 24000.
+[Dec-02-2023 01:12:00]  'info' 200 GET GET_CENTRO_COSTOS 21292 values.
+[Dec-02-2023 01:12:10]  'info' 200 GET getTurnos, 2 values.
+[Dec-02-2023 01:12:11]  'info' 200 GET getAsistenciaUbicacions, 3 values.
+[Dec-02-2023 01:12:11]  'info' 200 GET getPersonal_EmpresasCount 25425 values.
+[Dec-02-2023 01:12:14]  'info' 200 GET getPersonal_EmpresasByLimitAndOffset, limit: 8000 y offset: 0.
+[Dec-02-2023 01:12:18]  'info' 200 GET getPersonal_EmpresasByLimitAndOffset, limit: 8000 y offset: 8000.
+[Dec-02-2023 01:12:19]  'info' 200 GET getPersonal_EmpresasByLimitAndOffset, limit: 8000 y offset: 16000.
+[Dec-02-2023 01:12:20]  'info' 200 GET getPersonal_EmpresasByLimitAndOffset, limit: 8000 y offset: 24000.
+[Dec-02-2023 01:16:29]  'info' 200 GET GET_CENTRO_COSTOS 21292 values.
+[Dec-02-2023 01:17:26]  'info' 200 GET getTurnos, 2 values.
+[Dec-02-2023 01:17:26]  'info' 200 GET getAsistenciaUbicacions, 3 values.
+[Dec-02-2023 01:17:26]  'info' 200 GET getPersonal_EmpresasCount 25425 values.
+[Dec-02-2023 01:17:37]  'info' 200 GET getPersonal_EmpresasByLimitAndOffset, limit: 8000 y offset: 0.
+[Dec-02-2023 01:18:00]  'info' 200 GET GET_CENTRO_COSTOS 21292 values.
+[Dec-02-2023 01:18:12]  'info' 200 GET getTurnos, 2 values.
+[Dec-02-2023 01:18:12]  'info' 200 GET getAsistenciaUbicacions, 3 values.
+[Dec-02-2023 01:18:12]  'info' 200 GET getPersonal_EmpresasCount 25425 values.
+[Dec-02-2023 01:18:22]  'info' 200 GET getPersonal_EmpresasByLimitAndOffset, limit: 8000 y offset: 0.
+[Dec-02-2023 01:18:28]  'info' 200 GET getPersonal_EmpresasByLimitAndOffset, limit: 8000 y offset: 8000.
+[Dec-02-2023 01:18:30]  'info' 200 GET getPersonal_EmpresasByLimitAndOffset, limit: 8000 y offset: 16000.
+[Dec-02-2023 01:18:31]  'info' 200 GET getPersonal_EmpresasByLimitAndOffset, limit: 8000 y offset: 24000.
+[Dec-02-2023 01:26:41]  'info' 200 GET GET_CENTRO_COSTOS 21292 values.
+[Dec-02-2023 01:26:44]  'info' 200 GET getTurnos, 2 values.
+[Dec-02-2023 01:26:45]  'info' 200 GET getAsistenciaUbicacions, 3 values.
+[Dec-02-2023 01:26:45]  'info' 200 GET getPersonal_EmpresasCount 25425 values.
+[Dec-02-2023 01:26:47]  'info' 200 GET getPersonal_EmpresasByLimitAndOffset, limit: 8000 y offset: 0.
+[Dec-02-2023 01:26:51]  'info' 200 GET getPersonal_EmpresasByLimitAndOffset, limit: 8000 y offset: 8000.
+[Dec-02-2023 01:26:54]  'info' 200 GET getPersonal_EmpresasByLimitAndOffset, limit: 8000 y offset: 16000.
+[Dec-02-2023 01:26:54]  'info' 200 GET getPersonal_EmpresasByLimitAndOffset, limit: 8000 y offset: 24000.
+[Dec-02-2023 01:28:20]  'info' 200 GET GET_CENTRO_COSTOS 21292 values.
+[Dec-02-2023 01:28:45]  'info' 200 GET getPersonal_EmpresasCount 25425 values.
+[Dec-02-2023 01:29:47]  'info' API REST, corriendo en el puerto: 3002
+[Dec-02-2023 01:29:52]  'info' 200 GET getPersonal_EmpresasCount 13661 values.
+[Dec-02-2023 01:32:20]  'info' API REST, corriendo en el puerto: 3002

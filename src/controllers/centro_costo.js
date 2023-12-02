@@ -4,7 +4,7 @@ const logger=require('./../config/logger')
 
 async function getCentro_CostoCount(req,res){
   let [err,centro_costo]=await get(models.Centro_Costo.count({
-    /* where:{estado: 'A'},*/
+    where: {activo: true}
   }))
   if(err) return res.status(500).json({message: `${err}`})
   if(centro_costo==null) return res.status(404).json({message: `centro_costo nulos`})
@@ -13,6 +13,7 @@ async function getCentro_CostoCount(req,res){
 
 async function getCentro_Costos(req,res){
   let [err,centro_costos]=await get(models.Centro_Costo.findAll({
+    where: {activo: true}
     /* where:{estado: 'A'},
     include: [{all: true}] */
     /*attributes: { 
