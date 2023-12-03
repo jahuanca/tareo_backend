@@ -1958,3 +1958,5 @@ Validation error: Validation len on codigoempresa failed.
 [Dec-02-2023 15:25:03]  'info' 200 GET getPersonal_EmpresasCount 13663 values.
 [Dec-02-2023 15:25:12]  'info' 200 GET getPersonal_EmpresasByLimitAndOffset, limit: 8000 y offset: 0.
 [Dec-02-2023 15:25:20]  'info' 200 GET getPersonal_EmpresasByLimitAndOffset, limit: 8000 y offset: 8000.
+[Dec-02-2023 17:53:36]  'info' API REST, corriendo en el puerto: 3002
+[Dec-02-2023 19:09:49]  'info' 200 GET getPersonal_EmpresasCount 13663 values.

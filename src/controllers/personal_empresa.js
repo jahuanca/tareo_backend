@@ -21,7 +21,8 @@ async function getPersonal_Empresas(req, res) {
 
 async function getPersonal_EmpresasCount(req, res) {
   let [err, personal_empresas] = await get(models.Personal_Empresa.count({
-    where: { itemgrupopersonal: 1 }
+    where: { itemgrupopersonal: 1 },
+    include: [{ all: true }]
   }))
   if (err) {
     logger.error(`500 GET getPersonal_EmpresasCount, ${err}.`)
