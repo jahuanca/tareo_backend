@@ -2,6 +2,7 @@
 const express=require('express')
 const router=express.Router()
 const personal_empresa=require('../controllers/personal_empresa')
+const { getDateWithZone } = require('../services/utils')
 /* const upload_controller=require('../controllers/upload_controller')
 const auth=require('../middlewares/auth') */
 
@@ -23,6 +24,14 @@ router.get('/id/:id',personal_empresa.getPersonal_Empresa)
 router.post('/create',personal_empresa.createPersonal_Empresa)
 router.put('/update',personal_empresa.updatePersonal_Empresa)
 router.delete('/delete/:id', personal_empresa.deletePersonal_Empresa)
+
+
+
+router.post('/date', (req,res)=>{
+    res.status(200).json({
+        message: getDateWithZone(req.body.date)
+    })
+})
 
 module.exports=router
 /** 

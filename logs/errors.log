@@ -180,3 +180,7 @@ Validation error: Validation len on codigoempresa failed.
 [Nov-29-2023 02:31:36]  'error' 500 DELETE deleteDetalle, SequelizeDatabaseError: Invalid column name 'idasistencia'..
 [Nov-29-2023 02:31:49]  'error' 500 DELETE deleteDetalle, SequelizeDatabaseError: Invalid column name 'idasistencia'..
 [Nov-29-2023 22:41:13]  'error' 500 GET getLineasMesas, SequelizeDatabaseError: Incorrect syntax near ';'..
+[Dec-03-2023 21:26:25]  'error' 500 GET getPersonal_EmpresasCount, TypeError: options.logging is not a function.
+[Dec-03-2023 23:39:49]  'error' 500 GET getPesados, SequelizeDatabaseError: Invalid column name 'estado'..
+[Dec-03-2023 23:40:34]  'error' 500 GET getPesados, SequelizeDatabaseError: Invalid column name 'estado'..
+[Dec-03-2023 23:40:40]  'error' 500 GET getPesados, SequelizeDatabaseError: Invalid column name 'estado'..

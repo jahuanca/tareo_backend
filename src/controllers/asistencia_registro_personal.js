@@ -199,6 +199,7 @@ async function deleteAsistenciaRegistroPersonal(req, res) {
 }
 
 async function registrar(req, res){
+  console.log(req.body.idasistenciaturno)
   let [err, registro] = await get(models.AsistenciaRegistroPersonal.findOne({
     where: { 
       idasistenciaturno: req.body.idasistenciaturno,
@@ -213,6 +214,7 @@ async function registrar(req, res){
   }
   if (registro == null) {
     //creacion
+    console.log('Creacion')
     let [err, asistenciaRegistroPersonal] = await get(models.AsistenciaRegistroPersonal.create({
       idasistenciaturno: req.body.idasistenciaturno,
       codigoempresa: req.body.codigoempresa,
@@ -243,6 +245,7 @@ async function registrar(req, res){
     logger.info(`200 POST registrar, ${asistenciaRegistroPersonal.idasistencia} values.`)
     return res.status(200).json(asistenciaRegistroPersonal)
   }else{
+    console.log('Modificacion')
     //modificacion
     let [errU, valueToUpdate]= await get(
       models.AsistenciaRegistroPersonal.findOne(

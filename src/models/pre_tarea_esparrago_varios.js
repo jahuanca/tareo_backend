@@ -29,6 +29,8 @@ module.exports = (sequelize, DataTypes) => {
     turnotareo: {type: DataTypes.STRING, allowNull: false, },
     linea: {type: DataTypes.INTEGER, allowNull: false, },
 
+    estado: {type: DataTypes.CHAR(1), allowNull: true, defaultValue: 'A'},
+
     accion: {type: DataTypes.VIRTUAL},
     usuario: {type: DataTypes.VIRTUAL},
     ip: {type: DataTypes.VIRTUAL},
