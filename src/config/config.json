@@ -9,7 +9,7 @@
     "logging": false,
     "dialectOptions": {
       "multipleStatements": true,
-      "useUTC": false,
+      "useUTC": 0,
       "options": {
         "requestTimeout": 1500000
       }

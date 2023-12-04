@@ -2029,3 +2029,6 @@ Validation error: Validation len on codigoempresa failed.
 [Dec-04-2023 09:57:29]  'info' 200 GET getAsistenciaRegistroPersonals, 1 values.
 [Dec-04-2023 09:57:32]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
 [Dec-04-2023 09:57:35]  'info' 200 GET getAsistenciaRegistroPersonals, 1 values.
+[Dec-04-2023 10:23:00]  'info' API REST, corriendo en el puerto: 3002
+[Dec-04-2023 10:23:59]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[Dec-04-2023 10:24:36]  'info' 200 GET getAsistenciaRegistroPersonals, 1 values.
