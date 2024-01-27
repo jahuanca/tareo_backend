@@ -8,7 +8,22 @@ const getPesados = asyncCatch(async (req, res) => {
   console.log(query)
   const [err, pesados] = await getError(models.Pre_Tarea_Esparrago_Varios.findAll({
     where: query,
-    include: [{ all: true }]
+    include: [{ all: true }],
+    attributes: {
+      include: [
+        [
+          models.sequelize.literal(`(
+                  SELECT COUNT(*)
+                  FROM PersonalPreTareaEsparrago AS personal
+                  WHERE
+                      personal.itempretareaesparragovarios = Pre_Tarea_Esparrago_Varios.itempretareaesparragovarios
+                  AND Pre_Tarea_Esparrago_Varios.idusuario= ${query.idusuario}
+                  AND Pre_Tarea_Esparrago_Varios.estado= '${query.estado}'
+              )`),
+          'sizeDetails'
+        ]
+      ]
+    }
   }))
   if (err) {
     err.message = `500 GET getPesados, ${err.message}.`

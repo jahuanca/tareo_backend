@@ -40,3 +40,12 @@
 [Jan-27-2024 03:12:27]  'error' 500 GET getReporteLineaMesa header, SequelizeDatabaseError: Invalid column name 'undefined'..
 [Jan-27-2024 03:13:04]  'error' 500 GET getReporteLineaMesa header, SequelizeDatabaseError: Invalid column name 'undefined'..
 [Jan-27-2024 03:25:01]  'error' 500 GET getReporteLineaMesa header, SequelizeDatabaseError: Conversion failed when converting date and/or time from character string..
+[Jan-27-2024 15:07:56]  'error' 59b80f6a-1735-4c47-a2fb-f5229522c2e2:  Error: 500 GET getPesados, SequelizeDatabaseError: The multi-part identifier "PreTareaEsparragoVarios.itempretareaesparragovarios" could not be bound..
+[Jan-27-2024 15:10:16]  'error' 5c27e600-2119-4568-9c92-91a8e2bf81f1:  Error: 500 GET getPesados, SequelizeDatabaseError: The multi-part identifier "PreTareaEsparragoVarios.itempretareaesparragovarios" could not be bound..
+[Jan-27-2024 15:17:30]  'error' fc051dea-aec3-4f57-8402-14d7a8119e17:  Error: 500 GET getPesados, SequelizeDatabaseError: The multi-part identifier "PreTareaEsparragoVarios.itempretareaesparragovarios" could not be bound..
+[Jan-27-2024 15:21:14]  'error' 2a97bfff-b578-43a6-84a5-51236223c9a5:  Error: 500 GET getPesados, SequelizeDatabaseError: The multi-part identifier "PreTareaEsparragoVarios.itempretareaesparragovarios" could not be bound..
+[Jan-27-2024 15:24:00]  'error' dcfab333-e750-415b-ace3-4b087742c289:  Error: 500 GET getPesados, SequelizeDatabaseError: The multi-part identifier "PreTareaEsparragoVarios.itempretareaesparragovarios" could not be bound..
+[Jan-27-2024 15:26:44]  'error' 92fed3db-b2f3-4cdb-ad99-99189f14374d:  Error: 500 GET getPesados, SequelizeDatabaseError: Ambiguous column name 'idusuario'..
+[Jan-27-2024 15:28:12]  'error' 9a5bbb04-0ffa-43ce-962f-4037946792d2:  Error: 500 GET getPesados, SequelizeDatabaseError: The multi-part identifier "preTareaEsparragoVarios.itempretareaesparragovarios" could not be bound..
+[Jan-27-2024 15:30:02]  'error' 047229ec-bbfe-4f36-b3ea-e2b75ed725b6:  Error: 500 GET getPesados, SequelizeDatabaseError: The multi-part identifier "Personal_Pre_Tarea_Esparrago.itempretareaesparragovarios" could not be bound..
+[Jan-27-2024 15:33:24]  'error' ec22c8e0-16de-418b-af6c-df3349de5090:  Error: 500 GET getPesados, SequelizeDatabaseError: Invalid column name 'A'..

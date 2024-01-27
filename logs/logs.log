@@ -661,3 +661,55 @@
 [Jan-27-2024 09:58:49]  'info' API REST, corriendo en el puerto: 3002
 [Jan-27-2024 09:59:37]  'info' API REST, corriendo en el puerto: 3002
 [Jan-27-2024 10:00:00]  'info' API REST, corriendo en el puerto: 3002
+[Jan-27-2024 10:00:13]  'info' API REST, corriendo en el puerto: 3002
+[Jan-27-2024 10:09:12]  'info' API REST, corriendo en el puerto: 3002
+[Jan-27-2024 10:21:13]  'info' API REST, corriendo en el puerto: 3002
+[Jan-27-2024 12:43:41]  'info' API REST, corriendo en el puerto: 3002
+[Jan-27-2024 12:44:45]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[Jan-27-2024 12:44:50]  'info' 200 GET getPesados, 1 items.
+[Jan-27-2024 12:44:52]  'info' 200 GET getPesados, 1 items.
+[Jan-27-2024 12:47:57]  'info' 200 GET getLineasMesas, 2 values.
+[Jan-27-2024 12:48:05]  'info' 200 GET getLineasMesas, 2 values.
+[Jan-27-2024 12:48:08]  'info' 200 GET getPesadoPersonal, 4 items.
+[Jan-27-2024 15:02:13]  'info' 200 GET getPesados, 1 items.
+[Jan-27-2024 15:02:34]  'info' 200 GET getPesados, 1 items.
+[Jan-27-2024 15:03:50]  'info' API REST, corriendo en el puerto: 3002
+[Jan-27-2024 15:05:14]  'info' API REST, corriendo en el puerto: 3002
+[Jan-27-2024 15:07:38]  'info' API REST, corriendo en el puerto: 3002
+[Jan-27-2024 15:07:43]  'info' API REST, corriendo en el puerto: 3002
+[Jan-27-2024 15:07:50]  'info' API REST, corriendo en el puerto: 3002
+[Jan-27-2024 15:07:56]  'error' 59b80f6a-1735-4c47-a2fb-f5229522c2e2:  Error: 500 GET getPesados, SequelizeDatabaseError: The multi-part identifier "PreTareaEsparragoVarios.itempretareaesparragovarios" could not be bound..
+[Jan-27-2024 15:08:59]  'info' API REST, corriendo en el puerto: 3002
+[Jan-27-2024 15:09:33]  'info' API REST, corriendo en el puerto: 3002
+[Jan-27-2024 15:10:16]  'error' 5c27e600-2119-4568-9c92-91a8e2bf81f1:  Error: 500 GET getPesados, SequelizeDatabaseError: The multi-part identifier "PreTareaEsparragoVarios.itempretareaesparragovarios" could not be bound..
+[Jan-27-2024 15:15:50]  'info' API REST, corriendo en el puerto: 3002
+[Jan-27-2024 15:16:23]  'info' API REST, corriendo en el puerto: 3002
+[Jan-27-2024 15:17:30]  'error' fc051dea-aec3-4f57-8402-14d7a8119e17:  Error: 500 GET getPesados, SequelizeDatabaseError: The multi-part identifier "PreTareaEsparragoVarios.itempretareaesparragovarios" could not be bound..
+[Jan-27-2024 15:19:09]  'info' API REST, corriendo en el puerto: 3002
+[Jan-27-2024 15:21:14]  'error' 2a97bfff-b578-43a6-84a5-51236223c9a5:  Error: 500 GET getPesados, SequelizeDatabaseError: The multi-part identifier "PreTareaEsparragoVarios.itempretareaesparragovarios" could not be bound..
+[Jan-27-2024 15:21:29]  'info' API REST, corriendo en el puerto: 3002
+[Jan-27-2024 15:21:34]  'info' 200 GET getPesados, 1 items.
+[Jan-27-2024 15:23:22]  'info' API REST, corriendo en el puerto: 3002
+[Jan-27-2024 15:23:26]  'info' 200 GET getPesados, 1 items.
+[Jan-27-2024 15:23:53]  'info' API REST, corriendo en el puerto: 3002
+[Jan-27-2024 15:24:00]  'error' dcfab333-e750-415b-ace3-4b087742c289:  Error: 500 GET getPesados, SequelizeDatabaseError: The multi-part identifier "PreTareaEsparragoVarios.itempretareaesparragovarios" could not be bound..
+[Jan-27-2024 15:26:28]  'info' API REST, corriendo en el puerto: 3002
+[Jan-27-2024 15:26:40]  'info' API REST, corriendo en el puerto: 3002
+[Jan-27-2024 15:26:44]  'error' 92fed3db-b2f3-4cdb-ad99-99189f14374d:  Error: 500 GET getPesados, SequelizeDatabaseError: Ambiguous column name 'idusuario'..
+[Jan-27-2024 15:26:56]  'info' API REST, corriendo en el puerto: 3002
+[Jan-27-2024 15:26:58]  'info' 200 GET getPesados, 1 items.
+[Jan-27-2024 15:28:01]  'info' API REST, corriendo en el puerto: 3002
+[Jan-27-2024 15:28:12]  'error' 9a5bbb04-0ffa-43ce-962f-4037946792d2:  Error: 500 GET getPesados, SequelizeDatabaseError: The multi-part identifier "preTareaEsparragoVarios.itempretareaesparragovarios" could not be bound..
+[Jan-27-2024 15:29:55]  'info' API REST, corriendo en el puerto: 3002
+[Jan-27-2024 15:30:02]  'error' 047229ec-bbfe-4f36-b3ea-e2b75ed725b6:  Error: 500 GET getPesados, SequelizeDatabaseError: The multi-part identifier "Personal_Pre_Tarea_Esparrago.itempretareaesparragovarios" could not be bound..
+[Jan-27-2024 15:31:07]  'info' API REST, corriendo en el puerto: 3002
+[Jan-27-2024 15:31:15]  'info' 200 GET getPesados, 1 items.
+[Jan-27-2024 15:31:59]  'info' API REST, corriendo en el puerto: 3002
+[Jan-27-2024 15:32:04]  'info' API REST, corriendo en el puerto: 3002
+[Jan-27-2024 15:32:09]  'info' 200 GET getPesados, 1 items.
+[Jan-27-2024 15:32:49]  'info' API REST, corriendo en el puerto: 3002
+[Jan-27-2024 15:33:24]  'error' ec22c8e0-16de-418b-af6c-df3349de5090:  Error: 500 GET getPesados, SequelizeDatabaseError: Invalid column name 'A'..
+[Jan-27-2024 15:33:35]  'info' API REST, corriendo en el puerto: 3002
+[Jan-27-2024 15:33:38]  'info' 200 GET getPesados, 1 items.
+[Jan-27-2024 15:34:30]  'info' 200 GET getPesados, 1 items.
+[Jan-27-2024 15:34:46]  'info' 200 GET getLineasMesas, 2 values.
