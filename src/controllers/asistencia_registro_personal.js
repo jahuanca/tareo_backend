@@ -188,7 +188,6 @@ async function deleteAsistenciaRegistroPersonal (req, res) {
 }
 
 async function registrar (req, res) {
-  console.log(req.body.idasistenciaturno)
   const [err, registro] = await get(models.AsistenciaRegistroPersonal.findOne({
     where: {
       idasistenciaturno: req.body.idasistenciaturno,
@@ -204,6 +203,19 @@ async function registrar (req, res) {
   if (registro == null) {
     // creacion
     console.log('Creacion')
+    if (req.body.nrodocumento == null) {
+      console.log('Creacion buscando nrodocumento')
+      const [errPE, personalEmpresa] = await get(models.Personal_Empresa.findOne({
+        where: {
+          codigoempresa: req.body.codigoempresa
+        }
+      }))
+
+      if (errPE) {
+        logger.error(`500 POST registrar -> sin nrodocumento, ${errPE}.`)
+      }
+      req.body.nrodocumento = personalEmpresa.nrodocumento
+    }
     const [err, asistenciaRegistroPersonal] = await get(models.AsistenciaRegistroPersonal.create({
       idasistenciaturno: req.body.idasistenciaturno,
       nrodocumento: req.body.nrodocumento,

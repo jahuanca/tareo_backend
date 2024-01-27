@@ -643,3 +643,17 @@
 [Jan-27-2024 03:24:54]  'info' 200 GET getLineasMesas, 2 values.
 [Jan-27-2024 03:24:59]  'info' 200 GET getLineasMesas, 2 values.
 [Jan-27-2024 03:25:01]  'error' 500 GET getReporteLineaMesa header, SequelizeDatabaseError: Conversion failed when converting date and/or time from character string..
+[Jan-27-2024 08:27:33]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[Jan-27-2024 08:27:38]  'info' 200 GET getLineasMesas, 2 values.
+[Jan-27-2024 08:27:45]  'info' 200 GET getLineasMesas, 2 values.
+[Jan-27-2024 08:27:47]  'info' 200 GET getLineasMesas, 2 values.
+[Jan-27-2024 08:27:58]  'info' 200 GET getLineasMesas, 2 values.
+[Jan-27-2024 08:27:59]  'info' 200 GET getLineasMesas, 2 values.
+[Jan-27-2024 08:28:07]  'info' 200 GET getLineasMesas, 2 values.
+[Jan-27-2024 09:18:11]  'info' API REST, corriendo en el puerto: 3002
+[Jan-27-2024 09:18:39]  'info' API REST, corriendo en el puerto: 3002
+[Jan-27-2024 09:20:23]  'info' API REST, corriendo en el puerto: 3002
+[Jan-27-2024 09:20:54]  'info' 200 GET getAsistenciaRegistroPersonals, 3 values.
+[Jan-27-2024 09:22:52]  'info' API REST, corriendo en el puerto: 3002
+[Jan-27-2024 09:23:06]  'info' API REST, corriendo en el puerto: 3002
+[Jan-27-2024 09:23:34]  'info' API REST, corriendo en el puerto: 3002
