@@ -52,7 +52,7 @@ const getPesadoPersonal = asyncCatch(async (req, res) => {
 const createPesado = asyncCatch(async (req, res) => {
   const [err, pesado] = await getError(models.Pre_Tarea_Esparrago_Varios.create({
     fecha: req.body.fecha,
-    hora: req.body.fecha,
+    hora: new Date(),
     horainicio: req.body.horainicio,
     horafin: req.body.horafin,
     pausainicio: req.body.pausainicio,
@@ -102,7 +102,7 @@ const createPersonalPesado = asyncCatch(async (req, res) => {
     fechamod: new Date(),
     idusuario: req.body.idusuario,
     fecha: req.body.fecha,
-    hora: req.body.hora,
+    hora: new Date(),
 
     idestado: 1,
     estado: 'A',
@@ -172,7 +172,7 @@ const deletePersonalPesado = asyncCatch(async (req, res) => {
 const createDetallePesado = asyncCatch(async (req, res) => {
   const [err, pesado] = await getError(models.Personal_Pre_Tarea_Esparrago.create({
     fecha: req.body.fecha,
-    hora: req.body.fecha,
+    hora: new Date(),
     horainicio: req.body.horainicio,
     horafin: req.body.horafin,
     pausainicio: req.body.pausainicio,
