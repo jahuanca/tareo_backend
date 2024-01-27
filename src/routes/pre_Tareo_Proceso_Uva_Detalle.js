@@ -1,7 +1,7 @@
 'use strict'
 const express=require('express')
 const router=express.Router()
-const pre_Tareo_Proceso_Uva_Detalle=require('../controllers/Pre_Tareo_Proceso_Uva_Detalle')
+const pre_Tareo_Proceso_Uva_Detalle=require('../controllers/pre_tareo_proceso_uva_detalle')
 const upload_controller=require('../controllers/upload_controller')
 /* const auth=require('../middlewares/auth') */
 

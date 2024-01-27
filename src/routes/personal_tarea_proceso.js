@@ -1,7 +1,7 @@
 'use strict'
-const express=require('express')
-const router=express.Router()
-const personalTareaProceso=require('../controllers/personal_tarea_proceso')
+const express = require('express')
+const router = express.Router()
+const personalTareaProceso = require('../controllers/personal_tarea_proceso')
 /* const upload_controller=require('../controllers/upload_controller')
 const auth=require('../middlewares/auth') */
 
@@ -15,19 +15,19 @@ const auth=require('../middlewares/auth') */
  *      '200':
  *        description: A successful response
  */
-router.get('/',personalTareaProceso.getPersonalTareaProcesos)
-router.get('/id/:id',personalTareaProceso.getPersonalTareaProceso)
-router.post('/create',personalTareaProceso.createPersonalTareaProceso)
-router.put('/update',personalTareaProceso.updatePersonalTareaProceso)
+router.get('/', personalTareaProceso.getPersonalTareaProcesos)
+router.get('/id/:id', personalTareaProceso.getPersonalTareaProceso)
+router.post('/create', personalTareaProceso.createPersonalTareaProceso)
+router.put('/update', personalTareaProceso.updatePersonalTareaProceso)
 router.delete('/delete/:id', personalTareaProceso.deletePersonalTareaProceso)
-router.post('/rango',personalTareaProceso.personalTareaProcesoByRango)
-router.post('/migrar',personalTareaProceso.migrarContenido)
+router.post('/rango', personalTareaProceso.personalTareaProcesoByRango)
+router.post('/migrar', personalTareaProceso.migrarContenido)
 
-module.exports=router
-/** 
+module.exports = router
+/**
 * @swagger
 *definitions:
-*  PersonalTareaProceso:           
+*  PersonalTareaProceso:
 *    type: object
 *    required:
 *      - cod_PersonalTareaProceso

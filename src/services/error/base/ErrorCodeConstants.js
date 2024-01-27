@@ -1,0 +1,8 @@
+
+const ERROR_APP= 'ERROR_APPLICATION'
+const ERROR_SERVER= 'ERROR_SERVER'
+
+module.exports={
+    ERROR_APP,
+    ERROR_SERVER
+}

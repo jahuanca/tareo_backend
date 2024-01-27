@@ -2,10 +2,10 @@
 const express = require('express')
 const router = express.Router()
 const {
-    getPesados,
-    createPesado,
-    deletePesado
-} = require('./../controllers/control_lanzadas')
+  getResumenLanzada,
+  getResumenLanzadaError,
+  getReportePesadoLineaMesa
+} = require('../controllers/control_lanzada')
 
 /**
  * @swagger
@@ -17,16 +17,15 @@ const {
  *      '200':
  *        description: A successful response
  */
-router.get('/pesados', getPesados)
-router.post('/pesado/create', createPesado)
-router.delete('/pesado/delete/:id', deletePesado)
-
+router.get('/resumen', getResumenLanzada)
+router.get('/reportePesadoLineaMesa', getReportePesadoLineaMesa)
+router.get('/resumenE', getResumenLanzadaError)
 
 module.exports = router
-/** 
+/**
 * @swagger
 *definitions:
-*  AsistenciaPersonal:           
+*  AsistenciaPersonal:
 *    type: object
 *    required:
 *      - cod_AsistenciaPersonal
