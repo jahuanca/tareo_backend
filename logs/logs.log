@@ -713,3 +713,8 @@
 [Jan-27-2024 15:33:38]  'info' 200 GET getPesados, 1 items.
 [Jan-27-2024 15:34:30]  'info' 200 GET getPesados, 1 items.
 [Jan-27-2024 15:34:46]  'info' 200 GET getLineasMesas, 2 values.
+[Jan-27-2024 15:36:56]  'info' API REST, corriendo en el puerto: 3002
+[Jan-27-2024 15:37:02]  'info' 200 GET getPesados, 1 items.
+[Jan-27-2024 15:37:05]  'info' 200 GET getPesados, 1 items.
+[Jan-27-2024 15:38:32]  'info' 200 GET getPesados, 1 items.
+[Jan-27-2024 15:38:36]  'info' 200 GET getLineasMesas, 2 values.
