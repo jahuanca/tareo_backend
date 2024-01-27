@@ -328,5 +328,8 @@ function addMinutes (date, minutes) {
 }
 
 function getNowTime (date) {
-  return new Date(date.getTime() - 5 * 3600000)
+  // for server
+  return new Date(date.getTime() * 3600000)
+  // for local
+  // return new Date(date.getTime() - 5  * 3600000)
 }
