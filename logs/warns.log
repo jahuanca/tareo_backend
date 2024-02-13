@@ -49,3 +49,14 @@
 [Jan-27-2024 15:28:12]  'error' 9a5bbb04-0ffa-43ce-962f-4037946792d2:  Error: 500 GET getPesados, SequelizeDatabaseError: The multi-part identifier "preTareaEsparragoVarios.itempretareaesparragovarios" could not be bound..
 [Jan-27-2024 15:30:02]  'error' 047229ec-bbfe-4f36-b3ea-e2b75ed725b6:  Error: 500 GET getPesados, SequelizeDatabaseError: The multi-part identifier "Personal_Pre_Tarea_Esparrago.itempretareaesparragovarios" could not be bound..
 [Jan-27-2024 15:33:24]  'error' ec22c8e0-16de-418b-af6c-df3349de5090:  Error: 500 GET getPesados, SequelizeDatabaseError: Invalid column name 'A'..
+[Feb-05-2024 22:38:45]  'error' 28c1e254-6d66-4423-bc74-9eaa359531e4:  Requested path / not found
+[Feb-07-2024 00:37:35]  'error' cba182d8-e995-40d4-85ad-2ee710a7c54e:  Requested path / not found
+[Feb-07-2024 22:55:04]  'error' 9575f270-1a1d-48ef-97de-32c016cc374d:  Requested path / not found
+[Feb-08-2024 00:31:32]  'error' 7964f628-adea-4045-93bd-72b685832f9f:  Requested path / not found
+[Feb-09-2024 00:39:17]  'error' 20698a17-81d3-4575-a3d9-64075a3b7544:  Requested path / not found
+[Feb-09-2024 01:26:04]  'error' b29b8518-e639-41e1-aef9-e1aece7f1add:  Unexpected token 'n', "#" is not valid JSON
+[Feb-09-2024 01:28:25]  'error' c5fcf408-af75-4542-bb66-f0bad7e6caf5:  Unexpected token 'n', "#" is not valid JSON
+[Feb-11-2024 00:43:37]  'error' f1b20874-5430-44ee-b46b-6d3ee625b04e:  Requested path / not found
+[Feb-11-2024 01:48:45]  'error' 69d8fb08-5ff4-4c41-a6bd-b8bc19fa5d08:  Requested path / not found
+[Feb-11-2024 02:44:35]  'error' cc6eb7d6-14df-471f-8208-2dc860122743:  Requested path / not found
+[Feb-11-2024 04:52:52]  'error' e3c839c5-ddd3-4eca-a20a-7a87249bbb2e:  Requested path / not found

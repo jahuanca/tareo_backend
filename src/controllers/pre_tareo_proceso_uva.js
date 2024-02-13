@@ -1,8 +1,8 @@
 'use strict'
 const models = require('../models')
 
-async function getPre_Tareo_Proceso_Uvas(req, res) {
-  let [err, pre_tareo_proceso_uvas] = await get(models.Pre_Tareo_Proceso_Uva.findAll({
+async function getPre_Tareo_Proceso_Uvas (req, res) {
+  const [err, preTareoProcesoUvas] = await get(models.Pre_Tareo_Proceso_Uva.findAll({
     /* where:{estado: 'A'}, */
     /* order: [['fechamod','DESC']], */
     include: [
@@ -11,41 +11,41 @@ async function getPre_Tareo_Proceso_Uvas(req, res) {
     ]
   }))
   if (err) return res.status(500).json({ message: `${err}` })
-  if (pre_tareo_proceso_uvas == null) return res.status(404).json({ message: `Pre_Tareo_Proceso_Uvas nulos` })
-  res.status(200).json(pre_tareo_proceso_uvas)
+  if (preTareoProcesoUvas == null) return res.status(404).json({ message: 'Pre_Tareo_Proceso_Uvas nulos' })
+  res.status(200).json(preTareoProcesoUvas)
 }
 
-async function getPre_Tareo_Proceso_Uva(req, res) {
-  let [err, pre_tareo_proceso_uva] = await get(models.Pre_Tareo_Proceso_Uva.findOne({
-    where: { itempretareaprocesouva: req.params.id,/*  estado: 'A'  */ },
+async function getPre_Tareo_Proceso_Uva (req, res) {
+  const [err, pre_tareo_proceso_uva] = await get(models.Pre_Tareo_Proceso_Uva.findOne({
+    where: { itempretareaprocesouva: req.params.id/*  estado: 'A'  */ },
     include: [{ all: true }]
   }))
-  console.log(pre_tareo_proceso_uva.Pre_Tareo_Proceso_Uva_Detalles.length);
+  console.log(pre_tareo_proceso_uva.Pre_Tareo_Proceso_Uva_Detalles.length)
   if (err) return res.status(500).json({ message: `${err}` })
-  if (pre_tareo_proceso_uva == null) return res.status(404).json({ message: `Pre_Tareo_Proceso_Uvas nulos` })
+  if (pre_tareo_proceso_uva == null) return res.status(404).json({ message: 'Pre_Tareo_Proceso_Uvas nulos' })
   res.status(200).json(pre_tareo_proceso_uva)
 }
 
-async function preTareaProcesoUvaByRango(req, res) {
+async function preTareaProcesoUvaByRango (req, res) {
   console.log(req.body)
-  let where;
+  let where
   if (req.body.idcultivo == '-1') {
     where = {
       fecha: {
         [models.Sequelize.Op.between]: [new Date(req.body.inicio).setHours(0, 0, 0), new Date(req.body.fin).setHours(23, 59, 59)]
-      },
-    };
+      }
+    }
   } else {
     where = {
       fecha: {
         [models.Sequelize.Op.between]: [new Date(req.body.inicio).setHours(0, 0, 0), new Date(req.body.fin).setHours(23, 59, 59)]
       },
-      idcultivo: req.body.idcultivo,
-    };
+      idcultivo: req.body.idcultivo
+    }
   }
 
-  let [err, pretareoProcesoUva] = await get(models.Pre_Tareo_Proceso_Uva.findAll({
-    where: where,
+  const [err, pretareoProcesoUva] = await get(models.Pre_Tareo_Proceso_Uva.findAll({
+    where,
     raw: true,
     attributes: [
       'itempretareaprocesouva',
@@ -53,45 +53,44 @@ async function preTareaProcesoUvaByRango(req, res) {
       'fecha',
       [models.sequelize.col('Centro_Costo.detallecentrocosto'), 'centroCosto'],
       [models.sequelize.col('Cultivo.detallecultivo'), 'cultivo'],
-      [models.sequelize.fn('count', models.sequelize.col('Pre_Tareo_Proceso_Uva.itempretareaprocesouva')) ,'detalles'],
+      [models.sequelize.fn('count', models.sequelize.col('Pre_Tareo_Proceso_Uva.itempretareaprocesouva')), 'detalles']
     ],
     group: [
       'Pre_Tareo_Proceso_Uva.itempretareaprocesouva',
       'Pre_Tareo_Proceso_Uva.turnotareo',
       'Pre_Tareo_Proceso_Uva.fecha',
       'Centro_Costo.detallecentrocosto',
-      'Cultivo.detallecultivo',
+      'Cultivo.detallecultivo'
     ],
     include: [
-      { model: models.Centro_Costo, attributes: []},
-      {model: models.Cultivo, attributes: []},
-      {model: models.Pre_Tareo_Proceso_Uva_Detalle, attributes: []},
+      { model: models.Centro_Costo, attributes: [] },
+      { model: models.Cultivo, attributes: [] },
+      { model: models.Pre_Tareo_Proceso_Uva_Detalle, attributes: [] }
     ]
   }))
   console.log(err)
   if (err) return res.status(500).json({ message: `${err}` })
-  if (pretareoProcesoUva == null) return res.status(404).json({ message: `Packing nulos` })
+  if (pretareoProcesoUva == null) return res.status(404).json({ message: 'Packing nulos' })
   res.status(200).json(pretareoProcesoUva)
 }
 
-async function createPre_Tareo_Proceso_Uva(req, res) {
-  let [err, pre_tareo_proceso_uva] = await get(models.Pre_Tareo_Proceso_Uva.create({
-    //all fields to insert
+async function createPre_Tareo_Proceso_Uva (req, res) {
+  const [err, pre_tareo_proceso_uva] = await get(models.Pre_Tareo_Proceso_Uva.create({
+    // all fields to insert
 
     accion: 'I',
     accion_usuario: 'Creo un nuevo pre_tareo_proceso_uva.',
     ip: req.ip,
     usuario: 0
   }))
-  if (err) return res.status(500).json({ message: `err` })
-  if (pre_tareo_proceso_uva == null) return res.status(404).json({ message: `Pre_Tareo_Proceso_Uvas nulos` })
+  if (err) return res.status(500).json({ message: 'err' })
+  if (pre_tareo_proceso_uva == null) return res.status(404).json({ message: 'Pre_Tareo_Proceso_Uvas nulos' })
   res.status(200).json(pre_tareo_proceso_uva)
 }
 
-async function createAllPreTareoProcesoUva(req, res) {
+async function createAllPreTareoProcesoUva (req, res) {
   try {
     const result = await models.sequelize.transaction(async (t) => {
-
       const tarea = await models.Pre_Tareo_Proceso_Uva.create({
         fecha: req.body.fecha,
         horainicio: req.body.horainicio,
@@ -113,30 +112,29 @@ async function createAllPreTareoProcesoUva(req, res) {
         accion: 'I',
         usuario: 0,
         ip: req.ip,
-        accion_usuario: 'Creo un nuevo pre tareo completo.',
-      }, { transaction: t });
+        accion_usuario: 'Creo un nuevo pre tareo completo.'
+      }, { transaction: t })
 
       if (req.body.Pre_Tareo_Proceso_Uva_Detalles) {
         for (let i = 0; i < req.body.Pre_Tareo_Proceso_Uva_Detalles.length; i++) {
-          req.body.Pre_Tareo_Proceso_Uva_Detalles[i].itempretareaprocesouva = tarea.itempretareaprocesouva;
-          req.body.Pre_Tareo_Proceso_Uva_Detalles[i].fechamod = Date.now();
-          req.body.Pre_Tareo_Proceso_Uva_Detalles[i].idestado = 1;
+          req.body.Pre_Tareo_Proceso_Uva_Detalles[i].itempretareaprocesouva = tarea.itempretareaprocesouva
+          req.body.Pre_Tareo_Proceso_Uva_Detalles[i].fechamod = Date.now()
+          req.body.Pre_Tareo_Proceso_Uva_Detalles[i].idestado = 1
         }
-        await models.Pre_Tareo_Proceso_Uva_Detalle.bulkCreate(req.body.Pre_Tareo_Proceso_Uva_Detalles, { transaction: t });
+        await models.Pre_Tareo_Proceso_Uva_Detalle.bulkCreate(req.body.Pre_Tareo_Proceso_Uva_Detalles, { transaction: t })
       }
-      return tarea;
-    });
+      return tarea
+    })
     res.status(200).json(result)
   } catch (error) {
-    console.log(error);
+    console.log(error)
     return res.status(500).json({ message: `Error en el servidor ${error}` })
   }
 }
 
-
-async function updatePre_Tareo_Proceso_Uva(req, res) {
-  let [err, pre_tareo_proceso_uva] = await get(models.Pre_Tareo_Proceso_Uva.update({
-    //all fields to update
+async function updatePre_Tareo_Proceso_Uva (req, res) {
+  const [err, pre_tareo_proceso_uva] = await get(models.Pre_Tareo_Proceso_Uva.update({
+    // all fields to update
 
     accion: 'U',
     accion_usuario: 'Edito un pre_tareo_proceso_uva.',
@@ -149,14 +147,13 @@ async function updatePre_Tareo_Proceso_Uva(req, res) {
     individualHooks: true,
     validate: false
   }))
-  if (err) return res.status(500).json({ message: `err` })
-  if (pre_tareo_proceso_uva == null) return res.status(404).json({ message: `Pre_Tareo_Proceso_Uvas nulos` })
+  if (err) return res.status(500).json({ message: 'err' })
+  if (pre_tareo_proceso_uva == null) return res.status(404).json({ message: 'Pre_Tareo_Proceso_Uvas nulos' })
   res.status(200).json(pre_tareo_proceso_uva[1][0].dataValues)
 }
 
-
-async function deletePre_Tareo_Proceso_Uva(req, res) {
-  let [err, pre_tareo_proceso_uva] = await get(models.Pre_Tareo_Proceso_Uva.update({
+async function deletePre_Tareo_Proceso_Uva (req, res) {
+  const [err, pre_tareo_proceso_uva] = await get(models.Pre_Tareo_Proceso_Uva.update({
     estado: 'I',
 
     accion_usuario: 'Elimino un pre_tareo_proceso_uva.',
@@ -169,16 +166,15 @@ async function deletePre_Tareo_Proceso_Uva(req, res) {
     },
     individualHooks: true
   }))
-  if (err) return res.status(500).json({ message: `err` })
-  if (pre_tareo_proceso_uva == null) return res.status(404).json({ message: `Pre_Tareo_Proceso_Uvas nulos` })
+  if (err) return res.status(500).json({ message: 'err' })
+  if (pre_tareo_proceso_uva == null) return res.status(404).json({ message: 'Pre_Tareo_Proceso_Uvas nulos' })
   res.status(200).json(pre_tareo_proceso_uva[1][0].dataValues)
 }
 
-async function uploadFilePreTareoProcesoUva(req, res) {
-
+async function uploadFilePreTareoProcesoUva (req, res) {
   /* console.log(req.body); */
 
-  let [err, pretareoProcesoUva] = await get(models.Pre_Tareo_Proceso_Uva.update({
+  const [err, pretareoProcesoUva] = await get(models.Pre_Tareo_Proceso_Uva.update({
     firmasupervisor: req.file.filename,
 
     accion: 'U',
@@ -194,16 +190,15 @@ async function uploadFilePreTareoProcesoUva(req, res) {
   }))
   /* console.log(err); */
   if (err) return res.status(500).json({ message: `${err}` })
-  if (pretareoProcesoUva == null) return res.status(404).json({ message: `Pretareos nulos` })
+  if (pretareoProcesoUva == null) return res.status(404).json({ message: 'Pretareos nulos' })
   res.status(200).json(pretareoProcesoUva[1][0].dataValues)
 }
 
-
-function get(promise) {
+function get (promise) {
   return promise.then(data => {
-    return [null, data];
+    return [null, data]
   })
-    .catch(err => [err]);
+    .catch(err => [err])
 }
 
 module.exports = {
@@ -214,5 +209,5 @@ module.exports = {
   updatePre_Tareo_Proceso_Uva,
   deletePre_Tareo_Proceso_Uva,
   uploadFilePreTareoProcesoUva,
-  preTareaProcesoUvaByRango,
+  preTareaProcesoUvaByRango
 }

@@ -3,12 +3,12 @@ const {
   Model
 } = require('sequelize')
 module.exports = (sequelize, DataTypes) => {
-  class Personal_Empresa extends Model {
+  class PersonalEmpresa extends Model {
     static associate (models) {
 
     }
   };
-  Personal_Empresa.init({
+  PersonalEmpresa.init({
     // add new parameters
     codigoempresa: { type: DataTypes.STRING(200), primaryKey: true, allowNull: true, validate: { notEmpty: true, len: [1, 200] } },
     apellidopaterno: { type: DataTypes.STRING(200), allowNull: true, validate: { notEmpty: true, len: [1, 200] } },
@@ -40,9 +40,9 @@ module.exports = (sequelize, DataTypes) => {
     tableName: 'personalempresa'
   })
 
-  Personal_Empresa.associate = function (models) {
-    Personal_Empresa.belongsTo(models.PersonalEmpresa_Subdivision, { foreignKey: 'codigoempresa', targetKey: 'codigoempresa' })
+  PersonalEmpresa.associate = function (models) {
+    PersonalEmpresa.belongsTo(models.PersonalEmpresa_Subdivision, { foreignKey: 'codigoempresa', targetKey: 'codigoempresa' })
   }
 
-  return Personal_Empresa
+  return PersonalEmpresa
 }

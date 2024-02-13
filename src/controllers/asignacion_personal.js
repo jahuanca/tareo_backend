@@ -77,6 +77,8 @@ async function createDetalle (req, res) {
     logger.error('500 POST createDetalle, Esta persona ya ha sido registrada en este grupo.')
     return res.status(500).json({ message: 'Esta persona ya ha sido registrada en este grupo.' })
   }
+  /* solo en el servidor */
+  req.query.fechaturno = Date.parse(req.query.fechaturno) + 5 * 3600000
   const [errA, asistencia] = await get(models.AsistenciaRegistroPersonal.findOne({
     where: {
       fechaturno: req.query.fechaturno,
