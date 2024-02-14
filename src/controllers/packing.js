@@ -63,10 +63,10 @@ const getPersonalPacking = async (req, res) => {
 const createPacking = async (req, res) => {
   const [err, packing] = await getError(models.Pre_Tareo_Proceso_Uva.create({
     fecha: getNowTime(new Date()),
-    horainicio: req.body.horainicio,
-    horafin: req.body.horafin,
-    pausainicio: req.body.pausainicio,
-    pausafin: req.body.pausafin,
+    horainicio: getNowTime(req.body.horainicio),
+    horafin: getNowTime(req.body.horafin),
+    pausainicio: getNowTime(req.body.pausainicio),
+    pausafin: getNowTime(req.body.pausafin),
     linea: 1,
     idcentrocosto: req.body.idcentrocosto,
     idcultivo: req.body.idcultivo,
