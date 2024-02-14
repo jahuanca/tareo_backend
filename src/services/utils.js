@@ -33,9 +33,17 @@ const getError = (promise) => {
     })
 }
 
+function getNowTime (date) {
+  // for server
+  return new Date(date.getTime() - 0 * 3600000)
+  // for local
+  // return new Date(date.getTime() - 5  * 3600000)
+}
+
 module.exports = {
   getDateWithZone,
   get,
   getError,
-  asyncCatch
+  asyncCatch,
+  getNowTime
 }

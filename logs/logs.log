@@ -1173,3 +1173,6 @@
 [Feb-11-2024 16:12:55]  'info' 200 GET getPackings, size: 1.
 [Feb-11-2024 16:12:59]  'info' 200 GET getPersonalPacking, size: 3.
 [Feb-11-2024 16:13:06]  'info' 200 GET getPersonalPacking, size: 3.
+[Feb-12-2024 21:46:29]  'info' API REST, corriendo en el puerto: 3002
+[Feb-13-2024 22:59:49]  'info' API REST, corriendo en el puerto: 3002
+[Feb-13-2024 23:00:37]  'info' API REST, corriendo en el puerto: 3002

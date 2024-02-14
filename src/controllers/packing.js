@@ -1,6 +1,6 @@
 const logger = require('../config/logger')
 const models = require('../models')
-const { getError } = require('../services/utils')
+const { getError, getNowTime } = require('../services/utils')
 
 const getPackings = async (req, res) => {
   const query = { estado: { [models.Sequelize.Op.not]: 'I' } }
@@ -62,7 +62,7 @@ const getPersonalPacking = async (req, res) => {
 
 const createPacking = async (req, res) => {
   const [err, packing] = await getError(models.Pre_Tareo_Proceso_Uva.create({
-    fecha: req.body.fecha,
+    fecha: getNowTime(new Date()),
     horainicio: req.body.horainicio,
     horafin: req.body.horafin,
     pausainicio: req.body.pausainicio,
@@ -99,8 +99,8 @@ const createPersonalPacking = async (req, res) => {
     codigoempresa: req.body.codigoempresa,
     itempretareaprocesouva: req.body.itempretareaprocesouva,
     numcaja: req.body.numcaja,
-    fecha: req.body.fecha,
-    hora: req.body.hora,
+    fecha: getNowTime(new Date()),
+    hora: getNowTime(new Date()),
     imei: req.body.imei,
     idusuario: req.body.idusuario,
     idlabor: req.body.idlabor,
@@ -120,7 +120,6 @@ const createPersonalPacking = async (req, res) => {
 const updatePacking = async (req, res) => {
   console.log(req.body)
   const [err, packing] = await getError(models.Pre_Tareo_Proceso_Uva.update({
-    fecha: req.body.fecha,
     horainicio: req.body.horainicio,
     horafin: req.body.horafin,
     pausainicio: req.body.pausainicio,

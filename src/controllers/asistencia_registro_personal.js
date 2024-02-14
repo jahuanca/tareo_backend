@@ -1,5 +1,6 @@
 'use strict'
 const models = require('../models')
+const { getNowTime } = require('../services/utils')
 const logger = require('./../config/logger')
 
 async function getAsistenciaRegistroPersonalsCount (req, res) {
@@ -325,11 +326,4 @@ module.exports = {
 function addMinutes (date, minutes) {
   // return new Date(date.getTime() + minutes*60000 + 10 * 3600000 );
   return new Date(date.getTime() + minutes * 60000 + 5 * 3600000)
-}
-
-function getNowTime (date) {
-  // for server
-  return new Date(date.getTime() - 0 * 3600000)
-  // for local
-  // return new Date(date.getTime() - 5  * 3600000)
 }
