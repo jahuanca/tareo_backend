@@ -1,6 +1,6 @@
 const logger = require('../config/logger')
 const models = require('../models')
-const { getError, getNowTime } = require('../services/utils')
+const { getError } = require('../services/utils')
 
 const getPackings = async (req, res) => {
   const query = { estado: { [models.Sequelize.Op.not]: 'I' } }
@@ -94,6 +94,17 @@ const createPacking = async (req, res) => {
 }
 
 const createPersonalPacking = async (req, res) => {
+  const [errE, exists] = await getError(models.Pre_Tareo_Proceso_Uva_Detalle.count({
+    where: { codigotk: req.body.codigotk, estado: 'A' }
+  }))
+  if (errE) {
+    errE.message = `POST createPersonalPacking - al busar codigo repetido,${errE.message}.`
+    throw errE
+  }
+  if (exists > 0) {
+    logger.error(`500 POST createPersonalPacking, codigo ${req.body.codigotk} ya esta registrado.`)
+    return res.status(500).json({ message: 'El codigo ya se encuentra registrado' })
+  }
   const [err, packing] = await getError(models.Pre_Tareo_Proceso_Uva_Detalle.create({
     itempretareoprocesouvadetalle: req.body.itempretareoprocesouvadetalle,
     codigoempresa: req.body.codigoempresa,
@@ -118,7 +129,6 @@ const createPersonalPacking = async (req, res) => {
 }
 
 const updatePacking = async (req, res) => {
-  console.log(req.body)
   const [err, packing] = await getError(models.Pre_Tareo_Proceso_Uva.update({
     horainicio: req.body.horainicio,
     horafin: req.body.horafin,
@@ -216,7 +226,13 @@ const cleanPacking = async (req, res) => {
 
 const removePacking = async (req, res) => {
   const { id } = req.params
-  const [err, personal] = await getError(models.Pre_Tareo_Proceso_Uva_Detalle.destroy({
+  const [err, personal] = await getError(models.Pre_Tareo_Proceso_Uva_Detalle.update({
+    estado: 'I',
+    accion: 'U',
+    accion_usuario: 'Elimino un packing.',
+    ip: req.ip,
+    usuario: 0
+  }, {
     where: {
       itempretareaprocesouva: id
     },
@@ -230,7 +246,13 @@ const removePacking = async (req, res) => {
   }
   logger.info(`200 DELETE deletePacking, se elimino: ${personal} detalles`)
 
-  const [err2, packing] = await getError(models.Pre_Tareo_Proceso_Uva.destroy({
+  const [err2, packing] = await getError(models.Pre_Tareo_Proceso_Uva.update({
+    estado: 'I',
+    accion: 'U',
+    accion_usuario: 'Elimino un packing.',
+    ip: req.ip,
+    usuario: 0
+  }, {
     where: {
       itempretareaprocesouva: id
     },

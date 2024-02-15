@@ -1177,3 +1177,49 @@
 [Feb-13-2024 22:59:49]  'info' API REST, corriendo en el puerto: 3002
 [Feb-13-2024 23:00:37]  'info' API REST, corriendo en el puerto: 3002
 [Feb-13-2024 23:00:49]  'info' API REST, corriendo en el puerto: 3002
+[Feb-14-2024 23:23:09]  'info' API REST, corriendo en el puerto: 3002
+[Feb-14-2024 23:56:29]  'info' API REST, corriendo en el puerto: 3002
+[Feb-15-2024 00:01:47]  'info' API REST, corriendo en el puerto: 3002
+[Feb-15-2024 00:02:31]  'info' API REST, corriendo en el puerto: 3002
+[Feb-15-2024 00:02:35]  'info' API REST, corriendo en el puerto: 3002
+[Feb-15-2024 00:08:16]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[Feb-15-2024 00:08:24]  'info' 200 GET getPackings, size: 2.
+[Feb-15-2024 00:08:27]  'info' 200 GET getPersonalPacking, size: 2.
+[Feb-15-2024 00:08:31]  'info' 200 GET getPersonalPacking, size: 2.
+[Feb-15-2024 00:08:46]  'info' 200 GET getPersonalPacking, size: 2.
+[Feb-15-2024 00:09:04]  'info' 200 GET getPackings, size: 2.
+[Feb-15-2024 00:09:08]  'info' 200 GET getPersonalPacking, size: 2.
+[Feb-15-2024 00:09:15]  'info' 200 GET getPersonalPacking, size: 2.
+[Feb-15-2024 00:09:35]  'info' 200 GET getPackings, size: 2.
+[Feb-15-2024 00:11:34]  'info' 200 GET getPersonalPacking, size: 2.
+[Feb-15-2024 00:11:53]  'info' 200 GET getPersonalPacking, size: 2.
+[Feb-15-2024 00:17:03]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[Feb-15-2024 00:17:13]  'info' 200 GET getPackings, size: 2.
+[Feb-15-2024 00:22:32]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[Feb-15-2024 00:23:31]  'info' 200 GET getPackings, size: 2.
+[Feb-15-2024 00:23:35]  'info' 200 GET getPersonalPacking, size: 0.
+[Feb-15-2024 00:26:32]  'info' API REST, corriendo en el puerto: 3002
+[Feb-15-2024 00:26:55]  'info' 200 GET getPackings, size: 2.
+[Feb-15-2024 00:27:08]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[Feb-15-2024 00:28:16]  'info' 200 GET getPackings, size: 2.
+[Feb-15-2024 00:28:19]  'info' 200 GET getPersonalPacking, size: 0.
+[Feb-15-2024 00:28:24]  'error' 500 POST createPersonalPacking, codigo 10066599_2062_1_13350 ya esta registrado.
+[Feb-15-2024 00:30:28]  'info' 200 GET getPersonalPacking, size: 0.
+[Feb-15-2024 00:30:44]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[Feb-15-2024 00:31:10]  'info' 200 GET getPackings, size: 2.
+[Feb-15-2024 00:31:14]  'info' 200 GET getPersonalPacking, size: 0.
+[Feb-15-2024 00:31:19]  'error' 500 POST createPersonalPacking, codigo 10066599_2062_1_13350 ya esta registrado.
+[Feb-15-2024 00:32:34]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[Feb-15-2024 00:33:09]  'info' 200 GET getPackings, size: 2.
+[Feb-15-2024 00:33:13]  'info' 200 GET getPersonalPacking, size: 0.
+[Feb-15-2024 00:33:15]  'error' 500 POST createPersonalPacking, codigo 10066599_2062_1_13350 ya esta registrado.
+[Feb-15-2024 00:35:47]  'info' 200 GET getPersonalPacking, size: 0.
+[Feb-15-2024 00:35:49]  'error' 500 POST createPersonalPacking, codigo 10066599_2062_1_13350 ya esta registrado.
+[Feb-15-2024 00:35:52]  'error' 500 POST createPersonalPacking, codigo 10066599_2062_1_13350 ya esta registrado.
+[Feb-15-2024 00:36:02]  'info' 200 GET getPersonalPacking, size: 2.
+[Feb-15-2024 00:36:46]  'info' API REST, corriendo en el puerto: 3002
+[Feb-15-2024 00:37:40]  'info' API REST, corriendo en el puerto: 3002
+[Feb-15-2024 00:38:07]  'info' API REST, corriendo en el puerto: 3002
+[Feb-15-2024 00:38:53]  'info' API REST, corriendo en el puerto: 3002
+[Feb-15-2024 00:39:03]  'info' API REST, corriendo en el puerto: 3002
+[Feb-15-2024 00:39:27]  'info' 200 GET getPackings, size: 2.

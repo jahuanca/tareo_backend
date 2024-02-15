@@ -60,3 +60,8 @@
 [Feb-11-2024 01:48:45]  'error' 69d8fb08-5ff4-4c41-a6bd-b8bc19fa5d08:  Requested path / not found
 [Feb-11-2024 02:44:35]  'error' cc6eb7d6-14df-471f-8208-2dc860122743:  Requested path / not found
 [Feb-11-2024 04:52:52]  'error' e3c839c5-ddd3-4eca-a20a-7a87249bbb2e:  Requested path / not found
+[Feb-15-2024 00:28:24]  'error' 500 POST createPersonalPacking, codigo 10066599_2062_1_13350 ya esta registrado.
+[Feb-15-2024 00:31:19]  'error' 500 POST createPersonalPacking, codigo 10066599_2062_1_13350 ya esta registrado.
+[Feb-15-2024 00:33:15]  'error' 500 POST createPersonalPacking, codigo 10066599_2062_1_13350 ya esta registrado.
+[Feb-15-2024 00:35:49]  'error' 500 POST createPersonalPacking, codigo 10066599_2062_1_13350 ya esta registrado.
+[Feb-15-2024 00:35:52]  'error' 500 POST createPersonalPacking, codigo 10066599_2062_1_13350 ya esta registrado.
