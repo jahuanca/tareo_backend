@@ -1223,3 +1223,23 @@
 [Feb-15-2024 00:38:53]  'info' API REST, corriendo en el puerto: 3002
 [Feb-15-2024 00:39:03]  'info' API REST, corriendo en el puerto: 3002
 [Feb-15-2024 00:39:27]  'info' 200 GET getPackings, size: 2.
+[Feb-15-2024 00:48:16]  'info' API REST, corriendo en el puerto: 3002
+[Feb-15-2024 00:48:57]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[Feb-15-2024 00:49:27]  'info' 200 GET getPackings, size: 2.
+[Feb-15-2024 00:53:51]  'info' 200 GET getPackings, size: 2.
+[Feb-15-2024 00:54:03]  'info' 200 DELETE deletePacking, se elimino: 2,[object SequelizeInstance:Pre_Tareo_Proceso_Uva_Detalle],[object SequelizeInstance:Pre_Tareo_Proceso_Uva_Detalle] detalles
+[Feb-15-2024 00:54:03]  'info' 200 DELETE deletePacking, se elimino el packing: 3122
+[Feb-15-2024 00:54:08]  'info' 200 GET getPackings, size: 1.
+[Feb-15-2024 00:54:39]  'info' 200 GET getPersonalPacking, size: 0.
+[Feb-15-2024 00:54:42]  'error' 500 POST createPersonalPacking, codigo 10066599_2062_1_13350 ya esta registrado.
+[Feb-15-2024 00:55:41]  'info' 200 GET getPersonalPacking, size: 0.
+[Feb-15-2024 00:55:46]  'info' 200 GET getPackings, size: 1.
+[Feb-17-2024 15:12:51]  'info' API REST, corriendo en el puerto: 3002
+[Feb-17-2024 15:13:58]  'info' API REST, corriendo en el puerto: 3002
+[Feb-17-2024 15:15:28]  'info' API REST, corriendo en el puerto: 3002
+[Feb-17-2024 15:16:17]  'info' API REST, corriendo en el puerto: 3002
+[Feb-17-2024 15:20:41]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[Feb-17-2024 15:20:47]  'info' 200 GET getPackings, size: 1.
+[Feb-17-2024 15:20:51]  'info' 200 GET getPersonalPacking, size: 1.
+[Feb-17-2024 15:20:54]  'info' 200 DELETE deletePersonalPacking, se elimino el itempretareoprocesouvadetalle: 11843813
+[Feb-17-2024 15:21:00]  'info' 200 POST createPersonalPacking, new id: 3124.
