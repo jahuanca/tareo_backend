@@ -8,7 +8,7 @@ const getPackings = async (req, res) => {
   if (idusuario) query.idusuario = idusuario
   const [err, packings] = await getError(models.Pre_Tareo_Proceso_Uva.findAll({
     where: query,
-    include: [{ all: true }],
+    include: [{ model: models.Cultivo }, { model: models.Centro_Costo }],
     attributes: {
       include: [
         [
@@ -66,7 +66,19 @@ const createPacking = async (req, res) => {
   console.log('Hora fin: ' + req.body.horafin)
   console.log('Pausa inicio:' + req.body.pausainicio)
   console.log('Pausa fin: ' + req.body.pausafin)
+  /*
+   Fecha: 1708203417569
+0|app  | Hora inicio: 2024-02-17T15:56:00.000
+0|app  | Hora fin: 2024-02-17T15:56:00.000
+0|app  | Pausa inicio:null
+0|app  | Pausa fin: null
+0|app  | Fecha update: 1708185417569
+0|app  | Hora inicio update: 1708203360000
+0|app  | Hora fin update: 1708203360000
+0|app  | NaN
+0|app  | NaN
 
+  */
   console.log('Fecha update: ' + (Date.now() - 5 * 3600000))
   console.log('Hora inicio update: ' + (Date.parse(req.body.horainicio) + 5 * 3600000))
   console.log('Hora fin update: ' + (Date.parse(req.body.horafin) + 5 * 3600000))
@@ -237,7 +249,7 @@ const cleanPacking = async (req, res) => {
     err.message = `DELETE cleanPacking, ${err.message}.`
     throw err
   }
-  logger.info(`200 DELETE cleanPacking, se limpio el packing: ${packing[1][0].dataValues.itempretareaprocesouva}`)
+  logger.info(`200 DELETE cleanPacking, se limpio el packing: ${id}`)
   res.status(200).json(packing[1][0].dataValues)
 }
 
