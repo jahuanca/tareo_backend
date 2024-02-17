@@ -121,6 +121,7 @@ const createPersonalPacking = async (req, res) => {
   console.log('Hora normal:' + Date.now())
 
   console.log('Date update:' + (Date.now() - 5 * 3600000))
+  console.log('Hora update:' + Date.now())
   const [err, packing] = await getError(models.Pre_Tareo_Proceso_Uva_Detalle.create({
     itempretareoprocesouvadetalle: req.body.itempretareoprocesouvadetalle,
     codigoempresa: req.body.codigoempresa,

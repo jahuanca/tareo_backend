@@ -1243,3 +1243,8 @@
 [Feb-17-2024 15:20:51]  'info' 200 GET getPersonalPacking, size: 1.
 [Feb-17-2024 15:20:54]  'info' 200 DELETE deletePersonalPacking, se elimino el itempretareoprocesouvadetalle: 11843813
 [Feb-17-2024 15:21:00]  'info' 200 POST createPersonalPacking, new id: 3124.
+[Feb-17-2024 15:21:57]  'info' API REST, corriendo en el puerto: 3002
+[Feb-17-2024 15:23:55]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[Feb-17-2024 15:24:15]  'info' 200 GET getPackings, size: 1.
+[Feb-17-2024 15:24:18]  'info' 200 GET getPersonalPacking, size: 1.
+[Feb-17-2024 15:24:23]  'info' 200 DELETE deletePersonalPacking, se elimino el itempretareoprocesouvadetalle: 11843814
