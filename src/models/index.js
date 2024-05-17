@@ -16,14 +16,17 @@ if (config.use_env_variable) {
   sequelize = new Sequelize(config.database, config.username, config.password, config)
 }
 
-/* Sequelize.DATE.prototype._stringify = function _stringify(date, options) {
-
-  return this._applyTimezone(date, options).format('YYYY-MM-DD HH:mm:ss.SSS');
-}; */
-DataTypes.DATE.prototype._stringify = function _stringify (date, options) {
+/* const moment= require('moment')
+Sequelize.DATE.prototype._sanitize = function _sanitize(value) {
+  if (typeof value === 'string') { // maybe check if string date is valid
+    return moment(value).utc(false).toDate() // I use useUTC: false
+  }
+  return value
+} */
+/* DataTypes.DATE.prototype._stringify = function _stringify (date, options) {
   date = this._applyTimezone(date, options)
   return date.format('YYYY-MM-DD HH:mm:ss.SSS')
-}
+} */
 
 fs
   .readdirSync(__dirname)

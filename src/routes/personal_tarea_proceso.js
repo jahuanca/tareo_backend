@@ -1,7 +1,7 @@
 'use strict'
 const express = require('express')
 const router = express.Router()
-const personalTareaProceso = require('../controllers/personal_tarea_proceso')
+const personalTareaProceso = require('./../controllers/personal_tarea_proceso')
 /* const upload_controller=require('../controllers/upload_controller')
 const auth=require('../middlewares/auth') */
 

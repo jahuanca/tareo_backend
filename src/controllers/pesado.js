@@ -5,7 +5,6 @@ const models = require('../models')
 const getPesados = asyncCatch(async (req, res) => {
   const query = req.query
   query.estado = 'A'
-  console.log(query)
   const [err, pesados] = await getError(models.Pre_Tarea_Esparrago_Varios.findAll({
     where: query,
     include: [{ all: true }],

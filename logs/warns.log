@@ -66,3 +66,12 @@
 [Feb-15-2024 00:35:49]  'error' 500 POST createPersonalPacking, codigo 10066599_2062_1_13350 ya esta registrado.
 [Feb-15-2024 00:35:52]  'error' 500 POST createPersonalPacking, codigo 10066599_2062_1_13350 ya esta registrado.
 [Feb-15-2024 00:54:42]  'error' 500 POST createPersonalPacking, codigo 10066599_2062_1_13350 ya esta registrado.
+[May-15-2024 20:38:53]  'error' 04ed5890-ad5d-488d-b0a6-4a5349a6c3cb:  ReferenceError: moment is not defined
+[May-15-2024 21:21:39]  'error' 22714c44-0f22-4d6e-a0fc-6326c4138b0c:  Error: 500 GET getPesados, TypeError: attr.includes is not a function.
+[May-15-2024 21:22:19]  'error' a3ec72ce-a792-421b-96e9-3193218bdfd3:  Error: 500 GET getPesados, SequelizeDatabaseError: 'date_format' is not a recognized built-in function name..
+[May-15-2024 21:22:50]  'error' 89165631-f7bf-41e7-a237-bdeeca03da17:  Error: 500 GET getPesados, SequelizeDatabaseError: 'date_format' is not a recognized built-in function name..
+[May-16-2024 23:25:57]  'error' a59268eb-07b0-4579-92ab-1bc9ad3a3cef:  Requested path / not found
+[May-16-2024 23:26:36]  'error' 693f4af2-25f2-48c5-b1f5-d27a3a5d6763:  Requested path / not found
+[May-16-2024 23:28:10]  'error' 557992b7-cd67-4157-8693-8a0402cffd9e:  Requested path / not found
+[May-16-2024 23:28:14]  'error' 4bf5b85b-6a42-45eb-869d-7f6c5509df7e:  Requested path / not found
+[May-16-2024 23:28:41]  'error' 14879692-9dd4-496b-84ba-c9863dd4429b:  Requested path / not found

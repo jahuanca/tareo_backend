@@ -7,7 +7,6 @@ async function getLineasMesas (req, res) {
   const query = req.query
   let whereString = ''
   let subQuery = ' '
-  console.log(query)
   if (query.fecha) whereString += `WHERE fecha = '${query.fecha}' `
   if (query.turno) {
     whereString += ` AND turno = '${query.turno}' `
@@ -17,10 +16,9 @@ async function getLineasMesas (req, res) {
     subQuery = subQuery + selectSubQueryPerson
   }
   if (query.linea) {
-    whereString += ` AND linea = ${query.linea} `
+    whereString += ` AND linea = ${query.linea} AND idestado = 1`
   }
 
-  console.log(getQuery(whereString, subQuery))
   const [err, detalles] = await get(models.sequelize.query(
     getQuery(whereString, subQuery)))
   if (err) {

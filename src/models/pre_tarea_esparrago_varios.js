@@ -1,4 +1,5 @@
 'use strict'
+const moment = require('moment')
 const {
   Model
 } = require('sequelize')
@@ -14,7 +15,10 @@ module.exports = (sequelize, DataTypes) => {
   PreTareaEsparragoVarios.init({
     // add new parameters
     itempretareaesparragovarios: { primaryKey: true, autoIncrement: true, type: DataTypes.INTEGER, allowNull: null },
-    fecha: { type: DataTypes.DATEONLY, allowNull: false },
+    fecha: {
+      type: DataTypes.DATEONLY,
+      allowNull: false
+    },
     fechamod: { type: DataTypes.DATE, allowNull: false },
     hora: { type: DataTypes.DATE, allowNull: false },
     horainicio: { type: DataTypes.DATE, allowNull: false },

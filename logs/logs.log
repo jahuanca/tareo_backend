@@ -1256,3 +1256,422 @@
 [Feb-17-2024 16:12:14]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
 [Feb-17-2024 16:12:17]  'info' 200 GET getPackings, size: 31.
 [Feb-17-2024 16:17:34]  'info' API REST, corriendo en el puerto: 3002
+[Feb-17-2024 16:17:45]  'info' API REST, corriendo en el puerto: 3002
+[Feb-17-2024 16:19:00]  'info' 200 DELETE cleanPacking, se limpio el packing: 3115
+[Feb-17-2024 16:19:14]  'info' 200 DELETE cleanPacking, se limpio el packing: 3116
+[Feb-17-2024 16:19:17]  'info' 200 GET getPackings, size: 29.
+[Feb-17-2024 16:21:32]  'info' 200 DELETE cleanPacking, se limpio el packing: 3099
+[Feb-17-2024 16:21:35]  'info' 200 DELETE cleanPacking, se limpio el packing: 3100
+[Feb-17-2024 16:21:39]  'info' 200 DELETE cleanPacking, se limpio el packing: 3131
+[Feb-17-2024 16:21:42]  'info' 200 DELETE cleanPacking, se limpio el packing: 3132
+[Feb-17-2024 16:21:44]  'info' 200 DELETE cleanPacking, se limpio el packing: 3093
+[Feb-17-2024 16:21:46]  'info' 200 DELETE cleanPacking, se limpio el packing: 3095
+[Feb-17-2024 16:21:48]  'info' 200 DELETE cleanPacking, se limpio el packing: 3102
+[Feb-17-2024 16:21:50]  'info' 200 DELETE cleanPacking, se limpio el packing: 3104
+[Feb-17-2024 16:21:54]  'info' 200 DELETE cleanPacking, se limpio el packing: 3129
+[Feb-17-2024 16:23:48]  'info' 200 DELETE cleanPacking, se limpio el packing: 3094
+[Feb-17-2024 16:23:50]  'info' 200 DELETE cleanPacking, se limpio el packing: 3101
+[Feb-17-2024 16:23:55]  'info' 200 DELETE cleanPacking, se limpio el packing: 3134
+[Feb-17-2024 16:23:58]  'info' 200 DELETE cleanPacking, se limpio el packing: 3096
+[Feb-17-2024 16:24:01]  'info' 200 DELETE cleanPacking, se limpio el packing: 3137
+[Feb-17-2024 16:24:03]  'info' 200 DELETE cleanPacking, se limpio el packing: 3105
+[Feb-17-2024 16:24:05]  'info' 200 DELETE cleanPacking, se limpio el packing: 3139
+[Feb-17-2024 16:24:08]  'info' 200 DELETE cleanPacking, se limpio el packing: 3098
+[Feb-17-2024 16:24:10]  'info' 200 DELETE cleanPacking, se limpio el packing: 3097
+[Feb-17-2024 16:24:12]  'info' 200 DELETE cleanPacking, se limpio el packing: 3092
+[Feb-17-2024 16:24:13]  'info' 200 DELETE cleanPacking, se limpio el packing: 3103
+[Feb-17-2024 16:24:15]  'info' 200 DELETE cleanPacking, se limpio el packing: 3117
+[Feb-17-2024 16:24:17]  'info' 200 DELETE cleanPacking, se limpio el packing: 3128
+[Feb-17-2024 16:24:19]  'info' 200 DELETE cleanPacking, se limpio el packing: 3106
+[Feb-17-2024 16:24:22]  'info' 200 DELETE cleanPacking, se limpio el packing: 3138
+[Feb-17-2024 16:24:28]  'info' 200 GET getPersonalPacking, size: 2554.
+[Apr-28-2024 19:54:39]  'info' API REST, corriendo en el puerto: 3002
+[May-15-2024 20:20:16]  'info' API REST, corriendo en el puerto: 3002
+[May-15-2024 20:20:28]  'info' API REST, corriendo en el puerto: 3002
+[May-15-2024 20:21:32]  'info' 200 GET getPesados, 1 items.
+[May-15-2024 20:22:25]  'info' API REST, corriendo en el puerto: 3002
+[May-15-2024 20:22:28]  'info' 200 GET getPesados, 1 items.
+[May-15-2024 20:22:29]  'info' 200 GET getPesados, 1 items.
+[May-15-2024 20:22:31]  'info' 200 GET getPesados, 1 items.
+[May-15-2024 20:22:41]  'info' API REST, corriendo en el puerto: 3002
+[May-15-2024 20:22:47]  'info' API REST, corriendo en el puerto: 3002
+[May-15-2024 20:22:51]  'info' 200 GET getPesados, 1 items.
+[May-15-2024 20:23:00]  'info' API REST, corriendo en el puerto: 3002
+[May-15-2024 20:30:21]  'info' API REST, corriendo en el puerto: 3002
+[May-15-2024 20:30:24]  'info' 200 GET getPesados, 1 items.
+[May-15-2024 20:33:54]  'info' API REST, corriendo en el puerto: 3002
+[May-15-2024 20:33:56]  'info' 200 GET getPesados, 1 items.
+[May-15-2024 20:33:59]  'info' 200 GET getPesados, 1 items.
+[May-15-2024 20:34:09]  'info' API REST, corriendo en el puerto: 3002
+[May-15-2024 20:34:24]  'info' API REST, corriendo en el puerto: 3002
+[May-15-2024 20:34:27]  'info' 200 GET getPesados, 1 items.
+[May-15-2024 20:34:28]  'info' 200 GET getPesados, 1 items.
+[May-15-2024 20:34:43]  'info' API REST, corriendo en el puerto: 3002
+[May-15-2024 20:34:45]  'info' 200 GET getPesados, 1 items.
+[May-15-2024 20:35:01]  'info' API REST, corriendo en el puerto: 3002
+[May-15-2024 20:35:56]  'info' API REST, corriendo en el puerto: 3002
+[May-15-2024 20:36:03]  'info' API REST, corriendo en el puerto: 3002
+[May-15-2024 20:36:08]  'info' 200 GET getPesados, 1 items.
+[May-15-2024 20:36:20]  'info' API REST, corriendo en el puerto: 3002
+[May-15-2024 20:36:26]  'info' 200 GET getPesados, 1 items.
+[May-15-2024 20:36:35]  'info' API REST, corriendo en el puerto: 3002
+[May-15-2024 20:36:41]  'info' API REST, corriendo en el puerto: 3002
+[May-15-2024 20:37:17]  'info' API REST, corriendo en el puerto: 3002
+[May-15-2024 20:37:55]  'info' API REST, corriendo en el puerto: 3002
+[May-15-2024 20:38:13]  'info' API REST, corriendo en el puerto: 3002
+[May-15-2024 20:38:19]  'info' 200 GET getPesados, 1 items.
+[May-15-2024 20:38:44]  'info' API REST, corriendo en el puerto: 3002
+[May-15-2024 20:38:53]  'info' 200 GET getPesados, 1 items.
+[May-15-2024 20:38:53]  'error' 04ed5890-ad5d-488d-b0a6-4a5349a6c3cb:  ReferenceError: moment is not defined
+[May-15-2024 20:39:14]  'info' API REST, corriendo en el puerto: 3002
+[May-15-2024 20:39:34]  'info' 200 GET getPesados, 1 items.
+[May-15-2024 20:39:56]  'info' API REST, corriendo en el puerto: 3002
+[May-15-2024 20:40:03]  'info' 200 GET getPesados, 1 items.
+[May-15-2024 20:40:25]  'info' API REST, corriendo en el puerto: 3002
+[May-15-2024 20:40:32]  'info' API REST, corriendo en el puerto: 3002
+[May-15-2024 20:40:52]  'info' 200 GET getPesados, 1 items.
+[May-15-2024 20:41:05]  'info' API REST, corriendo en el puerto: 3002
+[May-15-2024 20:42:05]  'info' API REST, corriendo en el puerto: 3002
+[May-15-2024 20:42:08]  'info' 200 GET getPesados, 1 items.
+[May-15-2024 20:43:45]  'info' API REST, corriendo en el puerto: 3002
+[May-15-2024 20:43:49]  'info' 200 GET getPesados, 1 items.
+[May-15-2024 20:44:31]  'info' API REST, corriendo en el puerto: 3002
+[May-15-2024 20:44:33]  'info' 200 GET getPesados, 1 items.
+[May-15-2024 20:44:51]  'info' API REST, corriendo en el puerto: 3002
+[May-15-2024 20:44:54]  'info' 200 GET getPesados, 1 items.
+[May-15-2024 20:45:15]  'info' API REST, corriendo en el puerto: 3002
+[May-15-2024 20:45:40]  'info' API REST, corriendo en el puerto: 3002
+[May-15-2024 20:45:43]  'info' 200 GET getPesados, 1 items.
+[May-15-2024 20:45:58]  'info' API REST, corriendo en el puerto: 3002
+[May-15-2024 20:46:01]  'info' 200 GET getPesados, 1 items.
+[May-15-2024 20:47:10]  'info' API REST, corriendo en el puerto: 3002
+[May-15-2024 20:47:14]  'info' 200 GET getPesados, 1 items.
+[May-15-2024 20:47:37]  'info' API REST, corriendo en el puerto: 3002
+[May-15-2024 20:47:39]  'info' 200 GET getPesados, 1 items.
+[May-15-2024 20:47:41]  'info' 200 GET getPesados, 1 items.
+[May-15-2024 20:48:45]  'info' API REST, corriendo en el puerto: 3002
+[May-15-2024 20:48:50]  'info' 200 GET getPesados, 1 items.
+[May-15-2024 20:48:53]  'info' 200 GET getPesados, 1 items.
+[May-15-2024 20:49:08]  'info' API REST, corriendo en el puerto: 3002
+[May-15-2024 20:49:15]  'info' 200 GET getPesados, 1 items.
+[May-15-2024 20:49:45]  'info' API REST, corriendo en el puerto: 3002
+[May-15-2024 20:49:49]  'info' API REST, corriendo en el puerto: 3002
+[May-15-2024 20:49:53]  'info' 200 GET getPesados, 1 items.
+[May-15-2024 20:50:24]  'info' API REST, corriendo en el puerto: 3002
+[May-15-2024 20:50:27]  'info' 200 GET getPesados, 1 items.
+[May-15-2024 20:50:46]  'info' API REST, corriendo en el puerto: 3002
+[May-15-2024 20:50:55]  'info' 200 GET getPesados, 1 items.
+[May-15-2024 20:51:10]  'info' API REST, corriendo en el puerto: 3002
+[May-15-2024 20:51:13]  'info' 200 GET getPesados, 1 items.
+[May-15-2024 20:51:22]  'info' API REST, corriendo en el puerto: 3002
+[May-15-2024 20:51:30]  'info' API REST, corriendo en el puerto: 3002
+[May-15-2024 20:51:32]  'info' 200 GET getPesados, 1 items.
+[May-15-2024 20:51:34]  'info' 200 GET getPesados, 1 items.
+[May-15-2024 20:53:50]  'info' API REST, corriendo en el puerto: 3002
+[May-15-2024 20:53:54]  'info' 200 GET getPesados, 1 items.
+[May-15-2024 20:55:13]  'info' API REST, corriendo en el puerto: 3002
+[May-15-2024 20:56:27]  'info' API REST, corriendo en el puerto: 3002
+[May-15-2024 20:56:32]  'info' 200 GET getPesados, 1 items.
+[May-15-2024 20:57:05]  'info' API REST, corriendo en el puerto: 3002
+[May-15-2024 20:57:09]  'info' 200 GET getPesados, 1 items.
+[May-15-2024 20:57:42]  'info' API REST, corriendo en el puerto: 3002
+[May-15-2024 21:03:05]  'info' API REST, corriendo en el puerto: 3002
+[May-15-2024 21:03:07]  'info' 200 GET getPesados, 1 items.
+[May-15-2024 21:03:09]  'info' 200 GET getPesados, 1 items.
+[May-15-2024 21:04:16]  'info' API REST, corriendo en el puerto: 3002
+[May-15-2024 21:04:19]  'info' 200 GET getPesados, 1 items.
+[May-15-2024 21:04:35]  'info' API REST, corriendo en el puerto: 3002
+[May-15-2024 21:04:39]  'info' 200 GET getPesados, 1 items.
+[May-15-2024 21:04:58]  'info' API REST, corriendo en el puerto: 3002
+[May-15-2024 21:05:02]  'info' 200 GET getPesados, 1 items.
+[May-15-2024 21:05:16]  'info' API REST, corriendo en el puerto: 3002
+[May-15-2024 21:05:21]  'info' 200 GET getPesados, 1 items.
+[May-15-2024 21:05:36]  'info' API REST, corriendo en el puerto: 3002
+[May-15-2024 21:05:40]  'info' 200 GET getPesados, 1 items.
+[May-15-2024 21:05:54]  'info' API REST, corriendo en el puerto: 3002
+[May-15-2024 21:06:22]  'info' API REST, corriendo en el puerto: 3002
+[May-15-2024 21:06:27]  'info' API REST, corriendo en el puerto: 3002
+[May-15-2024 21:06:31]  'info' 200 GET getPesados, 1 items.
+[May-15-2024 21:07:02]  'info' API REST, corriendo en el puerto: 3002
+[May-15-2024 21:07:06]  'info' 200 GET getPesados, 1 items.
+[May-15-2024 21:07:24]  'info' API REST, corriendo en el puerto: 3002
+[May-15-2024 21:07:27]  'info' 200 GET getPesados, 1 items.
+[May-15-2024 21:10:43]  'info' API REST, corriendo en el puerto: 3002
+[May-15-2024 21:10:53]  'info' 200 GET getPesados, 1 items.
+[May-15-2024 21:11:05]  'info' API REST, corriendo en el puerto: 3002
+[May-15-2024 21:11:11]  'info' 200 GET getPesados, 1 items.
+[May-15-2024 21:12:12]  'info' API REST, corriendo en el puerto: 3002
+[May-15-2024 21:12:14]  'info' 200 GET getPesados, 1 items.
+[May-15-2024 21:12:20]  'info' API REST, corriendo en el puerto: 3002
+[May-15-2024 21:12:29]  'info' 200 GET getPesados, 1 items.
+[May-15-2024 21:12:39]  'info' API REST, corriendo en el puerto: 3002
+[May-15-2024 21:12:42]  'info' 200 GET getPesados, 1 items.
+[May-15-2024 21:13:34]  'info' API REST, corriendo en el puerto: 3002
+[May-15-2024 21:13:38]  'info' 200 GET getPesados, 1 items.
+[May-15-2024 21:13:40]  'info' 200 GET getPesados, 1 items.
+[May-15-2024 21:13:53]  'info' API REST, corriendo en el puerto: 3002
+[May-15-2024 21:13:56]  'info' 200 GET getPesados, 1 items.
+[May-15-2024 21:14:18]  'info' API REST, corriendo en el puerto: 3002
+[May-15-2024 21:14:21]  'info' 200 GET getPesados, 1 items.
+[May-15-2024 21:15:54]  'info' API REST, corriendo en el puerto: 3002
+[May-15-2024 21:16:01]  'info' 200 GET getPesados, 1 items.
+[May-15-2024 21:16:12]  'info' API REST, corriendo en el puerto: 3002
+[May-15-2024 21:16:16]  'info' 200 GET getPesados, 1 items.
+[May-15-2024 21:16:26]  'info' API REST, corriendo en el puerto: 3002
+[May-15-2024 21:16:44]  'info' 200 GET getPesados, 1 items.
+[May-15-2024 21:21:38]  'info' API REST, corriendo en el puerto: 3002
+[May-15-2024 21:21:39]  'error' 22714c44-0f22-4d6e-a0fc-6326c4138b0c:  Error: 500 GET getPesados, TypeError: attr.includes is not a function.
+[May-15-2024 21:22:16]  'info' API REST, corriendo en el puerto: 3002
+[May-15-2024 21:22:19]  'error' a3ec72ce-a792-421b-96e9-3193218bdfd3:  Error: 500 GET getPesados, SequelizeDatabaseError: 'date_format' is not a recognized built-in function name..
+[May-15-2024 21:22:30]  'info' API REST, corriendo en el puerto: 3002
+[May-15-2024 21:22:45]  'info' API REST, corriendo en el puerto: 3002
+[May-15-2024 21:22:50]  'error' 89165631-f7bf-41e7-a237-bdeeca03da17:  Error: 500 GET getPesados, SequelizeDatabaseError: 'date_format' is not a recognized built-in function name..
+[May-15-2024 21:23:36]  'info' API REST, corriendo en el puerto: 3002
+[May-15-2024 21:24:54]  'info' API REST, corriendo en el puerto: 3002
+[May-15-2024 21:24:57]  'info' 200 GET getPesados, 1 items.
+[May-15-2024 21:25:23]  'info' API REST, corriendo en el puerto: 3002
+[May-15-2024 21:25:25]  'info' 200 GET getPesados, 1 items.
+[May-15-2024 21:25:39]  'info' API REST, corriendo en el puerto: 3002
+[May-15-2024 21:25:57]  'info' 200 GET getPesados, 1 items.
+[May-15-2024 21:26:14]  'info' API REST, corriendo en el puerto: 3002
+[May-15-2024 21:26:19]  'info' API REST, corriendo en el puerto: 3002
+[May-15-2024 21:26:22]  'info' 200 GET getPesados, 1 items.
+[May-15-2024 21:26:34]  'info' API REST, corriendo en el puerto: 3002
+[May-15-2024 21:26:36]  'info' 200 GET getPesados, 1 items.
+[May-15-2024 21:26:46]  'info' API REST, corriendo en el puerto: 3002
+[May-15-2024 21:26:49]  'info' 200 GET getPesados, 1 items.
+[May-16-2024 22:51:37]  'info' API REST, corriendo en el puerto: 3002
+[May-16-2024 22:52:45]  'info' 200 GET getPesados, 1 items.
+[May-16-2024 22:53:11]  'info' API REST, corriendo en el puerto: 3002
+[May-16-2024 22:53:16]  'info' 200 GET getPesados, 1 items.
+[May-16-2024 22:54:57]  'info' 200 GET getPesados, 1 items.
+[May-16-2024 22:56:41]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[May-16-2024 22:57:09]  'info' 200 GET getPesados, 1 items.
+[May-16-2024 23:00:22]  'info' 200 GET GET_CENTRO_COSTOS 7710 values.
+[May-16-2024 23:01:50]  'info' 200 GET GET_CENTRO_COSTOS 7710 values.
+[May-16-2024 23:10:33]  'info' API REST, corriendo en el puerto: 3002
+[May-16-2024 23:11:57]  'info' API REST, corriendo en el puerto: 3002
+[May-16-2024 23:12:13]  'info' API REST, corriendo en el puerto: 3002
+[May-16-2024 23:12:48]  'info' API REST, corriendo en el puerto: 3002
+[May-16-2024 23:13:11]  'info' API REST, corriendo en el puerto: 3002
+[May-16-2024 23:13:18]  'info' 200 GET GET_CENTRO_COSTOS 7710 values.
+[May-16-2024 23:13:33]  'info' API REST, corriendo en el puerto: 3002
+[May-16-2024 23:14:44]  'info' API REST, corriendo en el puerto: 3002
+[May-16-2024 23:15:15]  'info' API REST, corriendo en el puerto: 3002
+[May-16-2024 23:17:00]  'info' API REST, corriendo en el puerto: 3002
+[May-16-2024 23:18:45]  'info' API REST, corriendo en el puerto: 3002
+[May-16-2024 23:19:00]  'info' API REST, corriendo en el puerto: 3002
+[May-16-2024 23:19:23]  'info' API REST, corriendo en el puerto: 3002
+[May-16-2024 23:20:14]  'info' 200 GET GET_CENTRO_COSTOS 7710 values.
+[May-16-2024 23:24:59]  'info' API REST, corriendo en el puerto: 3002
+[May-16-2024 23:25:12]  'info' API REST, corriendo en el puerto: 3002
+[May-16-2024 23:25:57]  'error' a59268eb-07b0-4579-92ab-1bc9ad3a3cef:  Requested path / not found
+[May-16-2024 23:26:36]  'error' 693f4af2-25f2-48c5-b1f5-d27a3a5d6763:  Requested path / not found
+[May-16-2024 23:28:08]  'info' API REST, corriendo en el puerto: 3002
+[May-16-2024 23:28:10]  'error' 557992b7-cd67-4157-8693-8a0402cffd9e:  Requested path / not found
+[May-16-2024 23:28:14]  'error' 4bf5b85b-6a42-45eb-869d-7f6c5509df7e:  Requested path / not found
+[May-16-2024 23:28:41]  'error' 14879692-9dd4-496b-84ba-c9863dd4429b:  Requested path / not found
+[May-16-2024 23:29:50]  'info' API REST, corriendo en el puerto: 3002
+[May-16-2024 23:29:54]  'info' 200 GET getCentroCostosByLimitAndOffset, limit: 2000 y offset: 0.
+[May-16-2024 23:29:58]  'info' 200 GET getCentroCostosByLimitAndOffset, limit: 2000 y offset: 0.
+[May-16-2024 23:30:15]  'info' API REST, corriendo en el puerto: 3002
+[May-16-2024 23:30:20]  'info' 200 GET getCentroCostosByLimitAndOffset, limit: 2000 y offset: 0.
+[May-16-2024 23:44:48]  'info' 200 GET getCentroCostosByLimitAndOffset, limit: 2000 y offset: 0.
+[May-16-2024 23:44:52]  'info' 200 GET getCentroCostosByLimitAndOffset, limit: 2000 y offset: 2000.
+[May-16-2024 23:44:55]  'info' 200 GET getCentroCostosByLimitAndOffset, limit: 2000 y offset: 4000.
+[May-16-2024 23:45:20]  'info' 200 GET getCentroCostosByLimitAndOffset, limit: 2000 y offset: 6000.
+[May-16-2024 23:55:06]  'info' 200 GET getCentroCostosByLimitAndOffset, limit: 1500 y offset: 0.
+[May-16-2024 23:55:09]  'info' 200 GET getCentroCostosByLimitAndOffset, limit: 1500 y offset: 1500.
+[May-16-2024 23:55:11]  'info' 200 GET getCentroCostosByLimitAndOffset, limit: 1500 y offset: 3000.
+[May-16-2024 23:55:14]  'info' 200 GET getCentroCostosByLimitAndOffset, limit: 1500 y offset: 4500.
+[May-16-2024 23:55:16]  'info' 200 GET getCentroCostosByLimitAndOffset, limit: 1500 y offset: 6000.
+[May-16-2024 23:55:19]  'info' 200 GET getCentroCostosByLimitAndOffset, limit: 1500 y offset: 7500.
+[May-16-2024 23:55:23]  'info' 200 GET getTurnos, 2 values.
+[May-16-2024 23:55:24]  'info' 200 GET getAsistenciaUbicacions, 3 values.
+[May-16-2024 23:55:25]  'info' 200 GET getPersonal_EmpresasCount 11794 values.
+[May-16-2024 23:55:31]  'info' 200 GET getPersonal_EmpresasByLimitAndOffset, limit: 6000 y offset: 0.
+[May-16-2024 23:56:32]  'info' 200 GET getPersonal_EmpresasByLimitAndOffset, limit: 6000 y offset: 0.
+[May-16-2024 23:59:33]  'info' 200 GET getCentroCostosByLimitAndOffset, limit: 1500 y offset: 0.
+[May-16-2024 23:59:37]  'info' 200 GET getCentroCostosByLimitAndOffset, limit: 1500 y offset: 1500.
+[May-16-2024 23:59:41]  'info' 200 GET getCentroCostosByLimitAndOffset, limit: 1500 y offset: 3000.
+[May-16-2024 23:59:45]  'info' 200 GET getCentroCostosByLimitAndOffset, limit: 1500 y offset: 4500.
+[May-16-2024 23:59:49]  'info' 200 GET getCentroCostosByLimitAndOffset, limit: 1500 y offset: 6000.
+[May-16-2024 23:59:52]  'info' 200 GET getCentroCostosByLimitAndOffset, limit: 1500 y offset: 7500.
+[May-16-2024 23:59:56]  'info' 200 GET getTurnos, 2 values.
+[May-16-2024 23:59:57]  'info' 200 GET getAsistenciaUbicacions, 3 values.
+[May-16-2024 23:59:58]  'info' 200 GET getPersonal_EmpresasCount 11794 values.
+[May-17-2024 00:00:00]  'info' 200 GET getPersonal_EmpresasByLimitAndOffset, limit: 2000 y offset: 0.
+[May-17-2024 00:04:20]  'info' API REST, corriendo en el puerto: 3002
+[May-17-2024 00:04:34]  'info' API REST, corriendo en el puerto: 3002
+[May-17-2024 00:07:03]  'info' API REST, corriendo en el puerto: 3002
+[May-17-2024 00:08:01]  'info' API REST, corriendo en el puerto: 3002
+[May-17-2024 00:08:59]  'info' API REST, corriendo en el puerto: 3002
+[May-17-2024 00:09:06]  'info' API REST, corriendo en el puerto: 3002
+[May-17-2024 00:10:59]  'info' API REST, corriendo en el puerto: 3002
+[May-17-2024 00:31:33]  'info' API REST, corriendo en el puerto: 3002
+[May-17-2024 00:31:45]  'info' API REST, corriendo en el puerto: 3002
+[May-17-2024 00:31:52]  'info' API REST, corriendo en el puerto: 3002
+[May-17-2024 00:32:01]  'info' API REST, corriendo en el puerto: 3002
+[May-17-2024 00:32:05]  'info' API REST, corriendo en el puerto: 3002
+[May-17-2024 00:32:10]  'info' API REST, corriendo en el puerto: 3002
+[May-17-2024 00:32:57]  'info' API REST, corriendo en el puerto: 3002
+[May-17-2024 00:33:19]  'info' 200 GET getEsparragoAgrupaPersonalByLimitAndOffset, limit: 1500 y offset: 0.
+[May-17-2024 00:33:21]  'info' 200 GET getEsparragoAgrupaPersonalByLimitAndOffset, limit: 1500 y offset: 1500.
+[May-17-2024 00:33:23]  'info' 200 GET getEsparragoAgrupaPersonalByLimitAndOffset, limit: 1500 y offset: 3000.
+[May-17-2024 00:33:24]  'info' 200 GET getEsparragoAgrupaPersonalByLimitAndOffset, limit: 1500 y offset: 4500.
+[May-17-2024 00:33:25]  'info' 200 GET getEsparragoAgrupaPersonalByLimitAndOffset, limit: 1500 y offset: 6000.
+[May-17-2024 00:33:26]  'info' 200 GET getEsparragoAgrupaPersonalByLimitAndOffset, limit: 1500 y offset: 7500.
+[May-17-2024 00:33:26]  'info' 200 GET getEsparragoAgrupaPersonalByLimitAndOffset, limit: 1500 y offset: 9000.
+[May-17-2024 00:33:26]  'info' 200 GET getEsparragoAgrupaPersonalByLimitAndOffset, limit: 1500 y offset: 10500.
+[May-17-2024 00:33:27]  'info' 200 GET getEsparragoAgrupaPersonalByLimitAndOffset, limit: 1500 y offset: 12000.
+[May-17-2024 00:33:27]  'info' 200 GET getEsparragoAgrupaPersonalByLimitAndOffset, limit: 1500 y offset: 13500.
+[May-17-2024 00:33:27]  'info' 200 GET getEsparragoAgrupaPersonalByLimitAndOffset, limit: 1500 y offset: 15000.
+[May-17-2024 00:33:28]  'info' 200 GET getEsparragoAgrupaPersonalByLimitAndOffset, limit: 1500 y offset: 16500.
+[May-17-2024 00:33:28]  'info' 200 GET getEsparragoAgrupaPersonalByLimitAndOffset, limit: 1500 y offset: 18000.
+[May-17-2024 00:33:28]  'info' 200 GET getEsparragoAgrupaPersonalByLimitAndOffset, limit: 1500 y offset: 19500.
+[May-17-2024 00:33:28]  'info' 200 GET getEsparragoAgrupaPersonalByLimitAndOffset, limit: 1500 y offset: 21000.
+[May-17-2024 00:33:29]  'info' 200 GET getEsparragoAgrupaPersonalByLimitAndOffset, limit: 1500 y offset: 22500.
+[May-17-2024 00:33:29]  'info' 200 GET getEsparragoAgrupaPersonalByLimitAndOffset, limit: 1500 y offset: 24000.
+[May-17-2024 00:33:29]  'info' 200 GET getEsparragoAgrupaPersonalByLimitAndOffset, limit: 1500 y offset: 25500.
+[May-17-2024 00:33:30]  'info' 200 GET getEsparragoAgrupaPersonalByLimitAndOffset, limit: 1500 y offset: 27000.
+[May-17-2024 00:33:30]  'info' 200 GET getEsparragoAgrupaPersonalByLimitAndOffset, limit: 1500 y offset: 28500.
+[May-17-2024 00:33:42]  'info' 200 GET getCentroCostosByLimitAndOffset, limit: 1500 y offset: 0.
+[May-17-2024 00:33:46]  'info' 200 GET getCentroCostosByLimitAndOffset, limit: 1500 y offset: 1500.
+[May-17-2024 00:33:49]  'info' 200 GET getCentroCostosByLimitAndOffset, limit: 1500 y offset: 3000.
+[May-17-2024 00:33:53]  'info' 200 GET getCentroCostosByLimitAndOffset, limit: 1500 y offset: 4500.
+[May-17-2024 00:33:56]  'info' 200 GET getCentroCostosByLimitAndOffset, limit: 1500 y offset: 6000.
+[May-17-2024 00:34:00]  'info' 200 GET getCentroCostosByLimitAndOffset, limit: 1500 y offset: 7500.
+[May-17-2024 00:34:04]  'info' 200 GET getTurnos, 2 values.
+[May-17-2024 00:34:05]  'info' 200 GET getAsistenciaUbicacions, 3 values.
+[May-17-2024 00:34:06]  'info' 200 GET getPersonal_EmpresasCount 11794 values.
+[May-17-2024 00:34:08]  'info' 200 GET getPersonal_EmpresasByLimitAndOffset, limit: 1500 y offset: 0.
+[May-17-2024 00:34:15]  'info' 200 GET getPersonal_EmpresasByLimitAndOffset, limit: 1500 y offset: 1500.
+[May-17-2024 00:34:19]  'info' 200 GET getPersonal_EmpresasByLimitAndOffset, limit: 1500 y offset: 3000.
+[May-17-2024 00:35:48]  'info' API REST, corriendo en el puerto: 3002
+[May-17-2024 00:37:08]  'info' API REST, corriendo en el puerto: 3002
+[May-17-2024 00:39:36]  'info' API REST, corriendo en el puerto: 3002
+[May-17-2024 00:39:53]  'info' API REST, corriendo en el puerto: 3002
+[May-17-2024 00:40:40]  'info' API REST, corriendo en el puerto: 3002
+[May-17-2024 00:41:34]  'info' API REST, corriendo en el puerto: 3002
+[May-17-2024 00:41:45]  'info' 200 GET getEsparragoAgrupaPersonalByLimitAndOffset, limit: 1500 y offset: 0.
+[May-17-2024 00:41:47]  'info' 200 GET getEsparragoAgrupaPersonalByLimitAndOffset, limit: 1500 y offset: 1500.
+[May-17-2024 00:41:49]  'info' 200 GET getEsparragoAgrupaPersonalByLimitAndOffset, limit: 1500 y offset: 3000.
+[May-17-2024 00:41:51]  'info' 200 GET getEsparragoAgrupaPersonalByLimitAndOffset, limit: 1500 y offset: 4500.
+[May-17-2024 00:41:53]  'info' 200 GET getEsparragoAgrupaPersonalByLimitAndOffset, limit: 1500 y offset: 6000.
+[May-17-2024 00:42:51]  'info' API REST, corriendo en el puerto: 3002
+[May-17-2024 00:46:47]  'info' 200 GET getEsparragoAgrupaPersonalByLimitAndOffset, limit: 1500 y offset: 0.
+[May-17-2024 00:46:50]  'info' 200 GET getEsparragoAgrupaPersonalByLimitAndOffset, limit: 1500 y offset: 1500.
+[May-17-2024 00:46:52]  'info' 200 GET getEsparragoAgrupaPersonalByLimitAndOffset, limit: 1500 y offset: 3000.
+[May-17-2024 00:46:54]  'info' 200 GET getEsparragoAgrupaPersonalByLimitAndOffset, limit: 1500 y offset: 4500.
+[May-17-2024 00:46:55]  'info' 200 GET getEsparragoAgrupaPersonalByLimitAndOffset, limit: 1500 y offset: 6000.
+[May-17-2024 00:47:09]  'info' 200 GET getCentroCostosByLimitAndOffset, limit: 1500 y offset: 0.
+[May-17-2024 00:47:12]  'info' 200 GET getCentroCostosByLimitAndOffset, limit: 1500 y offset: 1500.
+[May-17-2024 00:47:14]  'info' 200 GET getCentroCostosByLimitAndOffset, limit: 1500 y offset: 3000.
+[May-17-2024 00:47:16]  'info' 200 GET getCentroCostosByLimitAndOffset, limit: 1500 y offset: 4500.
+[May-17-2024 00:47:18]  'info' 200 GET getCentroCostosByLimitAndOffset, limit: 1500 y offset: 6000.
+[May-17-2024 00:47:21]  'info' 200 GET getCentroCostosByLimitAndOffset, limit: 1500 y offset: 7500.
+[May-17-2024 00:47:23]  'info' 200 GET getTurnos, 2 values.
+[May-17-2024 00:47:24]  'info' 200 GET getAsistenciaUbicacions, 3 values.
+[May-17-2024 00:47:25]  'info' 200 GET getPersonal_EmpresasCount 11794 values.
+[May-17-2024 00:47:26]  'info' 200 GET getPersonal_EmpresasByLimitAndOffset, limit: 1500 y offset: 0.
+[May-17-2024 00:47:31]  'info' 200 GET getPersonal_EmpresasByLimitAndOffset, limit: 1500 y offset: 1500.
+[May-17-2024 00:47:36]  'info' 200 GET getPersonal_EmpresasByLimitAndOffset, limit: 1500 y offset: 3000.
+[May-17-2024 00:47:41]  'info' 200 GET getPersonal_EmpresasByLimitAndOffset, limit: 1500 y offset: 4500.
+[May-17-2024 00:47:45]  'info' 200 GET getPersonal_EmpresasByLimitAndOffset, limit: 1500 y offset: 6000.
+[May-17-2024 00:47:50]  'info' 200 GET getPersonal_EmpresasByLimitAndOffset, limit: 1500 y offset: 7500.
+[May-17-2024 00:47:55]  'info' 200 GET getPersonal_EmpresasByLimitAndOffset, limit: 1500 y offset: 9000.
+[May-17-2024 00:48:00]  'info' 200 GET getPersonal_EmpresasByLimitAndOffset, limit: 1500 y offset: 10500.
+[May-17-2024 00:51:37]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[May-17-2024 00:52:02]  'info' 200 GET getPesados, 1 items.
+[May-17-2024 00:53:29]  'info' API REST, corriendo en el puerto: 3002
+[May-17-2024 00:53:39]  'info' 200 GET getPesados, 1 items.
+[May-17-2024 00:54:02]  'info' API REST, corriendo en el puerto: 3002
+[May-17-2024 00:55:59]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[May-17-2024 00:57:42]  'info' 200 GET getPesados, 1 items.
+[May-17-2024 01:03:47]  'info' 200 GET getLineasMesas, 2 values.
+[May-17-2024 01:04:03]  'info' 200 GET getLineasMesas, 2 values.
+[May-17-2024 01:04:09]  'info' 200 GET getLineasMesas, 2 values.
+[May-17-2024 01:04:14]  'info' 200 GET getLineasMesas, 2 values.
+[May-17-2024 01:09:33]  'info' 200 GET getDetalles, 0 values.
+[May-17-2024 01:09:35]  'info' 200 GET getDetalles, 0 values.
+[May-17-2024 01:12:27]  'info' 200 GET getLineasMesas, 2 values.
+[May-17-2024 01:12:31]  'info' 200 GET getLineasMesas, 2 values.
+[May-17-2024 01:12:35]  'info' 200 GET getLineasMesas, 2 values.
+[May-17-2024 01:12:47]  'info' 200 GET getLineasMesas, 2 values.
+[May-17-2024 01:12:50]  'info' 200 GET getLineasMesas, 2 values.
+[May-17-2024 01:13:14]  'info' 200 GET getLineasMesas, 2 values.
+[May-17-2024 01:13:17]  'info' 200 GET getLineasMesas, 2 values.
+[May-17-2024 01:15:15]  'info' 200 GET getLineasMesas, 2 values.
+[May-17-2024 01:15:21]  'info' 200 GET getLineasMesas, 2 values.
+[May-17-2024 01:15:29]  'info' 200 GET getLineasMesas, 2 values.
+[May-17-2024 01:15:34]  'info' 200 GET getLineasMesas, 2 values.
+[May-17-2024 01:15:41]  'info' 200 GET getLineasMesas, 2 values.
+[May-17-2024 01:15:45]  'info' 200 GET getLineasMesas, 2 values.
+[May-17-2024 01:17:56]  'info' 200 GET getLineasMesas, 2 values.
+[May-17-2024 01:18:07]  'info' 200 GET getLineasMesas, 2 values.
+[May-17-2024 01:18:16]  'info' 200 GET getLineasMesas, 2 values.
+[May-17-2024 01:18:20]  'info' 200 GET getLineasMesas, 2 values.
+[May-17-2024 01:18:32]  'info' 200 GET getLineasMesas, 2 values.
+[May-17-2024 01:18:36]  'info' 200 GET getLineasMesas, 2 values.
+[May-17-2024 01:18:40]  'info' 200 GET getLineasMesas, 2 values.
+[May-17-2024 01:20:37]  'info' 200 GET getLineasMesas, 2 values.
+[May-17-2024 01:20:44]  'info' 200 GET getLineasMesas, 2 values.
+[May-17-2024 01:25:57]  'info' 200 GET getLineasMesas, 2 values.
+[May-17-2024 01:26:01]  'info' 200 GET getLineasMesas, 2 values.
+[May-17-2024 01:26:16]  'info' 200 GET getLineasMesas, 2 values.
+[May-17-2024 01:32:26]  'info' API REST, corriendo en el puerto: 3002
+[May-17-2024 01:32:31]  'info' 200 GET getLineasMesas, 2 values.
+[May-17-2024 01:32:44]  'info' 200 GET getLineasMesas, 2 values.
+[May-17-2024 01:32:47]  'info' 200 GET getLineasMesas, 2 values.
+[May-17-2024 01:34:02]  'info' API REST, corriendo en el puerto: 3002
+[May-17-2024 01:34:08]  'info' 200 GET getLineasMesas, 2 values.
+[May-17-2024 01:34:11]  'info' 200 GET getLineasMesas, 2 values.
+[May-17-2024 01:34:22]  'info' API REST, corriendo en el puerto: 3002
+[May-17-2024 01:36:45]  'info' 200 GET getLineasMesas, 2 values.
+[May-17-2024 01:36:51]  'info' 200 GET getLineasMesas, 2 values.
+[May-17-2024 01:37:31]  'info' 200 GET getLineasMesas, 2 values.
+[May-17-2024 01:40:58]  'info' 200 GET getDetalles, 0 values.
+[May-17-2024 01:41:08]  'info' 200 GET getDetalles, 0 values.
+[May-17-2024 01:41:18]  'info' 200 GET getDetalles, 0 values.
+[May-17-2024 01:41:20]  'info' 200 GET getDetalles, 0 values.
+[May-17-2024 01:41:33]  'info' 200 GET getAsistenciaRegistroPersonals, 4 values.
+[May-17-2024 01:42:42]  'info' 200 GET getAsistenciaRegistroPersonals, 4 values.
+[May-17-2024 01:44:46]  'info' 200 GET getAsistenciaRegistroPersonals, 4 values.
+[May-17-2024 01:47:06]  'info' 200 GET getAsistenciaRegistroPersonals, 3 values.
+[May-17-2024 01:47:14]  'info' 200 GET getAsistenciaRegistroPersonals, 4 values.
+[May-17-2024 01:47:17]  'info' 200 GET getAsistenciaRegistroPersonals, 4 values.
+[May-17-2024 01:48:07]  'info' 200 GET getAsistenciaRegistroPersonals, 4 values.
+[May-17-2024 01:51:55]  'info' API REST, corriendo en el puerto: 3002
+[May-17-2024 01:53:32]  'info' 200 GET getDetalles, 0 values.
+[May-17-2024 01:54:15]  'info' 200 GET getPesados, 1 items.
+[May-17-2024 01:54:19]  'info' 200 GET getLineasMesas, 2 values.
+[May-17-2024 01:54:28]  'info' 200 GET getLineasMesas, 2 values.
+[May-17-2024 02:02:40]  'info' 200 GET getLineasMesas, 2 values.
+[May-17-2024 02:07:04]  'info' 200 GET getPesadoPersonal, 0 items.
+[May-17-2024 02:11:29]  'info' 200 GET getLineasMesas, 2 values.
+[May-17-2024 02:12:46]  'info' API REST, corriendo en el puerto: 3002
+[May-17-2024 02:12:55]  'info' API REST, corriendo en el puerto: 3002
+[May-17-2024 02:13:04]  'info' API REST, corriendo en el puerto: 3002
+[May-17-2024 02:13:18]  'info' 200 GET getLineasMesas, 2 values.
+[May-17-2024 02:19:11]  'info' API REST, corriendo en el puerto: 3002
+[May-17-2024 02:23:20]  'info' 200 GET getLineasMesas, 2 values.
+[May-17-2024 02:24:19]  'info' API REST, corriendo en el puerto: 3002
+[May-17-2024 02:25:06]  'info' API REST, corriendo en el puerto: 3002
+[May-17-2024 02:25:15]  'info' API REST, corriendo en el puerto: 3002
+[May-17-2024 02:25:19]  'info' 200 GET getLineasMesas, 2 values.
+[May-17-2024 02:25:22]  'info' 200 GET getLineasMesas, 2 values.
+[May-17-2024 02:25:28]  'info' 200 GET getLineasMesas, 2 values.
+[May-17-2024 02:25:35]  'info' 200 GET getLineasMesas, 2 values.
+[May-17-2024 02:25:38]  'info' 200 GET getLineasMesas, 2 values.
+[May-17-2024 09:41:42]  'info' API REST, corriendo en el puerto: 3002
+[May-17-2024 09:45:10]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[May-17-2024 09:46:08]  'info' 200 GET getPackings, size: 0.
+[May-17-2024 09:46:16]  'info' 200 GET getPesados, 1 items.
+[May-17-2024 09:47:35]  'info' 200 GET getPesados, 1 items.
+[May-17-2024 09:47:38]  'info' 200 GET getPesados, 1 items.
+[May-17-2024 09:48:54]  'info' 200 GET getPesados, 1 items.
+[May-17-2024 09:49:01]  'info' 200 GET getLineasMesas, 2 values.
+[May-17-2024 09:49:08]  'info' 200 GET getLineasMesas, 2 values.
+[May-17-2024 10:05:30]  'info' API REST, corriendo en el puerto: 3002
+[May-17-2024 10:06:06]  'info' API REST, corriendo en el puerto: 3002
+[May-17-2024 10:08:40]  'info' API REST, corriendo en el puerto: 3002
