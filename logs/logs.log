@@ -1675,3 +1675,15 @@
 [May-17-2024 10:05:30]  'info' API REST, corriendo en el puerto: 3002
 [May-17-2024 10:06:06]  'info' API REST, corriendo en el puerto: 3002
 [May-17-2024 10:08:40]  'info' API REST, corriendo en el puerto: 3002
+[May-17-2024 10:37:22]  'info' API REST, corriendo en el puerto: 3002
+[May-17-2024 14:55:53]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[May-17-2024 14:58:22]  'error' 500 POST createAsistenciaFechaTurno, SequelizeDatabaseError: The conversion of a nvarchar data type to a datetime data type resulted in an out-of-range value..
+[May-17-2024 15:00:49]  'info' API REST, corriendo en el puerto: 3002
+[May-17-2024 15:02:41]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[May-17-2024 15:05:08]  'error' 500 POST createAsistenciaFechaTurno, SequelizeDatabaseError: The conversion of a nvarchar data type to a datetime data type resulted in an out-of-range value..
+[May-17-2024 15:09:26]  'info' API REST, corriendo en el puerto: 3002
+[May-17-2024 15:10:04]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[May-17-2024 15:11:58]  'error' 500 POST createAsistenciaFechaTurno, SequelizeDatabaseError: The conversion of a nvarchar data type to a datetime data type resulted in an out-of-range value..
+[May-17-2024 15:15:06]  'info' API REST, corriendo en el puerto: 3002
+[May-17-2024 15:15:31]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[May-17-2024 15:15:40]  'info' 200 POST createAsistenciaFechaTurno, new id: 306.

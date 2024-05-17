@@ -75,3 +75,6 @@
 [May-16-2024 23:28:10]  'error' 557992b7-cd67-4157-8693-8a0402cffd9e:  Requested path / not found
 [May-16-2024 23:28:14]  'error' 4bf5b85b-6a42-45eb-869d-7f6c5509df7e:  Requested path / not found
 [May-16-2024 23:28:41]  'error' 14879692-9dd4-496b-84ba-c9863dd4429b:  Requested path / not found
+[May-17-2024 14:58:22]  'error' 500 POST createAsistenciaFechaTurno, SequelizeDatabaseError: The conversion of a nvarchar data type to a datetime data type resulted in an out-of-range value..
+[May-17-2024 15:05:08]  'error' 500 POST createAsistenciaFechaTurno, SequelizeDatabaseError: The conversion of a nvarchar data type to a datetime data type resulted in an out-of-range value..
+[May-17-2024 15:11:58]  'error' 500 POST createAsistenciaFechaTurno, SequelizeDatabaseError: The conversion of a nvarchar data type to a datetime data type resulted in an out-of-range value..

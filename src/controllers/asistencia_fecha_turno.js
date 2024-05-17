@@ -71,6 +71,7 @@ async function getAsistenciaFechaTurno (req, res) {
 }
 
 async function createAsistenciaFechaTurno (req, res) {
+  console.log(req.body)
   const [err, asistenciaFechaTurno] = await get(models.AsistenciaFechaTurno.create({
     idasistenciaturno: req.body.idasistenciaturno,
     fecha: req.body.fecha,

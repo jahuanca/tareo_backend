@@ -13,7 +13,7 @@ module.exports = (sequelize, DataTypes) => {
   AsistenciaFechaTurno.init({
     // add new parameters
     idasistenciaturno: { type: DataTypes.INTEGER, primaryKey: true, autoIncrement: true },
-    fecha: { type: DataTypes.DATEONLY, allowNull: true },
+    fecha: { type: DataTypes.DATE, allowNull: true },
     idubicacion: { type: DataTypes.INTEGER, allowNull: true },
     idturno: { type: DataTypes.INTEGER, allowNull: true },
     idestado: { type: DataTypes.INTEGER, allowNull: true, defaultValue: 1 },
