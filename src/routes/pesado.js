@@ -4,6 +4,7 @@ const router = express.Router()
 const {
   getPesados,
   getPesadoPersonal,
+  updatePesado,
   createPesado,
   deletePesado,
   deletePersonalPesado,
@@ -25,7 +26,7 @@ router.get('/', getPesados)
 router.get('/personal', getPesadoPersonal)
 router.post('/create', createPesado)
 router.post('/createPersonal', createPersonalPesado)
-// FIXME: considerar en eliminar este endpoint
+router.put('/update', updatePesado)
 router.post('/createDetalle', createDetallePesado)
 router.delete('/delete/:id', deletePesado)
 router.delete('/deletePersonal/:id', deletePersonalPesado)

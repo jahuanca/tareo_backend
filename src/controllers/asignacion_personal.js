@@ -11,7 +11,7 @@ async function getLineasMesas (req, res) {
   if (query.turno) {
     whereString += ` AND turno = '${query.turno}' `
     if (query.itempretareaesparragovarios) {
-      subQuery = selectSubQuerySize(`AND itempretareaesparragovarios = ${query.itempretareaesparragovarios}`)
+      subQuery = selectSubQuerySize(`AND itempretareaesparragovarios = ${query.itempretareaesparragovarios} AND idestado = 1`)
     }
     subQuery = subQuery + selectSubQueryPerson
   }

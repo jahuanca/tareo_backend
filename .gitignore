@@ -1,5 +1,5 @@
 node_modules/
-logs/*
+logs/
 node.rar
 config/config.json
 public/uploads/*
@@ -7,4 +7,3 @@ package-lock.json
 logs/errors.log
 logs/logs.log
 logs/warns.log
-package-lock.json

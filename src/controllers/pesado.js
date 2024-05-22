@@ -5,7 +5,12 @@ const models = require('../models')
 const getPesados = asyncCatch(async (req, res) => {
   const query = req.query
   query.estado = 'A'
+  console.log(query)
   const [err, pesados] = await getError(models.Pre_Tarea_Esparrago_Varios.findAll({
+    /* where: {
+      idusuario: query.idusuario,
+      estado: { [models.Sequelize.Op.in]: ['A', 'P'] }
+    }, */
     where: query,
     include: [{ all: true }],
     attributes: {
@@ -16,8 +21,10 @@ const getPesados = asyncCatch(async (req, res) => {
                   FROM PersonalPreTareaEsparrago AS personal
                   WHERE
                       personal.itempretareaesparragovarios = Pre_Tarea_Esparrago_Varios.itempretareaesparragovarios
+                  AND personal.idestado = 1
                   AND Pre_Tarea_Esparrago_Varios.idusuario= ${query.idusuario}
                   AND Pre_Tarea_Esparrago_Varios.estado= '${query.estado}'
+                  
               )`),
           'sizeDetails'
         ]
@@ -34,7 +41,7 @@ const getPesados = asyncCatch(async (req, res) => {
 
 const getPesadoPersonal = asyncCatch(async (req, res) => {
   const query = req.query
-  query.estado = 'A'
+  query.idestado = 1
   console.log(query)
   const [err, pesados] = await getError(models.Personal_Pre_Tarea_Esparrago.findAll({
     where: query,
@@ -82,6 +89,33 @@ const createPesado = asyncCatch(async (req, res) => {
   }
   logger.info(`200 POST createPesado, new key: ${pesado.itempretareaesparragovarios}.`)
   res.status(200).json(pesado)
+})
+
+const updatePesado = asyncCatch(async (req, res) => {
+  console.log(req.body)
+  const [err, pesado] = await getError(models.Pre_Tarea_Esparrago_Varios.update({
+    idestado: 1,
+    estado: 'M',
+
+    accion: 'I',
+    usuario: 0,
+    ip: req.ip,
+    accion_usuario: 'Edito un pesado.'
+  }, {
+    where: {
+      itempretareaesparragovarios: req.body.itempretareaesparragovarios
+    },
+    individualHooks: true,
+    validate: false
+  }))
+  if (err) {
+    err.message = `500 PUT updatePesado, ${err.message}.`
+    throw err
+  }
+  logger.info(`200 PUT updatePesado, ${req.body.itempretareaesparragovarios} itempretareaesparragovarios.`)
+  console.log(pesado[0])
+  console.log(pesado[0][1])
+  res.status(200).json(pesado[1][0].dataValues)
 })
 
 const createPersonalPesado = asyncCatch(async (req, res) => {
@@ -146,7 +180,7 @@ const deletePesado = asyncCatch(async (req, res) => {
 
 const deletePersonalPesado = asyncCatch(async (req, res) => {
   const [err, pesado] = await getError(models.Personal_Pre_Tarea_Esparrago.update({
-    estado: 'I',
+    idestado: 0,
     accion: 'D',
     usuario: 0,
     ip: req.ip,
@@ -163,8 +197,6 @@ const deletePersonalPesado = asyncCatch(async (req, res) => {
     throw err
   }
   logger.info(`200 DELETE deletePersonalPesado, ${req.params.id} id.`)
-  console.log(pesado[0])
-  console.log(pesado[0][1])
   res.status(200).json(pesado[1][0].dataValues)
 })
 
@@ -211,5 +243,6 @@ module.exports = {
   createPersonalPesado,
   deletePesado,
   createDetallePesado,
-  deletePersonalPesado
+  deletePersonalPesado,
+  updatePesado
 }

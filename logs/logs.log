@@ -1687,3 +1687,4 @@
 [May-17-2024 15:15:06]  'info' API REST, corriendo en el puerto: 3002
 [May-17-2024 15:15:31]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
 [May-17-2024 15:15:40]  'info' 200 POST createAsistenciaFechaTurno, new id: 306.
+[May-22-2024 02:06:43]  'info' API REST, corriendo en el puerto: 3002

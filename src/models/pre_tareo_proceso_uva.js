@@ -12,13 +12,12 @@ module.exports = (sequelize, DataTypes) => {
   };
   PreTareoProcesoUva.init({
     itempretareaprocesouva: { primaryKey: true, type: DataTypes.INTEGER, autoIncrement: true },
-    fecha: { type: DataTypes.DATEONLY, allowNull: false },
+    fecha: { type: DataTypes.DATE, allowNull: false },
     horainicio: { type: DataTypes.DATE, allowNull: false },
     horafin: { type: DataTypes.DATE, allowNull: false },
     pausainicio: { type: DataTypes.DATE, allowNull: true },
     pausafin: { type: DataTypes.DATE, allowNull: true },
     linea: { type: DataTypes.INTEGER, allowNull: false },
-    /* item: {type: DataTypes.INTEGER, allowNull: false,}, */
     idcentrocosto: { type: DataTypes.INTEGER, allowNull: false },
     idcultivo: { type: DataTypes.INTEGER, allowNull: false },
     diasiguiente: { type: DataTypes.BOOLEAN, allowNull: false },
@@ -26,8 +25,6 @@ module.exports = (sequelize, DataTypes) => {
     idestado: { type: DataTypes.INTEGER, allowNull: true, defaultValue: 1 },
     codigoempresasupervisor: { type: DataTypes.STRING, allowNull: false },
     codigoempresadigitador: { type: DataTypes.STRING, allowNull: false },
-    /* fechamod: {type: DataTypes.DATE, allowNull: false,}, */
-    /* activo: {type: DataTypes.BOOLEAN, allowNull: false,}, */
     idusuario: { type: DataTypes.INTEGER, allowNull: false },
     estado: { type: DataTypes.STRING, allowNull: true, defaultValue: 'A' },
 

@@ -66,19 +66,6 @@ const createPacking = async (req, res) => {
   console.log('Hora fin: ' + req.body.horafin)
   console.log('Pausa inicio:' + req.body.pausainicio)
   console.log('Pausa fin: ' + req.body.pausafin)
-  /*
-   Fecha: 1708203417569
-0|app  | Hora inicio: 2024-02-17T15:56:00.000
-0|app  | Hora fin: 2024-02-17T15:56:00.000
-0|app  | Pausa inicio:null
-0|app  | Pausa fin: null
-0|app  | Fecha update: 1708185417569
-0|app  | Hora inicio update: 1708203360000
-0|app  | Hora fin update: 1708203360000
-0|app  | NaN
-0|app  | NaN
-
-  */
   console.log('Fecha update: ' + (Date.now() - 5 * 3600000))
   console.log('Hora inicio update: ' + (Date.parse(req.body.horainicio) + 5 * 3600000))
   console.log('Hora fin update: ' + (Date.parse(req.body.horafin) + 5 * 3600000))
@@ -86,18 +73,16 @@ const createPacking = async (req, res) => {
   console.log('Pausa fin update: ' + (req.body.pausafin) ? (Date.parse(req.body.pausainicio) + 5 * 3600000) : null)
 
   const [err, packing] = await getError(models.Pre_Tareo_Proceso_Uva.create({
-    fecha: (Date.now() - 5 * 3600000),
-    horainicio: (Date.parse(req.body.horainicio) + 5 * 3600000),
-    horafin: (Date.parse(req.body.horafin) + 5 * 3600000),
-    pausainicio: (req.body.pausainicio) ? (Date.parse(req.body.pausainicio) + 5 * 3600000) : null,
-    pausafin: (req.body.pausafin) ? (Date.parse(req.body.pausainicio) + 5 * 3600000) : null,
+    fecha: req.body.fecha,
+    horainicio: req.body.horainicio,
+    horafin: req.body.horafin,
+    pausainicio: req.body.pausainicio,
+    pausafin: req.body.pausafin,
     linea: 1,
     idcentrocosto: req.body.idcentrocosto,
     idcultivo: req.body.idcultivo,
     codigoempresasupervisor: req.body.codigoempresasupervisor,
     codigoempresadigitador: req.body.codigoempresadigitador,
-    /* fechamod: new Date(req.body.fechamod), */
-    /* activo: true, */
     idusuario: req.body.idusuario,
     idestado: 1,
     turnotareo: req.body.turnotareo,
