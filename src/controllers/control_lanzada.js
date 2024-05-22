@@ -163,6 +163,7 @@ where EsparragoAgrupaPersonalDetalle.itemagruparpersonal = EsparragoAgrupaPerson
 ) as sizePersonalMesa
  , (SELECT COUNT(*) FROM PersonalPreTareaEsparrago
 where PersonalPreTareaEsparrago.linea = EsparragoAgrupaPersonal.linea AND PersonalPreTareaEsparrago.mesa = EsparragoAgrupaPersonal.grupo
+AND PersonalPreTareaEsparrago.idestado = 1
 AND itempretareaesparragovarios = ${itempretareaesparragovarios}
 ) as sizeDetails
 FROM EsparragoAgrupaPersonal
@@ -179,5 +180,6 @@ ON p.idlabor = l.idlabor
 WHERE itempretareaesparragovarios = ${itempretareaesparragovarios}
 AND linea = ${linea}
 AND mesa = ${mesa}
+AND idestado = 1
 GROUP BY p.idlabor, l.labor, l.descripcion 
 `
