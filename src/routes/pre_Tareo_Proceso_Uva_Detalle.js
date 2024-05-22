@@ -1,8 +1,7 @@
 'use strict'
-const express=require('express')
-const router=express.Router()
-const pre_Tareo_Proceso_Uva_Detalle=require('../controllers/pre_tareo_proceso_uva_detalle')
-const upload_controller=require('../controllers/upload_controller')
+const express = require('express')
+const router = express.Router()
+const preTareoProcesoUvaDetalle = require('../controllers/pre_tareo_proceso_uva_detalle')
 /* const auth=require('../middlewares/auth') */
 
 /**
@@ -15,19 +14,19 @@ const upload_controller=require('../controllers/upload_controller')
  *      '200':
  *        description: A successful response
  */
-router.get('/',pre_Tareo_Proceso_Uva_Detalle.getPre_Tareo_Proceso_Uva_Detalles)
-router.get('/id/:id',pre_Tareo_Proceso_Uva_Detalle.getPre_Tareo_Proceso_Uva_Detalle)
-router.get('/master/:id',pre_Tareo_Proceso_Uva_Detalle.getPre_Tareo_Proceso_Uva_DetalleByMaster)
-router.post('/create',pre_Tareo_Proceso_Uva_Detalle.createPre_Tareo_Proceso_Uva_Detalle)
-router.post('/rango',pre_Tareo_Proceso_Uva_Detalle.preTareaProcesoUvaDetalleByRango)
-router.put('/update',pre_Tareo_Proceso_Uva_Detalle.updatePre_Tareo_Proceso_Uva_Detalle)
-router.delete('/delete/:id', pre_Tareo_Proceso_Uva_Detalle.deletePre_Tareo_Proceso_Uva_Detalle)
+router.get('/', preTareoProcesoUvaDetalle.getPre_Tareo_Proceso_Uva_Detalles)
+router.get('/id/:id', preTareoProcesoUvaDetalle.getPre_Tareo_Proceso_Uva_Detalle)
+router.get('/master/:id', preTareoProcesoUvaDetalle.getPre_Tareo_Proceso_Uva_DetalleByMaster)
+router.post('/create', preTareoProcesoUvaDetalle.createPre_Tareo_Proceso_Uva_Detalle)
+router.post('/rango', preTareoProcesoUvaDetalle.preTareaProcesoUvaDetalleByRango)
+router.put('/update', preTareoProcesoUvaDetalle.updatePre_Tareo_Proceso_Uva_Detalle)
+router.delete('/delete/:id', preTareoProcesoUvaDetalle.deletePre_Tareo_Proceso_Uva_Detalle)
 
-module.exports=router
-/** 
+module.exports = router
+/**
 * @swagger
 *definitions:
-*  Pre_Tareo_Proceso_Uva_Detalle:           
+*  Pre_Tareo_Proceso_Uva_Detalle:
 *    type: object
 *    required:
 *      - cod_Pre_Tareo_Proceso_Uva_Detalle

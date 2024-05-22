@@ -124,7 +124,7 @@ const createPersonalPacking = async (req, res) => {
     codigoempresa: req.body.codigoempresa,
     itempretareaprocesouva: req.body.itempretareaprocesouva,
     numcaja: req.body.numcaja,
-    fecha: (Date.now() - 5 * 3600000),
+    fecha: Date.now(),
     hora: Date.now(),
     imei: req.body.imei,
     idusuario: req.body.idusuario,
