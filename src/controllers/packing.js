@@ -157,6 +157,7 @@ const updatePacking = async (req, res) => {
     /* activo: true, */
     idusuario: req.body.idusuario,
     idestado: 1,
+    estado: req.body.estado,
     turnotareo: req.body.turnotareo,
     diasiguiente: req.body.diasiguiente,
 
