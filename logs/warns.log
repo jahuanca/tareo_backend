@@ -78,3 +78,49 @@
 [May-17-2024 14:58:22]  'error' 500 POST createAsistenciaFechaTurno, SequelizeDatabaseError: The conversion of a nvarchar data type to a datetime data type resulted in an out-of-range value..
 [May-17-2024 15:05:08]  'error' 500 POST createAsistenciaFechaTurno, SequelizeDatabaseError: The conversion of a nvarchar data type to a datetime data type resulted in an out-of-range value..
 [May-17-2024 15:11:58]  'error' 500 POST createAsistenciaFechaTurno, SequelizeDatabaseError: The conversion of a nvarchar data type to a datetime data type resulted in an out-of-range value..
+[May-22-2024 16:02:37]  'error' 500 GET getReporteLineaMesa header, SequelizeDatabaseError: Invalid column name 'idestad'..
+[May-24-2024 15:27:35]  'error' 500 PUT updateAsistenciaRegistroPersonal, Debe esperar 5 minutos.
+[May-24-2024 15:28:58]  'error' 500 PUT updateAsistenciaRegistroPersonal, Debe esperar 5 minutos.
+[May-24-2024 15:29:12]  'error' 500 PUT updateAsistenciaRegistroPersonal, Debe esperar 5 minutos.
+[May-24-2024 15:44:53]  'error' 500 POST registrar, Error: WHERE parameter "idasistenciaturno" has invalid "undefined" value.
+[May-24-2024 15:45:21]  'error' 500 POST registrar, Error: WHERE parameter "idasistenciaturno" has invalid "undefined" value.
+[May-24-2024 15:47:13]  'error' 500 POST registrar, SequelizeValidationError: notNull Violation: AsistenciaRegistroPersonal.idturno cannot be null,
+notNull Violation: AsistenciaRegistroPersonal.fechaturno cannot be null,
+notNull Violation: AsistenciaRegistroPersonal.idusuario cannot be null,
+notNull Violation: AsistenciaRegistroPersonal.fechamod cannot be null,
+Validation error: Validation len on codigoempresa failed,
+Validation error: Validation len on nrodocumento failed.
+[May-24-2024 15:47:45]  'error' 500 POST registrar, SequelizeValidationError: notNull Violation: AsistenciaRegistroPersonal.fechaturno cannot be null,
+notNull Violation: AsistenciaRegistroPersonal.fechamod cannot be null,
+Validation error: Validation len on codigoempresa failed,
+Validation error: Validation len on nrodocumento failed.
+[May-24-2024 15:47:59]  'error' 500 POST registrar, SequelizeValidationError: notNull Violation: AsistenciaRegistroPersonal.fechamod cannot be null,
+Validation error: Validation len on codigoempresa failed,
+Validation error: Validation len on nrodocumento failed.
+[May-24-2024 15:48:21]  'error' 500 POST registrar, SequelizeValidationError: Validation error: Validation len on codigoempresa failed,
+Validation error: Validation len on nrodocumento failed.
+[May-24-2024 15:48:42]  'error' 500 POST registrar, SequelizeValidationError: string violation: codigoempresa cannot be an array or an object,
+Validation error: Validation len on codigoempresa failed,
+Validation error: Validation len on nrodocumento failed.
+[May-24-2024 15:49:12]  'error' 500 POST registrar, SequelizeValidationError: string violation: codigoempresa cannot be an array or an object,
+Validation error: Validation len on codigoempresa failed,
+Validation error: Validation len on nrodocumento failed.
+[May-24-2024 15:49:43]  'error' 500 POST registrar, SequelizeValidationError: string violation: codigoempresa cannot be an array or an object,
+Validation error: Validation len on codigoempresa failed,
+Validation error: Validation len on nrodocumento failed.
+[May-24-2024 15:50:40]  'error' 500 POST registrar, SequelizeValidationError: string violation: codigoempresa cannot be an array or an object,
+Validation error: Validation len on codigoempresa failed,
+Validation error: Validation len on nrodocumento failed.
+[May-24-2024 15:50:54]  'error' 500 POST registrar, SequelizeValidationError: string violation: codigoempresa cannot be an array or an object,
+Validation error: Validation len on codigoempresa failed,
+Validation error: Validation len on nrodocumento failed.
+[May-24-2024 15:51:39]  'error' 500 POST registrar, SequelizeValidationError: string violation: codigoempresa cannot be an array or an object,
+Validation error: Validation len on codigoempresa failed,
+Validation error: Validation len on nrodocumento failed.
+[May-24-2024 15:52:27]  'error' 500 POST registrar, SequelizeValidationError: Validation error: Validation len on codigoempresa failed,
+Validation error: Validation len on nrodocumento failed.
+[May-24-2024 15:52:51]  'error' 500 POST registrar, SequelizeValidationError: Validation error: Validation len on codigoempresa failed,
+Validation error: Validation len on nrodocumento failed.
+[May-24-2024 15:53:16]  'error' 500 POST registrar, SequelizeDatabaseError: Conversion failed when converting date and/or time from character string..
+[May-24-2024 17:14:39]  'error' 500 GET getAsistenciaFechaTurnos, SequelizeDatabaseError: Invalid column name 'undefined'..
+[May-24-2024 17:14:56]  'error' 500 GET getAsistenciaFechaTurnos, SequelizeDatabaseError: Invalid column name 'undefined'..

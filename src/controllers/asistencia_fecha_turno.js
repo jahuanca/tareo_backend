@@ -49,7 +49,6 @@ async function getAsistenciaFechaTurnos (req, res) {
     return res.status(404).json({ message: 'AsistenciaFechaTurnos nulos' })
   }
   logger.info(`200 GET getAsistenciaFechaTurnos, ${AsistenciaFechaTurnos.length} values.`)
-  console.log('resultado')
   res.status(200).json(transform(AsistenciaFechaTurnos[0]))
 }
 
@@ -104,7 +103,7 @@ async function createAsistenciaFechaTurno (req, res) {
 
 async function createAllAsistenciaFechaTurno (req, res) {
   try {
-    const t = await models.sequelize.transaction(async (t) => {
+    await models.sequelize.transaction(async (t) => {
       const asistencia = await models.AsistenciaFechaTurno.create({
 
         fecha: req.body.fecha,
@@ -137,7 +136,7 @@ async function createAllAsistenciaFechaTurno (req, res) {
           }
         )
       }
-      const [err, asistenciaRegistroPersonal] = await get(models.AsistenciaRegistroPersonal.bulkCreate(detalles, { transaction: t }))
+      const [err] = await get(models.AsistenciaRegistroPersonal.bulkCreate(detalles, { transaction: t }))
       if (err) {
         logger.error(`Error: POST createAllAsistenciaFechaTurno, ${err}`)
         return res.status(500).json({ message: `${err}` })
@@ -272,6 +271,7 @@ AND Asistencia_RegistrosPersonal.tipomovimiento= 'I') as sizeEntradas
 FROM Asistencia_FechaxTurno as AF INNER JOIN asistencia_turno as T
 ON AF.idturno  = T.idturno  
 INNER JOIN Asistencia_Ubicacion as U ON AF.idubicacion = U.idubicacion 
-WHERE idusuario = ${idusuario} AND estado != 'I'
+WHERE /*idusuario = ${idusuario} AND */
+estado != 'I'
 ORDER BY idasistenciaturno DESC;
 `

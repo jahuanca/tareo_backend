@@ -1,4 +1,5 @@
 'use strict'
+const { get } = require('./../services/utils')
 const models = require('../models')
 const { getNowTime } = require('../services/utils')
 const logger = require('./../config/logger')
@@ -189,6 +190,7 @@ async function deleteAsistenciaRegistroPersonal (req, res) {
 }
 
 async function registrar (req, res) {
+  console.log('Inicio ------------------------' + Date.now())
   const [err, registro] = await get(models.AsistenciaRegistroPersonal.findOne({
     where: {
       idasistenciaturno: req.body.idasistenciaturno,
@@ -202,8 +204,6 @@ async function registrar (req, res) {
     return res.status(500).json({ message: `${err}` })
   }
   if (registro == null) {
-    // creacion
-    console.log('Creacion')
     if (req.body.nrodocumento == null) {
       console.log('Creacion buscando nrodocumento')
       const [errPE, personalEmpresa] = await get(models.Personal_Empresa.findOne({
@@ -245,6 +245,7 @@ async function registrar (req, res) {
       logger.error('400 POST registrar, asistenciaRegistroPersonal nulos.')
       return res.status(404).json({ message: 'asistenciaRegistroPersonal nulos' })
     }
+    console.log('Fin registrar' + Date.now())
     logger.info(`200 POST registrar, ${asistenciaRegistroPersonal.idasistencia} values.`)
     return res.status(200).json(asistenciaRegistroPersonal)
   } else {
@@ -300,16 +301,10 @@ async function registrar (req, res) {
       logger.error('404 PUT updateAsistenciaRegistroPersonal, no se encontro asistenciaRegistroPersonal para modfiicar')
       return res.status(404).json({ message: 'asistenciaRegistroPersonals nulos' })
     }
+    console.log('Fin modificar' + Date.now())
     logger.info(`200 PUT updateAsistenciaRegistroPersonal, ${asistenciaRegistroPersonal[1][0].dataValues.idasistencia} values.`)
     return res.status(200).json(asistenciaRegistroPersonal[1][0].dataValues)
   }
-}
-
-function get (promise) {
-  return promise.then(data => {
-    return [null, data]
-  })
-    .catch(err => [err])
 }
 
 module.exports = {

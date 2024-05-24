@@ -1688,3 +1688,138 @@
 [May-17-2024 15:15:31]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
 [May-17-2024 15:15:40]  'info' 200 POST createAsistenciaFechaTurno, new id: 306.
 [May-22-2024 02:06:43]  'info' API REST, corriendo en el puerto: 3002
+[May-22-2024 02:16:14]  'info' API REST, corriendo en el puerto: 3002
+[May-22-2024 02:16:31]  'info' 200 GET getPesadoPersonal, 5 items.
+[May-22-2024 02:16:35]  'info' 200 GET getLineasMesas, 2 values.
+[May-22-2024 02:16:37]  'info' 200 GET getPesados, 2 items.
+[May-22-2024 11:00:07]  'info' API REST, corriendo en el puerto: 3002
+[May-22-2024 11:49:02]  'info' 200 GET get_personal_empresas 11786 values.
+[May-22-2024 12:00:33]  'info' API REST, corriendo en el puerto: 3002
+[May-22-2024 12:06:16]  'info' API REST, corriendo en el puerto: 3002
+[May-22-2024 12:06:32]  'info' API REST, corriendo en el puerto: 3002
+[May-22-2024 12:06:54]  'info' API REST, corriendo en el puerto: 3002
+[May-22-2024 12:06:57]  'info' API REST, corriendo en el puerto: 3002
+[May-22-2024 12:07:32]  'info' API REST, corriendo en el puerto: 3002
+[May-22-2024 16:02:30]  'info' API REST, corriendo en el puerto: 3002
+[May-22-2024 16:02:37]  'error' 500 GET getReporteLineaMesa header, SequelizeDatabaseError: Invalid column name 'idestad'..
+[May-22-2024 16:02:43]  'info' API REST, corriendo en el puerto: 3002
+[May-22-2024 16:03:00]  'info' API REST, corriendo en el puerto: 3002
+[May-22-2024 16:03:23]  'info' API REST, corriendo en el puerto: 3002
+[May-22-2024 16:15:06]  'info' API REST, corriendo en el puerto: 3002
+[May-22-2024 16:19:34]  'info' API REST, corriendo en el puerto: 3002
+[May-22-2024 17:12:37]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[May-22-2024 17:38:46]  'info' 200 GET getPackings, size: 1.
+[May-22-2024 17:38:48]  'info' 200 GET getPersonalPacking, size: 4.
+[May-22-2024 17:38:50]  'info' 200 GET getPersonalPacking, size: 4.
+[May-22-2024 17:40:55]  'info' API REST, corriendo en el puerto: 3002
+[May-22-2024 17:41:09]  'info' API REST, corriendo en el puerto: 3002
+[May-22-2024 17:41:22]  'info' API REST, corriendo en el puerto: 3002
+[May-22-2024 17:44:17]  'info' API REST, corriendo en el puerto: 3002
+[May-22-2024 18:11:25]  'info' API REST, corriendo en el puerto: 3002
+[May-22-2024 18:18:03]  'info' 200 PUT updatePacking, id: 3221 
+[May-22-2024 18:18:14]  'info' 200 GET getPackings, size: 1.
+[May-22-2024 20:56:47]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[May-24-2024 15:19:02]  'info' API REST, corriendo en el puerto: 3002
+[May-24-2024 15:19:46]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[May-24-2024 15:19:49]  'info' 200 GET getAsistenciaRegistroPersonals, 5 values.
+[May-24-2024 15:19:58]  'info' 200 DELETE deleteAsistenciaRegistroPersonal, [object Object] values.
+[May-24-2024 15:20:06]  'info' 200 POST registrar, 20534 values.
+[May-24-2024 15:24:04]  'info' 200 DELETE deleteAsistenciaRegistroPersonal, [object Object] values.
+[May-24-2024 15:24:28]  'info' API REST, corriendo en el puerto: 3002
+[May-24-2024 15:24:31]  'info' API REST, corriendo en el puerto: 3002
+[May-24-2024 15:24:46]  'info' 200 POST registrar, 20535 values.
+[May-24-2024 15:26:14]  'info' API REST, corriendo en el puerto: 3002
+[May-24-2024 15:27:35]  'error' 500 PUT updateAsistenciaRegistroPersonal, Debe esperar 5 minutos.
+[May-24-2024 15:27:42]  'info' 200 GET getAsistenciaRegistroPersonals, 5 values.
+[May-24-2024 15:27:48]  'info' 200 DELETE deleteAsistenciaRegistroPersonal, [object Object] values.
+[May-24-2024 15:27:59]  'info' API REST, corriendo en el puerto: 3002
+[May-24-2024 15:28:15]  'info' 200 POST registrar, 20536 values.
+[May-24-2024 15:28:53]  'info' API REST, corriendo en el puerto: 3002
+[May-24-2024 15:28:58]  'error' 500 PUT updateAsistenciaRegistroPersonal, Debe esperar 5 minutos.
+[May-24-2024 15:29:12]  'error' 500 PUT updateAsistenciaRegistroPersonal, Debe esperar 5 minutos.
+[May-24-2024 15:29:21]  'info' 200 DELETE deleteAsistenciaRegistroPersonal, [object Object] values.
+[May-24-2024 15:29:31]  'info' 200 POST registrar, 20537 values.
+[May-24-2024 15:31:11]  'info' 200 DELETE deleteAsistenciaRegistroPersonal, [object Object] values.
+[May-24-2024 15:31:54]  'info' 200 POST registrar, 20538 values.
+[May-24-2024 15:32:01]  'info' 200 DELETE deleteAsistenciaRegistroPersonal, [object Object] values.
+[May-24-2024 15:33:05]  'info' 200 POST registrar, 20539 values.
+[May-24-2024 15:33:53]  'info' 200 DELETE deleteAsistenciaRegistroPersonal, [object Object] values.
+[May-24-2024 15:34:12]  'info' 200 POST registrar, 20540 values.
+[May-24-2024 15:34:20]  'info' 200 DELETE deleteAsistenciaRegistroPersonal, [object Object] values.
+[May-24-2024 15:34:35]  'info' 200 POST registrar, 20541 values.
+[May-24-2024 15:37:11]  'info' API REST, corriendo en el puerto: 3002
+[May-24-2024 15:37:22]  'info' API REST, corriendo en el puerto: 3002
+[May-24-2024 15:38:16]  'info' API REST, corriendo en el puerto: 3002
+[May-24-2024 15:38:31]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[May-24-2024 15:40:06]  'info' API REST, corriendo en el puerto: 3002
+[May-24-2024 15:40:16]  'info' API REST, corriendo en el puerto: 3002
+[May-24-2024 15:40:19]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[May-24-2024 15:40:35]  'info' API REST, corriendo en el puerto: 3002
+[May-24-2024 15:40:55]  'info' API REST, corriendo en el puerto: 3002
+[May-24-2024 15:41:05]  'info' API REST, corriendo en el puerto: 3002
+[May-24-2024 15:41:16]  'info' 200 GET getAsistenciaRegistroPersonals, 5 values.
+[May-24-2024 15:41:21]  'info' 200 DELETE deleteAsistenciaRegistroPersonal, [object Object] values.
+[May-24-2024 15:41:29]  'info' 200 POST registrar, 20542 values.
+[May-24-2024 15:44:53]  'error' 500 POST registrar, Error: WHERE parameter "idasistenciaturno" has invalid "undefined" value.
+[May-24-2024 15:45:21]  'error' 500 POST registrar, Error: WHERE parameter "idasistenciaturno" has invalid "undefined" value.
+[May-24-2024 15:47:13]  'error' 500 POST registrar, SequelizeValidationError: notNull Violation: AsistenciaRegistroPersonal.idturno cannot be null,
+notNull Violation: AsistenciaRegistroPersonal.fechaturno cannot be null,
+notNull Violation: AsistenciaRegistroPersonal.idusuario cannot be null,
+notNull Violation: AsistenciaRegistroPersonal.fechamod cannot be null,
+Validation error: Validation len on codigoempresa failed,
+Validation error: Validation len on nrodocumento failed.
+[May-24-2024 15:47:45]  'error' 500 POST registrar, SequelizeValidationError: notNull Violation: AsistenciaRegistroPersonal.fechaturno cannot be null,
+notNull Violation: AsistenciaRegistroPersonal.fechamod cannot be null,
+Validation error: Validation len on codigoempresa failed,
+Validation error: Validation len on nrodocumento failed.
+[May-24-2024 15:47:59]  'error' 500 POST registrar, SequelizeValidationError: notNull Violation: AsistenciaRegistroPersonal.fechamod cannot be null,
+Validation error: Validation len on codigoempresa failed,
+Validation error: Validation len on nrodocumento failed.
+[May-24-2024 15:48:15]  'info' 200 GET getAsistenciaRegistroPersonals, 5 values.
+[May-24-2024 15:48:18]  'info' 200 DELETE deleteAsistenciaRegistroPersonal, [object Object] values.
+[May-24-2024 15:48:21]  'error' 500 POST registrar, SequelizeValidationError: Validation error: Validation len on codigoempresa failed,
+Validation error: Validation len on nrodocumento failed.
+[May-24-2024 15:48:42]  'error' 500 POST registrar, SequelizeValidationError: string violation: codigoempresa cannot be an array or an object,
+Validation error: Validation len on codigoempresa failed,
+Validation error: Validation len on nrodocumento failed.
+[May-24-2024 15:49:12]  'error' 500 POST registrar, SequelizeValidationError: string violation: codigoempresa cannot be an array or an object,
+Validation error: Validation len on codigoempresa failed,
+Validation error: Validation len on nrodocumento failed.
+[May-24-2024 15:49:43]  'error' 500 POST registrar, SequelizeValidationError: string violation: codigoempresa cannot be an array or an object,
+Validation error: Validation len on codigoempresa failed,
+Validation error: Validation len on nrodocumento failed.
+[May-24-2024 15:50:40]  'error' 500 POST registrar, SequelizeValidationError: string violation: codigoempresa cannot be an array or an object,
+Validation error: Validation len on codigoempresa failed,
+Validation error: Validation len on nrodocumento failed.
+[May-24-2024 15:50:54]  'error' 500 POST registrar, SequelizeValidationError: string violation: codigoempresa cannot be an array or an object,
+Validation error: Validation len on codigoempresa failed,
+Validation error: Validation len on nrodocumento failed.
+[May-24-2024 15:51:04]  'info' 200 GET getAsistenciaRegistroPersonals, 4 values.
+[May-24-2024 15:51:08]  'info' 200 POST registrar, 20543 values.
+[May-24-2024 15:51:30]  'info' 200 DELETE deleteAsistenciaRegistroPersonal, [object Object] values.
+[May-24-2024 15:51:39]  'error' 500 POST registrar, SequelizeValidationError: string violation: codigoempresa cannot be an array or an object,
+Validation error: Validation len on codigoempresa failed,
+Validation error: Validation len on nrodocumento failed.
+[May-24-2024 15:52:27]  'error' 500 POST registrar, SequelizeValidationError: Validation error: Validation len on codigoempresa failed,
+Validation error: Validation len on nrodocumento failed.
+[May-24-2024 15:52:51]  'error' 500 POST registrar, SequelizeValidationError: Validation error: Validation len on codigoempresa failed,
+Validation error: Validation len on nrodocumento failed.
+[May-24-2024 15:53:16]  'error' 500 POST registrar, SequelizeDatabaseError: Conversion failed when converting date and/or time from character string..
+[May-24-2024 15:53:37]  'info' 200 POST registrar, 20545 values.
+[May-24-2024 15:53:46]  'info' 200 GET getAsistenciaRegistroPersonals, 5 values.
+[May-24-2024 15:53:56]  'info' 200 DELETE deleteAsistenciaRegistroPersonal, [object Object] values.
+[May-24-2024 15:56:18]  'info' 200 GET getAsistenciaRegistroPersonals, 4 values.
+[May-24-2024 15:56:20]  'info' 200 GET getAsistenciaRegistroPersonals, 4 values.
+[May-24-2024 15:56:24]  'info' 200 GET getAsistenciaRegistroPersonals, 4 values.
+[May-24-2024 15:56:27]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[May-24-2024 15:56:29]  'info' 200 GET getAsistenciaRegistroPersonals, 4 values.
+[May-24-2024 16:06:07]  'info' 200 GET getAsistenciaRegistroPersonals, 4 values.
+[May-24-2024 16:33:09]  'info' 200 GET getLineasMesas, 2 values.
+[May-24-2024 16:33:11]  'info' 200 GET getLineasMesas, 2 values.
+[May-24-2024 16:33:15]  'info' 200 GET getLineasMesas, 2 values.
+[May-24-2024 16:40:33]  'info' API REST, corriendo en el puerto: 3002
+[May-24-2024 16:41:47]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[May-24-2024 16:42:43]  'info' 200 GET getLineasMesas, 2 values.
+[May-24-2024 16:42:52]  'info' 200 GET getLineasMesas, 2 values.
+[May-24-2024 17:14:39]  'error' 500 GET getAsistenciaFechaTurnos, SequelizeDatabaseError: Invalid column name 'undefined'..
+[May-24-2024 17:14:56]  'error' 500 GET getAsistenciaFechaTurnos, SequelizeDatabaseError: Invalid column name 'undefined'..
