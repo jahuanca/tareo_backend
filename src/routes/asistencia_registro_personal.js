@@ -1,9 +1,16 @@
 'use strict'
 const express = require('express')
 const router = express.Router()
-const asistenciaRegistroPersonal = require('../controllers/asistencia_registro_personal')
-/* const upload_controller=require('../controllers/upload_controller')
-const auth=require('../middlewares/auth') */
+const {
+  getAsistenciaRegistroPersonals,
+  getAsistenciaRegistroPersonalsCount,
+  getAsistenciaRegistroPersonalsByLimitAndOffset,
+  getAsistenciaRegistroPersonal,
+  createAsistenciaRegistroPersonal,
+  updateAsistenciaRegistroPersonal,
+  deleteAsistenciaRegistroPersonal,
+  registrar
+} = require('../controllers/asistencia_registro_personal')
 
 /**
  * @swagger
@@ -15,14 +22,14 @@ const auth=require('../middlewares/auth') */
  *      '200':
  *        description: A successful response
  */
-router.get('/', asistenciaRegistroPersonal.getAsistenciaRegistroPersonals)
-router.get('/count', asistenciaRegistroPersonal.getAsistenciaRegistroPersonalsCount)
-router.get('/range&limit=:limit?&offset=:offset', asistenciaRegistroPersonal.getAsistenciaRegistroPersonalsByLimitAndOffset)
-router.get('/id/:id', asistenciaRegistroPersonal.getAsistenciaRegistroPersonal)
-router.post('/create', asistenciaRegistroPersonal.createAsistenciaRegistroPersonal)
-router.put('/update', asistenciaRegistroPersonal.updateAsistenciaRegistroPersonal)
-router.delete('/delete/:id', asistenciaRegistroPersonal.deleteAsistenciaRegistroPersonal)
-router.post('/registrar', asistenciaRegistroPersonal.registrar)
+router.get('/', getAsistenciaRegistroPersonals)
+router.get('/count', getAsistenciaRegistroPersonalsCount)
+router.get('/range&limit=:limit?&offset=:offset', getAsistenciaRegistroPersonalsByLimitAndOffset)
+router.get('/id/:id', getAsistenciaRegistroPersonal)
+router.post('/create', createAsistenciaRegistroPersonal)
+router.put('/update', updateAsistenciaRegistroPersonal)
+router.delete('/delete/:id', deleteAsistenciaRegistroPersonal)
+router.post('/registrar', registrar)
 
 module.exports = router
 /**

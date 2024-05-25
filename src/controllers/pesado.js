@@ -7,11 +7,11 @@ const getPesados = asyncCatch(async (req, res) => {
   query.estado = 'A'
   console.log(query)
   const [err, pesados] = await getError(models.Pre_Tarea_Esparrago_Varios.findAll({
-    /* where: {
+    where: {
       idusuario: query.idusuario,
-      estado: { [models.Sequelize.Op.in]: ['A', 'P'] }
-    }, */
-    where: query,
+      estado: { [models.Sequelize.Op.in]: ['A', 'M'] }
+    },
+    // where: query,
     include: [{ all: true }],
     attributes: {
       include: [
@@ -23,7 +23,9 @@ const getPesados = asyncCatch(async (req, res) => {
                       personal.itempretareaesparragovarios = Pre_Tarea_Esparrago_Varios.itempretareaesparragovarios
                   AND personal.idestado = 1
                   AND Pre_Tarea_Esparrago_Varios.idusuario= ${query.idusuario}
-                  AND Pre_Tarea_Esparrago_Varios.estado= '${query.estado}'
+                  AND (
+                    Pre_Tarea_Esparrago_Varios.estado= 'A' 
+                    OR Pre_Tarea_Esparrago_Varios.estado = 'M' )
                   
               )`),
           'sizeDetails'
@@ -94,8 +96,22 @@ const createPesado = asyncCatch(async (req, res) => {
 const updatePesado = asyncCatch(async (req, res) => {
   console.log(req.body)
   const [err, pesado] = await getError(models.Pre_Tarea_Esparrago_Varios.update({
-    idestado: 1,
-    estado: 'M',
+    fecha: req.body.fecha,
+    hora: req.body.hora,
+    horainicio: req.body.hora,
+    horafin: req.body.horafin,
+    pausainicio: req.body.pausainicio,
+    pausafin: req.body.pausafin,
+    idestado: req.body.idestado,
+    idusuario: req.body.idusuario,
+    idcentrocosto: req.body.idcentrocosto,
+    idtipotarea: req.body.idtipotarea,
+    diasiguiente: req.body.diasiguiente,
+    codigosupervisor: req.body.codigosupervisor,
+    codigodigitador: req.body.codigodigitador,
+    turnotareo: req.body.turnotareo,
+    linea: req.body.linea,
+    estado: req.body.estado,
 
     accion: 'I',
     usuario: 0,
@@ -113,8 +129,6 @@ const updatePesado = asyncCatch(async (req, res) => {
     throw err
   }
   logger.info(`200 PUT updatePesado, ${req.body.itempretareaesparragovarios} itempretareaesparragovarios.`)
-  console.log(pesado[0])
-  console.log(pesado[0][1])
   res.status(200).json(pesado[1][0].dataValues)
 })
 

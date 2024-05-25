@@ -190,7 +190,8 @@ async function deleteAsistenciaRegistroPersonal (req, res) {
 }
 
 async function registrar (req, res) {
-  console.log('Inicio ------------------------' + Date.now())
+  console.log(req.body)
+  const inicio = Date.now()
   const [err, registro] = await get(models.AsistenciaRegistroPersonal.findOne({
     where: {
       idasistenciaturno: req.body.idasistenciaturno,
@@ -245,27 +246,14 @@ async function registrar (req, res) {
       logger.error('400 POST registrar, asistenciaRegistroPersonal nulos.')
       return res.status(404).json({ message: 'asistenciaRegistroPersonal nulos' })
     }
-    console.log('Fin registrar' + Date.now())
+    console.log('Demoro: ' + (inicio - Date.now()))
     logger.info(`200 POST registrar, ${asistenciaRegistroPersonal.idasistencia} values.`)
     return res.status(200).json(asistenciaRegistroPersonal)
   } else {
     console.log('Modificacion')
     // modificacion
-    const [errU, valueToUpdate] = await get(
-      models.AsistenciaRegistroPersonal.findOne(
-        {
-          where: { idasistencia: registro.idasistencia }
-        }
-      )
-    )
-
-    if (errU) {
-      logger.error(`500 POST registrar, ${errU}.`)
-      return res.status(500).json({ message: `${errU}` })
-    }
-
-    if (valueToUpdate) {
-      const horaMinima = addMinutes(valueToUpdate.horaentrada, 5)
+    if (registro) {
+      const horaMinima = addMinutes(registro.horaentrada, 5)
       console.log('Min:' + horaMinima.getTime())
       console.log('Act:' + Date.now())
       if (
@@ -301,7 +289,7 @@ async function registrar (req, res) {
       logger.error('404 PUT updateAsistenciaRegistroPersonal, no se encontro asistenciaRegistroPersonal para modfiicar')
       return res.status(404).json({ message: 'asistenciaRegistroPersonals nulos' })
     }
-    console.log('Fin modificar' + Date.now())
+    console.log('Demoro: ' + (inicio - Date.now()))
     logger.info(`200 PUT updateAsistenciaRegistroPersonal, ${asistenciaRegistroPersonal[1][0].dataValues.idasistencia} values.`)
     return res.status(200).json(asistenciaRegistroPersonal[1][0].dataValues)
   }
