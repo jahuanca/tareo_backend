@@ -38,18 +38,18 @@ async function getAsistenciaFechaTurnosByLimitAndOffset (req, res) {
 }
 
 async function getAsistenciaFechaTurnos (req, res) {
-  const [err, AsistenciaFechaTurnos] = await get(models.sequelize.query(
+  const [err, asistenciaFechaTurnos] = await get(models.sequelize.query(
     getQuery(req.query.idusuario)))
   if (err) {
     logger.error(`500 GET getAsistenciaFechaTurnos, ${err}.`)
     return res.status(500).json({ message: `${err}` })
   }
-  if (AsistenciaFechaTurnos == null) {
+  if (asistenciaFechaTurnos == null) {
     logger.error('404 GET getAsistenciaFechaTurnos, AsistenciaFechaTurnos nulos.')
     return res.status(404).json({ message: 'AsistenciaFechaTurnos nulos' })
   }
-  logger.info(`200 GET getAsistenciaFechaTurnos, ${AsistenciaFechaTurnos.length} values.`)
-  res.status(200).json(transform(AsistenciaFechaTurnos[0]))
+  logger.info(`200 GET getAsistenciaFechaTurnos, ${asistenciaFechaTurnos.length} values.`)
+  res.status(200).json(transform(asistenciaFechaTurnos[0]))
 }
 
 async function getAsistenciaFechaTurno (req, res) {
@@ -70,7 +70,6 @@ async function getAsistenciaFechaTurno (req, res) {
 }
 
 async function createAsistenciaFechaTurno (req, res) {
-  console.log(req.body)
   const [err, asistenciaFechaTurno] = await get(models.AsistenciaFechaTurno.create({
     idasistenciaturno: req.body.idasistenciaturno,
     fecha: req.body.fecha,
@@ -152,6 +151,14 @@ async function createAllAsistenciaFechaTurno (req, res) {
 
 async function updateAsistenciaFechaTurno (req, res) {
   const [err, asistenciaFechaTurno] = await get(models.AsistenciaFechaTurno.update({
+    idasistenciaturno: req.body.idasistenciaturno,
+    fecha: req.body.fecha,
+    idubicacion: req.body.idubicacion,
+    idturno: req.body.idturno,
+    idestado: req.body.idestado,
+    ipmovil: req.body.ipmovil,
+    fechamod: req.body.fechamod,
+    idusuario: req.body.idusuario,
     estado: req.body.estado,
 
     accion: 'U',
@@ -272,6 +279,6 @@ FROM Asistencia_FechaxTurno as AF INNER JOIN asistencia_turno as T
 ON AF.idturno  = T.idturno  
 INNER JOIN Asistencia_Ubicacion as U ON AF.idubicacion = U.idubicacion 
 WHERE /*idusuario = ${idusuario} AND */
-estado != 'I'
+(estado = 'A' OR estado = 'M')
 ORDER BY idasistenciaturno DESC;
 `

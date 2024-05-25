@@ -131,3 +131,6 @@ Validation error: Validation len on nrodocumento failed.
 [May-25-2024 00:17:26]  'error' 500 PUT updateAsistenciaRegistroPersonal, Debe esperar 5 minutos.
 [May-25-2024 00:22:42]  'error' 500 PUT updateAsistenciaRegistroPersonal, Debe esperar 5 minutos.
 [May-25-2024 00:28:15]  'error' 500 PUT updateAsistenciaRegistroPersonal, Debe esperar 5 minutos.
+[May-25-2024 12:06:49]  'error' 500 GET getAsistenciaFechaTurnos, SequelizeConnectionError: Failed to connect to 35.175.69.142:1433 in 15000ms.
+[May-25-2024 12:06:49]  'error' e208b7c1-2fc1-49e9-881f-abe90f485fc5:  Error: 500 GET getPesados, SequelizeConnectionError: Failed to connect to 35.175.69.142:1433 in 15000ms.
+[May-25-2024 12:19:34]  'error' 51750630-f7a1-416e-a6fa-b960d39f9ac6:  Requested path / not found

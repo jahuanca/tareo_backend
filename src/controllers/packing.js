@@ -61,17 +61,6 @@ const getPersonalPacking = async (req, res) => {
 }
 
 const createPacking = async (req, res) => {
-  console.log('Fecha: ' + (Date.now()))
-  console.log('Hora inicio: ' + req.body.horainicio)
-  console.log('Hora fin: ' + req.body.horafin)
-  console.log('Pausa inicio:' + req.body.pausainicio)
-  console.log('Pausa fin: ' + req.body.pausafin)
-  console.log('Fecha update: ' + (Date.now() - 5 * 3600000))
-  console.log('Hora inicio update: ' + (Date.parse(req.body.horainicio) + 5 * 3600000))
-  console.log('Hora fin update: ' + (Date.parse(req.body.horafin) + 5 * 3600000))
-  console.log('Pausa inicio update:' + (req.body.pausainicio) ? (Date.parse(req.body.pausainicio) + 5 * 3600000) : null)
-  console.log('Pausa fin update: ' + (req.body.pausafin) ? (Date.parse(req.body.pausainicio) + 5 * 3600000) : null)
-
   const [err, packing] = await getError(models.Pre_Tareo_Proceso_Uva.create({
     fecha: req.body.fecha,
     horainicio: req.body.horainicio,
@@ -114,11 +103,7 @@ const createPersonalPacking = async (req, res) => {
     logger.error(`500 POST createPersonalPacking, codigo ${req.body.codigotk} ya esta registrado.`)
     return res.status(500).json({ message: 'El codigo ya se encuentra registrado' })
   }
-  console.log('Date normal:' + Date.now())
-  console.log('Hora normal:' + Date.now())
 
-  console.log('Date update:' + (Date.now() - 5 * 3600000))
-  console.log('Hora update:' + Date.now())
   const [err, packing] = await getError(models.Pre_Tareo_Proceso_Uva_Detalle.create({
     itempretareoprocesouvadetalle: req.body.itempretareoprocesouvadetalle,
     codigoempresa: req.body.codigoempresa,

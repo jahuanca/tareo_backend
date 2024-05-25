@@ -2066,3 +2066,95 @@ Validation error: Validation len on nrodocumento failed.
 [May-25-2024 00:50:05]  'info' 200 GET getAsistenciaRegistroPersonals, 8 values.
 [May-25-2024 00:50:06]  'info' 200 GET getAsistenciaRegistroPersonals, 8 values.
 [May-25-2024 00:50:09]  'info' 200 DELETE deleteAsistenciaRegistroPersonal, [object Object] values.
+[May-25-2024 11:50:30]  'info' API REST, corriendo en el puerto: 3002
+[May-25-2024 11:50:42]  'info' API REST, corriendo en el puerto: 3002
+[May-25-2024 11:51:32]  'info' API REST, corriendo en el puerto: 3002
+[May-25-2024 12:06:49]  'error' 500 GET getAsistenciaFechaTurnos, SequelizeConnectionError: Failed to connect to 35.175.69.142:1433 in 15000ms.
+[May-25-2024 12:06:49]  'error' e208b7c1-2fc1-49e9-881f-abe90f485fc5:  Error: 500 GET getPesados, SequelizeConnectionError: Failed to connect to 35.175.69.142:1433 in 15000ms.
+[May-25-2024 12:07:46]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[May-25-2024 12:07:46]  'info' 200 GET getPesados, 3 items.
+[May-25-2024 12:09:18]  'info' 200 GET getAsistenciaRegistroPersonals, 37 values.
+[May-25-2024 12:09:20]  'info' 200 GET getAsistenciaRegistroPersonals, 37 values.
+[May-25-2024 12:09:21]  'info' 200 GET getAsistenciaRegistroPersonals, 134 values.
+[May-25-2024 12:09:23]  'info' 200 GET getAsistenciaRegistroPersonals, 37 values.
+[May-25-2024 12:09:27]  'info' 200 GET getAsistenciaRegistroPersonals, 37 values.
+[May-25-2024 12:09:30]  'info' 200 GET getAsistenciaRegistroPersonals, 134 values.
+[May-25-2024 12:09:30]  'info' 200 GET getAsistenciaRegistroPersonals, 134 values.
+[May-25-2024 12:10:27]  'info' 200 GET getAsistenciaRegistroPersonals, 134 values.
+[May-25-2024 12:10:55]  'info' 200 GET getAsistenciaRegistroPersonals, 134 values.
+[May-25-2024 12:11:19]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[May-25-2024 12:12:09]  'info' 200 GET getAsistenciaRegistroPersonals, 83 values.
+[May-25-2024 12:12:18]  'info' 200 PUT updateAsistenciaFechaTurno, undefined values.
+[May-25-2024 12:12:22]  'info' 200 GET getAsistenciaRegistroPersonals, 83 values.
+[May-25-2024 12:12:38]  'info' 200 DELETE deleteAsistenciaFechaTurno, [object Object] values.
+[May-25-2024 12:18:55]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[May-25-2024 12:19:34]  'error' 51750630-f7a1-416e-a6fa-b960d39f9ac6:  Requested path / not found
+[May-25-2024 12:19:46]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[May-25-2024 12:21:57]  'info' API REST, corriendo en el puerto: 3002
+[May-25-2024 12:22:01]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[May-25-2024 12:22:03]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[May-25-2024 12:22:12]  'info' API REST, corriendo en el puerto: 3002
+[May-25-2024 12:22:17]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[May-25-2024 12:22:36]  'info' API REST, corriendo en el puerto: 3002
+[May-25-2024 12:22:40]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[May-25-2024 12:22:41]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[May-25-2024 12:22:50]  'info' 200 GET getAsistenciaRegistroPersonals, 30 values.
+[May-25-2024 12:28:15]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[May-25-2024 12:28:37]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[May-25-2024 12:29:51]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[May-25-2024 12:37:06]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[May-25-2024 12:41:21]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[May-25-2024 12:43:42]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[May-25-2024 12:45:22]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[May-25-2024 12:55:35]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[May-25-2024 13:09:47]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[May-25-2024 13:10:34]  'info' API REST, corriendo en el puerto: 3002
+[May-25-2024 13:11:55]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[May-25-2024 13:12:00]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[May-25-2024 13:16:34]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[May-25-2024 13:16:41]  'info' 200 POST createAsistenciaFechaTurno, new id: 317.
+[May-25-2024 13:16:43]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[May-25-2024 13:16:44]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[May-25-2024 13:16:46]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[May-25-2024 13:16:53]  'info' 200 DELETE deleteAsistenciaFechaTurno, [object Object] values.
+[May-25-2024 13:16:54]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[May-25-2024 13:16:56]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[May-25-2024 13:16:57]  'info' 200 GET getAsistenciaRegistroPersonals, 30 values.
+[May-25-2024 13:17:03]  'info' 200 PUT updateAsistenciaFechaTurno, undefined values.
+[May-25-2024 13:17:04]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[May-25-2024 13:17:06]  'info' 200 GET getAsistenciaRegistroPersonals, 30 values.
+[May-25-2024 13:17:12]  'info' 200 POST createAsistenciaFechaTurno, new id: 318.
+[May-25-2024 13:17:19]  'info' 200 PUT updateAsistenciaFechaTurno, undefined values.
+[May-25-2024 13:17:20]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[May-25-2024 13:17:21]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[May-25-2024 13:18:58]  'info' API REST, corriendo en el puerto: 3002
+[May-25-2024 13:19:45]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[May-25-2024 13:20:14]  'info' API REST, corriendo en el puerto: 3002
+[May-25-2024 13:20:26]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[May-25-2024 13:20:26]  'info' 200 PUT updateAsistenciaFechaTurno, undefined values.
+[May-25-2024 13:20:27]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[May-25-2024 13:20:28]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[May-25-2024 13:20:36]  'info' 200 PUT updateAsistenciaFechaTurno, undefined values.
+[May-25-2024 13:20:38]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[May-25-2024 13:20:40]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[May-25-2024 13:20:47]  'info' 200 PUT updateAsistenciaFechaTurno, undefined values.
+[May-25-2024 13:20:48]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[May-25-2024 13:22:10]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[May-25-2024 13:22:13]  'info' 200 GET getAsistenciaRegistroPersonals, 30 values.
+[May-25-2024 13:22:17]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[May-25-2024 13:22:24]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[May-25-2024 13:22:27]  'info' 200 GET getAsistenciaRegistroPersonals, 30 values.
+[May-25-2024 13:22:31]  'info' 200 GET getAsistenciaRegistroPersonals, 30 values.
+[May-25-2024 13:22:54]  'info' 200 GET getAsistenciaRegistroPersonals, 0 values.
+[May-25-2024 13:23:03]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[May-25-2024 13:23:27]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[May-25-2024 13:23:30]  'info' 200 GET getAsistenciaRegistroPersonals, 30 values.
+[May-25-2024 13:23:35]  'info' 200 PUT updateAsistenciaFechaTurno, undefined values.
+[May-25-2024 13:23:40]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[May-25-2024 13:23:41]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[May-25-2024 13:23:43]  'info' 200 GET getAsistenciaRegistroPersonals, 30 values.
+[May-25-2024 13:23:46]  'info' 200 GET getAsistenciaRegistroPersonals, 30 values.
+[May-25-2024 13:26:04]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[May-25-2024 13:39:58]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[May-25-2024 13:45:44]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[May-25-2024 14:03:18]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
