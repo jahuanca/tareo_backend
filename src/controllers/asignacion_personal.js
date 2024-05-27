@@ -33,7 +33,7 @@ async function getLineasMesas (req, res) {
   res.status(200).json(transform(detalles[0]))
 }
 
-async function getDetalles (req, res) {
+async function getDetallesAsignacionPersonal (req, res) {
   const query = []
   query.push(req.query)
   query.push({ estado: 'A' })
@@ -45,18 +45,19 @@ async function getDetalles (req, res) {
     include: [{ model: models.Personal_Empresa, as: 'personal' }]
   }))
   if (err) {
-    logger.error(`500 GET getDetalles, ${err}.`)
+    logger.error(`500 GET getDetallesAsignacionPersonal, ${err}.`)
     return res.status(500).json({ message: `${err}` })
   }
   if (detalles == null) {
-    logger.error('404 GET getDetalles, detalles nulos.')
+    logger.error('404 GET getDetallesAsignacionPersonal, detalles nulos.')
     return res.status(404).json({ message: 'detalles nulos' })
   }
-  logger.info(`200 GET getDetalles, ${detalles.length} values.`)
+  logger.info(`200 GET getDetallesAsignacionPersonal, ${detalles.length} values.`)
   res.status(200).json(detalles)
 }
 
 async function createDetalle (req, res) {
+  console.log(req.body)
   const [errE, existe] = await get(models.EsparragoAgrupaPersonalDetalle.findOne({
     where: {
       codigoempresa: req.body.codigoempresa,
@@ -104,7 +105,7 @@ async function createDetalle (req, res) {
     linea: req.body.linea,
     grupo: req.body.grupo,
     turno: req.body.turno,
-    fecha: req.body.fecha,
+    fecha: new Date(),
     documento: req.body.documento,
     estado: 'A'
   }))
@@ -156,7 +157,7 @@ function get (promise) {
 
 module.exports = {
   getLineasMesas,
-  getDetalles,
+  getDetallesAsignacionPersonal,
   createDetalle,
   deleteDetalle
 }
@@ -171,12 +172,15 @@ const getQuery = (whereString, subQuery) => `
 const selectSubQueryPerson = `
     , (SELECT COUNT(*) FROM EsparragoAgrupaPersonalDetalle 
         where EsparragoAgrupaPersonalDetalle.itemagruparpersonal = EsparragoAgrupaPersonal.itemagruparpersonal
+        AND idestado = 1 AND estado = 'A'
         ) as sizePersonalMesa
 `
 
 const selectSubQuerySize = (itempretareaesparragovarios) => `
     , (SELECT COUNT(*) FROM PersonalPreTareaEsparrago
-    where PersonalPreTareaEsparrago.linea = EsparragoAgrupaPersonal.linea AND PersonalPreTareaEsparrago.mesa = EsparragoAgrupaPersonal.grupo
+    where PersonalPreTareaEsparrago.linea = EsparragoAgrupaPersonal.linea 
+    AND PersonalPreTareaEsparrago.mesa = EsparragoAgrupaPersonal.grupo
+    AND idestado = 1
     ${itempretareaesparragovarios}
     ) as sizeDetails
 `

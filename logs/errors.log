@@ -135,3 +135,6 @@ Validation error: Validation len on nrodocumento failed.
 [May-25-2024 12:06:49]  'error' e208b7c1-2fc1-49e9-881f-abe90f485fc5:  Error: 500 GET getPesados, SequelizeConnectionError: Failed to connect to 35.175.69.142:1433 in 15000ms.
 [May-25-2024 12:19:34]  'error' 51750630-f7a1-416e-a6fa-b960d39f9ac6:  Requested path / not found
 [May-27-2024 01:28:28]  'error' a686ce14-23f5-43f0-9cbe-21db1318917e:  Requested path / not found
+[May-27-2024 11:04:23]  'error' 500 POST createDetalle, Esta persona ya ha sido registrada en este grupo.
+[May-27-2024 11:04:31]  'error' 500 POST createDetalle, Esta persona ya ha sido registrada en este grupo.
+[May-27-2024 11:13:31]  'error' 500 GET getDetallesAsignacionPersonal, SequelizeDatabaseError: Invalid column name ' '..

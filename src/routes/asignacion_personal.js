@@ -1,7 +1,12 @@
 'use strict'
 const express = require('express')
 const router = express.Router()
-const asignacionPersonal = require('../controllers/asignacion_personal')
+const {
+  getLineasMesas,
+  getDetallesAsignacionPersonal,
+  createDetalle,
+  deleteDetalle
+} = require('../controllers/asignacion_personal')
 
 /**
  * @swagger
@@ -13,10 +18,10 @@ const asignacionPersonal = require('../controllers/asignacion_personal')
  *      '200':
  *        description: A successful response
  */
-router.get('/lineasMesas', asignacionPersonal.getLineasMesas)
-router.get('/detalles', asignacionPersonal.getDetalles)
-router.post('/create', asignacionPersonal.createDetalle)
-router.delete('/delete/:id', asignacionPersonal.deleteDetalle)
+router.get('/lineasMesas', getLineasMesas)
+router.get('/detalles', getDetallesAsignacionPersonal)
+router.post('/create', createDetalle)
+router.delete('/delete/:id', deleteDetalle)
 
 module.exports = router
 /**

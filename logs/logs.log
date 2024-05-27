@@ -2182,3 +2182,46 @@ Validation error: Validation len on nrodocumento failed.
 [May-27-2024 01:52:55]  'info' API REST, corriendo en el puerto: 3002
 [May-27-2024 01:55:25]  'info' API REST, corriendo en el puerto: 3002
 [May-27-2024 01:57:28]  'info' API REST, corriendo en el puerto: 3002
+[May-27-2024 02:51:14]  'info' API REST, corriendo en el puerto: 3002
+[May-27-2024 10:41:27]  'info' API REST, corriendo en el puerto: 3002
+[May-27-2024 10:54:45]  'info' 200 GET getDetalles, 1 values.
+[May-27-2024 10:56:14]  'info' API REST, corriendo en el puerto: 3002
+[May-27-2024 10:56:37]  'info' API REST, corriendo en el puerto: 3002
+[May-27-2024 10:58:30]  'info' API REST, corriendo en el puerto: 3002
+[May-27-2024 10:59:05]  'info' 200 GET getDetallesAsignacionPersonal, 1 values.
+[May-27-2024 11:02:49]  'info' 200 POST createDetalle, 12162 itemagruparpersonaldetalle.
+[May-27-2024 11:02:58]  'info' 200 GET getDetallesAsignacionPersonal, 2 values.
+[May-27-2024 11:03:46]  'info' 200 DELETE deleteDetalle, [object Object] values.
+[May-27-2024 11:04:16]  'info' API REST, corriendo en el puerto: 3002
+[May-27-2024 11:04:23]  'error' 500 POST createDetalle, Esta persona ya ha sido registrada en este grupo.
+[May-27-2024 11:04:28]  'info' 200 GET getDetallesAsignacionPersonal, 1 values.
+[May-27-2024 11:04:31]  'error' 500 POST createDetalle, Esta persona ya ha sido registrada en este grupo.
+[May-27-2024 11:04:36]  'info' 200 DELETE deleteDetalle, [object Object] values.
+[May-27-2024 11:04:38]  'info' 200 POST createDetalle, 12163 itemagruparpersonaldetalle.
+[May-27-2024 11:05:18]  'info' API REST, corriendo en el puerto: 3002
+[May-27-2024 11:05:27]  'info' 200 DELETE deleteDetalle, [object Object] values.
+[May-27-2024 11:05:29]  'info' 200 POST createDetalle, 12164 itemagruparpersonaldetalle.
+[May-27-2024 11:05:31]  'info' 200 GET getDetallesAsignacionPersonal, 1 values.
+[May-27-2024 11:05:32]  'info' 200 GET getDetallesAsignacionPersonal, 1 values.
+[May-27-2024 11:07:04]  'info' API REST, corriendo en el puerto: 3002
+[May-27-2024 11:07:54]  'info' API REST, corriendo en el puerto: 3002
+[May-27-2024 11:08:13]  'info' 200 DELETE deleteDetalle, [object Object] values.
+[May-27-2024 11:08:18]  'info' 200 POST createDetalle, 12165 itemagruparpersonaldetalle.
+[May-27-2024 11:08:21]  'info' 200 GET getDetallesAsignacionPersonal, 1 values.
+[May-27-2024 11:08:49]  'info' API REST, corriendo en el puerto: 3002
+[May-27-2024 11:09:09]  'info' 200 DELETE deleteDetalle, [object Object] values.
+[May-27-2024 11:09:12]  'info' 200 POST createDetalle, 12166 itemagruparpersonaldetalle.
+[May-27-2024 11:09:44]  'info' 200 GET getDetallesAsignacionPersonal, 1 values.
+[May-27-2024 11:12:16]  'info' 200 GET getDetallesAsignacionPersonal, 1 values.
+[May-27-2024 11:12:57]  'info' API REST, corriendo en el puerto: 3002
+[May-27-2024 11:13:11]  'info' 200 GET getDetallesAsignacionPersonal, 1 values.
+[May-27-2024 11:13:31]  'error' 500 GET getDetallesAsignacionPersonal, SequelizeDatabaseError: Invalid column name ' '..
+[May-27-2024 11:13:34]  'info' 200 GET getDetallesAsignacionPersonal, 1 values.
+[May-27-2024 11:17:45]  'info' API REST, corriendo en el puerto: 3002
+[May-27-2024 11:17:50]  'info' 200 DELETE deleteDetalle, [object Object] values.
+[May-27-2024 11:17:56]  'info' 200 POST createDetalle, 12167 itemagruparpersonaldetalle.
+[May-27-2024 11:17:59]  'info' 200 GET getDetallesAsignacionPersonal, 1 values.
+[May-27-2024 11:18:53]  'info' 200 GET getLineasMesas, 2 values.
+[May-27-2024 11:20:28]  'info' API REST, corriendo en el puerto: 3002
+[May-27-2024 11:20:34]  'info' 200 GET getLineasMesas, 2 values.
+[May-27-2024 11:21:25]  'info' API REST, corriendo en el puerto: 3002
