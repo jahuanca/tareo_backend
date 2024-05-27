@@ -27,6 +27,7 @@ async function getPersonalTareaProceso (req, res) {
 
 async function personalTareaProcesoByRango (req, res) {
   console.log(req.body)
+  console.log(req.headers)
   const dInicio = new Date(req.body.inicio).setHours(0, 0, 0)
   const dFin = new Date(req.body.fin).setHours(23, 59, 59)
   const mantenedor = req.body.mantenedor
@@ -53,7 +54,7 @@ async function personalTareaProcesoByRango (req, res) {
 
   const [err, personalTareaProceso] = await get(models.PersonalTareaProceso.findAll({
     where: {
-      estadosap: (tipo == 3) ? null : (tipo == 2) ? 'E' : 'T',
+      estadosap: (tipo === 3) ? null : (tipo === 2) ? 'E' : 'T',
       [models.Sequelize.Op.and]:
         [
           { fechamod: { [models.Sequelize.Op.gt]: dInicio } },
@@ -64,7 +65,7 @@ async function personalTareaProcesoByRango (req, res) {
       { model: models.Personal_Empresa },
       {
         model: models.TareaProceso,
-        include: [{ model: models.Centro_Costo }, { model: models.Actividad }, { model: models.Labor }]
+        include: [{ model: models.Centro_Costo }, { model: models.Actividad }, { model: models.Labor }, 'Supervisor', 'Digitador']
       }
     ]
   }))

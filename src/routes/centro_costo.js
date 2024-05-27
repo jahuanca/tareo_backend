@@ -2,17 +2,14 @@
 const express = require('express')
 const router = express.Router()
 const {
-    getCentroCostos,
-    getCentroCostoCount,
-    getCentro_Costo,
-    createCentro_Costo,
-    updateCentro_Costo,
-    deleteCentro_Costo,
-    getCentroCostosByLimitAndOffset
+  getCentroCostos,
+  getCentroCostoCount,
+  getCentroCosto,
+  createCentroCosto,
+  updateCentroCosto,
+  deleteCentroCosto,
+  getCentroCostosByLimitAndOffset
 } = require('../controllers/centro_costo')
-/* const upload_controller=require('../controllers/upload_controller')
-const auth=require('../middlewares/auth') */
-
 /**
  * @swagger
  * /Centro_Costo/:
@@ -25,10 +22,10 @@ const auth=require('../middlewares/auth') */
  */
 router.get('/', getCentroCostos)
 router.get('/count', getCentroCostoCount)
-router.get('/id/:id', getCentro_Costo)
-router.post('/create', createCentro_Costo)
-router.put('/update', updateCentro_Costo)
-router.delete('/delete/:id', deleteCentro_Costo)
+router.get('/id/:id', getCentroCosto)
+router.post('/create', createCentroCosto)
+router.put('/update', updateCentroCosto)
+router.delete('/delete/:id', deleteCentroCosto)
 router.get('/range', getCentroCostosByLimitAndOffset)
 
 module.exports = router

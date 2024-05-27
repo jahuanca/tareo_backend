@@ -2158,3 +2158,27 @@ Validation error: Validation len on nrodocumento failed.
 [May-25-2024 13:39:58]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
 [May-25-2024 13:45:44]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
 [May-25-2024 14:03:18]  'info' 200 GET getAsistenciaFechaTurnos, 2 values.
+[May-27-2024 00:48:14]  'info' API REST, corriendo en el puerto: 3002
+[May-27-2024 00:49:07]  'info' API REST, corriendo en el puerto: 3002
+[May-27-2024 00:49:14]  'info' API REST, corriendo en el puerto: 3002
+[May-27-2024 01:24:35]  'info' API REST, corriendo en el puerto: 3002
+[May-27-2024 01:25:09]  'info' API REST, corriendo en el puerto: 3002
+[May-27-2024 01:25:16]  'info' API REST, corriendo en el puerto: 3002
+[May-27-2024 01:27:00]  'info' API REST, corriendo en el puerto: 3002
+[May-27-2024 01:27:03]  'info' API REST, corriendo en el puerto: 3002
+[May-27-2024 01:27:12]  'info' API REST, corriendo en el puerto: 3002
+[May-27-2024 01:27:19]  'info' API REST, corriendo en el puerto: 3002
+[May-27-2024 01:28:28]  'error' a686ce14-23f5-43f0-9cbe-21db1318917e:  Requested path / not found
+[May-27-2024 01:34:01]  'info' 200 GET getCentroCostosByLimitAndOffset, limit: 10 y offset: 0.
+[May-27-2024 01:43:08]  'info' API REST, corriendo en el puerto: 3002
+[May-27-2024 01:43:38]  'info' API REST, corriendo en el puerto: 3002
+[May-27-2024 01:44:07]  'info' API REST, corriendo en el puerto: 3002
+[May-27-2024 01:44:56]  'info' API REST, corriendo en el puerto: 3002
+[May-27-2024 01:45:23]  'info' API REST, corriendo en el puerto: 3002
+[May-27-2024 01:45:26]  'info' API REST, corriendo en el puerto: 3002
+[May-27-2024 01:45:32]  'info' API REST, corriendo en el puerto: 3002
+[May-27-2024 01:46:18]  'info' API REST, corriendo en el puerto: 3002
+[May-27-2024 01:47:19]  'info' API REST, corriendo en el puerto: 3002
+[May-27-2024 01:52:55]  'info' API REST, corriendo en el puerto: 3002
+[May-27-2024 01:55:25]  'info' API REST, corriendo en el puerto: 3002
+[May-27-2024 01:57:28]  'info' API REST, corriendo en el puerto: 3002

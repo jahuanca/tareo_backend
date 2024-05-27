@@ -1,9 +1,21 @@
 'use strict'
-const express=require('express')
-const router=express.Router()
-const tareaProceso=require('../controllers/tarea_proceso')
-const upload_controller=require('../controllers/upload_controller')
-/*const auth=require('../middlewares/auth') */
+const express = require('express')
+const router = express.Router()
+const {
+  getTareaProcesos,
+  getTareaProceso,
+  createTareaProceso,
+  uploadFileTareaProceso,
+  createAllTareaProceso,
+  updateTareaProceso,
+  deleteTareaProceso
+} = require('../controllers/tarea_proceso')
+const {
+  upload,
+  save
+
+} = require('../controllers/upload_controller')
+/* const auth=require('../middlewares/auth') */
 
 /**
  * @swagger
@@ -15,19 +27,19 @@ const upload_controller=require('../controllers/upload_controller')
  *      '200':
  *        description: A successful response
  */
-router.get('/',tareaProceso.getTareaProcesos)
-router.get('/id/:id',tareaProceso.getTareaProceso)
-router.post('/create',tareaProceso.createTareaProceso)
-router.put('/updateFile', upload_controller.upload() ,upload_controller.save('tarea-procesos') ,tareaProceso.uploadFileTareaProceso)
-router.post('/createAll',tareaProceso.createAllTareaProceso)
-router.put('/update',tareaProceso.updateTareaProceso)
-router.delete('/delete/:id', tareaProceso.deleteTareaProceso)
+router.get('/', getTareaProcesos)
+router.get('/id/:id', getTareaProceso)
+router.post('/create', createTareaProceso)
+router.put('/updateFile', upload(), save('tarea-procesos'), uploadFileTareaProceso)
+router.post('/createAll', createAllTareaProceso)
+router.put('/update', updateTareaProceso)
+router.delete('/delete/:id', deleteTareaProceso)
 
-module.exports=router
-/** 
+module.exports = router
+/**
 * @swagger
 *definitions:
-*  TareaProceso:           
+*  TareaProceso:
 *    type: object
 *    required:
 *      - cod_TareaProceso

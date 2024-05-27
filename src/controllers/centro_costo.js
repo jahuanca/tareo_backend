@@ -45,7 +45,7 @@ async function getCentroCostos (req, res) {
   res.status(200).json(centroCosto)
 }
 
-async function getCentro_Costo (req, res) {
+async function getCentroCosto (req, res) {
   const [err, centroCosto] = await get(models.Centro_Costo.findOne({
     where: { idcentrocosto: req.params.id },
     include: [{ all: true }]
@@ -56,8 +56,8 @@ async function getCentro_Costo (req, res) {
   res.status(200).json(centroCosto)
 }
 
-async function createCentro_Costo (req, res) {
-  const [err, centro_costo] = await get(models.Centro_Costo.create({
+async function createCentroCosto (req, res) {
+  const [err, centroCosto] = await get(models.Centro_Costo.create({
     // all fields to insert
 
     accion: 'I',
@@ -66,12 +66,12 @@ async function createCentro_Costo (req, res) {
     usuario: 0
   }))
   if (err) return res.status(500).json({ message: 'err' })
-  if (centro_costo == null) return res.status(404).json({ message: 'Centro_Costos nulos' })
-  res.status(200).json(centro_costo)
+  if (centroCosto == null) return res.status(404).json({ message: 'Centro_Costos nulos' })
+  res.status(200).json(centroCosto)
 }
 
-async function updateCentro_Costo (req, res) {
-  const [err, centro_costo] = await get(models.Centro_Costo.update({
+async function updateCentroCosto (req, res) {
+  const [err, centroCosto] = await get(models.Centro_Costo.update({
     // all fields to update
 
     accion: 'U',
@@ -86,12 +86,12 @@ async function updateCentro_Costo (req, res) {
     validate: false
   }))
   if (err) return res.status(500).json({ message: 'err' })
-  if (centro_costo == null) return res.status(404).json({ message: 'Centro_Costos nulos' })
-  res.status(200).json(centro_costo[1][0].dataValues)
+  if (centroCosto == null) return res.status(404).json({ message: 'Centro_Costos nulos' })
+  res.status(200).json(centroCosto[1][0].dataValues)
 }
 
-async function deleteCentro_Costo (req, res) {
-  const [err, centro_costo] = await get(models.Centro_Costo.update({
+async function deleteCentroCosto (req, res) {
+  const [err, centroCosto] = await get(models.Centro_Costo.update({
     estado: 'I',
 
     accion_usuario: 'Elimino un centro_costo.',
@@ -105,8 +105,8 @@ async function deleteCentro_Costo (req, res) {
     individualHooks: true
   }))
   if (err) return res.status(500).json({ message: 'err' })
-  if (centro_costo == null) return res.status(404).json({ message: 'Centro_Costos nulos' })
-  res.status(200).json(centro_costo[1][0].dataValues)
+  if (centroCosto == null) return res.status(404).json({ message: 'Centro_Costos nulos' })
+  res.status(200).json(centroCosto[1][0].dataValues)
 }
 
 function get (promise) {
@@ -119,9 +119,9 @@ function get (promise) {
 module.exports = {
   getCentroCostosByLimitAndOffset,
   getCentroCostos,
-  getCentro_Costo,
-  createCentro_Costo,
-  updateCentro_Costo,
-  deleteCentro_Costo,
+  getCentroCosto,
+  createCentroCosto,
+  updateCentroCosto,
+  deleteCentroCosto,
   getCentroCostoCount
 }
