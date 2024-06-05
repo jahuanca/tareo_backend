@@ -2,6 +2,7 @@
 const models = require('../models')
 const logger = require('../config/logger')
 const { transform } = require('dottie')
+const { Op } = models.Sequelize
 
 async function getLineasMesas (req, res) {
   const query = req.query
@@ -77,10 +78,13 @@ async function createDetalle (req, res) {
     return res.status(500).json({ message: 'Esta persona ya ha sido registrada en este grupo.' })
   }
   /* solo en el servidor */
-  req.query.fechaturno = Date.parse(req.query.fechaturno) + 5 * 3600000
+  // req.query.fechaturno = Date.parse(req.query.fechaturno) + 5 * 3600000
+  const inicio = new Date(req.query.fechaturno).setHours(0, 0, 0)
+  const fin = new Date(inicio).setHours(23, 23, 59)
+  console.log(req.query)
   const [errA, asistencia] = await get(models.AsistenciaRegistroPersonal.findOne({
     where: {
-      fechaturno: req.query.fechaturno,
+      fechaturno: { [Op.between]: [inicio, fin] },
       idturno: req.query.idturno,
       codigoempresa: req.query.codigoempresa,
       /* fechaturno: req.body.fechaturno== 'D' ? 1 : 2,
