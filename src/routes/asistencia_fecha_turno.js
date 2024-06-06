@@ -1,7 +1,17 @@
 'use strict'
 const express = require('express')
 const router = express.Router()
-const asistenciaFechaTurno = require('../controllers/asistencia_fecha_turno')
+const {
+  getAsistenciaFechaTurnos,
+  getAsistenciaFechaTurnosCount,
+  getAsistenciaFechaTurnosByLimitAndOffset,
+  uploadFileAsistenciaFechaTurno,
+  getAsistenciaFechaTurno,
+  createAsistenciaFechaTurno,
+  createAllAsistenciaFechaTurno,
+  updateAsistenciaFechaTurno,
+  deleteAsistenciaFechaTurno
+} = require('../controllers/asistencia_fecha_turno')
 const { upload, save } = require('../controllers/upload_controller')
 /**
  * @swagger
@@ -13,15 +23,15 @@ const { upload, save } = require('../controllers/upload_controller')
  *      '200':
  *        description: A successful response
  */
-router.get('/', asistenciaFechaTurno.getAsistenciaFechaTurnos)
-router.get('/count', asistenciaFechaTurno.getAsistenciaFechaTurnosCount)
-router.get('/range&limit=:limit?&offset=:offset', asistenciaFechaTurno.getAsistenciaFechaTurnosByLimitAndOffset)
-router.put('/updateFile', upload(), save('asistencia-fecha-turno'), asistenciaFechaTurno.uploadFileAsistenciaFechaTurno)
-router.get('/id/:id', asistenciaFechaTurno.getAsistenciaFechaTurno)
-router.post('/create', asistenciaFechaTurno.createAsistenciaFechaTurno)
-router.post('/createAll', asistenciaFechaTurno.createAllAsistenciaFechaTurno)
-router.put('/update', asistenciaFechaTurno.updateAsistenciaFechaTurno)
-router.delete('/delete/:id', asistenciaFechaTurno.deleteAsistenciaFechaTurno)
+router.get('/', getAsistenciaFechaTurnos)
+router.get('/count', getAsistenciaFechaTurnosCount)
+router.get('/range&limit=:limit?&offset=:offset', getAsistenciaFechaTurnosByLimitAndOffset)
+router.put('/updateFile', upload(), save('asistencia-fecha-turno'), uploadFileAsistenciaFechaTurno)
+router.get('/id/:id', getAsistenciaFechaTurno)
+router.post('/create', createAsistenciaFechaTurno)
+router.post('/createAll', createAllAsistenciaFechaTurno)
+router.put('/update', updateAsistenciaFechaTurno)
+router.delete('/delete/:id', deleteAsistenciaFechaTurno)
 
 module.exports = router
 /**

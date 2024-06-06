@@ -72,10 +72,10 @@ async function getAsistenciaFechaTurno (req, res) {
 async function createAsistenciaFechaTurno (req, res) {
   const [err, asistenciaFechaTurno] = await get(models.AsistenciaFechaTurno.create({
     idasistenciaturno: req.body.idasistenciaturno,
+    idestado: 1,
     fecha: req.body.fecha,
     idubicacion: req.body.idubicacion,
     idturno: req.body.idturno,
-    idestado: req.body.idestado,
     ipmovil: req.ip,
     fechamod: req.body.fechamod,
     idusuario: req.body.idusuario,
@@ -104,12 +104,11 @@ async function createAllAsistenciaFechaTurno (req, res) {
   try {
     await models.sequelize.transaction(async (t) => {
       const asistencia = await models.AsistenciaFechaTurno.create({
-
+        idestado: 1,
         fecha: req.body.fecha,
         idubicacion: req.body.idubicacion,
         idturno: req.body.idturno,
-        idestado: req.body.idestado,
-        ipmovil: req.body.idturno,
+        ipmovil: req.ip,
         fechamod: req.body.fechamod,
         idusuario: req.body.idusuario
       }, { transaction: t })
@@ -155,8 +154,7 @@ async function updateAsistenciaFechaTurno (req, res) {
     fecha: req.body.fecha,
     idubicacion: req.body.idubicacion,
     idturno: req.body.idturno,
-    idestado: req.body.idestado,
-    ipmovil: req.body.ipmovil,
+    ipmovil: req.ip,
     fechamod: req.body.fechamod,
     idusuario: req.body.idusuario,
     estado: req.body.estado,
