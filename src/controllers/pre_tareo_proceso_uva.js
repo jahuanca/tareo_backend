@@ -29,16 +29,16 @@ async function getPre_Tareo_Proceso_Uva (req, res) {
 async function preTareaProcesoUvaByRango (req, res) {
   console.log(req.body)
   let where
-  if (req.body.idcultivo == '-1') {
+  if (req.body.idcultivo === '-1') {
     where = {
       fecha: {
-        [models.Sequelize.Op.between]: [new Date(req.body.inicio).setHours(0, 0, 0), new Date(req.body.fin).setHours(23, 59, 59)]
+        [models.Sequelize.Op.between]: [new Date(req.body.inicio).setUTCHours(0, 0, 0), new Date(req.body.fin).setUTCHours(23, 59, 59)]
       }
     }
   } else {
     where = {
       fecha: {
-        [models.Sequelize.Op.between]: [new Date(req.body.inicio).setHours(0, 0, 0), new Date(req.body.fin).setHours(23, 59, 59)]
+        [models.Sequelize.Op.between]: [new Date(req.body.inicio).setUTCHours(0, 0, 0), new Date(req.body.fin).setUTCHours(23, 59, 59)]
       },
       idcultivo: req.body.idcultivo
     }
@@ -133,7 +133,7 @@ async function createAllPreTareoProcesoUva (req, res) {
 }
 
 async function updatePre_Tareo_Proceso_Uva (req, res) {
-  const [err, pre_tareo_proceso_uva] = await get(models.Pre_Tareo_Proceso_Uva.update({
+  const [err, preTareoProcesoUva] = await get(models.Pre_Tareo_Proceso_Uva.update({
     // all fields to update
 
     accion: 'U',
@@ -148,8 +148,8 @@ async function updatePre_Tareo_Proceso_Uva (req, res) {
     validate: false
   }))
   if (err) return res.status(500).json({ message: 'err' })
-  if (pre_tareo_proceso_uva == null) return res.status(404).json({ message: 'Pre_Tareo_Proceso_Uvas nulos' })
-  res.status(200).json(pre_tareo_proceso_uva[1][0].dataValues)
+  if (preTareoProcesoUva == null) return res.status(404).json({ message: 'Pre_Tareo_Proceso_Uvas nulos' })
+  res.status(200).json(preTareoProcesoUva[1][0].dataValues)
 }
 
 async function deletePre_Tareo_Proceso_Uva (req, res) {

@@ -58,11 +58,13 @@ async function getDetallesAsignacionPersonal (req, res) {
 }
 
 async function createDetalle (req, res) {
-  console.log(req.body)
+  console.log(req.body.fecha)
   const inicioEsparrago = new Date(req.body.fecha)
-  inicioEsparrago.setHours(0, 0, 1)
+  inicioEsparrago.setUTCHours(0, 0, 1)
   const finEsparrago = new Date(req.body.fecha)
-  finEsparrago.setHours(23, 59, 59)
+  finEsparrago.setUTCHours(23, 59, 59)
+  console.log(inicioEsparrago)
+  console.log(finEsparrago)
   const [errE, existe] = await get(models.EsparragoAgrupaPersonalDetalle.findOne({
     where: {
       codigoempresa: req.body.codigoempresa,
@@ -83,8 +85,8 @@ async function createDetalle (req, res) {
   }
   /* solo en el servidor */
   // req.query.fechaturno = Date.parse(req.query.fechaturno) + 5 * 3600000
-  // const inicio = new Date(req.query.fechaturno).setHours(0, 0, 0)
-  // const fin = new Date(inicio).setHours(23, 23, 59)
+  // const inicio = new Date(req.query.fechaturno).setUTCHours(0, 0, 0)
+  // const fin = new Date(inicio).setUTCHours(23, 23, 59)
   console.log(req.query)
   const [errA, asistencia] = await get(models.AsistenciaRegistroPersonal.findOne({
     where: {

@@ -15,7 +15,7 @@ async function preTareaProcesoUvaDetalleByRango (req, res) {
   console.log(req.body)
   const where = {
     fecha: {
-      [models.Sequelize.Op.between]: [new Date(req.body.inicio).setHours(0, 0, 0), new Date(req.body.fin).setHours(23, 59, 59)]
+      [models.Sequelize.Op.between]: [new Date(req.body.inicio).setUTCHours(0, 0, 0), new Date(req.body.fin).setUTCHours(23, 59, 59)]
     }
   }
   let wIn

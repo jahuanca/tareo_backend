@@ -28,8 +28,8 @@ async function getPersonalTareaProceso (req, res) {
 async function personalTareaProcesoByRango (req, res) {
   console.log(req.body)
   console.log(req.headers)
-  const dInicio = new Date(req.body.inicio).setHours(0, 0, 0)
-  const dFin = new Date(req.body.fin).setHours(23, 59, 59)
+  const dInicio = new Date(req.body.inicio).setUTCHours(0, 0, 0)
+  const dFin = new Date(req.body.fin).setUTCHours(23, 59, 59)
   const mantenedor = req.body.mantenedor
   const tipo = req.body.tipo
 
