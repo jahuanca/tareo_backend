@@ -68,9 +68,23 @@ async function getPersonalEmpresa (req, res) {
 
 async function getPersonalEmpresaBySubdivision (req, res) {
   const [err, personalEmpresa] = await get(models.Personal_Empresa.findAll({
-    /* where:{id: req.params.id, estado: 'A'}, */
     include: [
       { model: models.PersonalEmpresa_Subdivision, where: { idsubdivision: req.params.id }, required: true }
+    ]
+  }))
+  if (err) return res.status(500).json({ message: `${err}` })
+  if (personalEmpresa == null) return res.status(404).json({ message: 'Personal_Empresas nulos' })
+  res.status(200).json(personalEmpresa)
+}
+
+async function getPersonalEmpresaBySubdivisionActive (req, res) {
+  const [err, personalEmpresa] = await get(models.Personal_Empresa.findOne({
+    include: [
+      {
+        model: models.PersonalEmpresa_Subdivision,
+        where: { idsubdivision: req.params.id, codigoempresa: req.params.codigoempresa, activo: true },
+        required: true
+      }
     ]
   }))
   if (err) return res.status(500).json({ message: `${err}` })
@@ -143,6 +157,7 @@ module.exports = {
   getPersonalEmpresasCount,
   getPersonalEmpresasByLimitAndOffset,
   getPersonalEmpresaBySubdivision,
+  getPersonalEmpresaBySubdivisionActive,
   getPersonalEmpresa,
   createPersonalEmpresa,
   updatePersonalEmpresa,

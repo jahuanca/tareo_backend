@@ -1,7 +1,13 @@
 'use strict'
-const express=require('express')
-const router=express.Router()
-const subdivision=require('../controllers/subdivision')
+const express = require('express')
+const router = express.Router()
+const {
+  getSubdivisions,
+  getSubdivision,
+  createSubdivision,
+  updateSubdivision,
+  deleteSubdivision
+} = require('../controllers/subdivision')
 /* const upload_controller=require('../controllers/upload_controller')
 const auth=require('../middlewares/auth') */
 
@@ -15,17 +21,17 @@ const auth=require('../middlewares/auth') */
  *      '200':
  *        description: A successful response
  */
-router.get('/',subdivision.getSubdivisions)
-router.get('/id/:id',subdivision.getSubdivision)
-router.post('/create',subdivision.createSubdivision)
-router.put('/update',subdivision.updateSubdivision)
-router.delete('/delete/:id', subdivision.deleteSubdivision)
+router.get('/', getSubdivisions)
+router.get('/id/:id', getSubdivision)
+router.post('/create', createSubdivision)
+router.put('/update', updateSubdivision)
+router.delete('/delete/:id', deleteSubdivision)
 
-module.exports=router
-/** 
+module.exports = router
+/**
 * @swagger
 *definitions:
-*  Subdivision:           
+*  Subdivision:
 *    type: object
 *    required:
 *      - cod_Subdivision

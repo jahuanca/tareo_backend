@@ -2,6 +2,7 @@
 const {
   Model
 } = require('sequelize')
+
 module.exports = (sequelize, DataTypes) => {
   class EsparragoAgrupaPersonalDetalle extends Model {
     static associate (models) {

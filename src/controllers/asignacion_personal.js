@@ -59,11 +59,15 @@ async function getDetallesAsignacionPersonal (req, res) {
 
 async function createDetalle (req, res) {
   console.log(req.body)
+  const inicioEsparrago = new Date(req.body.fecha)
+  inicioEsparrago.setHours(0, 0, 1)
+  const finEsparrago = new Date(req.body.fecha)
+  finEsparrago.setHours(23, 59, 59)
   const [errE, existe] = await get(models.EsparragoAgrupaPersonalDetalle.findOne({
     where: {
       codigoempresa: req.body.codigoempresa,
       turno: req.body.turno,
-      fecha: req.body.fecha,
+      fecha: { [Op.between]: [inicioEsparrago, finEsparrago] },
       linea: req.body.linea,
       grupo: req.body.grupo,
       estado: 'A'
@@ -79,17 +83,15 @@ async function createDetalle (req, res) {
   }
   /* solo en el servidor */
   // req.query.fechaturno = Date.parse(req.query.fechaturno) + 5 * 3600000
-  const inicio = new Date(req.query.fechaturno).setHours(0, 0, 0)
-  const fin = new Date(inicio).setHours(23, 23, 59)
+  // const inicio = new Date(req.query.fechaturno).setHours(0, 0, 0)
+  // const fin = new Date(inicio).setHours(23, 23, 59)
   console.log(req.query)
   const [errA, asistencia] = await get(models.AsistenciaRegistroPersonal.findOne({
     where: {
-      fechaturno: { [Op.between]: [inicio, fin] },
+      // fechaturno: { [Op.between]: [inicio, fin] },
+      fechaturno: req.query.fechaturno,
       idturno: req.query.idturno,
       codigoempresa: req.query.codigoempresa,
-      /* fechaturno: req.body.fechaturno== 'D' ? 1 : 2,
-            idturno: (req.body.idturno== 'D' ? 1 : 2),
-            codigoempresa: req.query.codigoempresa, */
       estado: 'A'
     },
     include: [
