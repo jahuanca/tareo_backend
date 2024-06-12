@@ -58,6 +58,7 @@ const getPesadoPersonal = asyncCatch(async (req, res) => {
 })
 
 const createPesado = asyncCatch(async (req, res) => {
+  console.log(req.body)
   const [err, pesado] = await getError(models.Pre_Tarea_Esparrago_Varios.create({
     fecha: req.body.fecha,
     hora: new Date(),
@@ -71,7 +72,7 @@ const createPesado = asyncCatch(async (req, res) => {
     idtipotarea: req.body.idtipotarea,
     codigosupervisor: req.body.codigosupervisor,
     codigodigitador: req.body.codigodigitador,
-    fechamod: req.body.fechamod,
+    fechamod: new Date(),
     /* activo: true, */
     idusuario: req.body.idusuario,
     idestado: 1,
@@ -94,42 +95,35 @@ const createPesado = asyncCatch(async (req, res) => {
 })
 
 const updatePesado = asyncCatch(async (req, res) => {
-  console.log(req.body)
-  const [err, pesado] = await getError(models.Pre_Tarea_Esparrago_Varios.update({
-    fecha: req.body.fecha,
-    hora: req.body.hora,
-    horainicio: req.body.hora,
-    horafin: req.body.horafin,
-    pausainicio: req.body.pausainicio,
-    pausafin: req.body.pausafin,
-    idestado: req.body.idestado,
-    idusuario: req.body.idusuario,
-    idcentrocosto: req.body.idcentrocosto,
-    idtipotarea: req.body.idtipotarea,
-    diasiguiente: req.body.diasiguiente,
-    codigosupervisor: req.body.codigosupervisor,
-    codigodigitador: req.body.codigodigitador,
-    turnotareo: req.body.turnotareo,
-    linea: req.body.linea,
-    estado: req.body.estado,
-
-    accion: 'I',
-    usuario: 0,
-    ip: req.ip,
-    accion_usuario: 'Edito un pesado.'
-  }, {
+  const [err, pesado] = await getError(models.Pre_Tarea_Esparrago_Varios.findOne({
     where: {
       itempretareaesparragovarios: req.body.itempretareaesparragovarios
-    },
-    individualHooks: true,
-    validate: false
+    }
   }))
   if (err) {
     err.message = `500 PUT updatePesado, ${err.message}.`
     throw err
   }
-  logger.info(`200 PUT updatePesado, ${req.body.itempretareaesparragovarios} itempretareaesparragovarios.`)
-  res.status(200).json(pesado[1][0].dataValues)
+  if (pesado != null) {
+    pesado.fecha = new Date(req.body.fecha)
+    pesado.horainicio = req.body.horainicio
+    pesado.horafin = req.body.horafin
+    pesado.pausainicio = req.body.pausainicio
+    pesado.pausafin = req.body.pausafin
+    pesado.idestado = req.body.idestado
+    pesado.idusuario = req.body.idusuario
+    pesado.idcentrocosto = req.body.idcentrocosto
+    pesado.idtipotarea = req.body.idtipotarea
+    pesado.diasiguiente = req.body.diasiguiente
+    pesado.codigosupervisor = req.body.codigosupervisor
+    pesado.codigodigitador = req.body.codigodigitador
+    pesado.turnotareo = req.body.turnotareo
+    pesado.linea = req.body.linea
+    pesado.estado = req.body.estado
+    pesado.save()
+    logger.info(`200 PUT updatePesado, ${req.body.itempretareaesparragovarios} itempretareaesparragovarios.`)
+    res.status(200).json(pesado)
+  }
 })
 
 const createPersonalPesado = asyncCatch(async (req, res) => {
@@ -228,7 +222,7 @@ const createDetallePesado = asyncCatch(async (req, res) => {
     idtipotarea: req.body.idtipotarea,
     codigosupervisor: req.body.codigosupervisor,
     codigodigitador: req.body.codigodigitador,
-    fechamod: req.body.fechamod,
+    fechamod: new Date(),
     /* activo: true, */
     idusuario: req.body.idusuario,
     idestado: 1,

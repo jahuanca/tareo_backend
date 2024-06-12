@@ -15,7 +15,7 @@ module.exports = (sequelize, DataTypes) => {
     // add new parameters
     itempretareaesparragovarios: { primaryKey: true, autoIncrement: true, type: DataTypes.INTEGER, allowNull: null },
     fecha: {
-      type: DataTypes.DATEONLY,
+      type: DataTypes.DATE,
       allowNull: false
     },
     fechamod: { type: DataTypes.DATE, allowNull: false },
