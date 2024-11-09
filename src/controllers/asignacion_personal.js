@@ -102,7 +102,8 @@ async function createDetalle (req, res) {
   }))
 
   if (errA) return res.status(500).json({ message: `Error: ${errA}` })
-  if (asistencia == null) return res.status(404).json({ message: 'Esta persona no se encuentra en la lista de asistencia.' })
+  if (asistencia == null) return res.status(404).json({ message: `FT:${req.query.fechaturno}, T: ${req.query.idturno}, CE: ${req.query.codigoempresa}` })
+  // if (asistencia == null) return res.status(404).json({ message: 'Esta persona no se encuentra en la lista de asistencia.' })
 
   const [err, detalle] = await get(models.EsparragoAgrupaPersonalDetalle.create({
     itemagruparpersonaldetalle: req.body.itemagruparpersonaldetalle,
